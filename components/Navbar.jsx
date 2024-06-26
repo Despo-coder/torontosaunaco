@@ -6,14 +6,14 @@ import defaultImage from "@/assets/images/profile.png"
 import { Button } from './ui/button';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
-
+import { HiOutlineShoppingBag } from "react-icons/hi2";
 
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
   const [isloggedIn, setIsLoggedIn] = useState(true);
-  const [isAdmin, setIsAdmin] = useState(true);
+  const [isAdmin, setIsAdmin] = useState(false);
   const pathname = usePathname();
     return (  
     <nav className="bg-slate-700  py-8"
@@ -111,6 +111,7 @@ const Navbar = () => {
 
         </div>
 
+
         {/* <!-- Right Side Menu (Logged Out) -->  */}
         {!isloggedIn && ( <div className="hidden md:block md:ml-6">
         <div className="flex items-center">
@@ -128,6 +129,12 @@ const Navbar = () => {
         <div
           className="absolute inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto md:ml-6 md:pr-0"
         >
+          {/* <!-- Shopping Cart Button --> */}
+          {!isAdmin && (<div className='mr-2'>
+                    <HiOutlineShoppingBag className='font-bold text-black' size={38}/>
+                    <span  className="absolute top-[46px] right-[70px] inline-flex items-center justify-center px-[1px] py-[2px]  font-semibold leading-none text-white text-md transform translate-x-1/2 -translate-y-1/2 ">2</span>
+                    </div>)}
+                  
           {isloggedIn && isAdmin && ( <Link href="/message" className="relative group">
             <button
               type="button"
