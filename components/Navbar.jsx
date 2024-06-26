@@ -1,13 +1,17 @@
+"use client"
 import Image from 'next/image';
 import Link from 'next/link';
-
 import logo from "@/assets/images/tsc_logo_black.jpg"
 import defaultImage from "@/assets/images/profile.png"
+import { Button } from './ui/button';
+import { useState } from 'react';
 
 //import  {ModeToggle} from "@/components/ThemeToggle"
 
 const Navbar = () => {
-  
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
+  console.log(isProfileMenuOpen)
     return (  
     <nav className="bg-slate-700 border-b border-blue-500 py-8">
     <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -20,6 +24,9 @@ const Navbar = () => {
             className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
             aria-controls="mobile-menu"
             aria-expanded="false"
+            onClick={() => {
+              setIsMobileMenuOpen(!isMobileMenuOpen);
+            }}
           >
             <span className="absolute -inset-0.5"></span>
             <span className="sr-only">Open main menu</span>
@@ -58,7 +65,7 @@ const Navbar = () => {
             <div className="flex space-x-2 mt-6">
               <Link
                 href="/"
-                className="text-white bg-black hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
+                className=" text-white bg-black hover:bg-gray-900 hover:text-white rounded-xl px-3 py-2"
                 >Home</Link
               >
               {/* Create drop down menu */}
@@ -77,17 +84,17 @@ const Navbar = () => {
                     
               <Link
                 href="/saunas"
-                className="text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
+                className="text-white hover:bg-gray-900 hover:text-white rounded-xl px-3 py-2"
                 >Saunas</Link
               >
               <Link
                 href="/cold-plunge"
-                className="text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
+                className="text-white hover:bg-gray-900 hover:text-white rounded-xl px-3 py-2"
                 >Cold Plunge</Link
               >
               <Link
                 href="/quote"
-                className="text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
+                className="text-white hover:bg-gray-900 hover:text-white rounded-xl px-3 py-2"
                 >Get a Quote</Link
               >
             </div>
@@ -99,10 +106,10 @@ const Navbar = () => {
         <div className="hidden md:block md:ml-6">
           <div className="flex items-center">
             <button
-              className="flex items-center text-white bg-gray-700 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
+              className="flex items-center text-white bg-gray-700 hover:bg-gray-900 hover:text-white rounded-xl px-3 py-2"
             >
-              <i className="fa-brands fa-google text-white mr-2"></i>
-              <span>Login or Register</span>
+              {/* <FaGoogle  className='mr-2 font-extralight'/> */}
+              <span>Login/Sign Up</span>
             </button>
           </div>
         </div>
@@ -149,6 +156,7 @@ const Navbar = () => {
                 id="user-menu-button"
                 aria-expanded="false"
                 aria-haspopup="true"
+                onClick={()=> setIsProfileMenuOpen((prev) => !prev)}
               >
                 <span className="absolute -inset-1.5"></span>
                 <span className="sr-only">Open user menu</span>
@@ -193,66 +201,75 @@ const Navbar = () => {
             </div>
 
             {/* <!-- Profile dropdown --> */}
-            <div
+            {isProfileMenuOpen && (<div
               id="user-menu"
-              className="hidden absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+              className= " absolute right-0 z-10 mt-14 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none ease-in duration-500"
               role="menu"
               aria-orientation="vertical"
               aria-labelledby="user-menu-button"
              tabIndex="-1"
+             
             >
-              <a
-                href="/profile.html"
+              <Link
+                href="/profile"
                 className="block px-4 py-2 text-sm text-gray-700"
                 role="menuitem"
                tabIndex="-1"
                 id="user-menu-item-0"
-                >Your Profile</a
+                >Your Profile</Link
               >
-              <a
-                href="saved-properties.html"
+              <Link
+                href="/orders"
                 className="block px-4 py-2 text-sm text-gray-700"
                 role="menuitem"
                tabIndex="-1"
                 id="user-menu-item-2"
-                >Saved Properties</a
+                >Orders</Link
               >
-              <a
+              <Link
                 href="#"
                 className="block px-4 py-2 text-sm text-gray-700"
                 role="menuitem"
                tabIndex="-1"
                 id="user-menu-item-2"
-                >Sign Out</a
+                >Sign Out</Link
               >
             </div>
+            )}
+            
           </div>
         </div>
       </div>
     </div>
 
     {/* <!-- Mobile menu, show/hide based on menu state. --> */}
-    <div className="hidden" id="mobile-menu">
+    <div className={isMobileMenuOpen ? '':"hidden"} id="mobile-menu">
       <div className="space-y-1 px-2 pb-3 pt-2">
-        <a
-          href="/index.html"
+        <Link
+          href="/"
           className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
-          >Home</a
+          >Home</Link
         >
-        <a
-          href="/properties.html"
+        <Link
+          href="/saunas"
           className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-          >Properties</a
+          >Saunas</Link
         >
-        <a
-          href="/add-property.html"
+       
+        <Link
+          href="/cold-plunge"
           className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-          >Add Property</a
+          >Cold Plunge</Link
+        >
+        <Link
+          href="/quote"
+          className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+          >Get A Quote</Link
         >
         <button
-          className="flex items-center text-white bg-gray-700 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 my-4"
+          className="flex items-center text-white bg-gray-700 hover:bg-gray-900 hover:text-white rounded-xl px-3 py-2 my-4"
         >
-          <i className="fa-brands fa-google mr-2"></i>
+          {/* <i className="fa-brands fa-google mr-2"></i> */}
           <span>Login or Register</span>
         </button>
       </div>
