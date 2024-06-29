@@ -7,9 +7,13 @@ import { Button } from './ui/button';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { HiOutlineShoppingBag } from "react-icons/hi2";
+import { useSelector } from 'react-redux';
+
 
 
 const Navbar = () => {
+  const [showDropdown, setShowDropdown] = useState(false);
+  const cartItems = useSelector((state) => state.cart);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
   const [isloggedIn, setIsLoggedIn] = useState(true);
@@ -69,7 +73,7 @@ const Navbar = () => {
         >
        
           <Link className="flex flex-col items-center md:flex-row md:items-center flex-shrink-0" href="/">
-           <Image src={logo} alt="Toronto Sauna Co" width={80} height={50} sizes={100} className='rounded-full'/>
+           <Image src={logo} alt="Toronto Sauna Co" width={80} height={50}priority={true} className='rounded-full w-auto'/>
            
             <span className="md:block text-white text-2xl font-bold ml-2 mt-1"
               >Toronto Sauna Co.</span
@@ -85,11 +89,58 @@ const Navbar = () => {
               >
               
                 
+              <div
+          className="relative"
+          onMouseEnter={() => setShowDropdown(true)}
+          onMouseLeave={() => setShowDropdown(false)}
+        >
+          <Link
+            href="/saunas"
+            className={`${pathname === '/saunas' ? 'bg-gray-900 text-white' : ''} text-white hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1 inline-flex items-center`}
+            style={{ marginTop: '1px' }}
+          >
+            Saunas
+          </Link>
+          {showDropdown && (
+            <div className="absolute left-0 mt-[-1px] w-48 bg-white shadow-lg rounded-xl z-10">
               <Link
-                href="/saunas"
-                className={`${pathname === '/saunas' ?'bg-gray-900 text-white' : ''} " text-white  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
-                >Saunas</Link
+                href="/saunas/barrel"
+                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+             onClick={() => setShowDropdown(false)}
+             >
+                Cedar Barrel Saunas
+              </Link>
+              <Link
+                href="/saunas/cube"
+                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                onClick={() => setShowDropdown(false)}
               >
+                Cedar Luna Saunas
+              </Link>
+              <Link
+                href="/saunas/outdoor"
+                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                onClick={() => setShowDropdown(false)}
+              >
+                Outdoor Cedar Cube Saunas
+              </Link>
+              <Link
+                href="/saunas/outdoor"
+                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                onClick={() => setShowDropdown(false)}
+              >
+                Indoor Cedar Cube Saunas
+              </Link>
+              <Link
+                href="/saunas/outdoor"
+                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                onClick={() => setShowDropdown(false)}
+             >
+                Outdoor Showers
+              </Link>
+            </div>
+          )}
+        </div>
               <Link
                 href="/cold-plunge"
                 className={`${pathname === '/cold-plunge' ?'bg-gray-900 text-white' : ''} " text-white  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
@@ -132,7 +183,7 @@ const Navbar = () => {
           {/* <!-- Shopping Cart Button --> */}
           {!isAdmin && (<div className='mr-2'>
                     <HiOutlineShoppingBag className='font-bold text-black' size={38}/>
-                    <span  className="absolute top-[46px] right-[70px] inline-flex items-center justify-center px-[1px] py-[2px]  font-semibold leading-none text-white text-md transform translate-x-1/2 -translate-y-1/2 ">2</span>
+                    <span  className="absolute top-[46px] right-[80px] md:right-[70px] inline-flex items-center justify-center px-[1px] py-[2px]  font-semibold leading-none text-white text-md transform translate-x-1/2 -translate-y-1/2 ">{cartItems.length}</span>
                     </div>)}
                   
           {isloggedIn && isAdmin && ( <Link href="/message" className="relative group">
@@ -243,11 +294,58 @@ const Navbar = () => {
                 className={`${pathname === '/' ?'bg-gray-900 text-white' : ''} " text-white  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
                 >Home</Link
               >
+              <div
+          className="relative"
+          onMouseEnter={() => setShowDropdown(true)}
+          onMouseLeave={() => setShowDropdown(false)}
+        >
+          <Link
+            href="/saunas"
+            className={`${pathname === '/saunas' ? 'bg-gray-900 text-white' : ''} text-white hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1 inline-flex items-center`}
+            style={{ marginTop: '1px' }}
+          >
+            Saunas
+          </Link>
+          {showDropdown && (
+            <div className="absolute left-0 mt-[-1px] w-48 bg-white shadow-lg rounded-xl z-10">
               <Link
-                href="/saunas"
-                className={`${pathname === '/saunas' ?'bg-gray-900 text-white' : ''} " text-white  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
-                >Saunas</Link
+                href="/saunas/barrel"
+                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+             onClick={() => setShowDropdown(false)}
+             >
+                Cedar Barrel Saunas
+              </Link>
+              <Link
+                href="/saunas/cube"
+                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                onClick={() => setShowDropdown(false)}
               >
+                Cedar Luna Saunas
+              </Link>
+              <Link
+                href="/saunas/outdoor"
+                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                onClick={() => setShowDropdown(false)}
+              >
+                Outdoor Cedar Cube Saunas
+              </Link>
+              <Link
+                href="/saunas/outdoor"
+                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                onClick={() => setShowDropdown(false)}
+              >
+                Indoor Cedar Cube Saunas
+              </Link>
+              <Link
+                href="/saunas/outdoor"
+                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                onClick={() => setShowDropdown(false)}
+              >
+                Outdoor Showers
+              </Link>
+            </div>
+          )}
+        </div>
             
               <Link
                 href="/cold-plunge"

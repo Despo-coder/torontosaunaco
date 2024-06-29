@@ -1,8 +1,10 @@
 import { Button } from "./ui/button";
 
+
 const Hero = () => {
   return (
     <div>
+
       <section
         className="relative bg-slate-700 py-20 mb-4 h-[74vh]"
         style={{
@@ -60,6 +62,7 @@ const Hero = () => {
           </form>
         </div>
       </section>
+  
     </div>
   );
 };

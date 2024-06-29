@@ -1,6 +1,7 @@
 import logo from "@/assets/images/tsc_logo_black.jpg"
 import Navbar from "@/components/Navbar"
 import '../assets/styles/globals.css'
+import StoreProvider from "@/redux/provider/StoreProvider"
 
 
 // Create Meta Data
@@ -16,12 +17,13 @@ export const metadata = {
 
 const MainLayout = ({children}) => {
     return (
-         <html lang="en">
-           
+         <html lang="en" >
+           <StoreProvider>
            <body>
             <Navbar />
            <main>{children}</main>
            </body>
+           </StoreProvider>
          </html>
        )
 }

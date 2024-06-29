@@ -1,0 +1,432 @@
+[
+  {
+  
+    "owner": "1",
+    "name": "Dundalk Leisurecraft",
+    "type": "Apartment",
+    "description": "This one. Our Pure Cube Trinity Sauna is a 5 Sided Corner model that will comfortably seat 2 people and fit onto an small deck or patio at your Condo or Cottage! Made with western red cedar and tempered glass windows this model as a special design flat plastic roof tray for year round use.",
+    "square_feet": 1500,
+    "price": 15000,
+    "views": {
+      "standard": 12,
+      "panoramic": 12,
+      "regular": 0
+    },  
+    "wood_type": {
+      "KWC":"Knotty Cedar",
+      "CC":"Clear Cedar"
+    },  
+    "stove_type": {
+      "Harvia Electric Stove (8kw)": 999,
+      "Huum Drop with remote (9kw)":3125,
+      "Huum Hive Mini (10.5 kw)":4620,
+      "Karhu 20":3140,
+      "Huum Hive Wood Heater":4890
+    },  
+    "upgrades": {
+      "Huum Drop UKU WiFi Controller": 575,
+      "Double Tired Benches":700,
+      "L-Bench":550
+    },  
+    "installation": {
+      "DIY": 0,
+      "Supply & Install":1750
+    },  
+    "seller_info": {
+      "name": "John Doe",
+      "email": "john@gmail.com",
+      "phone": "617-555-5555"
+    },
+    "images": ["/images/CU550 Sauna with Semi-Privacy.jpg", "/images/Sauna_Image_1-unsplash.jpg" ],
+    "is_featured": false,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+
+  },
+
+  {
+    
+    "owner": "1",
+    "name": "Pure Cube",
+    "type": "Apartment",
+    "description": "Our Pure Cube Trinity Sauna is a 5 Sided Corner model that will comfortably seat 2 people and fit onto an small deck or patio at your Condo or Cottage! Made with western red cedar and tempered glass windows this model as a special design flat plastic roof tray for year round use.",
+    "square_feet": 1800,
+    "price": 15000,
+    "views": {
+      "standard": 12,
+      "panoramic": 12,
+      "regular": 0
+    },  
+    "wood_type": {
+      "KWC":"Knotty Cedar",
+      "CC":"Clear Cedar"
+    },  
+    "stove_type": {
+      "Harvia Electric Stove (8kw)": 999,
+      "Huum Drop with remote (9kw)":3125,
+      "Huum Hive Mini (10.5 kw)":4620,
+      "Karhu 20":3140,
+      "Huum Hive Wood Heater":4890
+    },  
+    "upgrades": {
+      "Huum Drop UKU WiFi Controller": 575,
+      "Double Tired Benches":700,
+      "L-Bench":550
+    },  
+    "installation": {
+      "DIY": 0,
+      "Supply & Install":1750
+    },  
+    "seller_info": {
+      "name": "Jane Smith",
+      "email": "jane@gmail.com",
+      "phone": "212-555-5555"
+    },
+    "images": ["/images/IMG-20221103-WA0031.jpg", "/images/Sauna_Image_2-unsplash.jpg"],
+    "is_featured": false,
+    "createdAt": "2024-01-02T00:00:00.000Z",
+    "updatedAt": "2024-01-02T00:00:00.000Z"
+  },
+  {
+    
+    "owner": "2",
+    "name": "Canadian Timber",
+    "type": "Condo",
+    "description": "Our Pure Cube Trinity Sauna is a 5 Sided Corner model that will comfortably seat 2 people and fit onto an small deck or patio at your Condo or Cottage! Made with western red cedar and tempered glass windows this model as a special design flat plastic roof tray for year round use.",
+    "square_feet": 2200,
+    "price": 15000,
+    "views": {
+      "standard": 12,
+      "panoramic": 12,
+      "regular": 0
+    },  
+    "wood_type": {
+      "KWC":"Knotty Cedar",
+      "CC":"Clear Cedar"
+    },  
+    "stove_type": {
+      "Harvia Electric Stove (8kw)": 999,
+      "Huum Drop with remote (9kw)":3125,
+      "Huum Hive Mini (10.5 kw)":4620,
+      "Karhu 20":3140,
+      "Huum Hive Wood Heater":4890
+    },  
+    "upgrades": {
+      "Huum Drop UKU WiFi Controller": 575,
+      "Double Tired Benches":700,
+      "L-Bench":550
+    },  
+    "installation": {
+      "DIY": 0,
+      "Supply & Install":1750
+    },  
+    "seller_info": {
+      "name": "David Johnson",
+      "email": "david@gmail.com",
+      "phone": "213-555-5555"
+    },
+    "images": ["/images/PureCubeNeptuneClear_ Web-7.jpg", "/images/Sauna_Image_3-unsplash.jpg"],
+    "is_featured": false,
+    "createdAt": "2024-01-03T00:00:00.000Z",
+    "updatedAt": "2024-01-03T00:00:00.000Z"
+  },
+  {
+   
+    "owner": "2",
+    "name": "Cube Neptune Sauna",
+    "type": "Cottage Or Cabin",
+    "description": "Our Pure Cube Trinity Sauna is a 5 Sided Corner model that will comfortably seat 2 people and fit onto an small deck or patio at your Condo or Cottage! Made with western red cedar and tempered glass windows this model as a special design flat plastic roof tray for year round use.",
+    "price": 15000,
+    "views": {
+      "standard": 12,
+      "panoramic": 12,
+      "regular": 0
+    },  
+    "wood_type": {
+      "KWC":"Knotty Cedar",
+      "CC":"Clear Cedar"
+    },  
+    "stove_type": {
+      "Harvia Electric Stove (8kw)": 999,
+      "Huum Drop with remote (9kw)":3125,
+      "Huum Hive Mini (10.5 kw)":4620,
+      "Karhu 20":3140,
+      "Huum Hive Wood Heater":4890
+    },  
+    "upgrades": {
+      "Huum Drop UKU WiFi Controller": 575,
+      "Double Tired Benches":700,
+      "L-Bench":550
+    },  
+    "installation": {
+      "DIY": 0,
+      "Supply & Install":1750
+    },  
+    "seller_info": {
+      "name": "Emily Davis",
+      "email": "emily@gmail.com",
+      "phone": "512-555-5555"
+    },
+    "images": ["/images/PureCubeNeptuneClear_ Web-11.jpg", "/images/Sauna_Image_4-unsplash.jpg"],
+    "is_featured": false,
+    "createdAt": "2024-01-04T00:00:00.000Z",
+    "updatedAt": "2024-01-04T00:00:00.000Z"
+  },
+  {
+    
+    "owner": "3",
+    "name": "Georgian Cabin Sauna with Porch",
+    "type": "Studio",
+    "description": "Our Pure Cube Trinity Sauna is a 5 Sided Corner model that will comfortably seat 2 people and fit onto an small deck or patio at your Condo or Cottage! Made with western red cedar and tempered glass windows this model as a special design flat plastic roof tray for year round use.",
+    "price": 15000,
+    "views": {
+      "standard": 12,
+      "panoramic": 12,
+      "regular": 0
+    },  
+    "wood_type": {
+      "KWC":"Knotty Cedar",
+      "CC":"Clear Cedar"
+    },  
+    "stove_type": {
+      "Harvia Electric Stove (8kw)": 999,
+      "Huum Drop with remote (9kw)":3125,
+      "Huum Hive Mini (10.5 kw)":4620,
+      "Karhu 20":3140,
+      "Huum Hive Wood Heater":4890
+    },  
+    "upgrades": {
+      "Huum Drop UKU WiFi Controller": 575,
+      "Double Tired Benches":700,
+      "L-Bench":550
+    },  
+    "installation": {
+      "DIY": 0,
+      "Supply & Install":1750
+    },  
+    "seller_info": {
+      "name": "Michael Brown",
+      "email": "michael@gmail.com",
+      "phone": "312-555-5555"
+    },
+    "images": ["/images/Outdoors CU550-Full Glass b-web.jpg", "/images/Sauna_Image_1-unsplash.jpg"],
+    "is_featured": true,
+    "createdAt": "2024-01-05T00:00:00.000Z",
+    "updatedAt": "2024-01-05T00:00:00.000Z"
+  },
+  {
+    
+    "owner": "3",
+    "name": "Pure Cube Orion Sauna",
+    "type": "House",
+    "description": "Our Pure Cube Trinity Sauna is a 5 Sided Corner model that will comfortably seat 2 people and fit onto an small deck or patio at your Condo or Cottage! Made with western red cedar and tempered glass windows this model as a special design flat plastic roof tray for year round use.",
+    "price": 15000,
+    "views": {
+      "standard": 12,
+      "panoramic": 12,
+      "regular": 0
+    },  
+    "wood_type": {
+      "KWC":"Knotty Cedar",
+      "CC":"Clear Cedar"
+    },  
+    "stove_type": {
+      "Harvia Electric Stove (8kw)": 999,
+      "Huum Drop with remote (9kw)":3125,
+      "Huum Hive Mini (10.5 kw)":4620,
+      "Karhu 20":3140,
+      "Huum Hive Wood Heater":4890
+    },  
+    "upgrades": {
+      "Huum Drop UKU WiFi Controller": 575,
+      "Double Tired Benches":700,
+      "L-Bench":550
+    },  
+    "installation": {
+      "DIY": 0,
+      "Supply & Install":1750
+    },  
+    "seller_info": {
+      "name": "Sarah Wilson",
+      "email": "sarah@gmail.com",
+      "phone": "305-555-5555"
+    },
+    "images": ["/images/Sauna_Image_1-unsplash.jpg","/images/Sauna_Image_4-unsplash.jpg"],
+    "is_featured": true,
+    "createdAt": "2024-01-06T00:00:00.000Z",
+    "updatedAt": "2024-01-06T00:00:00.000Z"
+  },
+  {
+  
+    "owner": "4",
+    "name": "Pure Cabin Outdoor",
+    "type": "Cottage Or Cabin",
+    "description": "Our Pure Cube Trinity Sauna is a 5 Sided Corner model that will comfortably seat 2 people and fit onto an small deck or patio at your Condo or Cottage! Made with western red cedar and tempered glass windows this model as a special design flat plastic roof tray for year round use.",
+    "price": 15000,
+    "views": {
+      "standard": 12,
+      "panoramic": 12,
+      "regular": 0
+    },  
+    "wood_type": {
+      "KWC":"Knotty Cedar",
+      "CC":"Clear Cedar"
+    },  
+    "stove_type": {
+      "Harvia Electric Stove (8kw)": 999,
+      "Huum Drop with remote (9kw)":3125,
+      "Huum Hive Mini (10.5 kw)":4620,
+      "Karhu 20":3140,
+      "Huum Hive Wood Heater":4890
+    },  
+    "upgrades": {
+      "Huum Drop UKU WiFi Controller": 575,
+      "Double Tired Benches":700,
+      "L-Bench":550
+    },  
+    "installation": {
+      "DIY": 0,
+      "Supply & Install":1750
+    },  
+    "seller_info": {
+      "name": "Robert Anderson",
+      "email": "robert@gmail.com",
+      "phone": "303-555-5555"
+    },
+    "images": ["/images/neptune.png","/images/Sauna_Image_4-unsplash.jpg"],
+    "is_featured": false,
+    "createdAt": "2024-01-07T00:00:00.000Z",
+    "updatedAt": "2024-01-07T00:00:00.000Z"
+  },
+  {
+    
+    "owner": "5",
+    "name": "Baltic Cold Plunge Tub",
+    "type": "Chalet",
+    "description": "Our Pure Cube Trinity Sauna is a 5 Sided Corner model that will comfortably seat 2 people and fit onto an small deck or patio at your Condo or Cottage! Made with western red cedar and tempered glass windows this model as a special design flat plastic roof tray for year round use.",
+    "price": 15000,
+    "views": {
+      "standard": 12,
+      "panoramic": 12,
+      "regular": 0
+    },  
+    "wood_type": {
+      "KWC":"Knotty Cedar",
+      "CC":"Clear Cedar"
+    },  
+    "stove_type": {
+      "Harvia Electric Stove (8kw)": 999,
+      "Huum Drop with remote (9kw)":3125,
+      "Huum Hive Mini (10.5 kw)":4620,
+      "Karhu 20":3140,
+      "Huum Hive Wood Heater":4890
+    },  
+    "upgrades": {
+      "Huum Drop UKU WiFi Controller": 575,
+      "Double Tired Benches":700,
+      "L-Bench":550
+    },  
+    "installation": {
+      "DIY": 0,
+      "Supply & Install":1750
+    },  
+    "seller_info": {
+      "name": "Jennifer Martin",
+      "email": "jennifer@gmail.com",
+      "phone": "970-555-5555"
+    },
+    "images": ["/images/Sauna_Image_4-unsplash.jpg", "/images/Sauna_Image_3-unsplash.jpg"],
+    "is_featured": false,
+    "createdAt": "2024-01-08T00:00:00.000Z",
+    "updatedAt": "2024-01-08T00:00:00.000Z"
+  },
+  {
+  
+    "owner": "6",
+    "name": "The Arctic Plunge Tub",
+    "type": "House",
+    "description": "Our Pure Cube Trinity Sauna is a 5 Sided Corner model that will comfortably seat 2 people and fit onto an small deck or patio at your Condo or Cottage! Made with western red cedar and tempered glass windows this model as a special design flat plastic roof tray for year round use.",
+    "price": 15000,
+    "views": {
+      "standard": 12,
+      "panoramic": 12,
+      "regular": 0
+    },  
+    "wood_type": {
+      "KWC":"Knotty Cedar",
+      "CC":"Clear Cedar"
+    },  
+    "stove_type": {
+      "Harvia Electric Stove (8kw)": 999,
+      "Huum Drop with remote (9kw)":3125,
+      "Huum Hive Mini (10.5 kw)":4620,
+      "Karhu 20":3140,
+      "Huum Hive Wood Heater":4890
+    },  
+    "upgrades": {
+      "Huum Drop UKU WiFi Controller": 575,
+      "Double Tired Benches":700,
+      "L-Bench":550
+    },  
+    "installation": {
+      "DIY": 0,
+      "Supply & Install":1750
+    },  
+    "seller_info": {
+      "name": "Lisa Taylor",
+      "email": "lisa@gmail.com",
+      "phone": "303-555-5555"
+    },
+    "images": ["/images/Sauna_Image_4-unsplash.jpg","/images/Sauna_Image_1-unsplash.jpg"],
+    "is_featured": false,
+    "createdAt": "2024-01-09T00:00:00.000Z",
+    "updatedAt": "2024-01-09T00:00:00.000Z"
+  },
+  {
+    
+    "owner": "7",
+    "name": "Polar Plunge Tub",
+    "type": "Apartment",
+    "description": "Our Pure Cube Trinity Sauna is a 5 Sided Corner model that will comfortably seat 2 people and fit onto an small deck or patio at your Condo or Cottage! Made with western red cedar and tempered glass windows this model as a special design flat plastic roof tray for year round use.",
+    "price": 15000,
+    "views": {
+      "standard": 12,
+      "panoramic": 12,
+      "regular": 0
+    },  
+    "wood_type": {
+      "KWC":"Knotty Cedar",
+      "CC":"Clear Cedar"
+    },  
+    "stove_type": {
+      "Harvia Electric Stove (8kw)": 999,
+      "Huum Drop with remote (9kw)":3125,
+      "Huum Hive Mini (10.5 kw)":4620,
+      "Karhu 20":3140,
+      "Huum Hive Wood Heater":4890
+    },  
+    "upgrades": {
+      "Huum Drop UKU WiFi Controller": 575,
+      "Double Tired Benches":700,
+      "L-Bench":550
+    },  
+    "installation": {
+      "DIY": 0,
+      "Supply & Install":1750
+    },  
+    "seller_info": {
+      "name": "Matthew Harris",
+      "email": "matthew@gmail.com",
+      "phone": "215-555-5555"
+    },
+    "images": ["/images/Sauna_Image_4-unsplash.jpg", "/images/Sauna_Image_2-unsplash.jpg"],
+    "is_featured": false,
+    "createdAt": "2024-01-10T00:00:00.000Z",
+    "updatedAt": "2024-01-10T00:00:00.000Z"
+  }
+]
+
+  
+
+
+  
