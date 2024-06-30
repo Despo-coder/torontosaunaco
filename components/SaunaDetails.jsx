@@ -1,74 +1,144 @@
-import React from 'react'
+'use client'
+import { useState , useEffect } from "react"
+import { Button } from "./ui/button";
+
+
 
 const SaunaDetails = ({product}) => {
+    const [cost, setCost] = useState(product.price);
+    const [stoveType, setStoveType] = useState('');
+    const [woodType, setWoodType] = useState('');
+    const [windowStyle, setWindowStyle] = useState('');
+    const [installationChoice, setInstallationChoice] = useState('');
+  
+    const stovePrices = {
+        "Harvia Electric Stove (8kw)": 999,
+        "Huum Drop with remote (9kw)": 3125,
+        "Huum Hive Mini (10.5 kw)": 4620,
+        "Karhu 20": 3140,
+        "Huum Hive Wood Heater": 4890
+      };
+    
+      const woodPrices = {
+        "KWC": 0,
+        "CC": 500 // Example additional cost for clear cedar
+      };
+    
+      const windowPrices = {
+        "standard": 0,
+        "panoramic": 500, // Example additional cost for panoramic view
+        "regular": 100 // Example additional cost for regular view
+      };
+    
+      const installationPrices = {
+        "DIY": 0,
+        "Supply & Install": 1750
+      };
+    
+      useEffect(() => {
+        let newCost = product.price;
+        if (stoveType) newCost += stovePrices[stoveType];
+        if (woodType) newCost += woodPrices[woodType];
+        if (windowStyle) newCost += windowPrices[windowStyle];
+        if (installationChoice) newCost += installationPrices[installationChoice];
+        setCost(newCost);
+      }, [stoveType, woodType, windowStyle, installationChoice]);
+
   return (
     <main>
             <div
               className="bg-white p-6 rounded-lg shadow-md text-center md:text-left"
             >
               {/* <div className="text-gray-500 mb-4">{product.name}</div> */}
+              <div className="flex justify-between">
               <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
+              <h3 className="text-2xl font-semibold mb-4">${cost.toLocaleString()}.00</h3>
+              </div>
+              
+
               <div
                 className="text-gray-500 mb-4 flex align-middle justify-center md:justify-start"
               >
                 <i
                   className="fa-solid fa-location-dot text-lg text-orange-700 mr-2"
                 ></i>
-                <p className="text-orange-700">
+                {/* <p className="text-orange-700">
                   Available Options For this Sauna.
-                </p>
+                </p> */}
               </div>
 
-              <h3 className="text-lg font-bold my-6 bg-gray-800 text-white p-2">
-                Rates & Options
+              <h3 className="text-lg font-semibold my-6 bg-black rounded-xl text-white p-2">
+              Available Options For this Sauna
               </h3>
-              <div className="flex flex-col md:flex-row justify-around">
-                <div
-                  className="flex items-center justify-center mb-4 border-b border-gray-200 md:border-b-0 pb-4 md:pb-0"
-                >
-                  <div className="text-gray-500 mr-2 font-bold">Nightly</div>
-                  <div className="text-2xl font-bold">
-                    <i className="fa fa-xmark text-red-700"></i>
-                  </div>
-                </div>
-                <div
-                  className="flex items-center justify-center mb-4 border-b border-gray-200 md:border-b-0 pb-4 md:pb-0"
-                >
-                  <div className="text-gray-500 mr-2 font-bold">Weekly</div>
-                  <div className="text-2xl font-bold text-blue-500">$1,100</div>
-                </div>
-                <div className="flex items-center justify-center mb-4 pb-4 md:pb-0">
-                  <div className="text-gray-500 mr-2 font-bold">Monthly</div>
-                  <div className="text-2xl font-bold text-blue-500">$4,200</div>
-                </div>
-              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+     
+        <div className="flex flex-col items-left mb-4">
+        <label className="text-gray-500 text-2xl font-bold ">Stove Type</label>
+        <select
+          className="text-xl font-bold text-blue-500 w-full md:w-3/4"
+          onChange={(e) => setStoveType(e.target.value)}
+        >
+          <option value="">Select Stove</option>
+          {Object.keys(stovePrices).map((stove) => (
+            <option key={stove} value={stove}>{stove} - ${stovePrices[stove]}</option>
+          ))}
+        </select>
+      </div>
+      <div className="flex flex-col items-left mb-4">
+        <label className="text-gray-500 text-2xl font-bold">Wood Type</label>
+        <select
+          className="text-xl font-bold text-blue-500 w-full md:w-3/4"
+          onChange={(e) => setWoodType(e.target.value)}
+        >
+          <option value="">Select Wood</option>
+          {Object.keys(woodPrices).map((wood) => (
+            <option key={wood} value={wood}>{wood} - ${woodPrices[wood]}</option>
+          ))}
+        </select>
+      </div>
+      <div className="flex flex-col items-left mb-4">
+        <label className="text-gray-500 text-2xl font-bold">Window Style</label>
+        <select
+          className="text-xl font-bold text-blue-500 w-full md:w-3/4"
+          onChange={(e) => setWindowStyle(e.target.value)}
+        >
+          <option value="">Select Window</option>
+          {Object.keys(windowPrices).map((window) => (
+            <option key={window} value={window}>{window} - ${windowPrices[window]}</option>
+          ))}
+        </select>
+      </div>
+      <div className="flex flex-col items-left  mb-4">
+        <label className="text-gray-500 text-2xl font-bold">Installation Style</label>
+        <select
+          className="text-xl font-bold text-blue-500 w-full md:w-3/4"
+          onChange={(e) => setInstallationChoice(e.target.value)}
+        >
+          <option value="">Select Installation</option>
+          {Object.keys(installationPrices).map((installation) => (
+            <option key={installation} value={installation}>{installation} - ${installationPrices[installation]}</option>
+          ))}
+        </select>
+      </div>
+      <div className="flex flex-col items-left md:items-left  mb-4">
+        <div className="text-gray-500 font-bold">Total Cost</div>
+        <div className="text-2xl font-bold text-blue-500">${cost}</div>
+      </div>
+    </div>
+
+
+
+
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md mt-6">
               <h3 className="text-lg font-bold mb-6">Description & Details</h3>
-              <div
-                className="flex justify-center gap-4 text-blue-500 mb-4 text-xl space-x-9"
-              >
-                <p>
-                  <i className="fa-solid fa-bed"></i> 3
-                  <span className="hidden sm:inline">Beds</span>
-                </p>
-                <p>
-                  <i className="fa-solid fa-bath"></i> 2
-                  <span className="hidden sm:inline">Baths</span>
-                </p>
-                <p>
-                  <i className="fa-solid fa-ruler-combined"></i>
-                  1,500 <span className="hidden sm:inline">sqft</span>
-                </p>
-              </div>
+             
               <p className="text-gray-500 mb-4">
-                This is a beautiful apartment located near the commons
+                Place Holder.....
               </p>
               <p className="text-gray-500 mb-4">
-                We have a beautiful apartment located near the commons. It is a
-                2 bedroom apartment with a full kitchen and bathroom. It is
-                available for weekly or monthly rentals.
+               {product.description}
               </p>
             </div>
 
