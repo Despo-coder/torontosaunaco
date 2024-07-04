@@ -4,10 +4,12 @@ import Link from 'next/link';
 import logo from "@/assets/images/tsc_logo_black.jpg"
 import defaultImage from "@/assets/images/profile.png"
 import { Button } from './ui/button';
-import { useState } from 'react';
+import { useState , useEffect} from 'react';
 import { usePathname } from 'next/navigation';
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { useSelector } from 'react-redux';
+import { signIn, signOut , useSession, getProviders} from 'next-auth/react';
+
 
 
 
@@ -16,9 +18,20 @@ const Navbar = () => {
   const cartItems = useSelector((state) => state.cart);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
-  const [isloggedIn, setIsLoggedIn] = useState(true);
+  const [providers, setProviders] = useState(null);
   const [isAdmin, setIsAdmin] = useState(false);
   const pathname = usePathname();
+ const { data: session } = useSession();
+
+useEffect(() => {
+  const setAuthProviders = async () => {
+    const res = await getProviders();
+    setProviders(res);
+  }
+  setAuthProviders();
+}
+, []);
+
     return (  
     <nav className="bg-slate-700  py-8"
     
@@ -65,7 +78,11 @@ const Navbar = () => {
           </button>
         </div>
 
-      
+        {/* {session ? (
+          <button onClick={() => signOut()}>Sign out</button>
+        ) : (
+          <button onClick={() => signIn()}>Sign in</button>
+        )} */}
 
         {/* <!-- Logo + Regular Menu --> */}
         <div
@@ -151,7 +168,7 @@ const Navbar = () => {
                 className={`${pathname === '/quote' ?'bg-gray-900 text-white' : ''} " text-white  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
                 >Get a Quote</Link
               >
-              {isAdmin && isloggedIn &&( <Link
+              {isAdmin && session &&( <Link
                 href="/quote"
                 className={`${pathname === '/quote' ?'bg-gray-900 text-white' : ''} " text-white  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
                 >Admin</Link
@@ -164,7 +181,7 @@ const Navbar = () => {
 
 
         {/* <!-- Right Side Menu (Logged Out) -->  */}
-        {!isloggedIn && ( <div className="hidden md:block md:ml-6">
+        {!session && ( <div className="hidden md:block md:ml-6">
         <div className="flex items-center">
           <Button
             className="flex items-center  text-white bg-gray-600 hover:bg-gray-900 hover:text-white rounded-xl px-3 py-2"
@@ -184,9 +201,10 @@ const Navbar = () => {
           {!isAdmin && (<div className='mr-2'>
                     <HiOutlineShoppingBag className='font-bold text-black' size={38}/>
                     <span  className="absolute top-[46px] right-[80px] md:right-[70px] inline-flex items-center justify-center px-[1px] py-[2px]  font-semibold leading-none text-white text-md transform translate-x-1/2 -translate-y-1/2 ">{cartItems.length}</span>
+                    {/*  */}
                     </div>)}
                   
-          {isloggedIn && isAdmin && ( <Link href="/message" className="relative group">
+          {session && isAdmin && ( <Link href="/message" className="relative group">
             <button
               type="button"
               className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
@@ -357,7 +375,7 @@ const Navbar = () => {
                 className={`${pathname === '/quote' ?'bg-gray-900 text-white' : ''} " text-white  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
                 >Get A Quote</Link
               >
-              {isAdmin && isloggedIn &&( <Link
+              {isAdmin && session &&( <Link
                 href="/quote"
                 className={`${pathname === '/quote' ?'bg-gray-900 text-white' : ''} " text-white  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
                 >Admin</Link
@@ -365,7 +383,7 @@ const Navbar = () => {
               <button
                 className="flex mx-auto text-white bg-gray-700 hover:bg-gray-500 hover:text-white rounded-xl px-3 py-2 my-4"
               >
-                {!isloggedIn && (<span>Login or Register</span>)}
+                {!session && (<span>Login or Register</span>)}
                 
               </button>
             </div>
