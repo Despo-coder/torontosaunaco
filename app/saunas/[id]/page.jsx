@@ -6,6 +6,8 @@ import SaunaHeaderImage from "@/components/SaunaHeaderImage";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import SaunaDetails from "@/components/SaunaDetails";
+import Spinner from "@/components/Spinner";
+import ShareButtons from "@/components/ShareButtons";
 
 
 const SaunaPage = () => {
@@ -42,22 +44,22 @@ const SaunaPage = () => {
 
   return (
     <div>
-      
+     {loading && <Spinner loading={loading} /> }
     {!loading && product && (
       <>
-      <SaunaHeaderImage image={product.images[0]} />
+      <SaunaHeaderImage images={product.images} />
       <section>
-        <div className="container m-auto py-6 px-6">
+        {/* <div className="container m-auto py-6 px-6">
           <Link href="/saunas">
             <Button variant="secondary" className="bg-slate-700 text-white rounded-xl hover:bg-slate-800">
             Back to Saunas
             </Button>
            
             </Link>
-        </div>
+        </div> */}
       </section>
 
-      <section className="bg-blue-50">
+      <section className="">
       <div className="container m-auto py-10 px-6">
         <div className="grid grid-cols-1 md:grid-cols-70/30 w-full gap-6">
          <SaunaDetails product={product} />
@@ -65,15 +67,11 @@ const SaunaPage = () => {
           {/* <!-- Sidebar --> */}
           <aside className="space-y-4">       
             <button
-              className="bg-blue-500 hover:bg-blue-600 text-white font-bold w-full py-2 px-4 rounded-full flex items-center justify-center"
+              className="bg-slate-700 hover:bg-slate-600 text-white font-bold w-3/4 mx-auto py-2 px-4 rounded-xl flex items-center justify-center"
             >
-              <i className="fas fa-bookmark mr-2"></i> Bookmark Property
+              <i className="fas fa-bookmark mr-2"></i> Bookmark This Sauna
             </button>
-            <button
-              className="bg-orange-500 hover:bg-orange-600 text-white font-bold w-full py-2 px-4 rounded-full flex items-center justify-center"
-            >
-              <i className="fas fa-share mr-2"></i> Share Property
-            </button>
+           <ShareButtons product={product} />
 
             {/* <!-- Contact Form --> */}
             <div className="bg-white p-6 rounded-lg shadow-md">

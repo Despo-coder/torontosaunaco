@@ -2,28 +2,34 @@ import Image from "next/image"
 import Link from "next/link"
 
 const ProductCard = ({product}) => {
-  const {rates, views, wood_type} = product
- 
+  const {views, wood_type} = product
+ //console.log(dataObjects.map(wood_type)=>{})
  
   // const { standard, panoramic, regular } = views;
  
-    const getRates = ()=>{
-        if (rates.monthly){
-            return `${rates.monthly.toLocaleString()} `
-        }else if (rates.weekly){
-                return `${rates.weekly.toLocaleString()} `
-            }else if (rates.nightly){
-                return `${rates.nightly.toLocaleString()} `
-            }else{
-                return "Call for rates"
-            }
-        }
+
+
+//  Object.keys(wood_type).map(wood_type => {
+//   console.log(wood_type)
+//  })
+
+    // const getRates = ()=>{
+    //     if (rates.monthly){
+    //         return `${rates.monthly.toLocaleString()} `
+    //     }else if (rates.weekly){
+    //             return `${rates.weekly.toLocaleString()} `
+    //         }else if (rates.nightly){
+    //             return `${rates.nightly.toLocaleString()} `
+    //         }else{
+    //             return "Call for rates"
+    //         }
+    //     }
     
   return (
     <div>
       <div className="rounded-xl shadow-md relative bg-slate-100">
         <div className="flex justify-center mx-auto items-center p-4 overflow-hidden">
-        <Image src={`${product.images[0]}`}alt={product.name} className="rounded-xl ml-4" width={200} height={200} />
+        <Image src={`${product.images[0]}`}alt={product.name} className="rounded-xl ml-4" width={200} height={200} sizes="100vh" />
         <Image src={`${product.images[1]}`}alt={product.name} className="rounded-xl ml-4" width={200} height={200} />
         </div>
      
@@ -37,51 +43,51 @@ const ProductCard = ({product}) => {
                
                 <div className="text-gray-600">{product.description}</div>
                 {/* Insert a Horizontal Line */}
-                <div className="border-b border-gray-300 my-4"></div>
+                {/* <div className="border-b border-gray-300 my-4"></div> */}
                 
               </div>
               {/* <h3 className="absolute top-[10px] right-[10px] bg-white px-4 py-2 rounded-lg text-blue-500 font-bold text-right md:text-center lg:text-right">
                 ${getRates()}
               </h3> */}
 
-              <div className="flex  gap-4 text-gray-500 mb-4">
+              {/* <div className="flex  gap-4 text-gray-500 mb-4">
                 <p>
-                  <i className="fa-solid fa-bed"></i> 5
-                  <span className="md:hidden lg:inline">Seats</span>
-                </p>
-                <p>
+                  <i className="fa-solid fa-bed"></i> 2-4
+                  <span className="md:hidden lg:inline">{" "}Seats Available</span>
+                </p> */}
+                {/* <p>
                   <i className="fa-solid fa-bath"></i> 2
                   <span className="md:hidden lg:inline">Baths</span>
-                </p>
-                <p>
+                </p> */}
+                {/* <p>
                   <i className="fa-solid fa-ruler-combined"></i>
-                  1,500 <span className="md:hidden lg:inline">sqft</span>
+                  {product.square_feet}<span className="md:hidden lg:inline">{" "}sqft</span>
                 </p>
-              </div>
+              </div> */}
              
               <div
                 className="flex items-center gap-4 text-green-900 text-sm mb-4"
               >
                
-                <span className="text-lg mr-1">Available Views:</span>
-                {views?.panoramic && <p><i className="fa-solid fa-money-bill"></i>{`Panoramic: $${views.panoramic}`} </p>}
+                {/* <span className="text-lg mr-1">Available Views:</span> */}
+                {/* {views?.panoramic && <p><i className="fa-solid fa-money-bill"></i>{`Panoramic: $${views.panoramic}`} </p>} */}
                 {/* {views?.regular && <p><i className="fa-solid fa-money-bill"></i> {`$${views.regular}`}</p>} */}
-                {views?.standard && <p><i className="fa-solid fa-money-bill"></i> {` Standard: $${views.standard}`}</p>}
+                {/* {views?.standard && <p><i className="fa-solid fa-money-bill"></i> {` Standard: $${views.standard}`}</p>} */}
               </div>
               <div
                 className="flex items-center gap-4 text-green-900 text-sm mb-4"
               >
-                <span className="text-lg mr-1">Wood Type:</span>
-                {wood_type.KWC && <p><i className="fa-solid fa-money-bill"></i> Knotty Cedar</p>}
+                {/* <span className="text-lg mr-1">Wood Type:</span>
+                {wood_type && wood_type?.KWC ?(<p>Knotty Cedar</p>):(<></>)} 
                 {wood_type.CC && <p> Clear Cedar </p>}
-              
+               */}
               </div>
               <div
                 className="flex items-center gap-4 text-green-900 text-sm mb-4"
               >
-                <span className="text-lg mr-1">Stove Choice:</span>
-                {wood_type.KWC && <p><i className="fa-solid fa-money-bill"></i> Knotty Cedar</p>}
-                {wood_type.CC && <p> Clear Cedar </p>}
+                {/* <span className="text-lg mr-1">Stove Choice:</span>
+                {wood_type && wood_type ? (<p>Knotty Cedar</p>):(<></>)} 
+                {wood_type.CC && <p> Clear Cedar </p>} */}
               
               </div>
 
@@ -96,7 +102,7 @@ const ProductCard = ({product}) => {
                 </div>
                 <Link href={`/saunas/${product._id}`}>
                  <span className="h-[36px] bg-slate-700 hover:bg-slate-800 text-white px-4 py-2 rounded-xl text-center text-sm">
-                 Learn More
+                 Buy
                  </span>
                 </Link>
               </div>

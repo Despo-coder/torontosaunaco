@@ -13,8 +13,8 @@
       "regular": 0
     },  
     "wood_type": {
-      "KWC":"Knotty Cedar",
-      "CC":"Clear Cedar"
+      "Knotty Cedar":"Knotty Cedar",
+      "Clear Cedar":"Clear Cedar"
     },  
     "stove_type": {
       "Harvia Electric Stove (8kw)": 999,

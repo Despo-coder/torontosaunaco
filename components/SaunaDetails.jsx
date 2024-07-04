@@ -1,8 +1,9 @@
 'use client'
 import { useState , useEffect } from "react"
+
+
+import Image from "next/image"
 import { Button } from "./ui/button";
-
-
 
 const SaunaDetails = ({product}) => {
     const [cost, setCost] = useState(product.price);
@@ -10,37 +11,48 @@ const SaunaDetails = ({product}) => {
     const [woodType, setWoodType] = useState('');
     const [windowStyle, setWindowStyle] = useState('');
     const [installationChoice, setInstallationChoice] = useState('');
-  
-    const stovePrices = {
-        "Harvia Electric Stove (8kw)": 999,
-        "Huum Drop with remote (9kw)": 3125,
-        "Huum Hive Mini (10.5 kw)": 4620,
-        "Karhu 20": 3140,
-        "Huum Hive Wood Heater": 4890
-      };
-    
-      const woodPrices = {
-        "KWC": 0,
-        "CC": 500 // Example additional cost for clear cedar
-      };
+   
+    const {wood_type:woodPrices, stove_type:stovePrices}= product
+
+    //console.log(product.installation.map(install=>install))
+   // const intsall_array = Array.from(product.installation)
+    console.log(product.installation)
+    console.log(product.wood_type)
+    // const woodPrices = product.wood_type
+    // const stovePrices = product.stove_type
+    const  installationPrices = product.installation
+    // const stovePrices = {
+    //   "Harvia Electric Stove (8kw)": { price: 999, image: "/images/Finleo_8KW_With Rocks.jpg" },
+    //   "Huum Drop with remote (9kw)": { price: 3125, image: "/images/HUMHIVEWOOD.jpg" },
+    //   "Huum Hive Mini (10.5 kw)": { price: 4620, image: "/images/HUUMDROP_Electric.jpg" },
+    //   "Karhu 20": { price: 3140, image: "/images/HUUMHIVE_Mini.jpg" },
+    //   "Huum Hive Wood Heater": { price: 4890, image: "/images/Saaku Electric_Heater.jpg" }
+    // };
+     
+    // console.log(windowStyle)
+    //   const woodPrices = {
+    //     "KWC":{price:0, image:"/images/Clear_Cedar.jpg"} ,
+    //     "CC": {price:500, image:"/images/Knotty_Cedar.jpg"} // Example additional cost for clear cedar
+    //   };
     
       const windowPrices = {
-        "standard": 0,
-        "panoramic": 500, // Example additional cost for panoramic view
-        "regular": 100 // Example additional cost for regular view
+        "standard": {price:0 , image:"/images/panoramic.jpg"},
+        "panoramic": {price:500 , image:"/images/panoramic.jpg"}, // Example additional cost for panoramic view
+        "regular": {price:200 , image:"/images/panoramic.jpg"}// Example additional cost for regular view
       };
     
-      const installationPrices = {
-        "DIY": 0,
-        "Supply & Install": 1750
-      };
+
+      // const installationPrices = {
+      //   "DIY": {price:0, image:"/images/diy.jpg"},
+      //   "Supply & Install": {price:1750, image:"/images/neptune.png"}
+      // };
     
       useEffect(() => {
-        let newCost = product.price;
-        if (stoveType) newCost += stovePrices[stoveType];
-        if (woodType) newCost += woodPrices[woodType];
-        if (windowStyle) newCost += windowPrices[windowStyle];
-        if (installationChoice) newCost += installationPrices[installationChoice];
+        let newCost = product.price;  
+        if (stoveType) newCost += stovePrices[stoveType].price;
+        if (woodType) newCost += woodPrices[woodType].price;
+        if (windowStyle) newCost += windowPrices[windowStyle].price;
+        if (installationChoice) newCost += installationPrices[installationChoice].price;
         setCost(newCost);
       }, [stoveType, woodType, windowStyle, installationChoice]);
 
@@ -52,6 +64,7 @@ const SaunaDetails = ({product}) => {
               {/* <div className="text-gray-500 mb-4">{product.name}</div> */}
               <div className="flex justify-between">
               <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
+             
               <h3 className="text-2xl font-semibold mb-4">${cost.toLocaleString()}.00</h3>
               </div>
               
@@ -67,64 +80,195 @@ const SaunaDetails = ({product}) => {
                 </p> */}
               </div>
 
-              <h3 className="text-lg font-semibold my-6 bg-black rounded-xl text-white p-2">
-              Available Options For this Sauna
+
+    <section id="features" className="pt-12 bg-gray-50 dark:bg-darkBlue1 border-red-600 border-[1px]">
+      {/* <!-- Features Container --> */}
+      <div className="container mx-auto px-6 pb-2">
+      <h3 className="text-lg  my-6 bg-gray-50 rounded-xl text-black text-center font-light p-2">
+              Options & Rates 
               </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
-     
-        <div className="flex flex-col items-left mb-4">
-        <label className="text-gray-500 text-2xl font-bold ">Stove Type</label>
-        <select
-          className="text-xl font-bold text-blue-500 w-full md:w-3/4"
-          onChange={(e) => setStoveType(e.target.value)}
+        {/* <!-- First Row --> */}
+        <div
+          className="flex flex-col space-y-12 text-center md:flex-row md:space-y-0 "
         >
-          <option value="">Select Stove</option>
-          {Object.keys(stovePrices).map((stove) => (
-            <option key={stove} value={stove}>{stove} - ${stovePrices[stove]}</option>
+          {/* <!-- Item 1 --> */}
+          <div className="flex flex-col items-center space-y-2 md:w-1/2 ">
+            <div className="flex items-center justify-center h-14 mb-2">
+              <h2>Select From Available Stoves</h2>
+              {/* <Image src="/images/neptune.png" alt="" height={50} width={50} /> */}
+              
+            </div>
+            {/* <select
+              className=" font-bold bg-slate-700 text-white rounded-xl p-2 w-full md:w-1/2"
+              onChange={(e) => setStoveType(e.target.value)}
+            >
+              <option value=""></option>
+              {Object.keys(stovePrices).map((stove, index) => (
+                <option key={index} value={stove}>
+                  {stove} - ${stovePrices[stove].price}
+                </option>
+              ))}
+            </select> */}
+            <div className="grid grid-cols-2 gap-[1px]">
+            {Object.keys(stovePrices).map((stove, index) => (
+            <label key={index} className="flex flex-col items-center">
+              <input
+                type="radio"
+                name="stove"
+                value={stove}
+                checked={stoveType === stove}
+                onChange={(e) => setStoveType(e.target.value)}
+                className="hidden"
+              />
+              <Image
+                src={stovePrices[stove].image} 
+                width={350}
+                height={350}
+                priority={true}
+                alt={stove}
+                className={`w-24 h-24 cursor-pointer border-2 ${
+                  stoveType === stove ? 'border-blue-500' : 'border-gray-300'
+                } rounded`}
+              />
+              <span className="text-sm">{stove} - ${stovePrices[stove].price}</span>
+            </label>
           ))}
-        </select>
-      </div>
-      <div className="flex flex-col items-left mb-4">
-        <label className="text-gray-500 text-2xl font-bold">Wood Type</label>
-        <select
-          className="text-xl font-bold text-blue-500 w-full md:w-3/4"
-          onChange={(e) => setWoodType(e.target.value)}
+            </div>
+        {stoveType ? (   <p className="max-w-[20rem] text-center">
+             This <span className="font-bold">{stoveType}</span> will add ${stovePrices[stoveType].price}.00 to the subtotal.
+            </p>) :(<p>Choose from our wide array of stoves.</p>)}
+    
+           
+          </div>
+          {/* <!-- Item 2 --> */}
+          <div className="flex flex-col items-center space-y-2 md:w-1/2 ">
+            <div className="flex items-center justify-center h-24 mb-6">
+              <h2>Select From Various Wood Types</h2>
+              {/* <Image src="/images/neptune.png" alt="" height={50} width={50} /> */}
+              
+            </div>
+            <div className=" grid grid-cols-2 gap-[1px] ">
+            {Object.keys(woodPrices).map((wood, index) => (
+            <label key={index} className="flex flex-col items-center">
+              <input
+                type="radio"
+                name="wood"
+                value={wood}
+                checked={woodType === wood}
+                onChange={(e) => setWoodType(e.target.value)}
+                className="hidden"
+              />
+              <Image
+                src={woodPrices[wood].image} 
+                width={250}
+                height={250}
+                priority={true}
+                alt={wood}
+                className={`w-24 h-24 cursor-pointer border-2 ${
+                  woodType === wood ? 'border-blue-500' : 'border-gray-300'
+                } rounded`}
+              />
+              <span className="text-sm">{wood} - ${woodPrices[wood].price}</span>
+            </label>
+          ))}
+            </div>
+            {woodType ? (   <p className="max-w-[20rem] text-center">
+             This <span className="font-bold">{woodType}</span> will add ${woodPrices[woodType].price}.00 to the subtotal.
+            </p>) :(<p>Clear Cedar is more aged than Knotty Wood. Ask for more info or select a type</p>)}
+
+            {/* <p class="max-w-[20rem] text-center">
+             This <span className="font-bold">{woodType}</span> will add ${woodPrices[woodType]}.00 to the subtotal.
+            </p> */}
+          </div>
+        </div>
+
+        {/* <!-- Second Row --> */}
+        <div
+          className="flex flex-col space-y-24 mt-8 text-center border-t-black border-t-[1px] md:flex-row md:space-y-0"
         >
-          <option value="">Select Wood</option>
-          {Object.keys(woodPrices).map((wood) => (
-            <option key={wood} value={wood}>{wood} - ${woodPrices[wood]}</option>
+          {/* <!-- Item 3 --> */}
+          {/* <div className="flex flex-col items-center space-y-2 md:w-1/2 ">
+            <div className="flex items-center justify-center h-24 mb-6">
+              <h2>Select From Various Wood Types</h2>
+            
+              
+            </div>
+            <div className=" grid grid-cols-2 gap-[1px] ">
+            {Object.keys(windowPrices).map((window, index) => (
+            <label key={index} className="flex flex-col items-center">
+              <input
+                type="radio"
+                name="window"
+                value={window}
+                checked={windowStyle === window}
+                onChange={(e) => setWindowStyle(e.target.value)}
+                className="hidden"
+              />
+              <Image
+                src={windowPrices[window].image} 
+                width={50}
+                height={50}
+                priority={true}
+                alt={window}
+                className={`w-24 h-24 cursor-pointer border-2 ${
+                  windowStyle === window ? 'border-blue-500' : 'border-gray-300'
+                } rounded`}
+              />
+              <span className="text-sm">{window} - ${windowPrices[window].price}</span>
+            </label>
           ))}
-        </select>
-      </div>
-      <div className="flex flex-col items-left mb-4">
-        <label className="text-gray-500 text-2xl font-bold">Window Style</label>
-        <select
-          className="text-xl font-bold text-blue-500 w-full md:w-3/4"
-          onChange={(e) => setWindowStyle(e.target.value)}
-        >
-          <option value="">Select Window</option>
-          {Object.keys(windowPrices).map((window) => (
-            <option key={window} value={window}>{window} - ${windowPrices[window]}</option>
+            </div>
+            {windowStyle ? (   <p className="max-w-[20rem] text-center">
+             This <span className="font-bold">{windowStyle}</span> will add ${windowPrices[windowStyle].price}.00 to the subtotal.
+            </p>) :(<p>Clear Cedar is more aged than Knotty Wood. Ask for more info or select a type</p>)}
+
+           
+          </div> */}
+          {/* <!-- Item 4 --> */}
+          <div className="flex flex-col items-center space-y-2 md:w-1/2 ">
+            <div className="flex items-center justify-center h-24 mb-6">
+              <h2>Select From Various Wood Types</h2>
+              {/* <Image src="/images/neptune.png" alt="" height={50} width={50} /> */}
+              
+            </div>
+            <div className=" grid grid-cols-2 gap-[1px] ">
+            {Object.keys(installationPrices).map((install, index) => (
+            <label key={index} className="flex flex-col items-center">
+              <input
+                type="radio"
+                name="install"
+                value={install}
+                checked={installationChoice === install}
+                onChange={(e) => setInstallationChoice(e.target.value)}
+                className="hidden"
+              />
+              <Image
+                src={installationPrices[install].image} 
+                width={250}
+                height={250}
+                priority={true}
+                alt={install}
+                className={`w-24 h-24 cursor-pointer border-2 ${
+                  installationChoice === install ? 'border-blue-500' : 'border-gray-300'
+                } rounded`}
+              />
+              <span className="text-sm">{install} - ${installationPrices[install].price}</span>
+            </label>
           ))}
-        </select>
+            </div>
+            {installationChoice ? (   <p className="max-w-[20rem] text-center">
+             This <span className="font-bold">{installationChoice}</span> will add ${installationPrices[installationChoice].price}.00 to the subtotal.
+            </p>) :(<p>Clear Cedar is more aged than Knotty Wood. Ask for more info or select a type</p>)}
+
+            {/* <p class="max-w-[20rem] text-center">
+             This <span className="font-bold">{woodType}</span> will add ${woodPrices[woodType]}.00 to the subtotal.
+            </p> */}
+          </div>
+        </div>
       </div>
-      <div className="flex flex-col items-left  mb-4">
-        <label className="text-gray-500 text-2xl font-bold">Installation Style</label>
-        <select
-          className="text-xl font-bold text-blue-500 w-full md:w-3/4"
-          onChange={(e) => setInstallationChoice(e.target.value)}
-        >
-          <option value="">Select Installation</option>
-          {Object.keys(installationPrices).map((installation) => (
-            <option key={installation} value={installation}>{installation} - ${installationPrices[installation]}</option>
-          ))}
-        </select>
-      </div>
-      <div className="flex flex-col items-left md:items-left  mb-4">
-        <div className="text-gray-500 font-bold">Total Cost</div>
-        <div className="text-2xl font-bold text-blue-500">${cost}</div>
-      </div>
-    </div>
+    </section>
+
+
 
 
 
@@ -142,7 +286,7 @@ const SaunaDetails = ({product}) => {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md mt-6">
+            {/* <div className="bg-white p-6 rounded-lg shadow-md mt-6">
               <h3 className="text-lg font-bold mb-6">Amenities</h3>
 
               <ul
@@ -202,9 +346,11 @@ const SaunaDetails = ({product}) => {
                   Maker
                 </li>
               </ul>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md mt-6">
-              <div id="map"></div>
+            </div> */}
+            <div className="bg-white p rounded-lg shadow-md mt-6">
+              <div id="map">
+              <Button className="bg-slate-700 hover:bg-slate-500 text-white font-bold py-2 px-4 rounded-xl w-full">Add To Cart</Button>
+              </div>
             </div>
           </main>
   )
