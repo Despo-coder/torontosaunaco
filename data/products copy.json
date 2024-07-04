@@ -74,5 +74,45 @@
     "is_featured": false,
    "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "owner": "torontosaunco",
+    "name": "Neptune Pure Cube Sauna",
+   "type": "Pure Cube",
+   "description": "The Pure Cube Outdoor Sauna brings a luxurious new class of modular pre-built sauna kits to your home or cottage. Embrace the outdoors with the large double pane tempered glass front window and full glass door. The Pure Cube CU550 Sauna comes in easy to assemble wall and roof panels with a full cedar floor and EPDM rubber roof. Optional semi-privacy panels can be ordered on the front wall or sides so you can enjoy more natural light or panoramic views inside this stunning outdoor sauna. This model comes with an electric heater only and is uniquely designed to comfortably sit 2 adults. Pamper yourself and your family or friends with this authentic modern Pure Cube Sauna kit. ",
+    "dimension": "71 x 71(cm)",
+    "price": 13991,
+    "views": {
+      "standard":{"price": 0, "image": "/images/backwall.jpg" },
+      "halfmoon":{"price": 200, "image": "/images/half-moon.jpg" }
+    },
+    "wood_type": {
+      "Knotty Cedar": { "price": 0, "image": "/images/Clear_Cedar.jpg" },
+      "Clear Cedar": {"price": 3202, "image": "/images/Knotty_Cedar.jpg" }
+    },
+    "stove_type": {
+      "Designer B Electric Heater (6kw)": { "price": 1788, "image": "/images/Designer_B_6KW_Sauna_Heater_with_Rocks(1788).jpg" },
+      "Huum Drop Local Control (6kw)": { "price": 2556.50, "image": "/images/HUUM_Drop_6.0_KW_Electric_Heater_Local_Control(2556.50).jpg" },
+      "Huum Drop WIFI (6kw)": { "price": 3132.50, "image": "/images/HUUM_Drop_6.0_Electric_Heater_With_WIFI_Controls(3132.50).jpg" },
+      "Harvia KIP (8Kw) ": { "price": 1543, "image": "/images/Harvia_KIP_6KWH_WIth_Rocks(1470).jpg" }
+    },
+   "installation": {
+     "DIY": { "price": 0, "image": "/images/DIY.jpg" },
+      "Supply_Install": { "price": 1750,"image": "/images/supply_install" }
+    },
+    "seller_info": {
+      "name": "John Doe",
+      "email": "john@gmail.com",
+      "phone": "617-555-5555"
+    },
+    "images": ["/images/PureCubeHudsonClear_ Web-12.jpg", 
+    "/images/PureCubeHudsonClear_ Web-9.jpg" , 
+    "/images/PureCubeHudsonClear_ Web-8.jpg", 
+    "/images/PureCubeHudsonClear_ Web-21.jpg", 
+    "/images/PureCubeHudsonClear_ Web-17.jpg"
+  ],
+    "is_featured": false,
+   "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
   }
 ]

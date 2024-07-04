@@ -2,29 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 const ProductCard = ({product}) => {
-  const {views, wood_type} = product
- //console.log(dataObjects.map(wood_type)=>{})
  
-  // const { standard, panoramic, regular } = views;
- 
-
-
-//  Object.keys(wood_type).map(wood_type => {
-//   console.log(wood_type)
-//  })
-
-    // const getRates = ()=>{
-    //     if (rates.monthly){
-    //         return `${rates.monthly.toLocaleString()} `
-    //     }else if (rates.weekly){
-    //             return `${rates.weekly.toLocaleString()} `
-    //         }else if (rates.nightly){
-    //             return `${rates.nightly.toLocaleString()} `
-    //         }else{
-    //             return "Call for rates"
-    //         }
-    //     }
-    
   return (
     <div>
       <div className="rounded-xl shadow-md relative bg-slate-100">

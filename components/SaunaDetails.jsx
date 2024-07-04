@@ -16,11 +16,12 @@ const SaunaDetails = ({product}) => {
 
     //console.log(product.installation.map(install=>install))
    // const intsall_array = Array.from(product.installation)
-    console.log(product.installation)
-    console.log(product.wood_type)
+    console.log(product)
+   
     // const woodPrices = product.wood_type
     // const stovePrices = product.stove_type
     const  installationPrices = product.installation
+    const windowPrices = product.views
     // const stovePrices = {
     //   "Harvia Electric Stove (8kw)": { price: 999, image: "/images/Finleo_8KW_With Rocks.jpg" },
     //   "Huum Drop with remote (9kw)": { price: 3125, image: "/images/HUMHIVEWOOD.jpg" },
@@ -35,11 +36,11 @@ const SaunaDetails = ({product}) => {
     //     "CC": {price:500, image:"/images/Knotty_Cedar.jpg"} // Example additional cost for clear cedar
     //   };
     
-      const windowPrices = {
-        "standard": {price:0 , image:"/images/panoramic.jpg"},
-        "panoramic": {price:500 , image:"/images/panoramic.jpg"}, // Example additional cost for panoramic view
-        "regular": {price:200 , image:"/images/panoramic.jpg"}// Example additional cost for regular view
-      };
+      // const windowPrices = {
+      //   "standard": {price:0 , image:"/images/panoramic.jpg"},
+      //   "panoramic": {price:500 , image:"/images/panoramic.jpg"}, // Example additional cost for panoramic view
+      //   "regular": {price:200 , image:"/images/panoramic.jpg"}// Example additional cost for regular view
+      // };
     
 
       // const installationPrices = {
@@ -187,7 +188,7 @@ const SaunaDetails = ({product}) => {
           className="flex flex-col space-y-24 mt-8 text-center border-t-black border-t-[1px] md:flex-row md:space-y-0"
         >
           {/* <!-- Item 3 --> */}
-          {/* <div className="flex flex-col items-center space-y-2 md:w-1/2 ">
+          {product.views && ( <div className="flex flex-col items-center space-y-2 md:w-1/2 ">
             <div className="flex items-center justify-center h-24 mb-6">
               <h2>Select From Various Wood Types</h2>
             
@@ -223,7 +224,8 @@ const SaunaDetails = ({product}) => {
             </p>) :(<p>Clear Cedar is more aged than Knotty Wood. Ask for more info or select a type</p>)}
 
            
-          </div> */}
+          </div>)}
+         
           {/* <!-- Item 4 --> */}
           <div className="flex flex-col items-center space-y-2 md:w-1/2 ">
             <div className="flex items-center justify-center h-24 mb-6">
