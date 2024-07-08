@@ -1,9 +1,9 @@
-import React from 'react'
+import CanadianTimber from "@/components/CanadianTimber"
 
 const page = () => {
   return (
     <div>
-      Canadian Timber Page
+      <CanadianTimber />
     </div>
   )
 }

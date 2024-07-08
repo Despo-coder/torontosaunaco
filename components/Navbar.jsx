@@ -345,39 +345,46 @@ useEffect(() => {
           {showDropdown && (
             <div className="absolute left-0 mt-[-1px] w-48 bg-white shadow-lg rounded-xl z-10">
               <Link
-                href="/saunas/barrel"
+                href="/saunas/cube"
                 className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
              onClick={() => setShowDropdown(false)}
              >
-                Cedar Barrel Saunas
+                Cube Saunas
               </Link>
               <Link
-                href="/saunas/cube"
+                href="/saunas/luna"
                 className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                 onClick={() => setShowDropdown(false)}
               >
-                Cedar Luna Saunas
+                Luna Saunas
               </Link>
               <Link
-                href="/saunas/outdoor"
+                href="/saunas/barell"
                 className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                 onClick={() => setShowDropdown(false)}
               >
-                Outdoor Cedar Cube Saunas
+                Barrell Saunas
               </Link>
               <Link
-                href="/saunas/outdoor"
+                href="/saunas/canadian-timber"
                 className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                 onClick={() => setShowDropdown(false)}
               >
-                Indoor Cedar Cube Saunas
+                Canadian Timber
               </Link>
               <Link
-                href="/saunas/outdoor"
+                href="/saunas/indoor"
                 className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                 onClick={() => setShowDropdown(false)}
-              >
-                Outdoor Showers
+             >
+                Indoor Saunas
+              </Link>
+              <Link
+                href="/accessories"
+                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                onClick={() => setShowDropdown(false)}
+             >
+               Accessories
               </Link>
             </div>
           )}

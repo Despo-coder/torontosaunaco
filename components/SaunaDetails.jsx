@@ -114,7 +114,7 @@ const SaunaDetails = ({product}) => {
            
           </div>
           {/* <!-- Item 2 --> */}
-          <div className="flex flex-col items-center space-y-2 md:w-1/2 ">
+          {woodPrices ? ( <div className="flex flex-col items-center space-y-2 md:w-1/2 ">
             <div className="flex items-center justify-center h-24 mb-6">
               <h2>Select From Various Wood Types</h2>
               {/* <Image src="/images/neptune.png" alt="" height={50} width={50} /> */}
@@ -152,7 +152,8 @@ const SaunaDetails = ({product}) => {
             {/* <p class="max-w-[20rem] text-center">
              This <span className="font-bold">{woodType}</span> will add ${woodPrices[woodType]}.00 to the subtotal.
             </p> */}
-          </div>
+          </div>):''}
+         
         </div>
 
         {/* <!-- Second Row --> */}

@@ -47,6 +47,9 @@ const ProductsSchema = new Schema(
       type: Object,
       // required: true
     },
+  additonal_features: {
+    type: Object,
+  },
     installation: {
       type: Object,
       // required: true
