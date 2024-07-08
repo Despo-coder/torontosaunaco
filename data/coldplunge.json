@@ -1,0 +1,178 @@
+[
+    
+        {
+            "owner": "torontosaunco",
+            "name": "The Classic Cold Plunge Tub",
+           "type": "Cold Plunge",
+           "collectionType": "Cold Plunge",
+           "series": "Tub",
+           "description": "Enjoy a classic cold plunge at home or on the road. This is fully portable and sets up in minutes. Control from anywhere with IOS and Android App. Built to last with a 3 year warranty. This unit is able to fit up to 6ft 11 and cools down to 3 degrees Celsius.",
+            "dimension": "160l x 75w x 67h cm",
+            "price": 1579,
+            "views": {
+            },
+            "wood_type": {
+             
+            },
+           "stove_type": {
+             
+            },
+           "installation": {
+           
+            },
+            "seller_info": {
+              "name": "John Doe",
+              "email": "john@gmail.com",
+              "phone": "617-555-5555"
+            },
+            "images": ["https://res.cloudinary.com/dw4ev5whz/image/upload/v1720406064/torontosaunaco/coldplunge/CTClassicTub-min_p1d03w.webp", 
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720406058/torontosaunaco/coldplunge/coldture-170_px6gad.webp" , 
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720406070/torontosaunaco/coldplunge/tubonly_withlid_tq8ina.webp", 
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720406067/torontosaunaco/coldplunge/icephoto_igegwx.webp", 
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720406061/torontosaunaco/coldplunge/coldture-177_iepaje.webp"
+          ],
+            "is_featured": false,
+           "createdAt": "2024-01-01T00:00:00.000Z",
+            "updatedAt": "2024-01-01T00:00:00.000Z"
+          },
+          {
+            "owner": "torontosaunco",
+            "name": "TheBarrel Plunge",
+           "type": "Cold Plunge",
+           "collectionType": "Cold Plunge",
+           "series": "Barrel",
+           "description": "Enjoy a classic cold plunge at home or on the road. This is fully portable and sets up in minutes. Control from anywhere with IOS and Android App. Built to last with a 3 year warranty. This unit cools down to 3 degrees Celsius.",
+            "dimension": "95cm  x 100cm",
+            "price": 1579,
+            "views": {
+            },
+            "wood_type": {
+             
+            },
+           "stove_type": {
+             
+            },
+           "installation": {
+           
+            },
+            "seller_info": {
+              "name": "John Doe",
+              "email": "john@gmail.com",
+              "phone": "617-555-5555"
+            },
+            "images": ["https://res.cloudinary.com/dw4ev5whz/image/upload/v1720407128/torontosaunaco/coldplunge/CTBarrelTub_ikscue.webp", 
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720407123/torontosaunaco/coldplunge/coldture-237_z6mxi6.webp" , 
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720407115/torontosaunaco/coldplunge/barrelonthepremiumdrymat_zpwp5v.webp", 
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720407111/torontosaunaco/coldplunge/Barrelinthegym_greatshot_k57pdg.webp", 
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720407119/torontosaunaco/coldplunge/barreloutside_goingin_qmd3ya.webp"
+          ],
+            "is_featured": false,
+           "createdAt": "2024-01-01T00:00:00.000Z",
+            "updatedAt": "2024-01-01T00:00:00.000Z"
+          },
+          {
+            "owner": "torontosaunco",
+            "name": "The Pro Plunge",
+           "type": "Cold Plunge",
+           "collectionType": "Cold Plunge",
+           "series": "Tub",
+           "description": "The Pro Plunge is the most convenient all-in-one solution that enhances your health, fits your busy routine and looks beautiful in any space.",
+            "dimension": "76cm  x 31cm x 28cm",
+            "price": 11499,
+            "views": {
+            },
+            "wood_type": {
+             
+            },
+           "stove_type": {
+             
+            },
+           "installation": {
+           
+            },
+            "seller_info": {
+              "name": "John Doe",
+              "email": "john@gmail.com",
+              "phone": "617-555-5555"
+            },
+            "images": ["https://res.cloudinary.com/dw4ev5whz/image/upload/v1720407528/torontosaunaco/coldplunge/Coldture_Plunge_front_zzfapz.webp", 
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720408845/torontosaunaco/coldplunge/IMG-20240705-WA0011_je3fjg.jpg" , 
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720407524/torontosaunaco/coldplunge/Coldture_Plunge_Cover_u23u2e.webp", 
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720407543/torontosaunaco/coldplunge/TheColdtureProPlungeSpecifications_2_k9dsca.webp", 
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720407538/torontosaunaco/coldplunge/Pro-Black_dv6pja.webp"
+          ],
+            "is_featured": false,
+           "createdAt": "2024-01-01T00:00:00.000Z",
+            "updatedAt": "2024-01-01T00:00:00.000Z"
+          },
+          {
+            "owner": "torontosaunco",
+            "name": "The Ultra Light Barrel",
+           "type": "Cold Plunge",
+           "collectionType": "Cold Plunge",
+           "series": "Barrel",
+           "description": "Enjoy a classic cold plunge at home or on the road. Only this time using a smaller footprint. This is fully portable and sets up in minutes. COmes with chiller connections pre installed to upgrade when ready.",
+            "dimension": "75cm  x 75cm",
+            "price": 699,
+            "views": {
+            },
+            "wood_type": {
+             
+            },
+           "stove_type": {
+             
+            },
+           "installation": {
+           
+            },
+            "seller_info": {
+              "name": "John Doe",
+              "email": "john@gmail.com",
+              "phone": "617-555-5555"
+            },
+            "images": ["https://res.cloudinary.com/dw4ev5whz/image/upload/v1720407528/torontosaunaco/coldplunge/Coldture_Plunge_front_zzfapz.webp", 
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720407533/torontosaunaco/coldplunge/Coldture_Plunge_side_t1fmot.webp" , 
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720407524/torontosaunaco/coldplunge/Coldture_Plunge_Cover_u23u2e.webp", 
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720407543/torontosaunaco/coldplunge/TheColdtureProPlungeSpecifications_2_k9dsca.webp", 
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720407538/torontosaunaco/coldplunge/Pro-Black_dv6pja.webp"
+          ],
+            "is_featured": false,
+           "createdAt": "2024-01-01T00:00:00.000Z",
+            "updatedAt": "2024-01-01T00:00:00.000Z"
+          },
+          {
+            "owner": "torontosaunco",
+            "name": "The Chiller",
+           "type": "Cold Plunge Chiller",
+           "collectionType": "Chiller",
+           "series": "Chiller",
+           "description": "This Portable, all in one unit cools water down to 3 degress celcius and heats water up to 40 degrees celcius. It is WiFi enabled and is plug and play for easy setup and use. It comes with a sfety shutoff with indutrial grade components. It comes standard with two years warranty.",
+            "dimension": "13cm  x 17cm x 19cm",
+            "price": 3999,
+            "views": {
+            },
+            "wood_type": {
+             
+            },
+           "stove_type": {
+             
+            },
+           "installation": {
+           
+            },
+            "seller_info": {
+              "name": "John Doe",
+              "email": "john@gmail.com",
+              "phone": "617-555-5555"
+            },
+            "images": ["https://res.cloudinary.com/dw4ev5whz/image/upload/v1720408802/torontosaunaco/coldplunge/coldture-225_grqqcx.webp", 
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720408796/torontosaunaco/coldplunge/chilleronlyshotwithsleeves_goodsleeveshot_i7lgr7.webp" , 
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720408813/torontosaunaco/coldplunge/IceminiChiller_pdq0sh.webp", 
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720408791/torontosaunaco/coldplunge/Chiller_pc3zqf.webp", 
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720408807/torontosaunaco/coldplunge/coldture-227_lnuul7.webp"
+          ],
+            "is_featured": false,
+           "createdAt": "2024-01-01T00:00:00.000Z",
+            "updatedAt": "2024-01-01T00:00:00.000Z"
+          }
+]

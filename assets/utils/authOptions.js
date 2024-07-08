@@ -1,6 +1,8 @@
 import GoogleProvider from  'next-auth/providers/google';
 // Import Credentials Provider
 import CredentialsProvider from 'next-auth/providers/credentials';
+import connectDB from '@/config/db';
+import User from '@/models/Users';
 
 
 export const authOptions = {
@@ -54,14 +56,31 @@ callbacks: {
     async signIn({user, account, profile}){
         // Steps
         // 1. Connect to the DB
+        await connectDB();
         // 2. Check if user exists in db
-        // 3. If not, create a new user
-        // 4. Return the user object(true)
-
+        const userInDb = await User.findOne({email:profile.email});
+        // 3. If user exists, return the user object(true)
+       if(!userInDb){
+        const username = profile.name.slice(0,20)
+        await User.create(
+            {
+                username,
+                email:profile.email,
+                image:profile.picture,
+                
+            })
+           
+        }
+        console.log(profile)
+       return true;
     },
-    async session({session, user}){
+    async session({session}){
         // Steps
         // 1. Connect to the DB
+        const user = await User.findOne({email:session.user.email});
+        session.user.id = user._id.toString();
+        session.user.isAdmin = user.isAdmin;
+        return session;
         // 2. Get User from DB
         // 3. Set User in Session with the userid
         // 4. Return the Session

@@ -76,7 +76,7 @@ const SaunaPage = () => {
             {/* <!-- Contact Form --> */}
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-2">Need More Information ?</h3>
-              <p className="mb-4">Get in touch with us.</p>
+              <p className="mb-4">Get in touch with us, send us an email.</p>
               <form>
               <div className='mb-4'>
                 <label

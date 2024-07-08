@@ -3,17 +3,21 @@ import Link from "next/link"
 import { Button } from "./ui/button"
 import {fetchProducts} from "@/assets/utils/request"
 
-const HomePageProducts = async () => {
+
+
+
+const IndoorPage = async () => {
 
     const product = await fetchProducts()
-    const recentProducts = product.sort((a, b) => Math.random() - 0.5).slice(0, 10);
-    //console.log(recentProducts)
-  return (
+   const cubes = product.filter(product => product.name.includes("Indoor"))
+const recentProducts = cubes.sort((a, b) => Math.random() - 0.5).slice(0, 5)
+
+     return (
     <>
     <section className="px-4 py-6">
         <div className="container-xl lg:container m-auto">
             <h2 className="text-4xl font-bold mb-4 text-center text-black">
-                Premium Saunas
+                Indoor Saunas
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
 {recentProducts === 0 ? (<p>No Products found</p>):
@@ -35,4 +39,4 @@ recentProducts.map((product, i)=>(
   )
 }
 
-export default HomePageProducts
+export default IndoorPage

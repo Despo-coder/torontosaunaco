@@ -1,5 +1,5 @@
 'use client'
-import Breadcrumb from "@/components/Breadcrumbs";
+//import Breadcrumb from "@/components/Breadcrumbs";
 import CartProduct from "@/components/cartProduct";
 import Link from "next/link";
 import {useEffect} from "react";

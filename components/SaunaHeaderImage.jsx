@@ -12,14 +12,14 @@ import 'swiper/css/autoplay'
 const SaunaHeaderImage = ({images}) => {
 
 const [thumbsSwiper, setThumbsSwiper] = useState(null)
-
+const shouldLoop = images.length > 1
 
   return (
     <>
     <section>
       <div className='container mx-auto'>
         <Swiper
-          loop={true}
+          loop={shouldLoop}
           spaceBetween={12}
           navigation={true}
           thumbs={{
@@ -51,7 +51,7 @@ const [thumbsSwiper, setThumbsSwiper] = useState(null)
         {/* Thumbnail */}
         <Swiper
           onSwiper={setThumbsSwiper}
-          loop={true}
+          loop={shouldLoop}
           spaceBetween={6}
           slidesPerView={5}
           freeMode={true}

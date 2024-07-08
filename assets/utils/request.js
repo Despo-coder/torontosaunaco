@@ -41,4 +41,25 @@ const fetchProduct = async (id) => {
 
   }
 
-  export  {fetchProduct, fetchProducts}
+
+  // Fetch Accessories
+  const fetchAccessories = async () => {
+    try {
+      if(!apiDomain){
+        console.log("Something went Wrong....")
+        return []
+      }
+      const res = await fetch(`${apiDomain}/accessories`, { next: { revalidate: 10 } })
+      if(!res.ok){
+        throw new Error("Error fetching Accessories")
+      }
+      const accessories = await res.json()
+      return accessories
+    } catch (error) {
+      console.error(error)
+      return []
+    }
+
+  }
+
+  export  {fetchProduct, fetchProducts, fetchAccessories}

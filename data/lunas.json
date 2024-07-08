@@ -1,0 +1,89 @@
+[
+  {
+    "owner": "torontosaunco",
+    "name": "Outdoor Luna Sauna",
+   "type": "Luna Sauna",
+   "collectionType": "Luna",
+   "series": "LUE-880",
+   "description": "The Luna LUE-880 Outdoor Sauna offers a sleek and sophisticated addition to your home or cottage. It seats 4-6 persons and is quite good for family sessions. This modular pre-built sauna kit boasts a large double pane tempered glass front window and full glass door, providing beautiful outdoor views and excellent thermal insulation. Experience the perfect blend of luxury and practicality with this modern Luna Sauna kit, ideal for creating a relaxing and rejuvenating sauna experience for you and your family or friends.",
+    "dimension": "8 x 8 (ft)",
+    "price": 12250,
+    "views": {
+    },
+    "wood_type": {
+      "Knotty Cedar": { "price": 0, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg" },
+      "Clear Cedar": {"price": 9500, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg" }
+    },
+   "stove_type": {
+      "Designer B Electric Heater (6kw)": { "price": 1800, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg" },
+      "Huum Drop Local Control (7.5kw)": { "price": 2800, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361773/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_6.0_Electric_Heater_With_WIFI_Controls_3132.50_zpe3m3.jpg" },
+      "Huum Drop WIFI (7.5kw)": { "price": 2950, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361773/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_6.0_Electric_Heater_With_WIFI_Controls_3132.50_zpe3m3.jpg" },
+      "Harvia KIP (6Kw) ": { "price": 1500, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361760/torontosaunaco/Wood_Stove_Install_img/Harvia_KIP_6KWH_WIth_Rocks_1470_jz0epy.jpg" },
+      "Narvi NC 16 Black Woodburning Heater":{ "price": 1650, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361795/torontosaunaco/Wood_Stove_Install_img/NARVINC_1688.50_fryhhq.jpg" },
+      "Huum Hive Heater":{ "price": 1650, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361795/torontosaunaco/Wood_Stove_Install_img/NARVINC_1688.50_fryhhq.jpg" },
+      "HomeCraft Revive":{ "price": 1650, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361795/torontosaunaco/Wood_Stove_Install_img/NARVINC_1688.50_fryhhq.jpg" }
+    },
+   "installation": {
+     "DIY": { "price": 0, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg" },
+      "Supply_Install": { "price": 1750,"image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg" }
+    },
+    "seller_info": {
+      "name": "John Doe",
+      "email": "john@gmail.com",
+      "phone": "617-555-5555"
+    },
+    "images": ["https://res.cloudinary.com/dw4ev5whz/image/upload/v1720386264/torontosaunaco/Lunas/Luna/872LUE_v6gt5y.jpg", 
+    "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720386255/torontosaunaco/Lunas/Luna/860LUW_1_kbngku.jpg" , 
+    "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720386267/torontosaunaco/Lunas/Luna/880LUE_vv2usy.jpg", 
+    "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720386258/torontosaunaco/Lunas/Luna/860LUW_o4zegr.jpg", 
+    "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720386271/torontosaunaco/Lunas/Luna/882LUE_slzxvc.jpg"
+  ],
+    "is_featured": false,
+   "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "owner": "torontosaunco",
+    "name": "Outdoor Luna Sauna",
+   "type": "Luna Sauna",
+   "collectionType": "Luna",
+   "series": "LUPE-880",
+   "description": "The Luna LUE-860 Outdoor Sauna with Porch brings an elegant and inviting aesthetic to your outdoor space. This luxurious modular pre-built sauna kit features a spacious porch, perfect for relaxing before and after your sauna sessions. The large double pane tempered glass front window and full glass door offer stunning views of the outdoors while maintaining excellent insulation. Indulge yourself and your loved ones with this modern, authentic Luna Sauna kit, designed for comfort and style.",
+    "dimension": "8 x 6 (ft)",
+    "price": 11900,
+    "views": {
+    },
+    "wood_type": {
+      "Knotty Cedar": { "price": 0, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg" },
+      "Clear Cedar": {"price": 9550, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg" }
+    },
+   "stove_type": {
+      "Designer B Electric Heater (6kw)": { "price": 1800, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg" },
+      "Huum Drop Local Control (7.5kw)": { "price": 2800, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361773/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_6.0_Electric_Heater_With_WIFI_Controls_3132.50_zpe3m3.jpg" },
+      "Huum Drop WIFI (7.5kw)": { "price": 2950, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361773/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_6.0_Electric_Heater_With_WIFI_Controls_3132.50_zpe3m3.jpg" },
+      "Harvia KIP (6Kw) ": { "price": 1500, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361760/torontosaunaco/Wood_Stove_Install_img/Harvia_KIP_6KWH_WIth_Rocks_1470_jz0epy.jpg" },
+      "Narvi NC 16 Black Woodburning Heater":{ "price": 1650, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361795/torontosaunaco/Wood_Stove_Install_img/NARVINC_1688.50_fryhhq.jpg" },
+      "Huum Hive Heater":{ "price": 1650, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361795/torontosaunaco/Wood_Stove_Install_img/NARVINC_1688.50_fryhhq.jpg" },
+      "HomeCraft Revive":{ "price": 1650, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361795/torontosaunaco/Wood_Stove_Install_img/NARVINC_1688.50_fryhhq.jpg" }
+    },
+   "installation": {
+     "DIY": { "price": 0, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg" },
+      "Supply_Install": { "price": 1750,"image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg" }
+    },
+    "seller_info": {
+      "name": "John Doe",
+      "email": "john@gmail.com",
+      "phone": "617-555-5555"
+    },
+    "images": ["https://res.cloudinary.com/dw4ev5whz/image/upload/v1720387254/torontosaunaco/Lunas/Luna/880LUPE_ffk1jx.jpg", 
+    "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720387261/torontosaunaco/Lunas/Luna/882LUPE_icjeap.jpg" , 
+    "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720387249/torontosaunaco/Lunas/Luna/880LUPE_5_x3tjx4.jpg", 
+    "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720387223/torontosaunaco/Lunas/Luna/880LUPE_1_zc1vgg.jpg", 
+    "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720387228/torontosaunaco/Lunas/Luna/880LUPE_2_xzvpuy.jpg"
+  ],
+    "is_featured": false,
+   "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  }
+  
+]

@@ -4,7 +4,13 @@ const nextConfig = {
         remotePatterns: [
           {
             protocol: "https",
-            hostname: "fakestoreapi.com",
+            hostname:"lh3.googleusercontent.com",
+            pathname: "**"
+          },
+          {
+            protocol: 'https',
+            hostname: "res.cloudinary.com",
+            pathname: '**',
           },
         ],
       },

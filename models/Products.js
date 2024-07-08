@@ -4,28 +4,36 @@ const ProductsSchema = new Schema(
   {
     owner: {
       type: String,
-      required: true,
+      // required: true,
       ref: 'User'
     },
     name: {
       type: String,
-      required: true
+      // required: true
     },
     type: {
       type: String,
-      required: true
+      // required: true
+    },
+    collectionType: {
+      type: String,
+      // required: true
+    },
+    series: {
+      type: String,
+      // required: true
     },
     description: {
       type: String,
-      required: true
+      // required: true
     },
     dimension: {
       type: String,
-      required: true
+      // required: true
     },
     price: {
       type: Number,
-      required: true
+      // required: true
     },
     views: {
       type: Object,
@@ -33,33 +41,33 @@ const ProductsSchema = new Schema(
     },
     wood_type: {
       type: Object,
-      required: true
+      // required: true
     },
     stove_type: {
       type: Object,
-      required: true
+      // required: true
     },
     installation: {
       type: Object,
-      required: true
+      // required: true
     },
     seller_info: {
       name: {
         type: String,
-        required: true
+        // required: true
       },
       email: {
         type: String,
-        required: true
+        // required: true
       },
       phone: {
         type: String,
-        required: true
+        // required: true
       }
     },
     images: [{
       type: String,
-      required: true
+      // required: true
     }],
     is_featured: {
       type: Boolean,
@@ -73,13 +81,10 @@ const ProductsSchema = new Schema(
       type: Date,
       default: Date.now
     }
-  },
+  }, 
   {
     timestamps: true,
   },
-  {
-    timestamps: true,
-  }
 );
 
 const Products = models.Products || model('Products', ProductsSchema);

@@ -3,7 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import {CldImage} from 'next-cloudinary'
 
-const ProductCard = ({product}) => {
+const ColdPlungeCard = ({product}) => {
  //console.log(product)
   return (
     <div>
@@ -57,11 +57,11 @@ const ProductCard = ({product}) => {
                 <div className="flex align-middle gap-2 mb-4 lg:mb-0">
                  
                 </div>
-                <Link href={`/saunas/${product._id}`}>
+                {/* <Link href={`/saunas/${product._id}`}>
                  <span className="h-[36px] bg-slate-700 hover:bg-slate-800 text-white px-4 py-2 rounded-xl text-center text-sm">
                  Learn More
                  </span>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -69,4 +69,4 @@ const ProductCard = ({product}) => {
   )
 }
 
-export default ProductCard
+export default ColdPlungeCard

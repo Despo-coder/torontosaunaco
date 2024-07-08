@@ -1,24 +1,28 @@
-import ProductCard from "./ProductCard"
+import ColdPlungeCard from "./ColdPlungeCard"
 import Link from "next/link"
 import { Button } from "./ui/button"
 import {fetchProducts} from "@/assets/utils/request"
 
-const HomePageProducts = async () => {
+
+
+
+const Cold_Plunge = async () => {
 
     const product = await fetchProducts()
-    const recentProducts = product.sort((a, b) => Math.random() - 0.5).slice(0, 10);
-    //console.log(recentProducts)
-  return (
+   const cubes = product.filter(product => product.type.includes("Cold Plunge"))
+    const recentProducts = cubes.sort(()=> Math.random())
+    // .slice(0, )
+     return (
     <>
     <section className="px-4 py-6">
         <div className="container-xl lg:container m-auto">
             <h2 className="text-4xl font-bold mb-4 text-center text-black">
-                Premium Saunas
+                Cold Plunge
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
 {recentProducts === 0 ? (<p>No Products found</p>):
 recentProducts.map((product, i)=>(
-    <ProductCard  key={i} product= {product} />
+    <ColdPlungeCard key={i} product= {product} />
 ))
 
 }
@@ -35,4 +39,4 @@ recentProducts.map((product, i)=>(
   )
 }
 
-export default HomePageProducts
+export default Cold_Plunge

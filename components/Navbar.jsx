@@ -22,6 +22,7 @@ const Navbar = () => {
   const [isAdmin, setIsAdmin] = useState(false);
   const pathname = usePathname();
  const { data: session } = useSession();
+ const profileImage = session?.user?.image || defaultImage;
 
 useEffect(() => {
   const setAuthProviders = async () => {
@@ -31,16 +32,10 @@ useEffect(() => {
   setAuthProviders();
 }
 , []);
+ 
 
     return (  
-    <nav className="bg-slate-700  py-8"
-    
-    // style={{
-    //   backgroundImage: "url('/images/Sauna_Image_1-unsplash.jpg')",
-    //   backgroundSize: "cover",
-    //   backgroundPosition: "center",
-    // }}>
-    >
+    <nav className=" bg-slate-700  py-12 ">
 
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div className="relative flex h-20 items-center justify-between">
@@ -78,27 +73,22 @@ useEffect(() => {
           </button>
         </div>
 
-        {/* {session ? (
-          <button onClick={() => signOut()}>Sign out</button>
-        ) : (
-          <button onClick={() => signIn()}>Sign in</button>
-        )} */}
 
         {/* <!-- Logo + Regular Menu --> */}
         <div
-          className="flex flex-1 items-center justify-center md:items-stretch md:justify-start"
+          className="flex mb-2 flex-1 items-center justify-center md:items-stretch md:justify-start md:mt-1"
         >
        
           <Link className="flex flex-col items-center md:flex-row md:items-center flex-shrink-0" href="/">
            <Image src={logo} alt="Toronto Sauna Co" width={80} height={50}priority={true} className='rounded-full w-auto'/>
            
-            <span className="md:block text-white text-2xl font-bold ml-2 mt-1"
+            <span className="md:block text-white text-2xl font-bold ml-2 mt-1 "
               >Toronto Sauna Co.</span
             >
           </Link>
           {/* <!-- Desktop Menu Hidden below md screens --> */}
           <div className="hidden md:ml-6 md:block">
-            <div className="flex space-x-2 mt-6">
+            <div className="flex space-x-2 mt-12">
               <Link
                 href="/"
                 className={`${pathname === '/' ?'bg-gray-900 text-white' : ''} " text-white  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
@@ -121,39 +111,46 @@ useEffect(() => {
           {showDropdown && (
             <div className="absolute left-0 mt-[-1px] w-48 bg-white shadow-lg rounded-xl z-10">
               <Link
-                href="/saunas/barrel"
+                href="/saunas/cube"
                 className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
              onClick={() => setShowDropdown(false)}
              >
-                Cedar Barrel Saunas
+                Cube Saunas
               </Link>
               <Link
-                href="/saunas/cube"
+                href="/saunas/luna"
                 className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                 onClick={() => setShowDropdown(false)}
               >
-                Cedar Luna Saunas
+                Luna Saunas
               </Link>
               <Link
-                href="/saunas/outdoor"
+                href="/saunas/barell"
                 className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                 onClick={() => setShowDropdown(false)}
               >
-                Outdoor Cedar Cube Saunas
+                Barrell Saunas
               </Link>
               <Link
-                href="/saunas/outdoor"
+                href="/saunas/canadian-timber"
                 className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                 onClick={() => setShowDropdown(false)}
               >
-                Indoor Cedar Cube Saunas
+                Canadian Timber
               </Link>
               <Link
-                href="/saunas/outdoor"
+                href="/saunas/indoor"
                 className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                 onClick={() => setShowDropdown(false)}
              >
-                Outdoor Showers
+                Indoor Saunas
+              </Link>
+              <Link
+                href="/accessories"
+                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                onClick={() => setShowDropdown(false)}
+             >
+               Accessories
               </Link>
             </div>
           )}
@@ -168,7 +165,7 @@ useEffect(() => {
                 className={`${pathname === '/quote' ?'bg-gray-900 text-white' : ''} " text-white  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
                 >Get a Quote</Link
               >
-              {isAdmin && session &&( <Link
+              {session?.user.isAdmin && session &&( <Link
                 href="/quote"
                 className={`${pathname === '/quote' ?'bg-gray-900 text-white' : ''} " text-white  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
                 >Admin</Link
@@ -182,13 +179,32 @@ useEffect(() => {
 
         {/* <!-- Right Side Menu (Logged Out) -->  */}
         {!session && ( <div className="hidden md:block md:ml-6">
-        <div className="flex items-center">
-          <Button
-            className="flex items-center  text-white bg-gray-600 hover:bg-gray-900 hover:text-white rounded-xl px-3 py-2"
-          >
-            {/* <FaGoogle  className='mr-2 font-extralight'/> */}
-            <span>Login/Sign Up</span>
-          </Button>
+        <div className="flex items-center ">
+        {providers && Object.values(providers).map((provider, index) => {
+          if (provider.id === 'google') {
+            return (
+              <Button
+                key={index}
+                className="flex items-center text-white bg-gray-600 hover:bg-gray-900 hover:text-white rounded-xl px-3 py-2"
+                onClick={() => signIn(provider.id)}
+              >
+                <span>Login with Google</span>
+              </Button>
+            );
+          } else if (provider.id === 'credentials') {
+            return (
+              <Button
+                key={index}
+                className="flex items-center text-white bg-gray-600 hover:bg-gray-900 hover:text-white rounded-xl px-3 py-2  sm:hidden"
+                onClick={() => signIn(provider.id)}
+              >
+                <span>Login with Credentials</span>
+              </Button>
+            );
+          }
+          return null; // If there are other providers you don't want to render
+        })}
+          
         </div>
       </div>
 )}
@@ -198,13 +214,13 @@ useEffect(() => {
           className="absolute inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto md:ml-6 md:pr-0"
         >
           {/* <!-- Shopping Cart Button --> */}
-          {!isAdmin && (<div className='mr-2'>
+          {!session?.user.isAdmin&& (<div className='mr-2'>
                     <HiOutlineShoppingBag className='font-bold text-black' size={38}/>
                     <span  className="absolute top-[46px] right-[80px] md:right-[70px] inline-flex items-center justify-center px-[1px] py-[2px]  font-semibold leading-none text-white text-md transform translate-x-1/2 -translate-y-1/2 ">{cartItems.length}</span>
                     {/*  */}
                     </div>)}
                   
-          {session && isAdmin && ( <Link href="/message" className="relative group">
+          {session && session?.user.isAdmin && ( <Link href="/message" className="relative group">
             <button
               type="button"
               className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
@@ -253,8 +269,10 @@ useEffect(() => {
                 <span className="sr-only">Open user menu</span>
                 <Image
                   className="h-8 w-8 rounded-full"
-                  src={defaultImage}
+                  src={profileImage}
                   alt=""
+                  width={50}
+                  height={50}
                 />
               </button>
             </div>
@@ -267,7 +285,7 @@ useEffect(() => {
               aria-orientation="vertical"
               aria-labelledby="user-menu-button"
              tabIndex="-1"
-             
+             onClick={()=> setIsProfileMenuOpen(false)}
             >
               <Link
                 href="/profile"
@@ -285,14 +303,14 @@ useEffect(() => {
                 id="user-menu-item-2"
                 >Orders</Link
               >
-              <Link
-                href="#"
-                className="block px-4 py-2 text-sm text-gray-700"
-                role="menuitem"
-               tabIndex="-1"
-                id="user-menu-item-2"
-                >Sign Out</Link
+              <button  className="block px-4 py-2 text-sm text-gray-700" 
+              onClick={()=> {setIsProfileMenuOpen(false)
+                signOut()
+              }}
+              
               >
+                Sign Out
+              </button>
             </div>
             )}
             
@@ -375,17 +393,53 @@ useEffect(() => {
                 className={`${pathname === '/quote' ?'bg-gray-900 text-white' : ''} " text-white  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
                 >Get A Quote</Link
               >
-              {isAdmin && session &&( <Link
+              {session?.user.isAdmin && session &&( <Link
                 href="/quote"
                 className={`${pathname === '/quote' ?'bg-gray-900 text-white' : ''} " text-white  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
                 >Admin</Link
               >)}
-              <button
+              {/* <span
                 className="flex mx-auto text-white bg-gray-700 hover:bg-gray-500 hover:text-white rounded-xl px-3 py-2 my-4"
               >
-                {!session && (<span>Login or Register</span>)}
+                {!session && (
+                 
+                  <span>Login or Register</span>
+                 
+                )
+              } */}
+                 {
+                  providers && Object.values(providers).map((provider, index) => 
+                    {
+                  if (provider.id === 'google') 
+                    {
+                    return (
+                      <Button
+                        key={index}
+                        className="flex items-center text-white bg-gray-600 hover:bg-gray-900 hover:text-white rounded-xl px-3 py-2"
+                        onClick={() => signIn(provider.id)}
+                      >
+                        <span>Login with Google</span>
+                      </Button>
+                    );
+                  } else if (provider.id === 'credentials') {
+                    return (
+                     <span className='hidden' key={index}>
+                      <Button
+                        key={index}
+                        className="flex items-center text-white bg-gray-600 hover:bg-gray-900 hover:text-white rounded-xl px-3 py-2  "
+                        onClick={() => signIn(provider.id)}
+                      >
+                        <span>Login with Credentials</span>
+                      </Button>
+                      </span>
+                    );
+                  }
+                  return null; // If there are other providers you don't want to render
+                })}
+              
+            
                 
-              </button>
+              {/* </span> */}
             </div>
             </div>
           )}

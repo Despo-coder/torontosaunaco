@@ -4,6 +4,7 @@ import { useState , useEffect } from "react"
 
 import Image from "next/image"
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const SaunaDetails = ({product}) => {
     const [cost, setCost] = useState(product.price);
@@ -14,39 +15,10 @@ const SaunaDetails = ({product}) => {
    
     const {wood_type:woodPrices, stove_type:stovePrices}= product
 
-    //console.log(product.installation.map(install=>install))
-   // const intsall_array = Array.from(product.installation)
-    console.log(product)
-   
-    // const woodPrices = product.wood_type
-    // const stovePrices = product.stove_type
-    const  installationPrices = product.installation
+ 
+    const installationPrices = product.installation
     const windowPrices = product.views
-    // const stovePrices = {
-    //   "Harvia Electric Stove (8kw)": { price: 999, image: "/images/Finleo_8KW_With Rocks.jpg" },
-    //   "Huum Drop with remote (9kw)": { price: 3125, image: "/images/HUMHIVEWOOD.jpg" },
-    //   "Huum Hive Mini (10.5 kw)": { price: 4620, image: "/images/HUUMDROP_Electric.jpg" },
-    //   "Karhu 20": { price: 3140, image: "/images/HUUMHIVE_Mini.jpg" },
-    //   "Huum Hive Wood Heater": { price: 4890, image: "/images/Saaku Electric_Heater.jpg" }
-    // };
-     
-    // console.log(windowStyle)
-    //   const woodPrices = {
-    //     "KWC":{price:0, image:"/images/Clear_Cedar.jpg"} ,
-    //     "CC": {price:500, image:"/images/Knotty_Cedar.jpg"} // Example additional cost for clear cedar
-    //   };
     
-      // const windowPrices = {
-      //   "standard": {price:0 , image:"/images/panoramic.jpg"},
-      //   "panoramic": {price:500 , image:"/images/panoramic.jpg"}, // Example additional cost for panoramic view
-      //   "regular": {price:200 , image:"/images/panoramic.jpg"}// Example additional cost for regular view
-      // };
-    
-
-      // const installationPrices = {
-      //   "DIY": {price:0, image:"/images/diy.jpg"},
-      //   "Supply & Install": {price:1750, image:"/images/neptune.png"}
-      // };
     
       useEffect(() => {
         let newCost = product.price;  
@@ -123,15 +95,15 @@ const SaunaDetails = ({product}) => {
               />
               <Image
                 src={stovePrices[stove].image} 
-                width={350}
-                height={350}
+                width={450}
+                height={450}
                 priority={true}
                 alt={stove}
                 className={`w-24 h-24 cursor-pointer border-2 ${
                   stoveType === stove ? 'border-blue-500' : 'border-gray-300'
                 } rounded`}
               />
-              <span className="text-sm">{stove} - ${stovePrices[stove].price}</span>
+              <span className="text-sm">{stove} </span>
             </label>
           ))}
             </div>
@@ -161,15 +133,15 @@ const SaunaDetails = ({product}) => {
               />
               <Image
                 src={woodPrices[wood].image} 
-                width={250}
-                height={250}
+                width={350}
+                height={350}
                 priority={true}
                 alt={wood}
                 className={`w-24 h-24 cursor-pointer border-2 ${
                   woodType === wood ? 'border-blue-500' : 'border-gray-300'
                 } rounded`}
               />
-              <span className="text-sm">{wood} - ${woodPrices[wood].price}</span>
+              <span className="text-sm">{wood}</span>
             </label>
           ))}
             </div>
@@ -254,7 +226,7 @@ const SaunaDetails = ({product}) => {
                   installationChoice === install ? 'border-blue-500' : 'border-gray-300'
                 } rounded`}
               />
-              <span className="text-sm">{install} - ${installationPrices[install].price}</span>
+              <span className="text-sm">{install} </span>
             </label>
           ))}
             </div>
@@ -280,11 +252,18 @@ const SaunaDetails = ({product}) => {
             <div className="bg-white p-6 rounded-lg shadow-md mt-6">
               <h3 className="text-lg font-bold mb-6">Description & Details</h3>
              
-              <p className="text-gray-500 mb-4">
-                Place Holder.....
-              </p>
+              
               <p className="text-gray-500 mb-4">
                {product.description}
+              </p>
+              {/* Horizontal Line */}
+              <hr className="my-6 border-gray-200" />
+              <p className="text-gray-500 mb-4">
+              <Link href={`/saunas/${product.type}`}
+                    className="fa-solid fa-location-dot text-lg text-orange-700"
+                 >
+              <h6 className="text-orange-500 text-sm"> See more {product.collectionType} Saunas </h6>
+                </Link> 
               </p>
             </div>
 
