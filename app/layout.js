@@ -4,6 +4,7 @@ import '../assets/styles/globals.css'
 import StoreProvider from "@/redux/provider/StoreProvider"
 import AuthProvider from "@/components/AuthProvider"
 import toast, { Toaster } from 'react-hot-toast';
+import Footer from "@/components/Footer"
 
 
 // Create Meta Data
@@ -28,6 +29,7 @@ const MainLayout = ({children}) => {
           </StoreProvider>
           <Toaster position="top-center" />
           <main>{children}</main>
+          <Footer />
         </body>
        
       </html>

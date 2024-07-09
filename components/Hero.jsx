@@ -8,14 +8,14 @@ const Hero = () => {
       <section
         className="relative bg-slate-700 py-20 mb-4 h-[74vh]"
         style={{
-          backgroundImage: "url('/images/Sauna_Image_1-unsplash.jpg')",
+          backgroundImage: "url('/images/staging/PureCubeNeptuneClear.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:h-[70%] h-[88%] justify-center items-center">
           <div className="text-center">
-            <h1 className="text-4xl text-white font-thin sm:text-5xl md:text-6xl">
+            <h1 className="text-4xl text-black/80 font-thin sm:text-5xl md:text-6xl">
               Premium Cedar Saunas
             </h1>
             {/* <p className="my-4 text-xl  text-white font-semi-bold">
