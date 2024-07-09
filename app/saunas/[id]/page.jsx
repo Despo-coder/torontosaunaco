@@ -7,7 +7,7 @@ import SaunaDetails from "@/components/SaunaDetails";
 import Spinner from "@/components/Spinner";
 import ShareButtons from "@/components/ShareButtons";
 import toast from "react-hot-toast";
-import { set } from "mongoose";
+
 
 
 
