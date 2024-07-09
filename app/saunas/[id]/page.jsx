@@ -3,17 +3,20 @@ import { useState, useEffect } from "react"
 import { useParams } from "next/navigation"
 import { fetchProduct } from "@/assets/utils/request";
 import SaunaHeaderImage from "@/components/SaunaHeaderImage";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import SaunaDetails from "@/components/SaunaDetails";
 import Spinner from "@/components/Spinner";
 import ShareButtons from "@/components/ShareButtons";
+import toast from "react-hot-toast";
+import { set } from "mongoose";
+
 
 
 const SaunaPage = () => {
   const { id } = useParams()
   const [product, setProduct] = useState(null)
   const [loading, setLoading] = useState(true)
+  const [emailresult, setEmailResult] = useState({})
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
     const fetchData = async () => {
@@ -32,6 +35,7 @@ const SaunaPage = () => {
     if(product === null){
       fetchData()
   }
+  setMounted(true)
   
   }, [id, product])
 
@@ -42,7 +46,45 @@ const SaunaPage = () => {
   }
 
 
-  return (
+  const sendEmails = async (e) =>{
+    e.preventDefault(); // Prevent form from submitting the traditional way
+    setLoading(true);
+  
+    const formData = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      phone: e.target.phone.value,
+      message: e.target.message.value,
+      subject: product.name
+    };
+
+    try {
+      const res = await fetch('/api/emails', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+        
+      });
+
+      const data = await res.json();
+      console.log(data)
+      if (data.message='Email sent successfully!') {
+        //const { toast } = await import('react-hot-toast');
+        toast.success('Email sent successfully!', { duration: 2700 });
+      } else {
+        toast.error('Error sending email. Please try again later.', { duration: 2700 });
+      }
+      setEmailResult(data);
+      setLoading(false);
+    } catch (error) {
+      console.error('Error sending emails:', error);
+      setLoading(false);
+    }
+  
+  }
+  return mounted && (
     <div>
      {loading && <Spinner loading={loading} /> }
     {!loading && product && (
@@ -65,7 +107,9 @@ const SaunaPage = () => {
          <SaunaDetails product={product} />
 
           {/* <!-- Sidebar --> */}
-          <aside className="space-y-4">       
+          <aside className="space-y-4">    
+           
+            {loading && <Spinner loading={loading} /> }  
             <button
               className="bg-slate-700 hover:bg-slate-600 text-white font-bold w-3/4 mx-auto py-2 px-4 rounded-xl flex items-center justify-center"
             >
@@ -77,7 +121,7 @@ const SaunaPage = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-2">Need More Information ?</h3>
               <p className="mb-4">Get in touch with us, send us an email.</p>
-              <form>
+              <form onSubmit={sendEmails}>
               <div className='mb-4'>
                 <label
                   className='block text-gray-700 text-sm font-bold mb-2'
@@ -139,6 +183,7 @@ const SaunaPage = () => {
                   <button
                     className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline flex items-center justify-center"
                     type="submit"
+                    
                   >
                     <i className="fas fa-paper-plane mr-2"></i> Send Message
                   </button>

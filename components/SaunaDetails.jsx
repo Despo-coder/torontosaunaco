@@ -109,12 +109,12 @@ const SaunaDetails = ({product}) => {
             </div>
         {stoveType ? (   <p className="max-w-[20rem] text-center">
              This <span className="font-bold">{stoveType}</span> will add ${stovePrices[stoveType].price}.00 to the subtotal.
-            </p>) :(<p>Choose from our wide array of stoves.</p>)}
+            </p>) :''}
     
            
           </div>
           {/* <!-- Item 2 --> */}
-          <div className="flex flex-col items-center space-y-2 md:w-1/2 ">
+          {woodPrices ? ( <div className="flex flex-col items-center space-y-2 md:w-1/2 ">
             <div className="flex items-center justify-center h-24 mb-6">
               <h2>Select From Various Wood Types</h2>
               {/* <Image src="/images/neptune.png" alt="" height={50} width={50} /> */}
@@ -152,7 +152,8 @@ const SaunaDetails = ({product}) => {
             {/* <p class="max-w-[20rem] text-center">
              This <span className="font-bold">{woodType}</span> will add ${woodPrices[woodType]}.00 to the subtotal.
             </p> */}
-          </div>
+          </div>):''}
+         
         </div>
 
         {/* <!-- Second Row --> */}
@@ -162,7 +163,7 @@ const SaunaDetails = ({product}) => {
           {/* <!-- Item 3 --> */}
           {product.views && ( <div className="flex flex-col items-center space-y-2 md:w-1/2 ">
             <div className="flex items-center justify-center h-24 mb-6">
-              <h2>Select From Various Wood Types</h2>
+              <h2>Choose Prefered Window Prefernce</h2>
             
               
             </div>
@@ -199,9 +200,9 @@ const SaunaDetails = ({product}) => {
           </div>)}
          
           {/* <!-- Item 4 --> */}
-          <div className="flex flex-col items-center space-y-2 md:w-1/2 ">
+          {product.installation &&  <div className="flex flex-col items-center space-y-2 md:w-1/2 ">
             <div className="flex items-center justify-center h-24 mb-6">
-              <h2>Select From Various Wood Types</h2>
+              <h2>Choose Prefered Installation</h2>
               {/* <Image src="/images/neptune.png" alt="" height={50} width={50} /> */}
               
             </div>
@@ -237,7 +238,8 @@ const SaunaDetails = ({product}) => {
             {/* <p class="max-w-[20rem] text-center">
              This <span className="font-bold">{woodType}</span> will add ${woodPrices[woodType]}.00 to the subtotal.
             </p> */}
-          </div>
+          </div>}
+         
         </div>
       </div>
     </section>
@@ -258,13 +260,13 @@ const SaunaDetails = ({product}) => {
               </p>
               {/* Horizontal Line */}
               <hr className="my-6 border-gray-200" />
-              <p className="text-gray-500 mb-4">
+             
               <Link href={`/saunas/${product.type}`}
                     className="fa-solid fa-location-dot text-lg text-orange-700"
                  >
               <h6 className="text-orange-500 text-sm"> See more {product.collectionType} Saunas </h6>
                 </Link> 
-              </p>
+              
             </div>
 
             {/* <div className="bg-white p-6 rounded-lg shadow-md mt-6">

@@ -3,8 +3,7 @@ import Navbar from "@/components/Navbar"
 import '../assets/styles/globals.css'
 import StoreProvider from "@/redux/provider/StoreProvider"
 import AuthProvider from "@/components/AuthProvider"
-import Providers from "@/components/Providers"
-import { getCldOgImageUrl } from 'next-cloudinary';
+import toast, { Toaster } from 'react-hot-toast';
 
 
 // Create Meta Data
@@ -16,11 +15,7 @@ export const metadata = {
     url: "https://torontosaunaco.com",
     twitterHandle: "@torontosaunaco",
     twitterCardType: "summary_large_image",
-    // openGraph: {
-    //   images: getCldOgImageUrl({
-    //     src: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME
-    //   })
-    // }
+   
 };
 
 const MainLayout = ({children}) => {
@@ -31,9 +26,12 @@ const MainLayout = ({children}) => {
           <StoreProvider>
           <Navbar />
           </StoreProvider>
+          <Toaster position="top-center" />
           <main>{children}</main>
         </body>
+       
       </html>
+    
       </AuthProvider>
    
        )
