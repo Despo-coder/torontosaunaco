@@ -35,8 +35,8 @@ const Quote = () => {
           },
           body: JSON.stringify(formData)
         });
-        const data = await res.json();
-        if (data.message='Email sent successfully!') {
+        const dataResponse = await res.json();
+        if (dataResponse.message='Email sent successfully!') {
           toast.success('Email sent successfully!', { duration: 2700 });
           // setTimeout(() => {
           //   router.push('/saunas');
