@@ -1,85 +1,58 @@
 'use client'
-import { useState } from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay, FreeMode, Navigation, Thumbs } from 'swiper/modules'
-import Image from 'next/image';
-import 'swiper/css'
-import 'swiper/css/free-mode'
-import 'swiper/css/navigation'
-import 'swiper/css/thumbs'
-import 'swiper/css/autoplay'
+import Image from 'next/image'
+import React, { useCallback } from 'react'
+import useEmblaCarousel from 'embla-carousel-react'
+import Autoplay from 'embla-carousel-autoplay'
 
-const SaunaHeaderImage = ({images}) => {
+const SaunaHeaderImage = ({ images }) => {
+  const options = { loop: true };
 
-const [thumbsSwiper, setThumbsSwiper] = useState(null)
-const shouldLoop = images.length > 1
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    options, [Autoplay()]
+  );
+
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev()
+  }, [emblaApi]);
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext()
+  }, [emblaApi]);
 
   return (
-    <>
-    <section>
-      <div className='container mx-auto'>
-        <Swiper
-          loop={shouldLoop}
-          spaceBetween={12}
-          navigation={true}
-          thumbs={{
-            swiper:
-              thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null
-          }}
-          modules={[FreeMode, Navigation, Thumbs, Autoplay]}
-          className='mt-1 h-[250px] w-1/3 rounded-lg'
-        >
+    <div className='embla mt-12 max-w-4xl '>
+      <div className='embla__viewport h-[400px] w-full  ' ref={emblaRef}>
+        <div className='embla__container h-full'>
           {images.map((image, index) => (
-            <SwiperSlide key={index}>
-              <div className='flex h-full w-full items-center justify-center bg-slate-700 rounded-xl shadow-xl'>
-               
-                <Image
-                  src={image}
-                  alt={image}
-                  width={300}
-                  height={300}
-                  priority={true}
-                  className='rounded-xl border-4 border-white'
-                />
-              
-                
-              </div>
-            </SwiperSlide>
+            <div key={index} className='embla__slide'>
+              <Image 
+                src={image}
+                height={400}
+                width={600}
+                priority={true}
+                alt='Sauna Image'
+                style={{ objectFit: 'contain' }} // Ensure images are not cut
+              />
+            </div>
           ))}
-        </Swiper>
-
-        {/* Thumbnail */}
-        <Swiper
-          onSwiper={setThumbsSwiper}
-          loop={shouldLoop}
-          spaceBetween={6}
-          slidesPerView={5}
-          freeMode={true}
-          watchSlidesProgress={true}
-          modules={[FreeMode, Navigation, Thumbs]}
-          className='thumbs mt-1 h-32 w-full rounded-lg'
-        >
-          {images.map((image, index) => (
-            <SwiperSlide key={index}>
-              <div className='flex h-full w-full items-center gap-4 justify-between '>
-              <button >
-                <Image
-                  src={image}
-                  alt={image}
-                  width={0}
-                  height={0}
-                  sizes='25vh'
-                  className='block h-full w-full object-cover rounded-xl shadow-xl'
-                />
-              </button>
-              </div>
-             
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        </div>
       </div>
-    </section>     
-    </>
+
+      <div className='mt-3 flex justify-between'>
+        <button
+          className='w-20 bg-black px-2 py-1 text-sm text-white'
+          onClick={scrollPrev}
+        >
+          Prev
+        </button>
+        <button
+          className='w-20 bg-black px-2 py-1 text-sm text-white'
+          onClick={scrollNext}
+        >
+          Next
+        </button>
+      </div>
+    </div>
   )
 }
 

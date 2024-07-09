@@ -3,6 +3,9 @@ import Accessories from "@/models/Accessories";
 import { getUserSession } from "@/assets/utils/getServerSession";
 
 // GET API Handler - /api/products
+
+export const dynamic = 'force-dynamic';
+
 export const GET = async (req, res) => {
 
 try {

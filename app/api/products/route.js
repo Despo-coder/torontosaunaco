@@ -4,6 +4,8 @@ import connectDB from "@/config/db";
 import Products from "@/models/Products";
 import { getUserSession } from "@/assets/utils/getServerSession";
 
+
+export const dynamic = 'force-dynamic';
 // GET API Handler - /api/products
 export const GET = async (req, res) => {
 
