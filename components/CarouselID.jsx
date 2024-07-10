@@ -6,7 +6,8 @@ import { FaAngleRight } from "react-icons/fa";
 import { FaAngleLeft } from "react-icons/fa";
 import Image from 'next/image';
 
-const Carousel1 = () => {
+const Carousel1 = ({images}) => {
+    
   const options = { loop: true };
   const [emblaRef, emblaApi] = useEmblaCarousel(
     options, [Autoplay({
@@ -27,10 +28,20 @@ const Carousel1 = () => {
     <div className='relative embla'>
       <div className="embla__viewport mb-24 mx-auto mt-12 w-full md:w-2/3 lg:w-1/2 h-[300px] md:h-[400px] lg:h-[500px] rounded-xl" ref={emblaRef}>
         <div className="embla__container h-full">
-          <div className="embla__slide flex items-center justify-center">
-            <Image src='/SliderImages/7x10wCR.jpg' width={0} height={0} sizes='100vw' alt='Slide Image' className="rounded-xl object-cover h-full w-full" />
-          </div>
-          <div className="embla__slide flex items-center justify-center">
+        {images.map((image, index) => (
+  <div key={index} className="embla__slide flex items-center justify-center">
+    <Image
+      src={image}
+      width={0}
+      height={0}
+      sizes="100vw"
+      alt={`Slide Image ${index + 1}`}
+      className="rounded-xl object-cover h-full w-full"
+    />
+  </div>
+))}
+         
+          {/* <div className="embla__slide flex items-center justify-center">
             <Image src='/SliderImages/7x10wP.jpg' width={0} height={0} sizes='100vw' alt='Slide Image' className="rounded-xl object-cover h-full w-full" />
           </div>
           <div className="embla__slide flex items-center justify-center">
@@ -44,7 +55,7 @@ const Carousel1 = () => {
           </div>
           <div className="embla__slide flex items-center justify-center">
             <Image src='/SliderImages/CLASSIC6x6.jpg' width={0} height={0} sizes='100vw' alt='Slide Image' className="rounded-xl object-cover h-full w-full" />
-          </div>
+          </div> */}
         </div>
       </div>
 

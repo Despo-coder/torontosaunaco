@@ -1,4 +1,4 @@
-import ProductCard from "./ProductCard"
+import SwiperSlides from "./SwiperSlides"
 import Link from "next/link"
 import { Button } from "./ui/button"
 import {fetchProducts} from "@/assets/utils/request"
@@ -6,7 +6,7 @@ import {fetchProducts} from "@/assets/utils/request"
 const HomePageProducts = async () => {
 
     const product = await fetchProducts()
-    const recentProducts = product. filter((product)=> product.type !=='Cold Plunge').sort((a, b) => Math.random() - 0.5).slice(0, 10);
+    const recentProducts = product.filter((product)=> product.type !=='Cold Plunge').sort((a, b) => Math.random() - 0.5).slice(0, 10);
     //console.log(recentProducts)
   return (
     <>
@@ -18,7 +18,7 @@ const HomePageProducts = async () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
 {recentProducts === 0 ? (<p>No Products found</p>):
 recentProducts.map((product, i)=>(
-    <ProductCard  key={i} product= {product} />
+    <SwiperSlides key={i} product= {product} />
 ))
 
 }

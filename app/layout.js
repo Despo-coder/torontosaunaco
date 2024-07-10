@@ -1,6 +1,7 @@
 import logo from "@/assets/images/tsc_logo_black.jpg"
 import Navbar from "@/components/Navbar"
 import '../assets/styles/globals.css'
+import 'photoswipe/dist/photoswipe.css';
 import StoreProvider from "@/redux/provider/StoreProvider"
 import AuthProvider from "@/components/AuthProvider"
 import toast, { Toaster } from 'react-hot-toast';

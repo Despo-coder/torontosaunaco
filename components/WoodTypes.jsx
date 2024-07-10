@@ -26,14 +26,6 @@ const WoodTypes = () => {
             {woodData.map((wood, index) => (
               <div className="w-full md:w-1/3 px-4 mb-8 md:mb-0" key={index}>
                 <div className="text-center">
-                  {/* <Image
-                    src={wood.image}
-                    alt={wood.title}
-                    className="mb-4 mx-auto rounded-xl object-cover"
-                    width={230}
-                    height={230}
-                    sizes="100vw"
-                  /> */}
                  <h3 className="text-xl font-bold mb-2 font-playfair">{wood.title}</h3>
                  <p className="text-gray-700 font-roboto">{wood.description}</p>
                 <div className=" w-full border border-gray-400 my-4" />
