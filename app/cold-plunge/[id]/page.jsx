@@ -3,16 +3,16 @@ import { useState, useEffect } from "react"
 import { useParams } from "next/navigation"
 import { fetchProduct } from "@/assets/utils/request";
 import SaunaHeaderImage from "@/components/SaunaHeaderImage";
-import CarouselID from "@/components/CarouselID";
-import SaunaDetails from "@/components/SaunaDetails";
+import ColdPlungeDetails from "@/components/ColdPlungeDetails";
 import Spinner from "@/components/Spinner";
 import ShareButtons from "@/components/ShareButtons";
 import toast from "react-hot-toast";
+import ColdPlunge from "../page";
 
 
 
 
-const SaunaPage = () => {
+const ColdPlungePage = () => {
   const { id } = useParams()
   const [product, setProduct] = useState(null)
   const [loading, setLoading] = useState(true)
@@ -90,8 +90,7 @@ const SaunaPage = () => {
      {loading && <Spinner loading={loading} /> }
     {!loading && product && (
       <>
-      {/* <ProductImages images={product.images} /> */}
-      <CarouselID images={product.images} />
+      <SaunaHeaderImage images={product.images} />
       <section>
         {/* <div className="container m-auto py-6 px-6">
           <Link href="/saunas">
@@ -106,7 +105,7 @@ const SaunaPage = () => {
       <section className="">
       <div className="container m-auto py-10 px-6">
         <div className="grid grid-cols-1 md:grid-cols-70/30 w-full gap-6">
-         <SaunaDetails product={product} />
+         <ColdPlungeDetails product={product} />
 
           {/* <!-- Sidebar --> */}
           <aside className="space-y-4">    
@@ -202,4 +201,4 @@ const SaunaPage = () => {
   )
 }
 
-export default SaunaPage
+export default ColdPlungePage

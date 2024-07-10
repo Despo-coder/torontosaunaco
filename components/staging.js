@@ -229,6 +229,8 @@ const SaunaAddFormPage = () => {
           </button>
         </form>
       </div>
+
+    
     );
   };
   export default SaunaAddFormPage

@@ -4,6 +4,7 @@ import React, { useCallback } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 
+
 const SaunaHeaderImage = ({ images }) => {
   const options = { loop: true };
 
