@@ -35,7 +35,7 @@ useEffect(() => {
  
 
     return (  
-    <nav className=" bg-black  py-12 ">
+    <nav className=" bg-black/90 py-12 ">
 
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div className="relative flex h-20 items-center justify-between">
@@ -91,7 +91,7 @@ useEffect(() => {
             <div className="flex space-x-2 mt-12">
               <Link
                 href="/"
-                className={`${pathname === '/' ?'bg-white text-gray-900' : ''} " text-white  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
+                className={`${pathname === '/' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
                 >Home</Link
               >
               
@@ -103,7 +103,7 @@ useEffect(() => {
         >
           <Link
             href="/saunas"
-            className={`${pathname === '/saunas' ? 'bg-white text-gray-900' : ''} text-white hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1 inline-flex items-center`}
+            className={`${pathname === '/saunas' ? 'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
             style={{ marginTop: '1px' }}
           >
             Saunas
@@ -157,17 +157,17 @@ useEffect(() => {
         </div>
               <Link
                 href="/cold-plunge"
-                className={`${pathname === '/cold-plunge' ?'bg-white text-gray-900' : ''} " text-white  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
+                className={`${pathname === '/cold-plunge' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
                 >Cold Plunge</Link
               >
               <Link
                 href="/quote"
-                className={`${pathname === '/quote' ?'bg-white text-gray-900' : ''} " text-white  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
+                className={`${pathname === '/quote' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
                 >Get a Quote</Link
               >
               {session?.user.isAdmin && session &&( <Link
                 href="/quote"
-                className={`${pathname === '/quote' ?'bg-white text-gray-900' : ''} " text-white  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
+                className={`${pathname === '/quote' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
                 >Admin</Link
               >)}
              
@@ -327,7 +327,7 @@ useEffect(() => {
           <div className=" mt-6 flex flex-col space-y-1 px-2 pb-3 pt-2">
               <Link
                 href="/"
-                className={`${pathname === '/' ?'bg-white text-gray-900' : ''} " text-white  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
+                className={`${pathname === '/' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
                 // className={`${pathname === '/' ?'bg-gray-900 text-white' : ''} " text-white  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
                 >Home</Link
               >
@@ -338,7 +338,7 @@ useEffect(() => {
         >
           <Link
             href="/saunas"
-            className={`${pathname === '/saunas' ? 'bg-white text-gray-900' : ''} text-white hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1 inline-flex items-center`}
+            className={`${pathname === '/saunas' ? 'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
             style={{ marginTop: '1px' }}
           >
             Saunas
@@ -393,17 +393,17 @@ useEffect(() => {
             
               <Link
                 href="/cold-plunge"
-                className={`${pathname === '/cold-plunge' ?'bg-white text-gray-900' : ''} " text-white  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
+                className={`${pathname === '/cold-plunge' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
                 >Cold Plunge</Link
               >
               <Link
                 href="/quote"
-                className={`${pathname === '/quote' ?'bg-white text-gray-900' : ''} " text-white  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
+                className={`${pathname === '/quote' ?'bg-white text-gray-900' : ''} " bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
                 >Get A Quote</Link
               >
               {session?.user.isAdmin && session &&( <Link
                 href="/quote"
-                className={`${pathname === '/quote' ?'bg-white text-gray-900' : ''} " text-white  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
+                className={`${pathname === '/quote' ?'bg-white text-gray-900' : ''} " bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
                 >Admin</Link
               >)}
               {/* <span
