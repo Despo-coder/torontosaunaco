@@ -6,7 +6,7 @@ const Hero = () => {
     <div>
 
       <section
-        className="relative bg-slate-700 py-20 mb-4 h-[74vh]"
+        className="relative bg-slate-700 py-20 mb-4 h-[74vh] mt-8"
         style={{
           backgroundImage: "url('/images/staging/PureCubeNeptuneClear.png')",
           backgroundSize: "cover",

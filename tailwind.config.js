@@ -19,6 +19,8 @@ module.exports = {
     extend: {
      fontFamily: {
       sans: ["Poppins", "sans-serif"],
+      playfair: ['"Playfair Display"', 'serif'],
+        roboto: ['Roboto', 'sans-serif'],
      },
      gridTemplateColumns: {
 '70/30': '70% 28%',

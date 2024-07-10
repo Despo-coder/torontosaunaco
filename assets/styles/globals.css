@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.embla {
-  width: 80%; /* Adjust this percentage to make it wider */
+/* .embla {
+  width: 80%; 
   margin: auto;
   margin-top: 3px;
   border-radius: 0.75rem;
@@ -21,9 +21,26 @@
   flex: 0 0 100%;
   min-width: 0;
   display: flex;
-  justify-content: center; /* Center the image */
-  align-items: center; /* Center the image vertically */
+  justify-content: center; 
+  align-items: center; 
+} */
+
+.embla {
+  width: 100%; 
 }
+
+.embla__viewport {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+
 
 /* :root {
   --foreground-rgb: 0, 0, 0;
