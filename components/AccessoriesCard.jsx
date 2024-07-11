@@ -7,6 +7,24 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+import { Button } from "./ui/button"
+import { addToCart } from "@/redux/slices/cartSlice"
+
+
+const handleSubmit = async () => {
+ console.log("Here")
+  const data = {
+    // name: e.target.name.value,
+    // email: e.target.email.value,
+    // phone: e.target.phone.value,
+    // message: e.target.message.value,
+    // subject: product.name,
+     id: product._id,
+     name: product.name,
+     price: product.price,
+  }
+  console.log(data)
+}
 
 const AccessoriesCard = ({ product }) => {
   return (
@@ -51,10 +69,11 @@ const AccessoriesCard = ({ product }) => {
 
         {/* Links */}
         <div className="flex flex-col items-center gap-2">
-         
-          <Link href={`/`} className="h-[36px] bg-slate-700 hover:bg-slate-800 text-white px-4 py-2 rounded-xl text-center text-sm">
+         <Button type='submit' variant="secondary" className="bg-slate-700 text-white rounded-xl hover:bg-slate-800" onSubmit={handleSubmit}>
+           <Link href={`#`} >
             Add To Cart
-          </Link>
+           </Link>
+           </Button>
         </div>
       </div>
     </div>

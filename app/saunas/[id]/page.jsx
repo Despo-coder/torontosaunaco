@@ -2,18 +2,22 @@
 import { useState, useEffect } from "react"
 import { useParams } from "next/navigation"
 import { fetchProduct } from "@/assets/utils/request";
-import SaunaHeaderImage from "@/components/SaunaHeaderImage";
-import CarouselID from "@/components/CarouselID";
+import CarouselDynamic from "@/components/CarouselID";
 import SaunaDetails from "@/components/SaunaDetails";
 import Spinner from "@/components/Spinner";
 import ShareButtons from "@/components/ShareButtons";
 import toast from "react-hot-toast";
+import { useRouter } from "next/navigation";
 
 
+// const dataFile = {
+//   ids: ['668f1df5662a799cce869d64','668f1df5662a799cce869d63','668f1df5662a799cce869d62','668f1df5662a799cce869d61','668f1df5662a799cce869d60'],
+// }
 
 
 const SaunaPage = () => {
   const { id } = useParams()
+  const router = useRouter()
   const [product, setProduct] = useState(null)
   const [loading, setLoading] = useState(true)
   const [emailresult, setEmailResult] = useState({})
@@ -27,6 +31,7 @@ const SaunaPage = () => {
         const data = await fetchProduct(id)
         setProduct(data)
         //setLoading(false)
+       
       } catch (error) {
         console.error(error)
       } finally{
@@ -37,14 +42,26 @@ const SaunaPage = () => {
       fetchData()
   }
   setMounted(true)
+
+ 
   
   }, [id, product])
+  
+
+  
 
   if(!product && !loading ){
     return(
       <p className="text-center">Product not found</p>
     )
   }
+
+
+  const images = product?.images.map(image => ({
+    id: product._id, // Assuming each image should have the same product ID
+    image
+  })) || [];
+
 
 
   const sendEmails = async (e) =>{
@@ -85,22 +102,16 @@ const SaunaPage = () => {
     }
   
   }
+  // 
   return mounted && (
     <div>
      {loading && <Spinner loading={loading} /> }
     {!loading && product && (
       <>
       {/* <ProductImages images={product.images} /> */}
-      <CarouselID images={product.images} />
+      <CarouselDynamic images={images} />
       <section>
-        {/* <div className="container m-auto py-6 px-6">
-          <Link href="/saunas">
-            <Button variant="secondary" className="bg-slate-700 text-white rounded-xl hover:bg-slate-800">
-            Back to Saunas
-            </Button>
-           
-            </Link>
-        </div> */}
+        
       </section>
 
       <section className="">
