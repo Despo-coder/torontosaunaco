@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image';
 import Link from 'next/link';
-import logo from "@/assets/images/tsc_logo_white.jpg"
+import logo from "@/assets/images/new_logo_1.jpg"
 import defaultImage from "@/assets/images/profile.png"
 import { Button } from './ui/button';
 import { useState , useEffect} from 'react';
@@ -35,7 +35,7 @@ useEffect(() => {
  
 
     return (  
-    <nav className=" bg-black/90 py-12 ">
+    <nav className=" bg-black py-12 ">
 
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div className="relative flex h-20 items-center justify-between">
@@ -88,28 +88,34 @@ useEffect(() => {
           </Link>
           {/* <!-- Desktop Menu Hidden below md screens --> */}
           <div className="hidden md:ml-6 md:block">
-            <div className="flex space-x-2 mt-12">
+            <div className="flex space-x-2 mt-9">
               <Link
                 href="/"
-                className={`${pathname === '/' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
+                className={`${pathname === '/' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[8px]"`}
                 >Home</Link
               >
               
                 
-              <div
+         
+           <Link
+            href="/saunas"
+            className={`${pathname === '/saunas' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[8px]"`}
+          onMouseEnter={() => setShowDropdown(true)}
+          onClick={() => setShowDropdown(false)}
+          
+          >
+            
+            Saunas
+          </Link>
+           
+          
+          <div
           className="relative"
           onMouseEnter={() => setShowDropdown(true)}
           onMouseLeave={() => setShowDropdown(false)}
         >
-          <Link
-            href="/saunas"
-            className={`${pathname === '/saunas' ? 'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
-            style={{ marginTop: '1px' }}
-          >
-            Saunas
-          </Link>
           {showDropdown && (
-            <div className="absolute left-0 mt-[-1px] w-48 bg-white shadow-lg rounded-xl z-10">
+            <div className="absolute left-[-100px] mt-[25px] w-48 bg-white shadow-lg rounded-xl z-10">
               <Link
                 href="/saunas/cube"
                 className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
@@ -145,29 +151,30 @@ useEffect(() => {
              >
                 Indoor Saunas
               </Link>
-              <Link
+              
+            </div>
+          )}
+        </div>
+        <Link
                 href="/accessories"
-                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                className={`${pathname === '/accessories' ? 'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[8px]"`}
                 onClick={() => setShowDropdown(false)}
              >
                Accessories
               </Link>
-            </div>
-          )}
-        </div>
               <Link
                 href="/cold-plunge"
-                className={`${pathname === '/cold-plunge' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
+                className={`${pathname === '/cold-plunge' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px]"`}
                 >Cold Plunge</Link
               >
               <Link
                 href="/quote"
-                className={`${pathname === '/quote' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
+                className={`${pathname === '/quote' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px]"`}
                 >Get a Quote</Link
               >
               {session?.user.isAdmin && session &&( <Link
                 href="/quote"
-                className={`${pathname === '/quote' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
+                className={`${pathname === '/quote' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px]"`}
                 >Admin</Link
               >)}
              
