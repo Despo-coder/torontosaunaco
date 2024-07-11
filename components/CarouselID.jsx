@@ -5,9 +5,13 @@ import Autoplay from 'embla-carousel-autoplay'
 import { FaAngleRight } from "react-icons/fa";
 import { FaAngleLeft } from "react-icons/fa";
 import Image from 'next/image';
+import Link from 'next/link';
 
-const Carousel1 = ({images}) => {
-    
+const CarouselDynamic = ({images}) => {
+  
+  //const test = Object.values(images).map(p => p.images)
+  //console.log(images)
+  //  console.log(test)
   const options = { loop: true };
   const [emblaRef, emblaApi] = useEmblaCarousel(
     options, [Autoplay({
@@ -30,35 +34,20 @@ const Carousel1 = ({images}) => {
         <div className="embla__container h-full">
         {images.map((image, index) => (
   <div key={index} className="embla__slide flex items-center justify-center">
+    <Link href={`/saunas/${image.id}`}>
     <Image
-      src={image}
-      width={0}
-      height={0}
+      src={image.image}
+      width={250}
+      height={250}
       sizes="100vw"
       alt={`Slide Image ${index + 1}`}
       className="rounded-xl object-cover h-full w-full"
     />
+    </Link>
   </div>
 ))}
-         
-          {/* <div className="embla__slide flex items-center justify-center">
-            <Image src='/SliderImages/7x10wP.jpg' width={0} height={0} sizes='100vw' alt='Slide Image' className="rounded-xl object-cover h-full w-full" />
-          </div>
-          <div className="embla__slide flex items-center justify-center">
-            <Image src='/SliderImages/7x11-classic_900.jpg' width={0} height={0} sizes='100vw' alt='Slide Image' className="rounded-xl object-cover h-full w-full" />
-          </div>
-          <div className="embla__slide flex items-center justify-center">
-            <Image src='/SliderImages/7x12wCR.jpg' width={0} height={0} sizes='100vw' alt='Slide Image' className="rounded-xl object-cover h-full w-full" />
-          </div>
-          <div className="embla__slide flex items-center justify-center">
-            <Image src='/SliderImages/7x12WP.jpg' width={0} height={0} sizes='100vw' alt='Slide Image' className="rounded-xl object-cover h-full w-full" />
-          </div>
-          <div className="embla__slide flex items-center justify-center">
-            <Image src='/SliderImages/CLASSIC6x6.jpg' width={0} height={0} sizes='100vw' alt='Slide Image' className="rounded-xl object-cover h-full w-full" />
-          </div> */}
-        </div>
       </div>
-
+      </div>
       <div className="absolute inset-x-0 bottom-1/2 flex justify-between md:flex-col md:top-1/2 md:left-[20px] md:transform md:-translate-y-1/2 md:inset-x-auto lg:flex-col lg:top-1/2 lg:left-[20px] lg:transform lg:-translate-y-1/2 lg:inset-x-auto">
         <button onClick={scrollPrev}>
           <FaAngleLeft size={40} className='text-[#FFA726]'/>
@@ -72,4 +61,4 @@ const Carousel1 = ({images}) => {
     </div>
   )
 }
-export default Carousel1
+export default CarouselDynamic
