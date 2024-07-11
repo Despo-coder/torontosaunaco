@@ -22,18 +22,18 @@ const WoodTypes = () => {
       
       return (
         <section className="wood-types py-[120px] bg-gray-100">
-          <div className="container mx-auto flex flex-wrap">
-            {woodData.map((wood, index) => (
-              <div className="w-full md:w-1/3 px-4 mb-8 md:mb-0" key={index}>
-                <div className="text-center">
-                 <h3 className="text-xl font-bold mb-2 font-playfair">{wood.title}</h3>
-                 <p className="text-gray-700 font-roboto">{wood.description}</p>
-                <div className=" w-full border border-gray-400 my-4" />
-                </div>
+        <div className="container mx-auto flex flex-wrap">
+          {woodData.map((wood, index) => (
+            <div className="w-full md:w-1/3 px-4 mb-8 md:mb-0" key={index}>
+              <div className="text-center flex flex-col h-full">
+                <h3 className="text-xl font-bold mb-2 font-playfair">{wood.title}</h3>
+                <p className="text-gray-700 font-roboto flex-grow">{wood.description}</p>
+                <div className="w-full border border-gray-400 mt-4" />
               </div>
-            ))}
-          </div>
-        </section>
+            </div>
+          ))}
+        </div>
+      </section>
       );
     }
 export default WoodTypes;
