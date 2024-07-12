@@ -7,7 +7,7 @@ import SaunaDetails from "@/components/SaunaDetails";
 import Spinner from "@/components/Spinner";
 import ShareButtons from "@/components/ShareButtons";
 import toast from "react-hot-toast";
-import { useRouter } from "next/navigation";
+
 
 
 // const dataFile = {
@@ -17,7 +17,6 @@ import { useRouter } from "next/navigation";
 
 const SaunaPage = () => {
   const { id } = useParams()
-  const router = useRouter()
   const [product, setProduct] = useState(null)
   const [loading, setLoading] = useState(true)
   const [emailresult, setEmailResult] = useState({})

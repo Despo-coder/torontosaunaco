@@ -7,26 +7,33 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
-import { Button } from "./ui/button"
+import { button } from "./ui/button"
 import { addToCart } from "@/redux/slices/cartSlice"
+import { useDispatch } from "react-redux"
 
 
-const handleSubmit = async () => {
- console.log("Here")
-  const data = {
-    // name: e.target.name.value,
-    // email: e.target.email.value,
-    // phone: e.target.phone.value,
-    // message: e.target.message.value,
-    // subject: product.name,
+
+
+const AccessoriesCard = ({ product }) => {
+  const dispatch = useDispatch(); 
+
+  const handleSubmit = async () => {
+ 
+    
+    const data = {
      id: product._id,
      name: product.name,
      price: product.price,
-  }
-  console.log(data)
-}
+     image: product.image,
+     qty:1
+   };
+   
+   dispatch(addToCart(data));
+   console.log(data)
+   }
+  
 
-const AccessoriesCard = ({ product }) => {
+
   return (
     <div className="p-4">
       <div className="grid grid-cols-1 gap-2">
@@ -68,12 +75,18 @@ const AccessoriesCard = ({ product }) => {
         </div>
 
         {/* Links */}
-        <div className="flex flex-col items-center gap-2">
-         <Button type='submit' variant="secondary" className="bg-slate-700 text-white rounded-xl hover:bg-slate-800" onSubmit={handleSubmit}>
-           <Link href={`#`} >
+        <div className="flex justify-center items-center gap-2">
+        <button type='button' variant="secondary" className="bg-black text-white rounded-xl py-2 px-2 hover:bg-slate-800" onClick={handleSubmit}>
             Add To Cart
-           </Link>
-           </Button>
+          </button>
+          <Link href={'/cart'}>
+          <button type='button' variant="secondary" className="bg-black text-white rounded-xl py-2 px-2 hover:bg-slate-800" >
+            View Cart
+          </button>
+        </Link>
+        {/* <button type='button' variant="secondary" className="bg-slate-700 text-white rounded-xl py-2 px-2 hover:bg-slate-800" >
+            View Cart
+          </button> */}
         </div>
       </div>
     </div>
