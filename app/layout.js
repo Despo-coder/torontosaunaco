@@ -23,7 +23,7 @@ export const metadata = {
 const MainLayout = ({children}) => {
     return (
       <AuthProvider>
-      <html lang="en">
+      <html lang="en" suppressHydrationWarning>
         <head>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='true' />
@@ -35,9 +35,10 @@ const MainLayout = ({children}) => {
         <body>
           <StoreProvider>
           <Navbar />
-          </StoreProvider>
+        
           <Toaster position="top-center" />
           <main>{children}</main>
+          </StoreProvider>
           <Footer />
         </body>
        

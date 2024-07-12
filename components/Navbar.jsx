@@ -5,38 +5,37 @@ import logo from "@/assets/images/new_logo_1.jpg"
 import defaultImage from "@/assets/images/profile.png"
 import { Button } from './ui/button';
 import { useState , useEffect} from 'react';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { useSelector } from 'react-redux';
-import { signIn, signOut , useSession, getProviders} from 'next-auth/react';
-import { set } from 'mongoose';
+import {  signOut , useSession, getProviders} from 'next-auth/react';
+
 
 
 
 
 const Navbar = () => {
 
-  // const savedCart = JSON.parse(localStorage.getItem('cart')) || '[]';
-  // const savedCart = JSON.parse(localStorage.getItem('cart')) || [];
 
+ const router = useRouter();
   const [showDropdown, setShowDropdown] = useState(false);
-  const cartItems = useSelector((state) => state.cart);
+  const {cartItems} = useSelector((state) => state.cart);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
-  const [providers, setProviders] = useState(null);
+ 
   const [isAdmin, setIsAdmin] = useState(false);
   const pathname = usePathname();
  const { data: session } = useSession();
  const profileImage = session?.user?.image || defaultImage;
 
-useEffect(() => {
-  const setAuthProviders = async () => {
-    const res = await getProviders();
-    setProviders(res);
-  }
-  setAuthProviders();
-}
-, []);
+// useEffect(() => {
+//   const setAuthProviders = async () => {
+//     const res = await getProviders();
+//     setProviders(res);
+//   }
+//   setAuthProviders();
+// }
+// , []);
  
 
     return (  
@@ -229,40 +228,27 @@ useEffect(() => {
           </div>
 
         </div>
-
+ 
 
         {/* <!-- Right Side Menu (Logged Out) -->  */}
-        {!session && ( <div className="hidden md:block md:ml-6">
-        <div className="flex items-center ">
-        {providers && Object.values(providers).map((provider, index) => {
-          if (provider.id === 'google') {
-            return (
-              <Button
-                key={index}
-                className="flex items-center text-white bg-gray-600 hover:bg-gray-900 hover:text-white rounded-xl px-3 py-2"
-                onClick={() => signIn(provider.id)}
-              >
-                <span>Login with Google</span>
-              </Button>
-             
-            );
-          } else if (provider.id === 'credentials') {
-            return (
-              <Button
-                key={index}
-                className="flex items-center text-white bg-gray-600 hover:bg-gray-900 hover:text-white rounded-xl px-3 py-2  sm:hidden"
-                onClick={() => signIn(provider.id)}
-              >
-                <span>Login with Credentials</span>
-              </Button>
-            );
-          }
-          return null; // If there are other providers you don't want to render
-        })}
-          
-        </div>
-      </div>
-)}
+      
+<div className="hidden md:block md:ml-6">
+  <div className="flex items-center">
+    {!session ? (
+      <Link href="/signin">
+      <Button className="flex items-center text-white bg-gray-600 hover:bg-gray-900 hover:text-white rounded-xl px-3 py-2 ">
+      <span>Login/Sign-Up </span>
+    </Button>
+    </Link>
+    ):(
+      <h6 className='font-roboto text-white'>{session?.user?.email}</h6>
+    )}
+
+
+
+  </div>
+</div>
+        
        
         {/* <!-- Right Side Menu (Logged In) --> */}
         <div
@@ -270,8 +256,10 @@ useEffect(() => {
         >
           {/* <!-- Shopping Cart Button --> */}
           {!session?.user.isAdmin&& (<div className='mr-2'>
+            <Link href="/cart">
                     <HiOutlineShoppingBag className='font-bold text-white' size={38}/>
-                    <span  className="absolute top-[46px] right-[80px] md:right-[70px] inline-flex items-center justify-center px-[1px] py-[2px]  font-semibold leading-none text-white text-md transform translate-x-1/2 -translate-y-1/2 ">{cartItems.length}</span>
+                    <span  className="absolute top-[46px] right-[80px] md:right-[70px] inline-flex items-center justify-center px-[1px] py-[2px]  font-semibold leading-none text-white text-md transform translate-x-1/2 -translate-y-1/2 ">{!cartItems ? '0' : cartItems.length}</span>
+                    </Link>
                     {/*  */}
                     </div>)}
                   
@@ -453,7 +441,7 @@ useEffect(() => {
               >
               <Link
                 href="/quote"
-                className={`${pathname === '/quote' ?'bg-white text-gray-900' : ''} " bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
+                className={`${pathname === '/quote' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
                 >Get A Quote</Link
               >
               {session?.user.isAdmin && session &&( <Link
@@ -461,46 +449,16 @@ useEffect(() => {
                 className={`${pathname === '/quote' ?'bg-white text-gray-900' : ''} " bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
                 >Admin</Link
               >)}
-              {/* <span
-                className="flex mx-auto text-white bg-gray-700 hover:bg-gray-500 hover:text-white rounded-xl px-3 py-2 my-4"
-              >
-                {!session && (
-                 
-                  <span>Login or Register</span>
-                 
-                )
-              } */}
-                 {
-                  providers && Object.values(providers).map((provider, index) => 
-                    {
-                  if (provider.id === 'google') 
-                    {
-                    return (
-                      <Button
-                        key={index}
-                        className="flex items-center text-white bg-gray-600 hover:bg-gray-900 hover:text-white rounded-xl px-3 py-2"
-                        onClick={() => signIn(provider.id)}
-                      >
-                        <span>Login with Google</span>
-                      </Button>
-                    );
-                  } else if (provider.id === 'credentials') {
-                    return (
-                     <span className='hidden' key={index}>
-                      <Button
-                        key={index}
-                        className="flex items-center text-white bg-gray-600 hover:bg-gray-900 hover:text-white rounded-xl px-3 py-2  "
-                        onClick={() => signIn(provider.id)}
-                      >
-                        <span>Login with Credentials</span>
-                      </Button>
-                      </span>
-                    );
-                  }
-                  return null; // If there are other providers you don't want to render
-                })}
-              
             
+
+               {!session &&( <Link href="/signin" >
+              <Button
+              className="flex items-center w-full text-white bg-gray-600 hover:bg-gray-900 hover:text-white rounded-xl px-3 py-2"
+                >
+                        <span>Login/Sign-Up</span>
+                      </Button>
+                      </Link>)}
+             
                 
               {/* </span> */}
             </div>

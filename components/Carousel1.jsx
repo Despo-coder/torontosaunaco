@@ -11,7 +11,7 @@ useEffect(() => {
   const fetchData = async () => {
     try {
       const data = await fetchProducts()
-      console.log(data)
+      // console.log(data)
       const items = Object.values(data).filter((x)=>x.type !=='Cold Plunge').map(product => ({
         id: product._id,
         image: product.images[0]

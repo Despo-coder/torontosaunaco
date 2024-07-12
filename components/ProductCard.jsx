@@ -4,7 +4,7 @@ import Link from "next/link"
 
 
 const ProductCard = ({product}) => {
-  console.log(product.collectionType)
+  // console.log(product.collectionType)
 
   return (
     <>
