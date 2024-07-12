@@ -5,21 +5,36 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
   apiVersion: '2022-11-15',
 });
 
-export  async function POST(req, res) {
-  
+export async function POST(req) {
     try {
-      const { amount } = req.body;
+      const body = await req.json();
+      console.log('Received body:', body);
+  
+      const { amount } = body;
+      
+      if (!amount) {
+        return new Response(JSON.stringify({ error: 'Amount is required' }), {
+          status: 400,
+          headers: { 'Content-Type': 'application/json' },
+        });
+      }
+  
       const paymentIntent = await stripe.paymentIntents.create({
         amount,
         currency: 'usd',
         payment_method_types: ['card'],
       });
-      res.status(200).json({ clientSecret: paymentIntent.client_secret });
+  
+      return new Response(JSON.stringify({ clientSecret: paymentIntent.client_secret }), {
+        status: 200,
+        headers: { 'Content-Type': 'application/json' },
+      });
     } catch (error) {
-      res.status(500).json({ error: error.message });
+      console.error('Payment Intent Error:', error);
+      return new Response(JSON.stringify({ error: error.message }), {
+        status: 500,
+        headers: { 'Content-Type': 'application/json' },
+      });
     }
-//   } else {
-//     res.setHeader('Allow', 'POST');
-//     res.status(405).end('Method Not Allowed');
-//   }
-}
+  }
+  
