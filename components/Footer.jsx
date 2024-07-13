@@ -10,13 +10,9 @@ const Footer = () => {
         <div>
           <h4 className="text-[#101010] font-semibold text-lg mb-6">Toronto Sauna</h4>
           <ul className="space-y-5">
-            <li>
-              <Link href="/" className="hover:underline hover:text-[#FFA726]  transition-all">Our Story</Link>
-            </li>
-            <li><a href="/about" className="hover:underline hover:text-[#FFA726]">About Us</a></li>
-        <li><a href="/services" className="hover:underline hover:text-[#FFA726]">Services</a></li>
-        <li><a href="/products" className="hover:underline hover:text-[#FFA726]">Products</a></li>
-        <li><a href="/contact" className="hover:underline hover:text-[#FFA726]">Contact</a></li>
+            <li><Link href="/about" className="hover:underline hover:text-[#FFA726]">About Us</Link></li>
+       
+        <li><Link href="/quote" className="hover:underline hover:text-[#FFA726]">Contact</Link></li>
        
           </ul>
         </div>
@@ -44,11 +40,11 @@ const Footer = () => {
                                   <FaInstagram />
                             </li>
                         </ul> */}
-            <li>
+            {/* <li>
               <Link href="/" className="hover:underline hover:text-[#FFA726]  transition-all"><FaFacebook /></Link>
-            </li>
-            <li><a href="/about" className="hover:underline hover:text-[#FFA726]"><FaInstagram /></a></li>
-        <li><a href="/services" className="hover:underline hover:text-[#FFA726]"><FaTwitter /></a></li>
+            </li> */}
+            <li><Link href="https://www.instagram.com/thetorontosaunaco/" className="hover:underline hover:text-[#FFA726]"><FaInstagram /></Link></li>
+        {/* <li><a href="/services" className="hover:underline hover:text-[#FFA726]"><FaTwitter /></a></li> */}
 
           </ul>
         </div>
@@ -56,12 +52,12 @@ const Footer = () => {
         <div>
           <h4 className="text-[#101010] font-semibold text-lg mb-6">Company</h4>
           <ul className="space-y-5">
-            <li>
+            {/* <li>
               <Link href="/" className="hover:underline hover:text-[#FFA726]  transition-all">Our Story</Link>
-            </li>
-            <li><a href="/contact" className="hover:underline hover:text-[#FFA726]">Blog</a></li>
-        <li><a href="/services" className="hover:underline hover:text-[#FFA726]">Terms Of Service</a></li>
-        <li><a href="/products" className="hover:underline hover:text-[#FFA726]">Refund Policy</a></li>
+            </li> */}
+            <li><a href="/blog" className="hover:underline hover:text-[#FFA726]">Blog</a></li>
+        <li><a href="/terms" className="hover:underline hover:text-[#FFA726]">Terms Of Service</a></li>
+        <li><a href="/terms" className="hover:underline hover:text-[#FFA726]">Refund Policy</a></li>
 
           </ul>
         </div>

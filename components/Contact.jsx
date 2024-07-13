@@ -3,6 +3,7 @@ import { useState } from "react";
 import {FaTwitter, FaFacebook, FaInstagram} from 'react-icons/fa'
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const Contact = () => {
     const router = useRouter();
@@ -60,23 +61,25 @@ const Contact = () => {
                           <h2 className="text-gray-800 text-base font-bold">Socials</h2>
   
                           <ul className="flex mt-4 space-x-4">
-                              <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                              {/* <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                                 
                                 
                              <FaFacebook />
                              
-                              </li>
-                              <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                              </li> */}
+                              {/* <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                                  
                                 
                                   <FaTwitter />
   
-                              </li>
+                              </li> */}
+                              <Link href="https://www.instagram.com/thetorontosaunaco/">
                               <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                                 
                                  
                                     <FaInstagram />
-                              </li>
+                                    </li>
+                              </Link>
                           </ul>
                       </div>
                   </div>

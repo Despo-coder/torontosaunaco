@@ -26,7 +26,7 @@ export const authOptions = {
             name: "credentials",
             credentials: {},
             async authorize(credentials) {
-              const { email, password } = credentials 
+              const { email, password, username } = credentials 
               try {
                 await connectDB();
                 const user = await User.findOne({ email });
@@ -76,6 +76,7 @@ callbacks: {
         const user = await User.findOne({email:session.user.email});
         session.user.id = user._id.toString();
         session.user.isAdmin = user.isAdmin;
+        session.user.username = user.username;
         return session;
         // 2. Get User from DB
         // 3. Set User in Session with the userid

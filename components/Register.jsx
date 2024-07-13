@@ -46,7 +46,7 @@ const handleSubmit = async (e) => {
     });
 
     if (res.ok) {
-        toast.success("Registration Successful")
+        toast.success("Registration Successful. Please Login to Continue")
      // const form = e.target;
       //form.reset();
       router.push('/signin')

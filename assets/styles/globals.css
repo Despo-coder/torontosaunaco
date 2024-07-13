@@ -40,6 +40,77 @@
   min-width: 0;
 }
 
+.checkoutForm {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f8f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formTitle {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #32325d;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  color: #32325d;
+  font-weight: bold;
+}
+
+.cardElementWrapper {
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 12px;
+  background-color: #5469d4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submitButton:hover {
+  background-color: #4a5fc1;
+}
+
+.submitButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.errorMessage {
+  color: #fa755a;
+  margin-top: 10px;
+}
+
+.successMessage {
+  color: #32cd32;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
 
 
 /* :root {
