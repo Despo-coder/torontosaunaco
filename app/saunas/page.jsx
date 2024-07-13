@@ -10,7 +10,7 @@ const products = await fetchProducts()
   return (
    <div>
       <section className="px-4 py-6">
-        {/* <HompageInfo /> */}
+        
         <h1 className="text-3xl text-center font-bold font-playfair mb-2">Our Saunas</h1>
         {/* Horzontal rule across the screen */}
         <hr className="w-1/2 mx-auto border-b-2 border-black" />
