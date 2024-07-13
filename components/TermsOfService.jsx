@@ -53,8 +53,8 @@ const TermsOfService = () => {
                   For any questions or concerns regarding your order or this refund policy, please contact our customer service team at:
                 </p>
                 <ul className="ml-8 list-disc">
-                  <li>Email: <a href="mailto:thetest@gmail.com" className="text-blue-500 hover:underline">thetest@gmail.com</a></li>
-                  <li>Phone: 12345678</li>
+                  <li>Email: <a href="mailto:thetorontosaunaco@gmail.com" className="text-blue-500 hover:underline">thetest@gmail.com</a></li>
+                  <li>Phone: (416) 662-0984</li>
                 </ul>
               </li>
             </ol>
