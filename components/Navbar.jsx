@@ -8,7 +8,8 @@ import { useState , useEffect} from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { useSelector } from 'react-redux';
-import {  signOut , useSession, getProviders} from 'next-auth/react';
+import {  signOut, useSession} from 'next-auth/react';
+
 
 
 
@@ -17,7 +18,7 @@ import {  signOut , useSession, getProviders} from 'next-auth/react';
 const Navbar = () => {
 
 
- const router = useRouter();
+  const router = useRouter();
   const [showDropdown, setShowDropdown] = useState(false);
   const {cartItems} = useSelector((state) => state.cart);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -37,7 +38,7 @@ const Navbar = () => {
 // }
 // , []);
  
-
+console.log(showDropdown)
     return (  
     <nav className=" bg-black py-12 ">
 
@@ -98,32 +99,20 @@ const Navbar = () => {
                 className={`${pathname === '/' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-2 py-4"`}
                 >Home</Link
               >
-              <div className="relative w-max mx-auto" onClick={()=> setShowDropdown(!showDropdown)}>
-              <Link href="/saunas"
-         className={`${pathname === '/saunas' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[px]"`}>
+              <div className="relative w-max mx-auto"  onMouseEnter={()=>setShowDropdown(true)} onMouseLeave={()=>setShowDropdown(false)}>
+              <Link href={'/saunas'} 
+         className={`${pathname === '/saunas' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[px] cursor-pointer"`}>
         Saunas
+        <span >
         <svg xmlns="http://www.w3.org/2000/svg" className="w-3 fill-gray-500 inline ml-3" viewBox="0 0 24 24">
           <path fillRule="evenodd"
             d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z"
             clipRule="evenodd" data-original="#000000" />
         </svg>
+        </span>
       </Link>
-           {/* <Link
-            href="/saunas"
-            className={`${pathname === '/saunas' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[8px]"`}
-          onMouseEnter={() => setShowDropdown(true)}
-          onClick={() => setShowDropdown(false)}
-          onMouseLeave={() => setShowDropdown(false)}
-          >
-            
-            Saunas
-          </Link> */}
-          {/* <div
-          className="relative"
-          onMouseEnter={() => setShowDropdown(true)}
-          onMouseLeave={() => setShowDropdown(false)}
-        > */}
-        <ul className= {`${showDropdown ? 'absolute shadow-[0_8px_19px_-7px_rgba(6,81,237,0.2)] bg-white py-2 z-[1000] min-w-full w-max divide-y max-h-96 overflow-auto':'hidden'}`} >
+      {showDropdown && ( 
+        <ul className= 'absolute shadow-[0_8px_19px_-7px_rgba(6,81,237,0.2)] bg-white py-2 z-[1000] min-w-full w-max divide-y max-h-96 overflow-auto' >
         <li className='py-3 px-5 hover:bg-gray-50 text-gray-800 text-sm cursor-pointer'><Link
                 href="/saunas/cube"
                 className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
@@ -160,46 +149,7 @@ const Navbar = () => {
                 Indoor Saunas
               </Link></li>
       </ul>
-          {/* {showDropdown && (
-            <div className="absolute left-[-100px] mt-[25px] w-48 bg-white shadow-lg rounded-xl z-10">
-              <Link
-                href="/saunas/cube"
-                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-             onClick={() => setShowDropdown(false)}
-             >
-                Cube Saunas
-              </Link>
-              <Link
-                href="/saunas/luna"
-                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                onClick={() => setShowDropdown(false)}
-              >
-                Luna Saunas
-              </Link>
-              <Link
-                href="/saunas/barell"
-                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                onClick={() => setShowDropdown(false)}
-              >
-                Barrell Saunas
-              </Link>
-              <Link
-                href="/saunas/canadian-timber"
-                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                onClick={() => setShowDropdown(false)}
-              >
-                Canadian Timber
-              </Link>
-              <Link
-                href="/saunas/indoor"
-                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                onClick={() => setShowDropdown(false)}
-             >
-                Indoor Saunas
-              </Link>
-              
-            </div>
-          )} */}
+      )}
         </div>
         <Link
                 href="/accessories"
@@ -357,13 +307,10 @@ const Navbar = () => {
             </div>
             )}
             
-          </div>
         </div>
-
-  {/* <!-- Mobile menu, show/hide based on menu state. --> */}
-         
-            </div>
-    </div>  
+        </div>
+        </div>
+        </div>  
            
            {/* {isMobileMenuOpen && (       */}
           {isMobileMenuOpen && ( <div id="mobile-menu" >
@@ -374,66 +321,65 @@ const Navbar = () => {
                 // className={`${pathname === '/' ?'bg-gray-900 text-white' : ''} " text-white  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
                 >Home</Link
               >
-              <div
-          className="relative"
-          onMouseEnter={() => setShowDropdown(true)}
-          onMouseLeave={() => setShowDropdown(false)}
-        >
-          <Link
-            href="/saunas"
-            className={`${pathname === '/saunas' ? 'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
-            style={{ marginTop: '1px' }}
-          >
-            Saunas
-          </Link>
-          {showDropdown && (
-            <div className="absolute left-0 mt-[-1px] w-48 bg-white shadow-lg rounded-xl z-10">
-              <Link
+              <div className="relative "  onMouseEnter={()=>setShowDropdown(true)} onMouseLeave={()=>setShowDropdown(false) } onClick={()=>setShowDropdown(!showDropdown)}>
+              <Link href={'/saunas'} 
+              className={`${pathname === '/saunas' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[px] cursor-pointer"`}>
+              Saunas
+              <span >
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-3 fill-gray-500 inline ml-3" viewBox="0 0 24 24">
+              <path fillRule="evenodd"
+              d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z"
+              clipRule="evenodd" data-original="#000000" />
+              </svg>
+              </span>
+              </Link>
+              {showDropdown && ( 
+              <ul className= 'absolute shadow-[0_8px_19px_-7px_rgba(6,81,237,0.2)] bg-white py-2 z-[1000] min-w-full w-max divide-y max-h-96 overflow-auto' >
+              <li className='py-3 px-5 hover:bg-gray-50 text-gray-800 text-sm cursor-pointer'><Link
                 href="/saunas/cube"
                 className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-             onClick={() => setShowDropdown(false)}
-             >
+              onClick={() => setShowDropdown(false)}
+              >
                 Cube Saunas
-              </Link>
-              <Link
+              </Link></li>
+              <li className='py-3 px-5 hover:bg-gray-50 text-gray-800 text-sm cursor-pointer'><Link
                 href="/saunas/luna"
                 className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                 onClick={() => setShowDropdown(false)}
               >
                 Luna Saunas
-              </Link>
-              <Link
+              </Link></li>
+              <li className='py-3 px-5 hover:bg-gray-50 text-gray-800 text-sm cursor-pointer'><Link
                 href="/saunas/barell"
                 className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                 onClick={() => setShowDropdown(false)}
               >
                 Barrell Saunas
-              </Link>
-              <Link
+              </Link></li>
+              <li className='py-3 px-5 hover:bg-gray-50 text-gray-800 text-sm cursor-pointer'><Link
                 href="/saunas/canadian-timber"
                 className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                 onClick={() => setShowDropdown(false)}
               >
                 Canadian Timber
-              </Link>
-              <Link
-                href="/saunas/indoor"
+              </Link></li>
+              <li className='py-3 px-5 hover:bg-gray-50 text-gray-800 text-sm cursor-pointer'><Link
+                 href="/saunas/indoor"
                 className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                 onClick={() => setShowDropdown(false)}
-             >
+              >
                 Indoor Saunas
-              </Link>
-              <Link
-                href="/accessories"
-                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                onClick={() => setShowDropdown(false)}
-             >
-               Accessories
-              </Link>
-            </div>
-          )}
-        </div>
-            
+              </Link></li>
+              </ul>
+              )}
+              </div>
+        <Link
+        href="/accessories"
+        className={`${pathname === '/cold-plunge' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
+        onClick={() => setShowDropdown(false)}
+     >
+       Accessories
+      </Link>
               <Link
                 href="/cold-plunge"
                 className={`${pathname === '/cold-plunge' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
