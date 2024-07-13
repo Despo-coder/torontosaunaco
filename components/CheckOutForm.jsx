@@ -309,7 +309,7 @@ const [country, setCountry] = useState('');
                     className="px-4 py-3.5 bg-gray-100 text-[#1f2937] w-full text-sm border rounded-md focus:border-purple-500 focus:bg-transparent outline-none" />
                 </div>
     <div>
-                  <input type="text" placeholder="Cardholder's Name"
+                  <input type="text" placeholder="Address"
                   value={address}
                   onChange={(e) => setAddress(e.target.value)}
                     className="px-4 py-3.5 bg-gray-100 text-[#1f2937] w-full text-sm border rounded-md focus:border-purple-500 focus:bg-transparent outline-none" />
@@ -336,7 +336,7 @@ const [country, setCountry] = useState('');
   <div>
     <input 
       type="text" 
-      placeholder="Country"
+      placeholder="Country Code e.g (CA, US, UK)"
       value={country}
       onChange={(e) => setCountry(e.target.value)}
       className="px-4 py-3.5 bg-gray-100 text-[#1f2937] w-full text-sm border rounded-md focus:border-purple-500 focus:bg-transparent outline-none" 
@@ -357,9 +357,9 @@ const [country, setCountry] = useState('');
     
     <CardCvcElement id="card-cvc" options={cardStyle} className="px-4 py-3.5 bg-gray-100 text-[#1f2937] w-full text-sm border rounded-md focus:border-purple-500 focus:bg-transparent outline-none"/>
   </div>
-  <div>
+  {/* <div>
     <input type="text" id="postal-code" placeholder='zipcode' className="form-input px-4 py-3.5 bg-gray-100 text-gray-800 w-full text-sm border rounded-md focus:border-purple-500 focus:bg-transparent outline-none"/>
-  </div>
+  </div> */}
       <button
         disabled={processing || !stripe}
         id="submit"
