@@ -241,7 +241,7 @@ const Navbar = () => {
     </Button>
     </Link>
     ):(
-      <h6 className='font-roboto text-white'>{session?.user?.email}</h6>
+      <h6 className='font-roboto text-white'>{session?.user?.email.slice(0,20)}</h6>
     )}
 
 

@@ -8,9 +8,6 @@ import { useDispatch  } from 'react-redux';
 import Image from 'next/image';
 import Link from 'next/link';
 
-
-
-
 const CartPage = () => {
 const dispatch = useDispatch();
 const {cartItems} = useSelector((state) => state.cart);
@@ -93,8 +90,9 @@ const handleItemDelete = (id) => {
 
 const handleBuyNow = () => {
   // Navigate to the checkout page
-  router.push('/checkout');
+  router.push('/precheckout');
 };
+
 
   return (
     <div>

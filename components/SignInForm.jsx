@@ -4,7 +4,8 @@ import React, {useEffect, useState} from 'react'
 import { signIn, useSession, getProviders} from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 
-const SignInForm = () => {
+
+const SignInForm = ({ fromCheckout }) => {
   const [providers, setProviders] = useState(null);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -18,8 +19,14 @@ const SignInForm = () => {
       const res = await getProviders();
       setProviders(res);
     }
+    if (session && fromCheckout) {
+      router.push('/checkout');
+    }else if (session) {
+      router.push('/');
+    }
+
     setAuthProviders();
-  }, []);
+  }, [session, router]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -39,11 +46,10 @@ const SignInForm = () => {
     }
     setLoading(false);
   };
-
+// console.log(fromCheckout)
   // Once a session is created redirect the user to the homepage
-  if (session) {
-    router.push('/');
-  }
+ 
+  
   return (
     // {session && (<p className="text-green-500 mb-4">You are already signed in</p>)}
 // Route to Homepage once a session is created

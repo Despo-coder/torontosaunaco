@@ -33,7 +33,7 @@ const CarouselDynamic = ({images}) => {
       <div className="embla__viewport mb-24 mx-auto mt-12 w-full md:w-2/3 lg:w-1/2 h-[300px] md:h-[400px] lg:h-[500px] rounded-xl" ref={emblaRef}>
         <div className="embla__container h-full">
         {images.map((image, index) => (
-  <div key={index} className="embla__slide flex items-center justify-center">
+  <div key={index} className="embla__slide flex items-center justify-center relative">
     <Link href={`/saunas/${image.id}`}>
     <Image
       src={image.image}
@@ -44,6 +44,11 @@ const CarouselDynamic = ({images}) => {
       className="rounded-xl object-cover h-full w-full"
     />
     </Link>
+    <div className=' absolute flex flex-col bg-black/50 p-1 rounded-lg bottom-10 left-10 '>
+    <span className='font-playfair text-white text-lg'>{image.name}</span>
+    <span className='font-roboto text-white text-xs font-bold'>${`${image.price.toLocaleString()}.00`}</span>
+    </div>
+    
   </div>
 ))}
       </div>
