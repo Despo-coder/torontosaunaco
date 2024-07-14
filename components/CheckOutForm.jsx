@@ -140,7 +140,7 @@ const [country, setCountry] = useState('');
     setProcessing(true);
   
     if (!stripe || !elements) {
-      console.log('Stripe has not loaded yet');
+     // console.log('Stripe has not loaded yet');
       setProcessing(false);
       return;
     }
@@ -173,12 +173,12 @@ const [country, setCountry] = useState('');
         console.error('Payment confirmation error:', error);
         setError(`Payment failed: ${error.message}`);
       } else if (paymentIntent.status === 'succeeded') {
-        console.log('Payment succeeded:', paymentIntent);
+       // console.log('Payment succeeded:', paymentIntent);
         setError(null);
         setProcessing(false);
         setSucceeded(true);
         try {
-          console.log('Saving payment to database...');
+          //console.log('Saving payment to database...');
           await axios.post('/api/save-payment', {
             paymentIntentId: paymentIntent.id,
             amount: paymentIntent.amount,
@@ -191,7 +191,7 @@ const [country, setCountry] = useState('');
               country: country
             }
           });
-          console.log('Payment saved successfully');
+          //console.log('Payment saved successfully');
   
           dispatch(clearCart());
           toast.success('Payment successful! Thank you for your order.');

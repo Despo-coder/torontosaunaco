@@ -10,7 +10,7 @@ import Link from 'next/link';
 const CarouselDynamic = ({images}) => {
   
   //const test = Object.values(images).map(p => p.images)
-  console.log(images)
+ // console.log(images)
   //  console.log(test)
   const options = { loop: true };
   const [emblaRef, emblaApi] = useEmblaCarousel(

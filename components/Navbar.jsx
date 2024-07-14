@@ -38,7 +38,7 @@ const Navbar = () => {
 // }
 // , []);
  
-console.log(showDropdown)
+//console.log(showDropdown)
     return (  
     <nav className=" bg-black py-12 ">
 

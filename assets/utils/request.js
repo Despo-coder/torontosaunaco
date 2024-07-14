@@ -4,7 +4,7 @@ const fetchProducts = async () => {
 
     try {
       if(!apiDomain){
-        console.log("Something went Wrong....")
+        //console.log("Something went Wrong....")
         return []
       }
       const res = await fetch(`${apiDomain}/products`, { next: { revalidate: 10 } })
@@ -24,7 +24,7 @@ const fetchProducts = async () => {
 const fetchProduct = async (id) => {
   try {
       if(!apiDomain){
-        console.log("Something went Wrong....")
+       // console.log("Something went Wrong....")
         return null
       }
       const res = await fetch(`${apiDomain}/products/${id}`)
@@ -46,7 +46,7 @@ const fetchProduct = async (id) => {
   const fetchAccessories = async () => {
     try {
       if(!apiDomain){
-        console.log("Something went Wrong....")
+       // console.log("Something went Wrong....")
         return []
       }
       const res = await fetch(`${apiDomain}/accessories`, { next: { revalidate: 10 } })

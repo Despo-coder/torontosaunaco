@@ -9,8 +9,8 @@ const CartProduct = ({cartItem}) => {
 
     const removeFromCart = () => {
 dispatch(removeFromCart(id))
-console.log("remove from cart")
-console.log(id)
+//console.log("remove from cart")
+//console.log(id)
     }
 
   return (

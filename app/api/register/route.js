@@ -8,7 +8,7 @@ export const POST = async (request) => {
 try {
         
        const user  = await request.json();
-    console.log(user)
+   // console.log(user)
        await connectDB();
        const userExists = await User.findOne({email: user.email});
        if (userExists) {
@@ -21,7 +21,7 @@ try {
        await newUser.save();
        return NextResponse.json({newUser}, {status: 200})
     }  catch (error) {
-      console.log(error)
+      //console.log(error)
       return NextResponse.json({message:error}, {status: 500})
       
     }

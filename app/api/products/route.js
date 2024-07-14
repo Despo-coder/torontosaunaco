@@ -74,7 +74,7 @@ export const POST = async (req, res) => {
         // Return Dummy Response
        //return new Response (JSON.stringify({sessionUser}), {status: 201});
     } catch (error) {
-        console.log(error)
+        //console.log(error)
         return new Response ("error", {status: 500});
     }
     };
