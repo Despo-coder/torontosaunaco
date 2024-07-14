@@ -47,15 +47,16 @@ const handleSubmit = async (e) => {
 
     if (res.ok) {
         toast.success("Registration Successful. Please Login to Continue")
-     // const form = e.target;
-      //form.reset();
       router.push('/signin')
     } else {
       const error = await res.json();
-      setError(error.message);
+      console.log(error);
+      toast.error("Registration failed...", error);
     }
   } catch (error) {
-      setError("Error registering new user: " + error);
+
+     console.error("Error registering new user: " + error);
+     
   }
 }
 

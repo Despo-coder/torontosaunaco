@@ -4,11 +4,12 @@ import {FaTwitter, FaFacebook, FaInstagram} from 'react-icons/fa'
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { set } from "mongoose";
 
 const Contact = () => {
     const router = useRouter();
     const [emailresult, setEmailResult] = useState({})
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(false)
   
   
     const sendEmails = async (e) =>{
@@ -24,6 +25,7 @@ const Contact = () => {
         };
       
         try {
+          setLoading(true);
           const res = await fetch('/api/emails', {
             method: 'POST',
             headers: {
@@ -31,13 +33,15 @@ const Contact = () => {
             },
             body: JSON.stringify(formData)
           });
+          setLoading(true)
           const dataResponse = await res.json();
           if (dataResponse.message='Email sent successfully!') {
+            setLoading(false);
             toast.success('Email sent successfully!', { duration: 2700 });
-            // setTimeout(() => {
-            //   router.push('/saunas');
-            // }, 2000);
-            router.push('/saunas');
+            setTimeout(() => {
+              router.push('/');
+            }, 2000);
+            //router.push('/saunas');
           } else {
             toast.error('Error sending email. Please try again later.');
           }
@@ -50,7 +54,11 @@ const Contact = () => {
       }
    return (
       <div className="mb-12">
-         
+         {loading && (
+  <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50">
+    <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-white"></div>
+  </div>
+)}
         <div className="mt-6">
               <div className="grid sm:grid-cols-2 items-start gap-14 p-8 mx-auto max-w-4xl bg-white shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md font-[sans-serif]">
                   <div>
@@ -96,7 +104,7 @@ const Contact = () => {
                       <textarea placeholder='Message' rows="6" id='message' required
                           className="w-full text-gray-800 rounded-lg px-4 border text-sm pt-2.5 outline-blue-500"></textarea>
                       <button type='submit'
-                          className="text-white bg-blue-500 hover:bg-blue-600 rounded-xl text-sm px-4 py-3 w-full !mt-6">Send</button>
+                          className="text-white bg-black hover:bg-[#f9bd63] rounded-xl text-sm px-4 py-3 w-full !mt-6">Send</button>
                   </form>
               </div>
           </div>
