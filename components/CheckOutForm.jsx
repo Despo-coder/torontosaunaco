@@ -194,11 +194,12 @@ const [country, setCountry] = useState('');
           //console.log('Payment saved successfully');
   
           dispatch(clearCart());
-          toast.success('Payment successful! Thank you for your order.');
+          toast.success('Thank you for your order. You will receive an Email confirmation shortly');
           setTimeout(() => {
             router.push('/');
-          }, 1000);
+          }, 2000);
         } catch (error) {
+          toast.error('Something went wrong. Please try again later');
           console.error('Error saving payment:', error);
         }
       }
