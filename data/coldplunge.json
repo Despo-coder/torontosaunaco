@@ -2,7 +2,7 @@
     
         {
             "owner": "torontosaunco",
-            "name": "The Classic Cold Plunge Tub",
+            "name": "The Barrel + Chiller",
            "type": "Cold Plunge",
            "collectionType": "Cold Plunge",
            "series": "Tub",
@@ -25,11 +25,7 @@
               "email": "john@gmail.com",
               "phone": "617-555-5555"
             },
-            "images": ["https://res.cloudinary.com/dw4ev5whz/image/upload/v1720406064/torontosaunaco/coldplunge/CTClassicTub-min_p1d03w.webp", 
-            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720406058/torontosaunaco/coldplunge/coldture-170_px6gad.webp" , 
-            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720406070/torontosaunaco/coldplunge/tubonly_withlid_tq8ina.webp", 
-            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720406067/torontosaunaco/coldplunge/icephoto_igegwx.webp", 
-            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720406061/torontosaunaco/coldplunge/coldture-177_iepaje.webp"
+            "images": ["https://res.cloudinary.com/dw4ev5whz/image/upload/v1720917798/torontosaunaco/coldplunge/chiller_Barrel_xqhuxg.jpg"
           ],
             "is_featured": false,
            "createdAt": "2024-01-01T00:00:00.000Z",

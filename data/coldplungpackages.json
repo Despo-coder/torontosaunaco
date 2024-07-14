@@ -1,0 +1,33 @@
+[
+    {
+        "owner": "torontosaunco",
+        "name": "The Barrel + Chiller",
+       "type": "Cold Plunge",
+       "collectionType": "Cold Plunge",
+       "series": "Tub",
+       "description": "Enjoy a classic cold plunge at home or on the road. This is fully portable and sets up in minutes. Control from anywhere with IOS and Android App. Built to last with a 3 year warranty. This unit is able to fit up to 6ft 11 and cools down to 3 degrees Celsius.",
+        "dimension": "160l x 75w x 67h cm",
+        "price": 1579,
+        "views": {
+        },
+        "wood_type": {
+         
+        },
+       "stove_type": {
+         
+        },
+       "installation": {
+       
+        },
+        "seller_info": {
+          "name": "John Doe",
+          "email": "john@gmail.com",
+          "phone": "617-555-5555"
+        },
+        "images": ["https://res.cloudinary.com/dw4ev5whz/image/upload/v1720917798/torontosaunaco/coldplunge/chiller_Barrel_xqhuxg.jpg"
+      ],
+        "is_featured": false,
+       "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+      }
+]
