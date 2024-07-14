@@ -18,7 +18,7 @@ export async function POST(req, res) {
 // Email options
   let mailOptions = {
     from: process.env.MAIL_USER,
-    to: 'ddw.web.dev.services@gmail.com', // Recipient email address
+    to: 'thetorontosaunaco@gmail.com', // Recipient email address
     subject: `Re: ${subject}` || 'New message from contact form',
     html: `Name: ${name}<br>Email: ${email}<br>Phone: ${phone}<br>Message: ${message}`,
   };

@@ -1,10 +1,9 @@
-import { Button } from "./ui/button";
+
 
 
 const Hero = () => {
   return (
     <div>
-
       <section
         className="relative bg-slate-700 py-20 mb-4 h-[74vh] mt-8"
         style={{
@@ -15,14 +14,11 @@ const Hero = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:h-[70%] h-[88%] justify-center items-center">
           <div className="text-center">
-            <h1 className="text-4xl text-black/80 font-thin sm:text-5xl md:text-6xl">
+            <h1 className="font-playfair  text-4xl text-gray-900 font-thin sm:text-5xl md:text-6xl">
               Premium Cedar Saunas
             </h1>
-            {/* <p className="my-4 text-xl  text-white font-semi-bold">
-              Muskoka Lakes, Ontario, Canada
-            </p> */}
           </div>
-          <form className="mt-3 mx-auto max-w-2xl w-full flex flex-col md:flex-row items-center ">
+          {/* <form className="mt-3 mx-auto max-w-2xl w-full flex flex-col md:flex-row items-center ">
             <div className="w-full md:w-3/5 md:pr-2 mb-4 md:mb-0">
               <label htmlFor="location" className="sr-only">
                 Location
@@ -49,8 +45,7 @@ const Hero = () => {
                 <option value="Outdoor">Outdoor Cedar Cube Saunas</option>
                 <option value="Indoor">Indoor Cedar Cube Saunas</option>
                 <option value="Showers">OutDoor Showers</option>
-                {/* <option value="Room">Room</option>
-              <option value="Other">Other</option> */}
+               
               </select>
             </div>
             <Button
@@ -59,10 +54,9 @@ const Hero = () => {
             >
               Search
             </Button>
-          </form>
+          </form> */}
         </div>
       </section>
-  
     </div>
   );
 };

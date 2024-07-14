@@ -194,12 +194,12 @@ const [country, setCountry] = useState('');
           //console.log('Payment saved successfully');
   
           dispatch(clearCart());
-          toast.success('Thank you for your order. You will receive an Email confirmation shortly');
+          toast.success('Thank you for your order. You will receive an Email confirmation shortly',{duration:3000});
           setTimeout(() => {
             router.push('/');
-          }, 2000);
+          }, 3000);
         } catch (error) {
-          toast.error('Something went wrong. Please try again later');
+          toast.error('Something went wrong. Please try again later', {duration:2000});
           console.error('Error saving payment:', error);
         }
       }
@@ -295,6 +295,11 @@ const [country, setCountry] = useState('');
 
   return (
     <div className="font-[sans-serif] bg-white p-4">
+       {processing && (
+  <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50">
+    <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-white"></div>
+  </div>
+)}
       <div className="md:max-w-5xl max-w-xl mx-auto">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2 max-md:order-1">
@@ -358,9 +363,6 @@ const [country, setCountry] = useState('');
     
     <CardCvcElement id="card-cvc" options={cardStyle} className="px-4 py-3.5 bg-gray-100 text-[#1f2937] w-full text-sm border rounded-md focus:border-purple-500 focus:bg-transparent outline-none"/>
   </div>
-  {/* <div>
-    <input type="text" id="postal-code" placeholder='zipcode' className="form-input px-4 py-3.5 bg-gray-100 text-gray-800 w-full text-sm border rounded-md focus:border-purple-500 focus:bg-transparent outline-none"/>
-  </div> */}
       <button
         disabled={processing || !stripe}
         id="submit"
@@ -377,7 +379,6 @@ const [country, setCountry] = useState('');
             <h2 className="text-xl font-extrabold text-gray-800"> <Subtotal items={cartItems} /></h2>
              <ul className="text-gray-800 mt-8 space-y-4">
               <li className="flex flex-wrap gap-4 text-sm"><CartItems items={cartItems} /></li>
-              {/* <li className="flex flex-wrap gap-4 text-sm">Echo Elegance <span className="ml-auto font-bold">$90.00</span></li> */}
               <li className="flex flex-wrap gap-4 text-sm">Tax <span className="ml-auto font-bold"><Tax items={cartItems} /></span></li>
               <li className="flex flex-wrap gap-4 text-sm font-bold border-t-2 pt-4">Total <span className="ml-auto"><Total items={cartItems} /></span></li>
             </ul>
