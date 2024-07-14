@@ -1,9 +1,44 @@
 import React from 'react'
+import Image from 'next/image'
 
 const page = () => {
   return (
     <div>
-      Barrel Sauna Page
+        <div>
+          <section className="px-4 py-2">
+          <section className="modern-saunas py-4">
+          <div className="container mx-auto flex flex-col items-center md:flex-row md:justify-between md:gap-2">
+           
+     
+    
+    {/* Image */}
+            <div className="w-full md:w-[70%]">
+              <Image 
+              
+              src="/images/CLASSIC6X6.jpg" 
+              alt="Modern Sauna Image" 
+              className="rounded-xl object-cover h-full w-full" 
+              width={0}
+              height={0}
+              sizes='100vh'
+              />
+              
+            </div>
+
+
+      {/* Paragraph */}
+      <div className="text-center md:text-right w-full md:w-1/3 mb-2 md:mb-0">
+      <h2 className="text-4xl font-bold mb-4 text-center text-black">
+                Barrel Saunas
+            </h2>
+              <p className="text-gray-700 leading-relaxed mb-2 font-roboto">
+              The Barrel Sauna is a timeless classic, recognized for its distinctive cylindrical shape that offers superior heat circulation and efficiency. Made from premium Canadian cedar, the Barrel Sauna is not only visually appealing but also durable and weather-resistant. Its compact and unique design allows for easy installation in various outdoor spaces, making it an ideal choice for those with limited space. The Barrel Sauna's cozy interior provides an intimate setting for relaxation and detoxification, making it a popular choice among sauna enthusiasts.
+              </p>
+            </div>
+          </div>
+        </section>
+            </section>
+        </div>
     </div>
   )
 }
