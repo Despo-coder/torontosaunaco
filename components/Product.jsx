@@ -7,7 +7,7 @@ import { addToCart } from "@/redux/slices/cartSlice";
 
 
 export default function Product({ product }) {
-  console.log(product)
+  //console.log(product)
   const dispatch = useDispatch();
 const addItemsToCart = () => {
   dispatch(

@@ -70,7 +70,7 @@ const ColdPlungePage = () => {
       });
 
       const data = await res.json();
-      console.log(data)
+      //console.log(data)
       if (data.message='Email sent successfully!') {
         //const { toast } = await import('react-hot-toast');
         toast.success('Email sent successfully!', { duration: 2700 });

@@ -57,11 +57,18 @@ const SaunaPage = () => {
 
 
   const images = product?.images.map(image => ({
-    id: product._id, // Assuming each image should have the same product ID
-    image
+    id: product._id,
+    image,
+    name: product.name,
+    price: product.price
   })) || [];
 
-
+// console.log(product?.map((p) => ({
+//   id: p._id, // Assuming each image should have the same product ID
+//   image:p.images,
+//   name:p.name,
+//   price:p.price
+// })))
 
   const sendEmails = async (e) =>{
     e.preventDefault(); // Prevent form from submitting the traditional way
@@ -86,7 +93,7 @@ const SaunaPage = () => {
       });
 
       const data = await res.json();
-      console.log(data)
+     // console.log(data)
       if (data.message='Email sent successfully!') {
         //const { toast } = await import('react-hot-toast');
         toast.success('Email sent successfully!', { duration: 2700 });

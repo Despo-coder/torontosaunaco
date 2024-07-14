@@ -95,7 +95,7 @@ const SaunaAddFormPage = () => {
     const handleSubmit = async (e) => {
       e.preventDefault();
       // Add logic to submit the form data to the backend/API
-      console.log(fields.views);
+      //console.log(fields.views);
       const test = fields.views
       if(fields.views)
   {

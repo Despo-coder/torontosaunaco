@@ -16,7 +16,7 @@ export const GET = async (request, {params}) => {
         }
         return new Response(JSON.stringify(product), { status: 200 });
     } catch (error) {
-        console.log(error);
+       // console.log(error);
         return new Response(error, { status: 500 });
     }
 }

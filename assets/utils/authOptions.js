@@ -42,7 +42,7 @@ export const authOptions = {
                 }
                 return user;
               } catch (error) {
-                console.log("Error:", error);
+              //  console.log("Error:", error);
               }
             },
           }),
@@ -62,7 +62,7 @@ callbacks: {
                     image: profile.picture,
                 });
             }
-            console.log(profile);
+           // console.log(profile);
         } else if (account.provider === 'credentials') {
             // For credentials login, we don't need to do anything here
             // as the user is already authenticated in the authorize function

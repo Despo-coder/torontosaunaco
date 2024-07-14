@@ -19,7 +19,7 @@ const SaunaDetails = ({ product }) => {
 
   const installationPrices = product.installation;
   const windowPrices = product.views;
-console.log(product)
+//console.log(product)
   useEffect(() => {
     let newCost = product.price;
     if (stoveType) newCost += stovePrices[stoveType].price;

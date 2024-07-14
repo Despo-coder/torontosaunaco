@@ -12,13 +12,13 @@ const connectDB = async () => {
     mongoose.set('strictQuery', false);
  
 if(connected){
-    console.log('DB already connected')
+   // console.log('DB already connected')
 return;
 } 
 try {
     await mongoose.connect(process.env.MONGO_URI);
     connected = true;
-    console.log("DB Connected")
+    //console.log("DB Connected")
 } catch (error) {
     console.log(error)
 }
