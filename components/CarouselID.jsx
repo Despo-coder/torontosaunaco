@@ -10,7 +10,7 @@ import Link from 'next/link';
 const CarouselDynamic = ({images}) => {
   
   //const test = Object.values(images).map(p => p.images)
-  //console.log(images)
+  console.log(images)
   //  console.log(test)
   const options = { loop: true };
   const [emblaRef, emblaApi] = useEmblaCarousel(
@@ -46,7 +46,9 @@ const CarouselDynamic = ({images}) => {
     </Link>
     <div className=' absolute flex flex-col bg-black/50 p-1 rounded-lg bottom-10 left-10 '>
     <span className='font-playfair text-white text-lg'>{image.name}</span>
-    <span className='font-roboto text-white text-xs font-bold'>${`${image.price.toLocaleString()}.00`}</span>
+    <span className='font-roboto text-white text-xs font-bold'>
+  ${image.price ? image.price.toLocaleString() : '0'}.00
+    </span>
     </div>
     
   </div>
