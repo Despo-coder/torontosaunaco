@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import BarrelPage from '@/components/Barrel'
 
 const page = () => {
   return (
@@ -15,7 +16,7 @@ const page = () => {
             <div className="w-full md:w-[70%]">
               <Image 
               
-              src="/images/CLASSIC6X6.jpg" 
+              src="https://res.cloudinary.com/dw4ev5whz/image/upload/v1720930176/torontosaunaco/Barrell/7x8wP_oq9au4.jpg" 
               alt="Modern Sauna Image" 
               className="rounded-xl object-cover h-full w-full" 
               width={0}
@@ -39,6 +40,7 @@ const page = () => {
         </section>
             </section>
         </div>
+        <BarrelPage />
     </div>
   )
 }
