@@ -17,12 +17,11 @@ const page = () => {
               
               src="https://res.cloudinary.com/dw4ev5whz/image/upload/v1721007667/torontosaunaco/CTC/Canadian%20Timber/IMG-20240714-WA0013_ptdiat.jpg" 
               alt="Modern Sauna Image" 
-              className="rounded-xl object-cover h-full w-full" 
+              className="rounded-xl object-cover h-[%] w-full" 
               width={0}
               height={0}
               sizes='100vh'
-              />
-              
+              /> 
             </div>
 
 
