@@ -15,7 +15,7 @@ const page = () => {
             <div className="w-full md:w-[70%]">
               <Image 
               
-              src="/images/indoor.jpg" 
+              src="https://res.cloudinary.com/dw4ev5whz/image/upload/v1721007667/torontosaunaco/CTC/Canadian%20Timber/IMG-20240714-WA0013_ptdiat.jpg" 
               alt="Modern Sauna Image" 
               className="rounded-xl object-cover h-full w-full" 
               width={0}
