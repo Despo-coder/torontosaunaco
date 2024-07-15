@@ -8,6 +8,7 @@ import Spinner from "@/components/Spinner";
 import ShareButtons from "@/components/ShareButtons";
 import toast from "react-hot-toast";
 import ColdPlunge from "../page";
+import PureCube1_ID from "@/components/PureCube1_ID";
 
 
 
@@ -90,17 +91,8 @@ const ColdPlungePage = () => {
      {loading && <Spinner loading={loading} /> }
     {!loading && product && (
       <>
-      <SaunaHeaderImage images={product.images} />
-      <section>
-        {/* <div className="container m-auto py-6 px-6">
-          <Link href="/saunas">
-            <Button variant="secondary" className="bg-slate-700 text-white rounded-xl hover:bg-slate-800">
-            Back to Saunas
-            </Button>
-           
-            </Link>
-        </div> */}
-      </section>
+     
+      <PureCube1_ID id={product._id} />
 
       <section className="">
       <div className="container m-auto py-10 px-6">
