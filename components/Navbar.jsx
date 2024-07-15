@@ -88,7 +88,7 @@ const Navbar = () => {
            <Image src={logo} alt="Toronto Sauna Co" width={80} height={50}priority={true} className='rounded-full w-auto'/>
            
             <span className="md:block text-white text-2xl font-bold ml-2 mt-1 "
-              >Toronto Sauna Co.</span
+              >The Toronto Sauna Co.</span
             >
           </Link>
           {/* <!-- Desktop Menu Hidden below md screens --> */}

@@ -1,24 +1,27 @@
 [
     {
         "owner": "torontosaunco",
-        "name": "Barrel Sauna w Porch (7' x 8')",
-       "type": "Barrel",
-       "collectionType": "Barrel",
-       "series": "782PW",
-       "description": "The Barrel Sauna with porch brings a luxurious new class of modular pre-built sauna kits to your home or cottage. Embrace the outdoors with the large double pane tempered glass front window and full glass door. Pamper yourself and your family or friends with this authentic modern Pure Cube Sauna kit.",
+        "name": "CT Granby Cabin Sauna",
+       "type": "Canadian Timber",
+       "collectionType": "CT",
+       "series": "CTC28LU",
+       "description": "The Granby Cabin Sauna is another model in the Canadian Timber Collection manufactured with Eastern White Cedar. The 1.5 inch (35mm) thick walls and roof boards make this 6'x6' (182cm) sauna easy and efficient to heat up and will fit 2 or 3 people comfortably. 2 Tier Benches on the back wall allow for upper and lower seating, this model only comes with electric heater options.",
         "dimension": "84 x 84 x 60 (in)",
-        "price": 10500,
+        "price": 7350,
         "views": {
         },
         "wood_type": {
-          "Knotty Cedar": { "price": 0, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg" },
-          "Clear Cedar": {"price": 9000, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg" }
+          
         },
        "stove_type": {
-          
-        "Narvi NC 16 Black Woodburning Heater":{ "price": 1650, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361795/torontosaunaco/Wood_Stove_Install_img/NARVINC_1688.50_fryhhq.jpg" },
-        "Huum Hive Heater":{ "price": 1650, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361795/torontosaunaco/Wood_Stove_Install_img/NARVINC_1688.50_fryhhq.jpg" }
-        },
+      "Designer B Electric Heater (6kw)": { "price": 1800, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg" },
+      "Huum Drop Local Control (7.5kw)": { "price": 2800, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361773/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_6.0_Electric_Heater_With_WIFI_Controls_3132.50_zpe3m3.jpg" },
+      "Huum Drop WIFI (7.5kw)": { "price": 2950, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361773/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_6.0_Electric_Heater_With_WIFI_Controls_3132.50_zpe3m3.jpg" },
+      "Harvia KIP (6Kw) ": { "price": 1500, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361760/torontosaunaco/Wood_Stove_Install_img/Harvia_KIP_6KWH_WIth_Rocks_1470_jz0epy.jpg" },
+      "Narvi NC 16 Black Woodburning Heater":{ "price": 1650, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361795/torontosaunaco/Wood_Stove_Install_img/NARVINC_1688.50_fryhhq.jpg" },
+      "Huum Hive Heater":{ "price": 1650, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361795/torontosaunaco/Wood_Stove_Install_img/NARVINC_1688.50_fryhhq.jpg" },
+      "HomeCraft Revive":{ "price": 1650, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361795/torontosaunaco/Wood_Stove_Install_img/NARVINC_1688.50_fryhhq.jpg" }
+    },
        "installation": {
          "DIY": { "price": 0, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg" },
           "Supply_Install": { "price": 1750,"image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg" }
@@ -28,11 +31,11 @@
           "email": "john@gmail.com",
           "phone": "617-555-5555"
         },
-        "images": ["https://res.cloudinary.com/dw4ev5whz/image/upload/v1720930176/torontosaunaco/Barrell/7x8wP_oq9au4.jpg", 
-        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720933070/torontosaunaco/Barrell/Filler_Image2_wjdarw.jpg" , 
-        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720933070/torontosaunaco/Barrell/Filler_Image3_bbrj7z.jpg", 
-        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720933070/torontosaunaco/Barrell/Filler_Image1_z6njhq.jpg", 
-        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720933070/torontosaunaco/Barrell/Filler_Image4_piux8f.jpg"
+        "images": ["https://res.cloudinary.com/dw4ev5whz/image/upload/v1721007667/torontosaunaco/CTC/Canadian%20Timber/IMG-20240714-WA0016_vqwwhu.jpg", 
+        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720467094/torontosaunaco/CTC/Canadian%20Timber/Luna/CTC22LU_5_obwlw9.jpg" , 
+        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720467085/torontosaunaco/CTC/Canadian%20Timber/Luna/CTC22LU_3_du4rgi.jpg", 
+        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720467082/torontosaunaco/CTC/Canadian%20Timber/Luna/CTC22LU_2_yappvj.jpg", 
+        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721007667/torontosaunaco/CTC/Canadian%20Timber/IMG-20240714-WA0013_ptdiat.jpg"
       ],
         "is_featured": false,
        "createdAt": "2024-01-01T00:00:00.000Z",
