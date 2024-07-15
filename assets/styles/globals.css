@@ -1,6 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+
+/* Add any custom styles for your slider here */
+.slick-slide img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slider-container {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.image-wrapper {
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
 
 /* .embla {
   width: 80%; 

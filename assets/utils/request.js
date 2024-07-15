@@ -11,7 +11,9 @@ const fetchProducts = async () => {
       if(!res.ok){
         throw new Error("Error fetching products")
       }
+      
       const products = await res.json()
+    
       return products
     } catch (error) {
       console.error(error)

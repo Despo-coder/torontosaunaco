@@ -65,8 +65,8 @@ const SaunaDetails = ({ product }) => {
     <main>
       <div className="bg-white p-6 rounded-lg shadow-md text-center md:text-left">
         <div className="flex justify-between">
-          <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
-          <h3 className="text-2xl font-semibold mb-4">${cost.toLocaleString()}.00</h3>
+          <h1 className="text-xl font-bold mb-4">{product.name}</h1>
+          <h3 className="text-xl font-semibold mb-4">${cost.toLocaleString()}.00</h3>
         </div>
 
         <section id="features" className="pt-12 bg-gray-50 dark:bg-darkBlue1 border-red-600 border-[1px]">
@@ -222,14 +222,14 @@ const SaunaDetails = ({ product }) => {
           </div>
         </section>
 
-        <p className="max-w-[40rem] my-6">{product.description}</p>
+        {/* <p className="max-w-[40rem] my-6">{product.description}</p> */}
         <div className="flex justify-center mt-8 space-x-4 md:justify-start">
-          <Button className="px-8 py-3 text-lg" onClick={handleAddToCart}>
+          <Button className="px-8 py-3 text-lg bg-black text-white rounded-xl hover:bg-black/85" onClick={handleAddToCart}>
             Add to Cart
           </Button>
-          <Link href="/contact">
-            <Button className="px-8 py-3 text-lg">Contact Us</Button>
-          </Link>
+          {/* <Link href="/contact">
+            <Button className="px-8 py-3 text-lg bg-black text-white rounded-xl hover:bg-black/85">Contact Us</Button>
+          </Link> */}
         </div>
       </div>
     </main>

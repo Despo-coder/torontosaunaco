@@ -10,7 +10,7 @@ const IndoorPage = async () => {
 
     const product = await fetchProducts()
    const cubes = product.filter(product => product.name.includes("Indoor"))
-const recentProducts = cubes.sort((a, b) => Math.random() - 0.5).slice(0, 5)
+   const recentProducts = cubes.sort((a, b) => (a.price || 0) - (b.price || 0));
 
      return (
     <>

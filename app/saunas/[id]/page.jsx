@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import { useParams } from "next/navigation"
 import { fetchProduct } from "@/assets/utils/request";
 import CarouselDynamic from "@/components/CarouselID";
+import PureCube1_ID from "@/components/PureCube1_ID";
 import SaunaDetails from "@/components/SaunaDetails";
 import Spinner from "@/components/Spinner";
 import ShareButtons from "@/components/ShareButtons";
@@ -115,10 +116,9 @@ const SaunaPage = () => {
     {!loading && product && (
       <>
       {/* <ProductImages images={product.images} /> */}
-      <CarouselDynamic images={images} />
-      <section>
-        
-      </section>
+      <PureCube1_ID  id={id}/>
+      {/* <CarouselDynamic images={images} /> */}
+    
 
       <section className="">
       <div className="container m-auto py-10 px-6">

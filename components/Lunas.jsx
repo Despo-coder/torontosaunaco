@@ -10,7 +10,7 @@ const LunaPage = async () => {
 
     const product = await fetchProducts()
    const cubes = product.filter(product => product.type === "Luna Sauna")
-    const recentProducts = cubes.sort(()=> Math.random())
+   const recentProducts = cubes.sort((a, b) => (a.price || 0) - (b.price || 0));
     // .slice(0, )
      return (
     <>
