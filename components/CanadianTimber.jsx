@@ -17,9 +17,7 @@ const CanadianTimber = async () => {
     <>
     <section className="px-4 py-6">
         <div className="container-xl lg:container m-auto">
-            <h2 className="text-4xl font-bold mb-4 text-center text-black">
-                Canadian Timber
-            </h2>
+           
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
 {recentProducts === 0 ? (<p>No Products found</p>):
 recentProducts.map((product, i)=>(
