@@ -9,9 +9,9 @@ const HomeInfoV2 = () => {
       page: '/cold-plunge'
     },
     {
-      image: '/SliderImages/NARKAAM.jpg',
-      description: 'We have a wide Array of heaters to choose from, from the classic to the modern.',
-      page: '/saunas'
+      image: '/images/Accessories.png',
+      description: 'your sauna with a varity of accessories.',
+      page: '/accessories'
     }
   ];
 
@@ -27,12 +27,21 @@ const HomeInfoV2 = () => {
               width={400}
               height={300}
             />
-            <p className="text-gray-700 text-center font-roboto">{item.description}</p>
+            <p className="text-gray-700 text-center font-roboto ">
+      {index === data.length - 1 ? (
+        <>
+          <span className='font-bold font-playfair'>Accessorize </span>
+          {item.description}
+        </>
+      ) : (
+        item.description
+      )}
+    </p>
             <div className='container flex justify-center items-center mt-2'>
               <Link href={item.page}>
-             <button className='bg-black w-full text-white p-2 rounded-lg' > Find Out More</button>
-             </Link>
-        </div>
+                <button className='bg-black w-full text-white p-2 rounded-lg'>Find Out More</button>
+              </Link>
+            </div>
           </div>
         ))}
        
