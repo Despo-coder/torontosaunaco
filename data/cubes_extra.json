@@ -1,0 +1,45 @@
+[
+  {
+    "owner": "torontosaunco",
+    "name": "Outdoor Pure Cube Sauna 580",
+   "type": "Pure Cube",
+   "collectionType": "Cube",
+   "series": "CU582",
+   "description": "The Outdoor 670 Pure Cube Sauna is a sophisticated design that features 3 large window panels on the front wall and the door in the middle. Create a calm and relaxing atmosphere with the optional semi-privacy panels that still have the double pane glass with a fixed cedar grill on the outside. Relax and rejuvenate with your family or friends in this clean and modern sauna.",
+    "dimension": "68 x 68 (in)",
+    "price": 13000,
+    "views": {
+    },
+    "wood_type": {
+      "Knotty Cedar": { "price": 0, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg" },
+      "Clear Cedar": {"price": 5000, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg" }
+    },
+   "stove_type": {
+      "Designer B Electric Heater (6kw)": { "price": 1800, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg" },
+      "Huum Drop Local Control (7.5kw)": { "price": 2800, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361773/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_6.0_Electric_Heater_With_WIFI_Controls_3132.50_zpe3m3.jpg" },
+      "Huum Drop WIFI (7.5kw)": { "price": 2950, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361773/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_6.0_Electric_Heater_With_WIFI_Controls_3132.50_zpe3m3.jpg" },
+      "Harvia KIP (6Kw) ": { "price": 1500, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361760/torontosaunaco/Wood_Stove_Install_img/Harvia_KIP_6KWH_WIth_Rocks_1470_jz0epy.jpg" },
+      "Narvi NC 16 Black Woodburning Heater":{ "price": 1650, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361795/torontosaunaco/Wood_Stove_Install_img/NARVINC_1688.50_fryhhq.jpg" },
+      "Huum Hive Heater":{ "price": 1650, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361795/torontosaunaco/Wood_Stove_Install_img/NARVINC_1688.50_fryhhq.jpg" },
+      "HomeCraft Revive":{ "price": 1650, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361795/torontosaunaco/Wood_Stove_Install_img/NARVINC_1688.50_fryhhq.jpg" }
+    },
+   "installation": {
+     "DIY": { "price": 0, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg" },
+      "Supply_Install": { "price": 1750,"image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg" }
+    },
+    "seller_info": {
+      "name": "John Doe",
+      "email": "john@gmail.com",
+      "phone": "617-555-5555"
+    },
+    "images": ["https://res.cloudinary.com/dw4ev5whz/image/upload/v1721092010/torontosaunaco/Cubes/CU670/670_900x_j9zcwz.webp", 
+    "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720366558/torontosaunaco/Cubes/CU670/Print_CU670-26_b39zp5.jpg" , 
+    "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720366551/torontosaunaco/Cubes/CU670/Print_CU670-19_mpc5zv.jpg", 
+    "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720366564/torontosaunaco/Cubes/CU670/Print_CU670-9_ve5us1.jpg", 
+    "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721090420/torontosaunaco/Cubes/CU582/4-PersonOutdoorSauna_Shower_900_acxnyb.jpg"
+  ],
+    "is_featured": false,
+   "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  }
+]

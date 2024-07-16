@@ -11,10 +11,10 @@
   overflow: hidden;
 }
 
-.slick-prev:before,
+/* .slick-prev:before,
 .slick-next:before {
   color: black;
-}
+} */
 
 .slider-container {
   width: 100%;
@@ -29,28 +29,6 @@
 }
 
 
-/* .embla {
-  width: 80%; 
-  margin: auto;
-  margin-top: 3px;
-  border-radius: 0.75rem;
-}
-
-.embla__viewport {
-  overflow: hidden;
-}
-
-.embla__container {
-  display: flex;
-}
-
-.embla__slide {
-  flex: 0 0 100%;
-  min-width: 0;
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-} */
 
 .embla {
   width: 100%; 
