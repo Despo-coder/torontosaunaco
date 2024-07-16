@@ -5,7 +5,7 @@ const HomeInfoV2 = () => {
   const data = [
     {
       image: '/SliderImages/PortableBarrel_Front_cover-ezgif.com-webp-to-jpg-converter_f3d75c61-5625-4644-b5f2-58d2539db6fa_zlbnnm.webp',
-      description: 'Take Plunge into Pure Bliss with our Classic Cold Plunge.',
+      description: 'Take a Plunge into Pure Bliss with our Classic Cold Plunge.',
       page: '/cold-plunge'
     },
     {
