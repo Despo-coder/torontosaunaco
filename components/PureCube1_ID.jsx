@@ -38,7 +38,6 @@ export default function SimpleSlider({id}) {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      //arrows: true,
       afterChange: (index) => setCurrentSlide(index),
     };
     if(loading) return <div>Loading...</div>
@@ -46,8 +45,9 @@ export default function SimpleSlider({id}) {
     if(!product || product.length === 0) return <div>No product found</div>
 
     return (
-      <div className="grid grid-cols-1  md:grid-cols-2 gap-8 p-4">
+      <div className="grid grid-cols-1  md:grid-cols-2 gap-[6px] p-4 md:gap-8">
     <div className="slider-container ">
+      
       <Slider {...settings}>
         {product.images.map((image, index) => (
           <div key={index}>
@@ -55,16 +55,17 @@ export default function SimpleSlider({id}) {
             <Image 
               src={image}
               alt={product.name || "Product Image"}
-              layout="fill"
-              objectFit="cover"
               sizes=" 100vw, 500px"
               priority={true}
-              style={{ overflow: 'hidden' }}
+              style={{ objectFit: 'cover' , layout: 'fill' }}
+              width={0}
+              height={0}
             />
             </div>
           </div>
         ))}
       </Slider>
+
     </div>
     <div className="flex flex-col items-center justify-center">
     <div className="product-info">
