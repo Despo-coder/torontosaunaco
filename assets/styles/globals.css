@@ -4,6 +4,12 @@
 @import 'slick-carousel/slick/slick.css';
 @import 'slick-carousel/slick/slick-theme.css';
 
+
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* Add any custom styles for your slider here */
 .slick-slide img {
   width: 100%;

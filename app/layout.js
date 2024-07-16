@@ -5,6 +5,7 @@ import 'photoswipe/dist/photoswipe.css';
 import StoreProvider from "@/redux/provider/StoreProvider"
 import AuthProvider from "@/components/AuthProvider"
 import toast, { Toaster } from 'react-hot-toast';
+import ScrollToTop from '@/components/ScrollToTop';
 import Footer from "@/components/Footer"
 
 
@@ -37,6 +38,7 @@ const MainLayout = ({children}) => {
           <Navbar />
         
           <Toaster position="top-center" />
+          <ScrollToTop />
           <main>{children}</main>
           </StoreProvider>
           <Footer />
