@@ -20,6 +20,7 @@ const HomeInfoV2 = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {data.map((item, index) => (
           <div key={index} className="flex flex-col items-center ">
+            <Link href={item.page}>
             <Image
               src={item.image}
               alt={`Image ${index + 1}`}
@@ -27,6 +28,7 @@ const HomeInfoV2 = () => {
               width={400}
               height={300}
             />
+            </Link>
             <p className="text-gray-700 text-center font-roboto ">
       {index === data.length - 1 ? (
         <>
