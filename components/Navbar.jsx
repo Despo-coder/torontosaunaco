@@ -59,6 +59,7 @@ const Navbar = () => {
             onClick={() => {
               setIsMobileMenuOpen(!isMobileMenuOpen);
             }}
+            suppressHydrationWarning
           >
             <span className="absolute -inset-0.5"></span>
             <span className="sr-only">Open main menu</span>

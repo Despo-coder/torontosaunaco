@@ -1,4 +1,5 @@
 // Create Utility function to fetch all data
+import { NextResponse } from "next/server"
 const apiDomain = process.env.NEXT_PUBLIC_API_DOMAIN || null
 const fetchProducts = async () => {
 
@@ -22,7 +23,7 @@ const fetchProducts = async () => {
    
   }
 
-// Fetch Single Property
+// Fetch Single Product
 const fetchProduct = async (id) => {
   try {
       if(!apiDomain){
@@ -68,16 +69,16 @@ const fetchProduct = async (id) => {
   const fetchOrders = async () => {
     try {
       if(!apiDomain){
-       // console.log("Something went Wrong....")
+       
         return []
       }
-      const res = await fetch(`${apiDomain}/orders`)
+      const res = await fetch(`${apiDomain}/orders`, { next: { revalidate: 10 } })
       if(!res.ok){
-      
-        throw new Error("Error fetching Orders")
+         throw new Error("Error fetching Orders")
+
       }
       const orders = await res.json()
-      console.log(orders)
+      console.log('FetchOrders', orders)
       return orders
     } catch (error) {
       console.error(error)
@@ -86,4 +87,26 @@ const fetchProduct = async (id) => {
 
   }
 
-  export  {fetchProduct, fetchProducts, fetchAccessories, fetchOrders}
+
+  // Fetch Single Order
+const fetchOrder = async (id) => {
+  try {
+      if(!apiDomain){
+       // console.log("Something went Wrong....")
+        return null
+      }
+      const res = await fetch(`${apiDomain}/orders/${id}`)
+      if(!res.ok){
+        throw new Error("Error fetching Sauna!")
+      }
+      const order = await res.json()
+   
+      return order
+    } catch (error) {
+      console.error(error)
+      return null
+    }
+
+  }
+
+  export  {fetchProduct, fetchProducts, fetchAccessories, fetchOrders,fetchOrder}
