@@ -1,9 +1,11 @@
+'use client'
 import React from 'react';
 import Image from 'next/image';
-import { format } from 'date-fns';
+
 
 const OrderCard = ({ order }) => {
 
+    console.log(order)
 
   return (
     <div className="bg-white shadow-md rounded-lg p-6 m-4 w-full max-w-3xl ">
