@@ -6,10 +6,10 @@ import OrderCard from './OrdersCard'
 
 
 const Orders = async() => {
-    const product = await fetchOrders()
+    const orders = await fetchOrders()
     const user = await getUserSession()
-    // console.log(user)
-    const userOrders = product.filter(order => order.id === user.userId)
+    console.log(user)
+    const userOrders = orders.filter(order => order.id === user.id)
    /// console.log(userOrders.map(order => order.items.map(image => image.url)))
    
   return (
