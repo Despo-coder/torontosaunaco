@@ -4,7 +4,7 @@ import Orders from "@/models/Orders";
 
 // GET API Handler - /api/products
 
-export const dynamic = 'force-dynamic';
+export const dynamic = 'auto'
 
 export const GET = async (req, res) => {
 
