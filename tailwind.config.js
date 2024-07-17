@@ -83,7 +83,10 @@ module.exports = {
           '4/12': '33.333333%',
           '5/12': '41.666667%',
           '6/12': '50%',
-      }
+      },
+      screens: {
+        'xs': '859px',
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
