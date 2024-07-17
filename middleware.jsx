@@ -5,8 +5,8 @@ import { getToken } from "next-auth/jwt";
 export async function middleware(request) {
     const token = await getToken({ req: request });
     
-    console.log('Current User:', token ? 'Authenticated' : 'Not Authenticated');
-    console.log('Requested URL:', request.nextUrl.pathname);
+    // console.log('Current User:', token ? 'Authenticated' : 'Not Authenticated');
+    // console.log('Requested URL:', request.nextUrl.pathname);
   
     if (token && request.nextUrl.pathname === '/signin') {
       return NextResponse.redirect(new URL('/', request.url));
