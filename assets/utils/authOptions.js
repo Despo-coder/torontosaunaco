@@ -48,6 +48,13 @@ export const authOptions = {
           }),
     ],
 callbacks: {
+    async jwt({ token, user }) {
+        if (user) {
+          token.id = user.id;
+          token.isAdmin = user.isAdmin;
+        }
+        return token;
+      },
     // Invoked on Successful Sign In
     async signIn({ user, account, profile }) {
         await connectDB();
@@ -70,14 +77,25 @@ callbacks: {
     
         return true;
     },
-    async session({session}){
+    async session({session, token}){
         // Steps
         // 1. Connect to the DB
         const user = await User.findOne({email:session.user.email});
-        session.user.id = user._id.toString();
-        session.user.isAdmin = user.isAdmin;
-        session.user.username = user.username;
-        return session;
+        // async session({session, token}){
+        //     const user = await User.findOne({email:session.user.email});
+            session.user = {
+                id: token.id,
+                isAdmin: user.isAdmin,
+                username: user.username,
+                email:user.email,
+                image:user.image,
+                secondaryId:user._id
+
+
+            };
+            return session;
+        }
+        
         // 2. Get User from DB
         // 3. Set User in Session with the userid
         // 4. Return the Session
@@ -89,5 +107,4 @@ callbacks: {
         
         // return session;
     }
-}
 }

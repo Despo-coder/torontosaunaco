@@ -42,12 +42,13 @@ const Navbar = () => {
     return (  
     <nav className=" bg-black py-12 ">
 
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-2 sm:px-6 md:px-6 lg:px-8">
       <div className="relative flex h-20 items-center justify-between">
      
       
        {/* <!-- Mobile menu button--> */}
-        <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
+        <div className="absolute inset-y-0 left-0 flex items-center xs:hidden">
+          {/* XS Screen Change */}
         
           <button
             type="button"
@@ -81,19 +82,18 @@ const Navbar = () => {
 
         {/* <!-- Logo + Regular Menu --> */}
         <div
-          className="flex mb-2 flex-1 items-center justify-center sm:items-stretch md:justify-start md:mt-1"
+          className="flex mb-2 flex-1 items-center justify-center sm:items-stretch md:items-stretch md:justify-start md:mt-1"
         >
        
-          <Link className="flex flex-col items-center md:flex-row md:items-center flex-shrink-0" href="/">
-           <Image src={logo} alt="Toronto Sauna Co" width={80} height={50}priority={true} className='rounded-full w-auto'/>
-           
-            <span className="md:block text-white text-2xl font-bold ml-2 mt-1 "
-              >The Toronto Sauna Co.</span
-            >
-          </Link>
+       <Link className="flex flex-col items-center md:flex-row md:items-center flex-shrink-0"  href="/">
+  <Image src={logo} alt="Toronto Sauna Co" width={80} height={50} priority={true} className='rounded-full w-auto md:w-16 lg:w-20'/>
+  <span className="md:block text-white text-xl md:text-lg lg:text-2xl font-bold ml-2 mt-1">The Toronto Sauna Co.</span>
+</Link>
+
           {/* <!-- Desktop Menu Hidden below md screens --> */}
-          <div className="hidden md:ml-6 md:block">
-            <div className="flex space-x-2 mt-9">
+          <div className="hidden md:ml-4 lg:ml-6  md:block">
+             {/* XS Screen Change */}
+            <div className="flex space-x-1 md:space-x-2 lg:space-x-4 mt-9">
               <Link
                 href="/"
                 className={`${pathname === '/' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-2 py-4"`}
@@ -182,16 +182,10 @@ const Navbar = () => {
 
         {/* <!-- Right Side Menu (Logged Out) -->  */}
       
-<div className="hidden md:block md:ml-6">
-  <div className="flex items-center">
-    {!session ? (
-      <Link href="/signin">
-      <Button className="flex items-center text-white bg-gray-600 hover:bg-gray-900 hover:text-white rounded-xl px-3 py-2 ">
-      <span>Login/Sign-Up </span>
-    </Button>
-    </Link>
-    ):(
-      <h6 className='font-roboto text-white'>{session?.user?.email.slice(0,20)}</h6>
+<div className="hidden md:block md:ml-2 lg:ml-6">
+<div className="flex items-center ">
+    {session && (
+      <h6 className='font-roboto text-white'>{session?.user?.username.slice(0,20)}</h6>
     )}
 
 
@@ -273,13 +267,21 @@ const Navbar = () => {
             {/* <!-- Profile dropdown --> */}
             {isProfileMenuOpen && (<div
               id="user-menu"
-              className= " absolute right-0 z-10 mt-14 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none ease-in duration-500"
+              className= " absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none ease-in duration-500"
               role="menu"
               aria-orientation="vertical"
               aria-labelledby="user-menu-button"
              tabIndex="-1"
              onClick={()=> setIsProfileMenuOpen(false)}
             >
+              <Link
+                href="/signin"
+                className="block px-4 py-2 text-sm text-gray-700"
+                role="menuitem"
+               tabIndex="-1"
+                id="user-menu-item-0"
+                ><span className='font-bold'>Sign In</span></Link
+              >
               <Link
                 href="/profile"
                 className="block px-4 py-2 text-sm text-gray-700"
