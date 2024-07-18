@@ -11,13 +11,7 @@ useEffect(() => {
   const fetchData = async () => {
     try {
       const data = await fetchProducts()
-      // console.log(data)
-      // const items = Object.values(data).filter((x)=>x.type !=='Cold Plunge').map(product => ({
-      //   id: product._id,
-      //   image: product.images[0],
-      //   name: product.name,
-      //   price: product.price
-      // }))
+    
          const items = Object.values(data).filter((x) => x.type !== 'Cold Plunge').map(product => ({
         id: product._id,
         image: product.images[0],
@@ -32,6 +26,8 @@ useEffect(() => {
   
   fetchData()
 }, [])
+
+console.log(carouselItems)
 
 return (
   <>
