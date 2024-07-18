@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { getToken } from "next-auth/jwt";
-
+export {default} from 'next-auth/middleware'
 
 export async function middleware(request) {
     const token = await getToken({ req: request });
@@ -29,6 +29,7 @@ export const config = {
     '/profile', 
     '/messages', 
     '/profile',
+    '/orders',
     '/products/saved',
     '/signin' // Include the sign-in page to handle redirection to home if already logged in
   ],

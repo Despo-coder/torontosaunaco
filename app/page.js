@@ -17,7 +17,7 @@ const HomePage = () => {
       <HompageInfo />
       <WoodTypes />
       <h1 className=" mt-4 text-3xl text-center font-bold font-playfair mb-2">Popular Saunas</h1>
-     <Carousel2 />
+       <Carousel2 />
       <HomeInfoV2 />
       <Contact />
     
