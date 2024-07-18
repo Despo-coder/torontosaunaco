@@ -14,7 +14,7 @@ const CarouselContainer = () => {
             
            
             const shuffled = filteredProducts.sort(() => 0.5 - Math.random());
-            const selected = shuffled.slice(0, 8);
+            const selected = shuffled.slice(0, 10);
       
             const items = selected.map(product => ({
               id: product._id,
