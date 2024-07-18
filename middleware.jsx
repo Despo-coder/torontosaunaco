@@ -27,7 +27,6 @@ export const config = {
     '/saunas/add', 
     '/products/edit', 
     '/profile', 
-    '/orders',
     '/messages', 
     '/products/saved',
     '/signin' // Include the sign-in page to handle redirection to home if already logged in
