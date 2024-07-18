@@ -78,7 +78,7 @@ const fetchProduct = async (id) => {
 
       }
       const orders = await res.json()
-      console.log('FetchOrders', orders)
+      // console.log('FetchOrders', orders)
       return orders
     } catch (error) {
       console.error(error)
