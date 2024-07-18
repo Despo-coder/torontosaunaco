@@ -15,7 +15,7 @@ const fetchProducts = async () => {
       }
       
       const products = await res.json()
-      console.log("Fetching Products....")
+      // console.log("Fetching Products....")
       return products
     } catch (error) {
       console.error(error)

@@ -1,18 +1,18 @@
 [
     {
         "owner": "torontosaunco",
-        "name": "6'x6'  Barrel Sauna w Changeroom",
+        "name": "7' x 7'  Barrel Sauna with Changeroom & Porch",
        "type": "Barrel",
        "collectionType": "Barrel",
-       "series": "662",
-       "description": "6'x6' Barrel Sauna w/ Changeroom in western red cedar (knotty). A traditional option that stands the test of time. Customize to suit your sauna needs then enjoy with family and friends. This version incorporates the benefits of a 4' changeroom and can be customized to suit your sauna needs. Enjoy with family and friends!",
+       "series": "772CPW",
+       "description": "The 7'x7' Barrel Sauna w/ Changeroom & Porch in western red cedar (knotty). A traditional option that stands the test of time. Customize to suit your sauna needs then enjoy with family and friends. This version incorporates the benefits of a 4' changeroom, 2' porch and can be customized to suit your sauna needs. Enjoy with family and friends!",
         "dimension": "84 x 84 x 60 (in)",
-        "price": 9800,
+        "price": 12000,
         "views": {
         },
         "wood_type": {
           "Knotty Cedar": { "price": 0, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg" },
-          "Clear Cedar": {"price": 9000, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg" }
+          "Clear Cedar": {"price": 13500, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg" }
         },
        "stove_type": {
       "Harvia KIP (6Kw) ": { "price": 1500, "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361760/torontosaunaco/Wood_Stove_Install_img/Harvia_KIP_6KWH_WIth_Rocks_1470_jz0epy.jpg" },
@@ -29,11 +29,11 @@
           "email": "john@gmail.com",
           "phone": "617-555-5555"
         },
-        "images": ["https://res.cloudinary.com/dw4ev5whz/image/upload/v1721324123/torontosaunaco/Barrell/6x6/6x6BarrelSauna_wCR_tqclui.png", 
-        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721324345/torontosaunaco/Barrell/6x6/660CW_2_c2d0ri.jpg" , 
-        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721324343/torontosaunaco/Barrell/6x6/660CW_1_hfpri7.jpg", 
-        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721324347/torontosaunaco/Barrell/6x6/660CW_3_j3vdao.jpg", 
-        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721324349/torontosaunaco/Barrell/6x6/660CW_nlk85y.jpg"
+        "images": ["https://res.cloudinary.com/dw4ev5whz/image/upload/v1721332483/torontosaunaco/Barrell/7x7/7x7BarrelSauna_CRP_qkzlun.png", 
+        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720933070/torontosaunaco/Barrell/Filler_Image2_wjdarw.jpg" , 
+        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720933070/torontosaunaco/Barrell/Filler_Image3_bbrj7z.jpg", 
+        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721332882/torontosaunaco/Barrell/7x7crp_filler_v2s2qk.png", 
+        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721332483/torontosaunaco/Barrell/7x7/7x7BarrelSauna_CRP_qkzlun.png"
       ],
         "is_featured": false,
        "createdAt": "2024-01-01T00:00:00.000Z",
