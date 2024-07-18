@@ -1,6 +1,7 @@
 // Create Utility function to fetch all data
 import { NextResponse } from "next/server"
 const apiDomain = process.env.NEXT_PUBLIC_API_DOMAIN || null
+
 const fetchProducts = async () => {
 
     try {
@@ -14,7 +15,7 @@ const fetchProducts = async () => {
       }
       
       const products = await res.json()
-    
+      console.log("Fetching Products....")
       return products
     } catch (error) {
       console.error(error)

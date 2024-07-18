@@ -38,7 +38,7 @@ const MainLayout = ({children}) => {
           <Navbar />
         
           <Toaster position="top-center" />
-          {/* <ScrollToTop /> */}
+          <ScrollToTop />
           <main>{children}</main>
           </StoreProvider>
           <Footer />

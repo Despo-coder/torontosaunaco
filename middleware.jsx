@@ -28,6 +28,7 @@ export const config = {
     '/products/edit', 
     '/profile', 
     '/messages', 
+    '/profile',
     '/products/saved',
     '/signin' // Include the sign-in page to handle redirection to home if already logged in
   ],
