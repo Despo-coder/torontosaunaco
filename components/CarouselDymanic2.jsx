@@ -84,7 +84,7 @@ const CarouselDynamic2 = ({images}) => {
     return (
         <>
      
-            <div className='max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative group' >
+            <div className='max-w-[1400px] h-[530px] md:h-[700px] w-full m-auto py-4 md:py-4 px-4 mb-4 md:mb-12 relative group' >
                 <div className='w-full h-full rounded-2xl bg-center bg-cover duration-500 relative'>
                   
                     {images && images.length > 0 && (
@@ -100,7 +100,7 @@ const CarouselDynamic2 = ({images}) => {
                             </div>
                         </Link>
                     )}
-                    <div className='absolute flex flex-col bg-black/50 p-1 rounded-lg bottom-20 left-40'>
+                    <div className='absolute flex flex-col bg-black/50 p-1 rounded-lg bottom-40 left-10 sm:bottom-20 md:left-2rem'>
                         <span className='font-playfair text-white text-lg'>{images[currentIndex]?.name}</span>
                         <span className='font-roboto text-white text-xs font-bold'>
                             ${images[currentIndex]?.price ? images[currentIndex]?.price.toLocaleString() : '0'}.00
@@ -110,7 +110,7 @@ const CarouselDynamic2 = ({images}) => {
                 <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
                     <BsChevronCompactLeft onClick={prevSlide} size={30} />
                 </div>
-                <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+                <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer '>
                     <BsChevronCompactRight onClick={nextSlide} size={30} />
                 </div>
                 <div className='flex justify-center py-2'>
