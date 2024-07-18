@@ -27,6 +27,10 @@ const orderSchema = new mongoose.Schema(
     amount: {
       type: Number,
     },
+    emailSent: {
+      type: Boolean,
+      default: false,
+    },
   },
   {
     timestamps: true,

@@ -59,6 +59,7 @@ const Navbar = () => {
             onClick={() => {
               setIsMobileMenuOpen(!isMobileMenuOpen);
             }}
+            suppressHydrationWarning
           >
             <span className="absolute -inset-0.5"></span>
             <span className="sr-only">Open main menu</span>
@@ -296,7 +297,7 @@ const Navbar = () => {
                 role="menuitem"
                tabIndex="-1"
                 id="user-menu-item-2"
-                >Orders</Link
+                >View Orders</Link
               >
               <button  className="block px-4 py-2 text-sm text-gray-700" 
               onClick={()=> {setIsProfileMenuOpen(false)

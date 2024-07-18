@@ -11,6 +11,7 @@ export async function POST(req) {
     await connectDB();
     const { paymentIntentId, amount, items, cardholderName, address } = await req.json();
     const {id , username, email}= sessionUser.user
+    const emailSent = false
     
     //console.log(cardholderName, address, paymentIntentId, amount, items, id, username, email)
     //const {username, email, password} = user;
@@ -25,7 +26,8 @@ export async function POST(req) {
       email,
       id,
       amount,
-      paymentIntentId
+      paymentIntentId,
+      emailSent,
     });
     return NextResponse.json({newOrder}, {status: 200})
 

@@ -1,11 +1,16 @@
 import React from 'react';
 import Image from 'next/image';
-import { format } from 'date-fns';
+
 
 const OrderCard = ({ order }) => {
 
+    if (!order) {
+        return <div className="bg-white shadow-md rounded-lg p-6 m-4 w-full max-w-3xl">No order found.</div>
+      }
 
   return (
+    <>
+
     <div className="bg-white shadow-md rounded-lg p-6 m-4 w-full max-w-3xl ">
          <h3 className="text-2xl font-bold mb-4">Hello {order.username || "There"}, </h3>
          <p> Thanks Again for Shopping WIth Us.</p>
@@ -51,7 +56,11 @@ const OrderCard = ({ order }) => {
   </div>
 </div>
 
-    </div>
+    </div></>
+
+
+   
+    
   );
 };
 

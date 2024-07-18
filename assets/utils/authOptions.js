@@ -89,7 +89,7 @@ callbacks: {
                 username: user.username,
                 email:user.email,
                 image:user.image,
-                secondaryId:user._id
+                secondaryId:user._id.toString(),
 
 
             };
