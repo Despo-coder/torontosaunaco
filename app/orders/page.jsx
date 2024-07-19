@@ -11,12 +11,12 @@ const OrdersPage = async () => {
 
 console.log(session)
 
-  if (!session) {
+  // if (!session) {
     // Redirect to sign in page if there's no session
-    return (
-      <div>Please sign in to view your orders.</div>
-    );
-  }
+  //   return (
+  //     <div>Please sign in to view your orders.</div>
+  //   );
+  // }
 
   // Fetch orders on the server side
   const orders = await fetchOrders();
@@ -29,19 +29,20 @@ console.log(orders)
 
   // const userOrders = session ? orders.filter(order => order.id === session.user.secondaryId) : [];
 
-const userOrders = session?.user?.id ? orders.filter(order => order.id === session.user.secondaryId)  : []
-console.log(userOrders)
+//const userOrders = session?.user?.id ? orders.filter(order => order.id === session.user.secondaryId)  : []
+//console.log(userOrders)
 
   // Handle case when there are no orders
-  if (!userOrders.length) {
-    return (
-      <div>No orders found.</div>
-    );
-  }
+  // if (!userOrders.length) {
+  //   return (
+  //     <div>No orders found.</div>
+  //   );
+  // }
 
   return (
     <div>
-      <OrderCard orders={userOrders} />
+      {/* <OrderCard orders={userOrders} /> */}
+      <OrderCard initialOrders={orders} />
     </div>
   );
 };
