@@ -60,7 +60,9 @@ export default function SimpleSlider({id}) {
               style={{ objectFit: 'cover' , layout: 'fill' }}
               width={0}
               height={0}
+             
             />
+
             </div>
           </div>
         ))}
