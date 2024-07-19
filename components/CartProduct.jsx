@@ -17,13 +17,7 @@ dispatch(removeFromCart(id))
     <div className="flex items-center justify-between border-b border-slate-400  pb-3 font-semibold text-sm mb-4">
     
          <div className="flex items-center gap-3">
-         {/* <Image
-           src="/tomato.webp"
-           width={249}
-           height={249}
-           alt="Alt text"
-           className="rounded-xl w-20 h-20"
-         /> */}
+         
          <div className="flex flex-col">
            <h2>{cartItem.title}</h2>
            

@@ -92,7 +92,8 @@ const handleBuyNow = () => {
   // Navigate to the checkout page
   router.push('/precheckout');
 };
-
+// const tax = AddDecimals((suBtotal + shippingCost) * 0.13)
+const totalCost = AddDecimals(suBtotal + shippingCost + parseFloat(tax))
 
   return (
     <div>
@@ -169,7 +170,7 @@ const handleBuyNow = () => {
                         
                         <li className="flex flex-wrap gap-4 text-sm">Tax <span className="ml-auto font-bold">${`${tax.toLocaleString()}`}</span></li>
                         <hr className="border-gray-300" />
-                        <li className="flex flex-wrap gap-4 text-sm font-bold">Total <span className="ml-auto">{}</span></li>
+                        <li className="flex flex-wrap gap-4 text-sm font-bold">Total <span className="ml-auto">{`$${totalCost.toLocaleString()}`}</span></li>
                     </ul>
 
                     <div className=" flex flex-col items-center mt-8 space-y-2">
