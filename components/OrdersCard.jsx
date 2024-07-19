@@ -2,11 +2,54 @@
 
 import React from 'react'
 import Image from 'next/image'
+import { useSession} from 'next-auth/react';
+import { useState, useEffect } from 'react';
 
-const OrderCard = ({ orders }) => {
-  if (!orders || orders.length === 0) {
-    return <div className="bg-white shadow-md rounded-lg p-6 m-4 w-full max-w-3xl">No orders found.</div>
+
+const OrderCard = ({ initialOrders }) => {
+  const [myOrders, setMyOrders] = useState([])
+  const [orders, setOrders] = useState(initialOrders);
+  const { data: session } = useSession()
+
+  //useEffect(() => {
+    // Only update state if initialOrders changes
+//     if (JSON.stringify(initialOrders) !== JSON.stringify(orders)) {
+//       setOrders(initialOrders);
+//     }
+//   }, [initialOrders]);
+
+
+//   console.log(session)
+//   console.log(orders)
+
+// useEffect(() => {
+//   if (session?.user?.user?.id !== orders.id) {
+//     return <div className="bg-white shadow-md rounded-lg p-6 m-4 w-full max-w-3xl">No orders found.</div>
+//   }else if(session?.user?.user?.id === orders.id){
+ 
+// setMyOrders(orders)
+//   }
+
+// }, [session, orders])
+
+
+
+useEffect(() => {
+  if (session && initialOrders.length) {
+    const userOrders = initialOrders.filter(order => order.id === session.user.secondaryId || order.email === session.user.email);
+    setOrders(userOrders);
   }
+}, [session, initialOrders]);
+
+if (!session) {
+  return <div>Please sign in to view your orders.</div>;
+}
+
+if (!orders.length) {
+  return <div>No orders found.</div>;
+}
+
+
 
   return (
     <div className="container mx-auto px-4 flex justify-center">

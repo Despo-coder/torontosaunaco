@@ -67,47 +67,47 @@ const fetchProduct = async (id) => {
   }
 
    // Fetch Orders
-  // const fetchOrders = async () => {
-  //   try {
-  //     if(!apiDomain){
+  const fetchOrders = async () => {
+    try {
+      if(!apiDomain){
        
-  //       return []
-  //     }
-  //     const res = await fetch(`${apiDomain}/orders`, { next: { revalidate: 10 } })
-  //     if(!res.ok){
-  //        throw new Error("Error fetching Orders")
+        return []
+      }
+      const res = await fetch(`${apiDomain}/orders`)
+      if(!res.ok){
+         throw new Error("Error fetching Orders")
 
-  //     }
-  //     const orders = await res.json()
-  //     // console.log('FetchOrders', orders)
-  //     return orders
-  //   } catch (error) {
-  //     console.error(error)
-  //     return []
-  //   }
+      }
+      const orders = await res.json()
+     // console.log('FetchOrders', orders)
+      return orders
+    } catch (error) {
+      console.error(error)
+      return []
+    }
 
-  // }
+  }
 
 
  
 
-  const fetchOrders = async (page = 1, limit = 10) => {
-    try {
-      if(!apiDomain) {
-        return { orders: [], totalPages: 0, currentPage: 1 };
-      }
-      const res = await fetch(`${apiDomain}/orders?page=${page}&limit=${limit}`);
-      if(!res.ok) {
-        throw new Error("Error fetching Orders");
-      }
-      const data = await res.json();
-      console.log('API DATA: ', data)
-      return data;
-    } catch (error) {
-      console.error(error);
-      return { orders: [], totalPages: 0, currentPage: 1 };
-    }
-  }
+  // const fetchOrders = async (page = 1, limit = 10) => {
+  //   try {
+  //     if(!apiDomain) {
+  //       return { orders: [], totalPages: 0, currentPage: 1 };
+  //     }
+  //     const res = await fetch(`${apiDomain}/orders?page=${page}&limit=${limit}`);
+  //     if(!res.ok) {
+  //       throw new Error("Error fetching Orders");
+  //     }
+  //     const data = await res.json();
+  //     console.log('API DATA: ', data)
+  //     return data;
+  //   } catch (error) {
+  //     console.error(error);
+  //     return { orders: [], totalPages: 0, currentPage: 1 };
+  //   }
+  // }
 
 
   // Fetch Single Order
