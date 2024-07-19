@@ -7,6 +7,9 @@ import { fetchOrders } from '@/assets/utils/request';
 const OrdersPage = async () => {
   // Get the user's session on the server side
   const session = await getServerSession(authOptions);
+  // const session = await getServerSession(authOptions);
+
+console.log(session)
 
   if (!session) {
     // Redirect to sign in page if there's no session
@@ -17,12 +20,17 @@ const OrdersPage = async () => {
 
   // Fetch orders on the server side
   const orders = await fetchOrders();
-
+  // const { orders, totalPages, currentPage } = await fetchOrders();
+  // const { orders = [] } = await fetchOrders()
   // Filter orders for the logged-in user
-  const userOrders = orders.filter(order => order.id === session.user.secondaryId);
 
+console.log(orders)
+  // const userOrders = orders.filter(order => order.id === session.user.secondaryId);
 
+  // const userOrders = session ? orders.filter(order => order.id === session.user.secondaryId) : [];
 
+const userOrders = session?.user?.id ? orders.filter(order => order.id === session.user.secondaryId)  : []
+console.log(userOrders)
 
   // Handle case when there are no orders
   if (!userOrders.length) {
