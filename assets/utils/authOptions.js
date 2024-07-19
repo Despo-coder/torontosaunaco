@@ -71,7 +71,7 @@ callbacks: {
                     image: profile.picture,
                 });
             }
-           // console.log(profile);
+           //console.log(profile);
         } else if (account.provider === 'credentials') {
             // For credentials login, we don't need to do anything here
             // as the user is already authenticated in the authorize function
@@ -110,3 +110,30 @@ callbacks: {
         // return session;
     }
 }
+
+// Notes
+// The code in authOptions.js is responsible for setting up authentication options for a web application. This file configures how users can sign in and how their session information is managed.
+
+// The main purpose of this code is to define authentication providers and callbacks that handle user sign-in, session management, and token creation. It supports two ways for users to sign in: through Google and through a username/password (credentials) system.
+
+// This code doesn't take direct inputs or produce direct outputs in the traditional sense. Instead, it exports an object called authOptions that other parts of the application can use to set up authentication.
+
+// The code achieves its purpose by first setting up two authentication providers:
+
+// Google Provider: This allows users to sign in with their Google accounts. It uses environment variables to securely store the Google client ID and secret.
+
+// Credentials Provider: This allows users to sign in with a username and password. It checks if the provided email exists in the database and if the password matches.
+
+// The code then defines several callback functions that handle different aspects of the authentication process:
+
+// The jwt callback adds user information to the JSON Web Token (JWT) that's created when a user signs in.
+
+// The signIn callback is called when a user successfully signs in. For Google sign-ins, it checks if the user already exists in the database. If not, it creates a new user record.
+
+// The session callback is responsible for adding user information to the session object, which can be used throughout the application to know who is currently logged in.
+
+// An important logic flow in this code is how it handles different sign-in methods. For Google sign-ins, it checks if the user exists in the database and creates a new user if they don't. For credential sign-ins, it verifies the email and password against the database.
+
+// The code also includes data transformations, such as creating a username from the Google profile name and converting the database user ID to a string.
+
+// Overall, this code sets up a flexible authentication system that supports multiple sign-in methods and manages user sessions, providing a foundation for user authentication in the application.
