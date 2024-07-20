@@ -2,7 +2,7 @@ import nodemailer from 'nodemailer';
 
 export const dynamic = 'force-dynamic';
 export async function POST(req, res) {
-  const { name, email, phone, message, subject } = await req.json();
+const { name, email, phone, message, subject } = await req.json();
 
 //   Create a transporter object using SMTP transport
   let transporter = nodemailer.createTransport({
@@ -43,6 +43,4 @@ export async function POST(req, res) {
       },
     });
   }
-
-
 }
