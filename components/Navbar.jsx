@@ -29,16 +29,12 @@ const Navbar = () => {
  const { data: session } = useSession();
  const profileImage = session?.user?.image || defaultImage;
 
-// useEffect(() => {
-//   const setAuthProviders = async () => {
-//     const res = await getProviders();
-//     setProviders(res);
-//   }
-//   setAuthProviders();
-// }
-// , []);
+ const handleLinkClick = () => {
+  setIsMobileMenuOpen(false);
+};
+
  
-//console.log(showDropdown)
+
     return (  
     <nav className=" bg-black py-12 ">
 
@@ -318,15 +314,22 @@ const Navbar = () => {
            {/* {isMobileMenuOpen && (       */}
           {isMobileMenuOpen && ( <div id="mobile-menu" >
           <div className=" mt-6 flex flex-col space-y-1 px-2 pb-3 pt-2">
-              <Link
-                href="/"
-                className={`${pathname === '/' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
-                // className={`${pathname === '/' ?'bg-gray-900 text-white' : ''} " text-white  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
-                >Home</Link
+          
+         
+          <Link
+          href="/"
+          className={`${pathname === '/' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
+          onClick={handleLinkClick}
+        >
+          Home
+        </Link>
+             
+              <div className="relative "  onMouseEnter={()=>setShowDropdown(true)} onMouseLeave={()=>setShowDropdown(false) } onClick={()=>setShowDropdown(!showDropdown)} >
+              <Link href='#' 
+              className={`${pathname === '/saunas' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[px] cursor-pointer"`}
+              
               >
-              <div className="relative "  onMouseEnter={()=>setShowDropdown(true)} onMouseLeave={()=>setShowDropdown(false) } onClick={()=>setShowDropdown(!showDropdown)}>
-              <Link href={'/saunas'} 
-              className={`${pathname === '/saunas' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[px] cursor-pointer"`}>
+             
               Saunas
               <span >
               <svg xmlns="http://www.w3.org/2000/svg" className="w-3 fill-gray-500 inline ml-3" viewBox="0 0 24 24">
@@ -339,37 +342,46 @@ const Navbar = () => {
               {showDropdown && ( 
               <ul className= 'absolute shadow-[0_8px_19px_-7px_rgba(6,81,237,0.2)] bg-white py-2 z-[1000] min-w-full w-max divide-y max-h-96 overflow-auto' >
               <li className='py-3 px-5 hover:bg-gray-50 text-gray-800 text-sm cursor-pointer'><Link
+                href="/saunas"
+                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                
+                onClick={() => {setShowDropdown(false); handleLinkClick()}}
+              >
+                All Saunas
+              </Link></li>
+              <li className='py-3 px-5 hover:bg-gray-50 text-gray-800 text-sm cursor-pointer'><Link
                 href="/saunas/cube"
                 className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-              onClick={() => setShowDropdown(false)}
+                
+                onClick={() => {setShowDropdown(false); handleLinkClick()}}
               >
                 Cube Saunas
               </Link></li>
               <li className='py-3 px-5 hover:bg-gray-50 text-gray-800 text-sm cursor-pointer'><Link
                 href="/saunas/luna"
                 className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                onClick={() => setShowDropdown(false)}
+                onClick={() => {setShowDropdown(false); handleLinkClick()}}
               >
                 Luna Saunas
               </Link></li>
               <li className='py-3 px-5 hover:bg-gray-50 text-gray-800 text-sm cursor-pointer'><Link
                 href="/saunas/barell"
                 className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                onClick={() => setShowDropdown(false)}
+                onClick={() => {setShowDropdown(false); handleLinkClick()}}
               >
                 Barrell Saunas
               </Link></li>
               <li className='py-3 px-5 hover:bg-gray-50 text-gray-800 text-sm cursor-pointer'><Link
                 href="/saunas/canadian-timber"
                 className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                onClick={() => setShowDropdown(false)}
+                onClick={() => {setShowDropdown(false); handleLinkClick()}}
               >
                 Canadian Timber
               </Link></li>
               <li className='py-3 px-5 hover:bg-gray-50 text-gray-800 text-sm cursor-pointer'><Link
                  href="/saunas/indoor"
                 className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                onClick={() => setShowDropdown(false)}
+                onClick={() => {setShowDropdown(false); handleLinkClick()}}
               >
                 Indoor Saunas
               </Link></li>
@@ -379,19 +391,23 @@ const Navbar = () => {
         <Link
         href="/accessories"
         className={`${pathname === '/cold-plunge' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
-        onClick={() => setShowDropdown(false)}
+        onClick={() => {setShowDropdown(false); handleLinkClick()}}
      >
        Accessories
       </Link>
               <Link
                 href="/cold-plunge"
                 className={`${pathname === '/cold-plunge' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
+                onClick={handleLinkClick}
                 >Cold Plunge</Link
               >
               <Link
                 href="/quote"
                 className={`${pathname === '/quote' ?'bg-white text-gray-900' : 'text-white'} " text-black  hover:bg-gray-900 hover:text-white rounded-xl px-3 py-[6px] mt-1"`}
-                >Get A Quote</Link
+                onClick={handleLinkClick}
+                >
+              
+                Get A Quote</Link
               >
               {session?.user.isAdmin && session &&( <Link
                 href="/quote"
@@ -403,7 +419,8 @@ const Navbar = () => {
                {!session &&( <Link href="/signin" >
               <Button
               className="flex items-center w-full text-white bg-gray-600 hover:bg-gray-900 hover:text-white rounded-xl px-3 py-2"
-                >
+               onClick={handleLinkClick}
+               >
                         <span>Login/Sign-Up</span>
                       </Button>
                       </Link>)}
