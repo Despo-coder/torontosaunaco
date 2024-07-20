@@ -1,6 +1,7 @@
-import connectDB from '../config/db';
+import connectDB from "@/config/db";
+import Orders from "@/models/Orders";
 import nodemailer from 'nodemailer';
-import Order from '@/models/Order'; // Adjust the path based on your project structure
+
 
 
 export const dynamic = 'force-dynamic';
