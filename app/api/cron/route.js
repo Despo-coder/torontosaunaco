@@ -1,4 +1,4 @@
-import connectDB from '@/utils/connectDB';
+import connectDB from '../config/db';
 import nodemailer from 'nodemailer';
 import Order from '@/models/Order'; // Adjust the path based on your project structure
 
