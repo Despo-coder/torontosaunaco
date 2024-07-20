@@ -31,7 +31,7 @@ async function sendEmails(orders) {
     // Send email to customer
     await transporter.sendMail({
       from: process.env.MAIL_USER,
-      to: order.customerEmail,
+      to: order.email,
       subject: 'Your Order Confirmation',
       html: createEmailContent(order),
     });
