@@ -11,10 +11,6 @@ import { useSelector } from 'react-redux';
 import {  signOut, useSession} from 'next-auth/react';
 
 
-
-
-
-
 const Navbar = () => {
 
 
