@@ -3,17 +3,25 @@ import Orders from "@/models/Orders";
 import { getToken } from "next-auth/jwt";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/assets/utils/authOptions";
+// import { getCSRFToken } from '../../utils/csrf';
+
+// export default async function handler(req, res) {
+ 
+//   // Use the token as needed
+// }
+
 
 
 export const maxDuration = 25;
 export const dynamic = 'force-dynamic';
 
 export const GET = async (req, res) => {
-
-    const session = await getServerSession(authOptions);
+// const csrfToken = getCSRFToken();
+const session = await getServerSession(authOptions);
     // const session = await getServerSession(authOptions);
   
   console.log('Session',session)
+  // console.log('Token',csrfToken)
 
 try {
     const token = await getToken({ req, secret: process.env.NEXTAUTH_SECRET });
