@@ -340,13 +340,16 @@ const [country, setCountry] = useState('');
   </div>
 
   <div>
-    <input 
-      type="text" 
-      placeholder="Country Code e.g (CA, US, UK)"
-      value={country}
-      onChange={(e) => setCountry(e.target.value)}
-      className="px-4 py-3.5 bg-gray-100 text-[#1f2937] w-full text-sm border rounded-md focus:border-purple-500 focus:bg-transparent outline-none" 
-    />
+  <select
+  value={country}
+  onChange={(e) => setCountry(e.target.value)}
+  className="px-4 py-3.5 bg-gray-100 text-[#1f2937] w-full text-sm border rounded-md focus:border-purple-500 focus:bg-transparent outline-none"
+>
+  <option value="" disabled>Select your country</option>
+  <option value="CA">Canada</option>
+  {/* <option value="US">USA</option>
+  <option value="MX">Mexico</option> */}
+</select>
   </div>
 
 

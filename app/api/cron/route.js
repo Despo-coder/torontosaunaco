@@ -17,11 +17,16 @@ const transporter = nodemailer.createTransport({
 
 // Email content
 const createEmailContent = (order) => {
+if(order.items){
+    const items = order.items.map(item => `<li>${item.name} - ${item.quantity}</li>`).join('');
+    return items;
+}
+
   return `
     <p>Order ID: ${order._id}</p>
-    <p>Customer Name: ${order.customerName}</p>
-    <p>Order Total: ${order.total}</p>
-    <p>Order Details: ${order.details}</p>
+    <p>Customer Name: ${order.cardholderName}</p>
+    <p>Order Total: ${order.amount}</p>
+    <p>Order Details: ${items}</p>
   `;
 };
 
