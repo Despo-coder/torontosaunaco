@@ -20,8 +20,8 @@ const { name, email, phone, message, subject } = await req.json();
   host: "smtp.gmail.com", // Explicitly set Gmail SMTP host
   port: 587, // Use 587 for TLS (STARTTLS)
   secure: false, // Must be false for port 587
-    logger: true,
-debug: true,
+//     logger: true,
+// debug: true,
   auth: {
     user: process.env.MAIL_USER, // Your Gmail email
     pass: process.env.MAIL_PWD,  // Your App Password
