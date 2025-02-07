@@ -14,9 +14,9 @@ const HomePage = () => {
 
   return (
     <div className="">
-      <div className="bg-white flex flex-end justify-end">
+      {/* <div className="bg-white flex flex-end justify-end">
         <Image src={LLCL} alt="Leisure Craft Logo" />
-      </div>
+      </div> */}
       <Hero />
       <HompageInfo />
       <WoodTypes />
