@@ -30,10 +30,12 @@ const { name, email, phone, message, subject } = await req.json();
     rejectUnauthorized: false, // Add this to prevent TLS-related issues
   },
 });
+
 // console.log("Mail Host:", process.env.MAIL_HOST);
 // console.log("Mail Port:", process.env.MAIL_PORT);
 // console.log("Mail User:", process.env.MAIL_USER);
 // Email options
+
   let mailOptions = {
     from: process.env.MAIL_USER,
     to: 'thetorontosaunaco@gmail.com', // Recipient email address
