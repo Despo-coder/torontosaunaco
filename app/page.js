@@ -14,7 +14,7 @@ const HomePage = () => {
 
   return (
     <div className="">
-      <div className="bg-white">
+      <div className="bg-white flex flex-end justify-end">
         <Image src={LLCL} alt="Leisure Craft Logo" />
       </div>
       <Hero />
