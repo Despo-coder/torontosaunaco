@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react"
 import { useParams } from "next/navigation"
 import { fetchProduct } from "@/assets/utils/request";
-import CarouselDynamic from "@/components/CarouselID";
 import PureCube1_ID from "@/components/PureCube1_ID";
 import SaunaDetails from "@/components/SaunaDetails";
 import Spinner from "@/components/Spinner";
@@ -129,11 +128,11 @@ const SaunaPage = () => {
           <aside className="space-y-4">    
            
             {loading && <Spinner loading={loading} /> }  
-            <button
+            {/* <button
               className="bg-slate-700 hover:bg-slate-600 text-white font-bold w-3/4 mx-auto py-2 px-4 rounded-xl flex items-center justify-center"
             >
               <i className="fas fa-bookmark mr-2"></i> Bookmark This Sauna
-            </button>
+            </button> */}
            <ShareButtons product={product} />
 
             {/* <!-- Contact Form --> */}

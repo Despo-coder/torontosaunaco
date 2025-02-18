@@ -1,0 +1,77 @@
+[
+    {
+        "_id": {
+            "$oid": "668af06648215c199c406a5f"
+        },
+        "owner": "torontosaunco",
+        "name": "Pure Cube Sauna - CU550",
+        "type": "Pure Cube",
+        "collectionType": "Cube",
+        "series": "552",
+        "description": "The Pure Cube CU552 Outdoor Sauna brings a luxurious new class of modular pre-built sauna kits to your home or cottage. Embrace the outdoors with the large double pane tempered glass front window and full glass door. Pamper yourself and your family or friends with this authentic modern Pure Cube Sauna kit.",
+        "dimension": "68 x 68 (in)",
+        "price": 10800,
+        "views": {},
+        "wood_type": {
+            "Knotty Cedar": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg"
+            },
+            "Clear Cedar": {
+                "price": 3600,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg"
+            }
+        },
+        "stove_type": {
+            "Designer B Electric Heater": {
+                "price": 1900,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg"
+            },
+            "Huum Drop Local Control": {
+                "price": 3000,
+                "power": "6 Kw",
+                "dimensions": "10 x 11 x 23 (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361773/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_6.0_Electric_Heater_With_WIFI_Controls_3132.50_zpe3m3.jpg"
+            },
+            "Huum Drop WIFI": {
+                "price": 3500,
+                "power": "6 Kw",
+                "dimensions": "10 x 11 x 23 (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361773/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_6.0_Electric_Heater_With_WIFI_Controls_3132.50_zpe3m3.jpg"
+            },
+            "Harvia KIP": {
+                "price": 1500,
+                "power": "6 Kw",
+                "dimensions": "16 W x 11 D x 24 H (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361760/torontosaunaco/Wood_Stove_Install_img/Harvia_KIP_6KWH_WIth_Rocks_1470_jz0epy.jpg"
+            }
+        },
+        "installation": {
+            "DIY": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+            },
+            "Supply_Install": {
+                "price": 1750,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+            }
+        },
+        "seller_info": {
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "phone": "617-555-5555"
+        },
+        "images": [
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720652998/torontosaunaco/Cubes/CU550/CU550_1_900_hehapo.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720360902/torontosaunaco/Cubes/CU550/Print-0425_ybm4h0.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720360903/torontosaunaco/Cubes/CU550/Print-0432_u74awv.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720360903/torontosaunaco/Cubes/CU550/Print-0482_vm9rtv.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720360902/torontosaunaco/Cubes/CU550/Outdoors_CU550-PrivPanel_b-web_bmuwf7.jpg"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+    }
+]

@@ -3,7 +3,7 @@ import Accessories from '@/components/Accessories'
 
 const page = () => {
   return (
-    <div>
+    <div className='mt-8'>
     <Accessories />
     </div>
   )

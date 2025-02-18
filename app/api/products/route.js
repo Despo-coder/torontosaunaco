@@ -2,16 +2,22 @@
 
 import connectDB from "@/config/db";
 import Products from "@/models/Products";
+ import  Product from "@/models/UpdatedProduct";
+
 import { getUserSession } from "@/assets/utils/getServerSession";
 
 
 export const dynamic = 'force-dynamic';
+
+
+
 // GET API Handler - /api/products
 export const GET = async (req, res) => {
-
 try {
     await connectDB();
     const products = await Products.find();
+    const product = await Product.find();
+    // console.log('New Product',product)
     
     return new Response (JSON.stringify(products), {status: 200});
 } catch (error) {
@@ -22,9 +28,6 @@ try {
 
 // POST API Handler - /api/products
 export const POST = async (req, res) => {
-   
-   
-   
     try {
        
         await connectDB();

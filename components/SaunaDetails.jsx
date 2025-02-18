@@ -1,11 +1,50 @@
-'use client'
-import { useState, useEffect } from "react";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { useSelector, useDispatch } from "react-redux";
 import { addToCart } from "@/redux/slices/cartSlice";
 import toast from "react-hot-toast";
+import { OptionCard } from '@/components/OptionCard';
+import { ToggleSwitch } from "@/components/ToggleSwitch";
+import MaterialCard from "@/components/MaterialCard";
+import DealerLogo from '@/public/images/Leisurecraft logo 3.jpg'
+import PureCubeLogo from '@/public/images/Pure Cube Logo.jpg'
+
+
+const ShieldCheckIcon = () => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    fill="none" 
+    viewBox="0 0 24 24" 
+    strokeWidth={1.5} 
+    stroke="currentColor" 
+    className="w-5 h-5"
+  >
+    <path 
+      strokeLinecap="round" 
+      strokeLinejoin="round" 
+      d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" 
+    />
+  </svg>
+);
+
+const LeafIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth={1.5}
+    stroke="currentColor"
+    className="w-5 h-5"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"
+    />
+  </svg>
+);
 
 const SaunaDetails = ({ product }) => {
   const dispatch = useDispatch();
@@ -19,13 +58,15 @@ const SaunaDetails = ({ product }) => {
 
   const installationPrices = product.installation;
   const windowPrices = product.views;
-//console.log(product)
+
   useEffect(() => {
     let newCost = product.price;
     if (stoveType) newCost += stovePrices[stoveType].price;
     if (woodType) newCost += woodPrices[woodType].price;
     if (windowStyle) newCost += windowPrices[windowStyle].price;
-    if (installationChoice) newCost += installationPrices[installationChoice].price;
+    if (installationChoice === 'PRO') {
+      newCost += 1750;
+    }
     setCost(newCost);
   }, [stoveType, woodType, windowStyle, installationChoice]);
 
@@ -33,7 +74,7 @@ const SaunaDetails = ({ product }) => {
     stoveType: stoveType ? { type: stoveType, price: stovePrices[stoveType].price } : null,
     woodType: woodType ? { type: woodType, price: woodPrices[woodType].price } : null,
     windowStyle: windowStyle ? { type: windowStyle, price: windowPrices[windowStyle].price } : null,
-    installationChoice: installationChoice ? { type: installationChoice, price: installationPrices[installationChoice].price } : null,
+    installationChoice: installationChoice ? { type: installationChoice, price: installationChoice === 'PRO' ? 1750 : 0 } : null,
   };
 
   const normalizeCartItem = (item) => {
@@ -62,174 +103,175 @@ const SaunaDetails = ({ product }) => {
   };
 
   return (
-    <main>
-      <div className="bg-white p-6 rounded-lg shadow-md text-center md:text-left">
-        <div className="flex justify-between">
-          <h1 className="text-xl font-bold mb-4">{product.name}</h1>
-          <h3 className="text-xl font-semibold mb-4">${cost.toLocaleString()}.00</h3>
-        </div>
-
-        <section id="features" className="pt-12 bg-gray-50 dark:bg-darkBlue1 border-red-600 border-[1px]">
-          <div className="container mx-auto px-6 pb-2">
-            <h3 className="text-lg my-6 bg-gray-50 rounded-xl text-black text-center font-light p-2">
-              Options & Rates
-            </h3>
-            <div className="flex flex-col space-y-12 text-center md:flex-row md:space-y-0">
-              <div className="flex flex-col items-center space-y-2 md:w-1/2">
-                <div className="flex items-center justify-center h-14 mb-2">
-                  <h2>Select From Available Stoves</h2>
-                </div>
-                <div className="grid grid-cols-2 gap-[1px]">
-                  {Object.keys(stovePrices).map((stove, index) => (
-                    <label key={index} className="flex flex-col items-center">
-                      <input
-                        type="radio"
-                        name="stove"
-                        value={stove}
-                        checked={stoveType === stove}
-                        onChange={(e) => setStoveType(e.target.value)}
-                        className="hidden"
-                      />
-                      <Image
-                        src={stovePrices[stove].image}
-                        width={450}
-                        height={450}
-                        priority={true}
-                        alt={stove}
-                        className={`w-24 h-24 cursor-pointer border-2 ${stoveType === stove ? 'border-blue-500' : 'border-gray-300'} rounded`}
-                      />
-                      <span className="text-sm">{stove}</span>
-                    </label>
-                  ))}
-                </div>
-                {stoveType ? (
-                  <p className="max-w-[20rem] text-center">
-                    This <span className="font-bold">{stoveType}</span> will add ${stovePrices[stoveType].price}.00 to the subtotal.
-                  </p>
-                ) : ''}
-              </div>
-
-              {woodPrices && (
-                <div className="flex flex-col items-center space-y-2 md:w-1/2">
-                  <div className="flex items-center justify-center h-24 mb-6">
-                    <h2>Select From Various Wood Types</h2>
-                  </div>
-                  <div className="grid grid-cols-2 gap-[1px]">
-                    {Object.keys(woodPrices).map((wood, index) => (
-                      <label key={index} className="flex flex-col items-center">
-                        <input
-                          type="radio"
-                          name="wood"
-                          value={wood}
-                          checked={woodType === wood}
-                          onChange={(e) => setWoodType(e.target.value)}
-                          className="hidden"
-                        />
-                        <Image
-                          src={woodPrices[wood].image}
-                          width={350}
-                          height={350}
-                          priority={true}
-                          alt={wood}
-                          className={`w-24 h-24 cursor-pointer border-2 ${woodType === wood ? 'border-blue-500' : 'border-gray-300'} rounded`}
-                        />
-                        <span className="text-sm">{wood}</span>
-                      </label>
-                    ))}
-                  </div>
-                  {woodType ? (
-                    <p className="max-w-[20rem] text-center">
-                      This <span className="font-bold">{woodType}</span> will add ${woodPrices[woodType].price}.00 to the subtotal.
-                    </p>
-                  ) : (<p>Clear Cedar is more aged than Knotty Wood. Ask for more info or select a type</p>)}
-                </div>
-              )}
-            </div>
-
-            <div className="flex flex-col space-y-24 mt-8 text-center border-t-black border-t-[1px] md:flex-row md:space-y-0">
-              {product.views && (
-                <div className="flex flex-col items-center space-y-2 md:w-1/2">
-                  <div className="flex items-center justify-center h-24 mb-6">
-                    <h2>Choose Preferred Window Preference</h2>
-                  </div>
-                  <div className="grid grid-cols-2 gap-[1px]">
-                    {Object.keys(windowPrices).map((window, index) => (
-                      <label key={index} className="flex flex-col items-center">
-                        <input
-                          type="radio"
-                          name="window"
-                          value={window}
-                          checked={windowStyle === window}
-                          onChange={(e) => setWindowStyle(e.target.value)}
-                          className="hidden"
-                        />
-                        <Image
-                          src={windowPrices[window].image}
-                          width={50}
-                          height={50}
-                          priority={true}
-                          alt={window}
-                          className={`w-24 h-24 cursor-pointer border-2 ${windowStyle === window ? 'border-blue-500' : 'border-gray-300'} rounded`}
-                        />
-                        <span className="text-sm">{window} - ${windowPrices[window].price}</span>
-                      </label>
-                    ))}
-                  </div>
-                  {windowStyle ? (
-                    <p className="max-w-[20rem] text-center">
-                      This <span className="font-bold">{windowStyle}</span> will add ${windowPrices[windowStyle].price}.00 to the subtotal.
-                    </p>
-                  ) : (<p>Clear Cedar is more aged than Knotty Wood. Ask for more info or select a type</p>)}
-                </div>
-              )}
-
-              {product.installation && (
-                <div className="flex flex-col items-center space-y-2 md:w-1/2">
-                  <div className="flex items-center justify-center h-24 mb-6">
-                    <h2>Choose Preferred Installation</h2>
-                  </div>
-                  <div className="grid grid-cols-2 gap-[1px]">
-                    {Object.keys(installationPrices).map((installation, index) => (
-                      <label key={index} className="flex flex-col items-center">
-                        <input
-                          type="radio"
-                          name="installation"
-                          value={installation}
-                          checked={installationChoice === installation}
-                          onChange={(e) => setInstallationChoice(e.target.value)}
-                          className="hidden"
-                        />
-                        <Image
-                          src={installationPrices[installation].image}
-                          width={50}
-                          height={50}
-                          priority={true}
-                          alt={installation}
-                          className={`w-24 h-24 cursor-pointer border-2 ${installationChoice === installation ? 'border-blue-500' : 'border-gray-300'} rounded`}
-                        />
-                        <span className="text-sm">{installation}</span>
-                      </label>
-                    ))}
-                  </div>
-                  {installationChoice ? (
-                    <p className="max-w-[20rem] text-center">
-                      This <span className="font-bold">{installationChoice}</span> will add ${installationPrices[installationChoice].price}.00 to the subtotal.
-                    </p>
-                  ) : ''}
-                </div>
-              )}
+    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {/* Configuration Column */}
+        <div className="lg:col-span-2 space-y-8">
+          {/* Product Header */}
+          <div className="flex justify-between items-start">
+            <h1 className="text-3xl font-bold tracking-tight">
+              {product.name}
+            </h1>
+            <div className="text-2xl font-semibold">
+              ${cost.toLocaleString()}.00
             </div>
           </div>
-        </section>
 
-        {/* <p className="max-w-[40rem] my-6">{product.description}</p> */}
-        <div className="flex justify-center mt-8 space-x-4 md:justify-start">
-          <Button className="px-8 py-3 text-lg bg-black text-white rounded-xl hover:bg-black/85" onClick={handleAddToCart}>
-            Add to Cart
-          </Button>
-          {/* <Link href="/contact">
-            <Button className="px-8 py-3 text-lg bg-black text-white rounded-xl hover:bg-black/85">Contact Us</Button>
-          </Link> */}
+          {/* Configuration Sections */}
+          <div className="space-y-12">
+            {/* Stove Selection */}
+            <section className="space-y-6">
+              <h2 className="text-xl font-semibold">Heating System</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {Object.entries(stovePrices).map(([key, value]) => (
+                  <OptionCard
+                    key={key}
+                    title={key}
+                    price={value.price}
+                    image={value.image}
+                    selected={stoveType === key}
+                    onSelect={() => setStoveType(key)}
+                    specs={[
+                      `Power: ${value.power}`,
+                      `Dimensions: ${value.dimensions}`,
+                    ]}
+                  />
+                ))}
+              </div>
+            </section>
+
+            {/* Wood Type Selection */}
+            <section className="space-y-6">
+              <h2 className="text-xl font-semibold">Material Selection</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {Object.entries(woodPrices).map(([key, value]) => (
+                  <MaterialCard
+                    key={key}
+                    name={key}
+                    price={value.price}
+                    image={value.image}
+                    selected={woodType === key}
+                    onSelect={() => setWoodType(key)}
+                    properties={[
+                      // `Aging: ${value.aging}`,
+                      // `Density: ${value.density}`,
+                      // `Maintenance: ${value.maintenance}`
+                    ]}
+                  />
+                ))}
+              </div>
+            </section>
+
+            {/* Installation Selection */}
+            <section className="space-y-6">
+              <h2 className="text-xl font-semibold">Installation Options</h2>
+              <div className="space-y-4">
+                <ToggleSwitch
+                  options={[
+                    { value: 'DIY', label: 'Self Installation' },
+                    { value: 'PRO', label: 'Professional Installation' }
+                  ]}
+                  selected={installationChoice}
+                  onSelect={setInstallationChoice}
+                />
+                {installationChoice && (
+                  <div className="bg-blue-50 p-4 rounded-lg">
+                    <h4 className="font-medium mb-2">Package Includes:</h4>
+                    <ul className="list-disc pl-5 space-y-1">
+                      {installationChoice === 'DIY' ? (
+                        <>
+                          <li>Digital installation guide</li>
+                          <li>24/7 support hotline</li>
+                          <li>Pre-sorted hardware kit</li>
+                          <li>Cost: $0</li>
+                        </>
+                      ) : (
+                        <>
+                          <li>Certified technician team</li>
+                          <li>5-year installation warranty</li>
+                          <li>Site preparation assistance</li>
+                          <li>Cost: $1750</li>
+                        </>
+                      )}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </section>
+          </div>
+        </div>
+
+        {/* Summary Column */}
+        <div className="bg-gray-50 p-6 rounded-lg shadow-md h-fit sticky top-4">
+          <h3 className="text-xl font-semibold mb-6">Your Configuration</h3>
+          
+          {/* Price Breakdown */}
+          <div className="space-y-3 mb-6">
+            <div className="flex justify-between">
+              <span>Base Model</span>
+              <span>${product.price.toLocaleString()}.00</span>
+            </div>
+            
+            {stoveType && (
+              <div className="flex justify-between text-blue-600">
+                <span>{stoveType} Heater</span>
+                <span>${stovePrices[stoveType].price}.00</span>
+              </div>
+            )}
+
+            {woodType && (
+              <div className="flex justify-between text-blue-600">
+                <span>{woodType} Wood</span>
+                <span>${woodPrices[woodType].price}.00</span>
+              </div>
+            )}
+            {installationChoice && (
+              <div className="flex justify-between text-blue-600">
+                <span>{installationChoice} Installation</span>
+                <span>${installationChoice === 'PRO' ? 1750 : 0}.00</span>
+              </div>
+            )}
+            
+            {/* Add similar blocks for other options */}
+
+           
+          </div>
+
+          {/* Trust Badges */}
+          <div className="flex items-center gap-3">
+            <ShieldCheckIcon className="w-5 h-5 text-green-600 shrink-0" />
+            <span className="text-sm">10-Year Structural Warranty</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <LeafIcon className="w-5 h-5 text-green-600 shrink-0" />
+            <span className="text-sm">FSC Certified Wood</span>
+          </div>
+
+          {/* CTA Section */}
+          <div className="mt-8 space-y-4">
+            
+            {/* <Button 
+              className="w-full py-4 text-lg bg-blue-600 hover:bg-blue-700 text-white"
+              onClick={handleAddToCart}
+            >
+              Secure Your Sauna (${cost.toLocaleString()}.00)
+            </Button> */}
+            {/* <Link href='/quote'>
+            <Button 
+              variant="outline" 
+              className="w-full py-4 text-lg shadow-lg hover:shadow-xl "
+            >
+              Book Virtual Consultation
+            </Button>
+            </Link> */}
+            <Image src={PureCubeLogo} width={140} height={140} alt={product.name} className="mx-auto"/>
+            <div className="border-t pt-3 mt-3">
+              <div className="flex justify-between font-semibold">
+                <span>Total Investment</span>
+                <span>${cost.toLocaleString()}.00</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
