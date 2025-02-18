@@ -208,11 +208,18 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "@/assets/images/1.png";
 import { FaBars, FaTimes, FaUser, FaChevronDown, FaShoppingBag, FaHome } from "react-icons/fa";
+import { useSelector } from 'react-redux';
+import {  signOut, useSession} from 'next-auth/react';
+import defaultImage from "@/assets/images/profile.png"
+
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [dropdownOpen, setDropdownOpen] = useState(false);
-    const shopping_count = 2;
+    const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
+    const {cartItems} = useSelector((state) => state.cart);
+    const { data: session } = useSession();
+     const profileImage = session?.user?.image || defaultImage;
 
     const handleDesktopHover = (open) => {
         setDropdownOpen(open);
@@ -265,11 +272,13 @@ export default function Header() {
 
                 {/* Website Name */}
                 <div className="flex flex-col lg:flex-row gap-y-2 lg:gap-x-5 text-white text-xl font-bold">
+                    <Link href="/" className="flex items-center gap-x-2">
                     <div className="flex items-center gap-x-2">
                         <h1 className="font-atkinson text-2xl md:text-4xl text-white border-4 border-white p-2 md:p-4 rounded-none">
                             The Toronto Sauna Co.
                         </h1>
                     </div>
+                    </Link>
                 </div>
 
                 {/* Navigation */}
@@ -278,15 +287,79 @@ export default function Header() {
                         <div className="relative">
                             <FaShoppingBag className="text-xl w-7 h-7" />
                             <span className="absolute -top-[4px] -right-2 z-10 bg-green-500 text-white font-semibold rounded-xl w-5 h-5 flex items-center justify-center text-sm border border-white">
-                                {shopping_count}
+                                {/* {shopping_count} */}
+                                {!cartItems ? '0' : cartItems.length}
                             </span>
                         </div>
-                        <FaUser className="text-xl w-7 h-7" />
+                         <div>
+                                     <button
+                                       type="button"
+                                       className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                                       id="user-menu-button"
+                                       aria-expanded="false"
+                                       aria-haspopup="true"
+                                       onClick={()=> setIsProfileMenuOpen((prev) => !prev)}
+                                     >
+                                       <span className="absolute -inset-1.5"></span>
+                                       <span className="sr-only">Open user menu</span>
+                                       <Image
+                                         className="h-8 w-8 rounded-full "
+                                         src={profileImage}
+                                         alt=""
+                                         width={50}
+                                         height={50}
+                                       />
+                                     </button>
+                                   </div>
+                                   {isProfileMenuOpen && (<div
+              id="user-menu"
+              className= " absolute left-12 top-10 z-10 mt-2 w-36  md:right-10 md:top-10 md:w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none ease-in duration-500"
+              role="menu"
+              aria-orientation="vertical"
+              aria-labelledby="user-menu-button"
+             tabIndex="-1"
+             onClick={()=> setIsProfileMenuOpen(false)}
+            >
+              <Link
+                href="/signin"
+                className="block px-4 py-2 text-sm text-gray-700"
+                role="menuitem"
+               tabIndex="-1"
+                id="user-menu-item-0"
+                ><span className='font-bold'>Sign In</span></Link
+              >
+              {/* <Link
+                href="/profile"
+                className="block px-4 py-2 text-sm text-gray-700"
+                role="menuitem"
+               tabIndex="-1"
+                id="user-menu-item-0"
+                >Your Profile</Link
+              > */}
+              <Link
+                href="/orders"
+                className="block px-4 py-2 text-sm text-gray-700"
+                role="menuitem"
+               tabIndex="-1"
+                id="user-menu-item-2"
+                >View Orders</Link
+              >
+              <button  className="block px-4 py-2 text-sm text-gray-700" 
+              onClick={()=> {setIsProfileMenuOpen(false)
+                signOut()
+              }}
+              
+              >
+                Sign Out
+              </button>
+            </div>
+            )}
+                       
                     </div>
                 </div>
 
                 {/* Mobile Menu Button */}
-                <button className="lg:hidden text-gray-800 text-2xl" onClick={() => setMenuOpen(!menuOpen)}>
+                <button className="hidden md:hidden text-gray-800 text-2xl" onClick={() => setMenuOpen(!menuOpen)}>
                     {menuOpen ? <FaTimes /> : <FaBars />}
                 </button>
                 <button className="lg:hidden text-white text-2xl" onClick={() => setMenuOpen(!menuOpen)}>
