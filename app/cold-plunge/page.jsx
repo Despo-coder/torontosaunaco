@@ -3,7 +3,7 @@ import Cold_Plunge from "@/components/ColdPlunge"
 
 const ColdPlunge = () => {
   return (
-    <div>
+    <div className="mt-8">
      <Cold_Plunge />
     </div>
   )

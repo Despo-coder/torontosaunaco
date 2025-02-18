@@ -13,8 +13,8 @@ const Contact = () => {
   
   
     const sendEmails = async (e) =>{
-        e.preventDefault(); // Prevent form from submitting the traditional way
-        setLoading(true);
+    e.preventDefault(); // Prevent form from submitting the traditional way
+    setLoading(true);
       
         const formData = {
           name: e.target.name.value,
@@ -53,7 +53,7 @@ const Contact = () => {
         }
       }
    return (
-      <div className="mb-12">
+      <div className="mb-12 mt-16">
          {loading && (
   <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50">
     <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-white"></div>
@@ -69,18 +69,7 @@ const Contact = () => {
                           <h2 className="text-gray-800 text-base font-bold">Socials</h2>
   
                           <ul className="flex mt-4 space-x-4">
-                              {/* <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                                
-                                
-                             <FaFacebook />
                              
-                              </li> */}
-                              {/* <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                                 
-                                
-                                  <FaTwitter />
-  
-                              </li> */}
                               <Link href="https://www.instagram.com/thetorontosaunaco/">
                               <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                                 

@@ -25,6 +25,7 @@ module.exports = {
       sans: ["Poppins", "sans-serif"],
       playfair: ['"Playfair Display"', 'serif'],
         roboto: ['Roboto', 'sans-serif'],
+        atkinson: ['Atkinson Hyperlegible', 'sans-serif'],
      },
      gridTemplateColumns: {
 '70/30': '70% 28%',

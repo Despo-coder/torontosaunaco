@@ -4,6 +4,7 @@ import Link from "next/link"
 
 
 const ProductCard = ({product}) => {
+  
  
 const saunaLink = `/saunas/${product._id}`
 const colpluneLink = `/cold-plunge/${product._id}`
