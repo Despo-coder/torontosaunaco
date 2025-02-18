@@ -230,7 +230,7 @@ export default function Header() {
         setDropdownOpen(false);
         setMenuOpen(false); // Also close mobile menu if open
     };
-
+// console.log(menuOpen)
     // Close dropdown when clicking outside
     useEffect(() => {
         const closeDropdown = (e) => {
@@ -378,7 +378,7 @@ export default function Header() {
                             <FaHome className="text-2xl" />
                         </button>
                     </div>
-                    <NavItem href="/" label="Home" />
+                    <NavItem href="/" label="Home"  onClick={() => setMenuOpen(false)}/>
 
                     {/* Mobile Dropdown */}
                     <li className="dropdown">
@@ -399,9 +399,13 @@ export default function Header() {
                             </ul>
                         )}
                     </li>
-                    <NavItem href="/cold-plunge" label="Cold Plunge" className="font-atkinson" />
-                    <NavItem href="/quote" label="Get a Quote" className="font-atkinson" />
-                    <NavItem href="/accessories" label="Accessories" className="font-atkinson" />
+                    <NavItem 
+        href="/cold-plunge" 
+        label="Cold Plunge" 
+        onClick={() => setMenuOpen(false)}
+    />
+                    <NavItem href="/quote" label="Get a Quote"   onClick={() => setMenuOpen(!menuOpen)}/>
+                    <NavItem href="/accessories" label="Accessories"   onClick={() => setMenuOpen(!menuOpen)}/>
                 </ul>
                 <span>copyright @ 2024</span>
             </nav>
@@ -445,10 +449,14 @@ export default function Header() {
 }
 
 // Reusable Navigation Item Component
-function NavItem({ href, label }) {
+function NavItem({ href, label, onClick }) {
     return (
         <li>
-            <Link href={href} className="hover:text-blue-600 transition">
+            <Link 
+                href={href} 
+                className="hover:text-blue-600 transition"
+                onClick={onClick}
+            >
                 {label}
             </Link>
         </li>
