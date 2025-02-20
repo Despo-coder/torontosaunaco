@@ -21,6 +21,7 @@ const SaunaPage = () => {
   const [loading, setLoading] = useState(true)
   const [emailresult, setEmailResult] = useState({})
   const [mounted, setMounted] = useState(false)
+  //console.log(product)
 
   useEffect(() => {
     const fetchData = async () => {

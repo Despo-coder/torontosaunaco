@@ -32,17 +32,29 @@ const Hero = () => {
     <div>
       <section className="relative bg-slate-700 py-20 mb-4 min-h-[88vh] mt-1 overflow-hidden z-[-2]">
         {/* Video element */}
-        <video 
+          <video 
+          // width={1200}
+          // height={800}
           autoPlay 
           loop 
           muted 
           playsInline
-          className="absolute top-0 left-0  w-full h-full object-cover z-0"> 
+          className="absolute top-0 left-0 w-full h-full object-cover z-0"> 
           {/* <source src="/images/staging/tsc_edit/tsc_edit.mp4" type="video/mp4" /> */}
           <source src="/images/VID-20250213-WA0015.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="absolute top-0 left-0 w-full h-full bg-black/60 z-10"></div>
+        {/* <video width="1200" height="800" controls preload="none">
+        <source src="/images/VID-20250213-WA0015.mp4" type="video/mp4" />
+      <track
+        src="/path/to/captions.vtt"
+        kind="subtitles"
+        srcLang="en"
+        label="English"
+      />
+      Your browser does not support the video tag.
+    </video> */}
+        <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
 
 {/* Content */}
 <div className="relative mt-10 z-20 flex flex-col items-center justify-center text-white h-full">

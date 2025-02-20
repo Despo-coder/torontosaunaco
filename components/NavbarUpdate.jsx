@@ -399,6 +399,7 @@ export default function Header() {
                             </ul>
                         )}
                     </li>
+                    <NavItem href="/heaters" label="Heaters" className="font-atkinson" />
                     <NavItem 
         href="/cold-plunge" 
         label="Cold Plunge" 
@@ -411,7 +412,7 @@ export default function Header() {
             </nav>
 
             {/* Desktop Navigation */}
-            <nav className="font-atkinson hidden lg:flex  absolute lg:left-[51.25%] transform -translate-x-1/2 top-16  bg-white shadow-md shadow-black rounded-2xl px-10 py-4 mt-36  backdrop-blur-sm">
+            <nav className="font-nunito hidden lg:flex  absolute lg:left-[51.25%] transform -translate-x-1/2 top-16  bg-white shadow-md shadow-black rounded-2xl px-10 py-4 mt-36  backdrop-blur-sm">
             {/* <nav className="font-atkinson hidden lg:flex justify-center items-center bg-white shadow-md shadow-black rounded-2xl px-10 py-4 w-auto backdrop-blur-sm mx-auto">  */}
                 <ul className="flex gap-x-6 text-gray-800 text-base md:mx-auto">
                     <NavItem href="/" label="Home" />
@@ -423,7 +424,7 @@ export default function Header() {
                         onMouseLeave={() => handleDesktopHover(false)}
                     >
                         <button 
-                            className="flex items-center gap-2 font-atkinson text-md hover:text-blue-600 transition"
+                            className="flex items-center gap-2 font-nunito text-md hover:text-blue-600 transition"
                         >
                             <Link href='/saunas'>Saunas</Link> 
                         </button>
@@ -439,6 +440,7 @@ export default function Header() {
                     </li>
                     
                     <NavItem href="/cold-plunge" label="Cold Plunge" className="font-atkinson" />
+                    <NavItem href="/heaters" label="Heaters" className="font-atkinson" />
                     <NavItem href="/quote" label="Get a Quote" className="font-atkinson" />
                     <NavItem href="/accessories" label="Accessories" className="font-atkinson" />
                   
