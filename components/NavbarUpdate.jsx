@@ -399,7 +399,7 @@ export default function Header() {
                             </ul>
                         )}
                     </li>
-                    <NavItem href="/heaters" label="Heaters" className="font-atkinson" />
+                    {/* <NavItem href="/heaters" label="Heaters" className="font-atkinson" /> */}
                     <NavItem 
         href="/cold-plunge" 
         label="Cold Plunge" 
@@ -439,8 +439,9 @@ export default function Header() {
                         )}
                     </li>
                     
+                    {/* <NavItem href="/heaters" label="Heaters" className="font-atkinson" /> */}
                     <NavItem href="/cold-plunge" label="Cold Plunge" className="font-atkinson" />
-                    <NavItem href="/heaters" label="Heaters" className="font-atkinson" />
+                  
                     <NavItem href="/quote" label="Get a Quote" className="font-atkinson" />
                     <NavItem href="/accessories" label="Accessories" className="font-atkinson" />
                   
