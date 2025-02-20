@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import {FaTwitter, FaFacebook, FaInstagram} from 'react-icons/fa'
 
 const Footer = () => {
@@ -15,6 +16,7 @@ const Footer = () => {
         <li><Link href="/quote" className="hover:underline hover:text-[#FFA726]">Contact</Link></li>
        
           </ul>
+    
         </div>
 
         <div>

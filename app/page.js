@@ -6,6 +6,7 @@ import Carousel2 from "@/components/Carousel2";
 import HompageInfo from "@/components/HompageInfo";
 import WoodTypes from "@/components/WoodTypes";
 import Image from 'next/image';
+import LCL from '@/public/images/Leisurecraft logo 3.jpg'
 
 
 
@@ -24,7 +25,7 @@ const HomePage = () => {
        <Carousel2 />
       <HomeInfoV2 />
       <Contact />
-    
+      <Image src={LCL} alt="Logo" width={150} height={150} className='mx-auto' />
     </div>
   )
 }

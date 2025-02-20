@@ -26,6 +26,8 @@ module.exports = {
       playfair: ['"Playfair Display"', 'serif'],
         roboto: ['Roboto', 'sans-serif'],
         atkinson: ['Atkinson Hyperlegible', 'sans-serif'],
+        nunito: ['Nunito', 'Poppins'],
+        rubik:['Rubik', 'sans-serif']
      },
      gridTemplateColumns: {
 '70/30': '70% 28%',

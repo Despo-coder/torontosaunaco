@@ -10,7 +10,8 @@ import { ToggleSwitch } from "@/components/ToggleSwitch";
 import MaterialCard from "@/components/MaterialCard";
 import DealerLogo from '@/public/images/Leisurecraft logo 3.jpg'
 import PureCubeLogo from '@/public/images/Pure Cube Logo.jpg'
-
+import CTLOGO from '@/public/images/CTC LOGO.png'
+import DundalkLogo from '@/public/images/DLC (Low-res) on white.jpg'
 
 const ShieldCheckIcon = () => (
   <svg 
@@ -54,9 +55,9 @@ const SaunaDetails = ({ product }) => {
   const [windowStyle, setWindowStyle] = useState('');
   const [installationChoice, setInstallationChoice] = useState('');
 
-  const { wood_type: woodPrices, stove_type: stovePrices } = product;
+  const { wood_type: woodPrices, stove_type: stovePrices, type } = product;
 
-  const installationPrices = product.installation;
+  ///const installationPrices = product.installation;
   const windowPrices = product.views;
 
   useEffect(() => {
@@ -123,6 +124,7 @@ const SaunaDetails = ({ product }) => {
             <section className="space-y-6">
               <h2 className="text-xl font-semibold">Heating System</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+
                 {Object.entries(stovePrices).map(([key, value]) => (
                   <OptionCard
                     key={key}
@@ -140,27 +142,61 @@ const SaunaDetails = ({ product }) => {
               </div>
             </section>
 
-            {/* Wood Type Selection */}
-            <section className="space-y-6">
-              <h2 className="text-xl font-semibold">Material Selection</h2>
+          
+            {/* <section className="space-y-6">
+            <h2 className="text-xl font-semibold">Material Selection</h2>
+             
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {Object.entries(woodPrices).map(([key, value]) => (
-                  <MaterialCard
-                    key={key}
-                    name={key}
-                    price={value.price}
-                    image={value.image}
-                    selected={woodType === key}
-                    onSelect={() => setWoodType(key)}
-                    properties={[
-                      // `Aging: ${value.aging}`,
-                      // `Density: ${value.density}`,
-                      // `Maintenance: ${value.maintenance}`
-                    ]}
-                  />
-                ))}
+
+
+    {Object.entries(woodPrices).map(([key, value]) => (
+      <MaterialCard
+        key={key}
+        name={key}
+        price={value.price}
+        image={value.image}
+        selected={woodType === key}
+        onSelect={() => setWoodType(key)}
+        properties={[
+          // `Aging: ${value.aging}`,
+          // `Density: ${value.density}`,
+          // `Maintenance: ${value.maintenance}`
+        ]}
+      />
+    ))
+  }
+                
+              
               </div>
-            </section>
+            </section> */}
+
+
+  {/* Wood Type Selection */}
+            {type !== 'Canadian Timber' && (
+  <section className="space-y-6">
+    <h2 className="text-xl font-semibold">Material Selection</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {Object.entries(woodPrices).map(([key, value]) => (
+        <MaterialCard
+          key={key}
+          name={key}
+          price={value.price}
+          image={value.image}
+          selected={woodType === key}
+          onSelect={() => setWoodType(key)}
+          properties={[
+            // `Aging: ${value.aging}`,
+            // `Density: ${value.density}`,
+            // `Maintenance: ${value.maintenance}`
+          ]}
+        />
+      ))}
+    </div>
+  </section>
+)}
+
+
+
 
             {/* Installation Selection */}
             <section className="space-y-6">
@@ -264,7 +300,19 @@ const SaunaDetails = ({ product }) => {
               Book Virtual Consultation
             </Button>
             </Link> */}
-            <Image src={PureCubeLogo} width={140} height={140} alt={product.name} className="mx-auto"/>
+            <Image
+  src={
+    type === "Pure Cube"
+      ? PureCubeLogo
+      : type === "Barrel" || type === "Luna Sauna"
+      ? DundalkLogo
+      : CTLOGO // Fallback logo for other types
+  }
+  width={140}
+  height={140}
+  alt={product.name}
+  className="mx-auto"
+/>
             <div className="border-t pt-3 mt-3">
               <div className="flex justify-between font-semibold">
                 <span>Total Investment</span>
