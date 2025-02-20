@@ -10,7 +10,7 @@ import { ToggleSwitch } from "@/components/ToggleSwitch";
 import MaterialCard from "@/components/MaterialCard";
 import DealerLogo from '@/public/images/Leisurecraft logo 3.jpg'
 import PureCubeLogo from '@/public/images/Pure Cube Logo.jpg'
-import CTLOGO from '@/public/images/CTC LOGO.png'
+import CTLOGO from '@/public/images/CTC Logo.png'
 import DundalkLogo from '@/public/images/DLC (Low-res) on white.jpg'
 
 const ShieldCheckIcon = () => (
