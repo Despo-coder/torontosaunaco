@@ -84,9 +84,7 @@ const AccessoriesCard = ({ product }) => {
             View Cart
           </button>
         </Link>
-        {/* <button type='button' variant="secondary" className="bg-slate-700 text-white rounded-xl py-2 px-2 hover:bg-slate-800" >
-            View Cart
-          </button> */}
+       
         </div>
       </div>
     </div>
