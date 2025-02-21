@@ -515,13 +515,13 @@
             "$oid": "668af06648215c199c406a60"
         },
         "owner": "torontosaunco",
-        "name": "Outdoor Pure Cube Sauna 572E",
+        "name": "Pure Cube Sauna 572",
         "type": "Pure Cube",
         "collectionType": "Cube",
         "series": "570",
         "description": "The Pure Cube CU570 Outdoor Sauna is a complex and stunning design that features a full glass door between the large window panels on the front wall. Revamp your outdoor entertainment area with optional semi-privacy panels that still feature the double pane tempered glass with a fixed cedar grill on the outside.",
         "dimension": "68 x 84(in)",
-        "price": 10975,
+        "price": 11867,
         "views": {},
         "wood_type": {
             "Knotty Cedar": {
@@ -529,7 +529,7 @@
                 "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg"
             },
             "Clear Cedar": {
-                "price": 3446,
+                "price": 4092,
                 "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg"
             }
         },
@@ -1479,11 +1479,1130 @@
             "phone": "617-555-5555"
         },
         "images": [
-            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361069/torontosaunaco/CTC/Canadian%20Timber/Harmony%20Barrel/CTCHarmonyBarrelW_gy4wwu.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721008420/torontosaunaco/CTC/Canadian%20Timber/CLASSIC6x6_oae6ce.jpg",
             "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361068/torontosaunaco/CTC/Canadian%20Timber/Harmony%20Barrel/CTCHarmonyBarrel22W_jthfoj.jpg",
             "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361067/torontosaunaco/CTC/Canadian%20Timber/Harmony%20Barrel/CTC22HArmonyBarrel1W_vr0skc.jpg",
             "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361068/torontosaunaco/CTC/Canadian%20Timber/Harmony%20Barrel/CTCHarmonyBarrel_qt0ood.jpg",
             "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361069/torontosaunaco/CTC/Canadian%20Timber/Harmony%20Barrel/CTCHarmonyBarrelW_gy4wwu.jpg"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+        "_id": {
+            "$oid": "66948450a93a72ff9464ef6e"
+        },
+        "owner": "torontosaunco",
+        "name": "Serenity Barrel Sauna",
+        "type": "Canadian Timber",
+        "collectionType": "CT",
+        "series": "CTC25LU",
+        "description": "This Canadian Timber Collection Sauna by Dundalk LeisureCraft is handcrafted from Eastern White Cedar that is lighter in color and has tight knots in the wood. The door is 5mm bronze tempered glass with wooden frame and pre-hung on the front wall for easy installation.",
+        "dimension": "84 x 84 x 60 (in)",
+        "price": 7713,
+        "views": {},
+        "wood_type": {},
+        "stove_type": {
+            "Designer B Electric Heater (6kw)": {
+                "price": 1860,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg"
+            },
+            " Huum Drop Heater - 6KW LOCAL CONTROL": {
+                "price": 2810,
+                "power": "6 Kw",
+                "dimensions": "10 x 11 x 23 (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361776/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_7.5_KW_Electric_Heater_Local_Control_2721.00_lgzulk.jpg"
+            },
+            " Huum Drop Heater - 6KW WIFI CONTROL": {
+                "price": 3386,
+                "power": "6 Kw",
+                "dimensions": "10 x 11 x 23 (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361773/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_6.0_Electric_Heater_With_WIFI_Controls_3132.50_zpe3m3.jpg"
+            },
+            " Huum Hive Heater - 6KW LOCAL CONTROL": {
+                "price": 4294,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464088/torontosaunaco/stoves/HUUMHIVE_Local_6kw__3600_ubtwqn.jpg"
+            },
+            " Huum Hive Heater - 6KW WIFI CONTROL": {
+                "price": 4870,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464088/torontosaunaco/stoves/HUUMHIVE_Local_6kw__3600_ubtwqn.jpg"
+            },
+            " Harvia KIP 8KW Sauna Heater": {
+                "price": 1470,
+                "power": "8 Kw",
+                "dimensions": "16 W × 11”H × 21 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464062/torontosaunaco/stoves/Harvia_KIP_8KW_Sauna_Heater_with_Rocks__1600_ajkagr.jpg"
+            },
+            "Homecraft Revive Heater - 6KW": {
+                "price": 2640,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464079/torontosaunaco/stoves/Homecraft_Revive_7.5kw_Sauna_Heater_with_Controls__2500_xjtsc4.jpg"
+            }
+        },
+        "installation": {
+            "DIY": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+            },
+            "Supply_Install": {
+                "price": 1750,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+            }
+        },
+        "seller_info": {
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "phone": "617-555-5555"
+        },
+        "images": [
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721008419/torontosaunaco/CTC/Canadian%20Timber/7x8wP_lgopqu.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720468025/torontosaunaco/CTC/Canadian%20Timber/Serenity%20Barrel/CTC2245W_2_sicsyo.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720468029/torontosaunaco/CTC/Canadian%20Timber/Serenity%20Barrel/CTC2245W_3_giwwu0.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720468038/torontosaunaco/CTC/Canadian%20Timber/Serenity%20Barrel/CTC2245W_5_dgjpjd.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720468033/torontosaunaco/CTC/Canadian%20Timber/Serenity%20Barrel/CTC2245W_4_jvyzpv.jpg"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+        "_id": {
+            "$oid": "669484ffa93a72ff9464ef6f"
+        },
+        "owner": "torontosaunco",
+        "name": "Tranquility Barrel Sauna",
+        "type": "Canadian Timber",
+        "collectionType": "CT",
+        "series": "CTC28LU",
+        "description": "This Canadian Timber Tranquility Barrel Sauna with 45cm Porch that seats 6-8 people is handcrafted from Eastern White Cedar that has a lighter color and tight knots in the wood. A great sauna for larger families, or your favorite get together spot.",
+        "dimension": "84 x 84 x 60 (in)",
+        "price": 8169,
+        "views": {},
+        "wood_type": {},
+        "stove_type": {
+            "Designer B Electric Heater (6kw)": {
+                "price": 1860,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg"
+            },
+            " Huum Drop Heater - 6KW LOCAL CONTROL": {
+                "price": 2810,
+                "power": "6 Kw",
+                "dimensions": "10 x 11 x 23 (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361776/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_7.5_KW_Electric_Heater_Local_Control_2721.00_lgzulk.jpg"
+            },
+            " Huum Drop Heater - 6KW WIFI CONTROL": {
+                "price": 3386,
+                "power": "6 Kw",
+                "dimensions": "10 x 11 x 23 (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361773/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_6.0_Electric_Heater_With_WIFI_Controls_3132.50_zpe3m3.jpg"
+            },
+            " Huum Hive Heater - 6KW LOCAL CONTROL": {
+                "price": 4294,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464088/torontosaunaco/stoves/HUUMHIVE_Local_6kw__3600_ubtwqn.jpg"
+            },
+            " Huum Hive Heater - 6KW WIFI CONTROL": {
+                "price": 4870,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464088/torontosaunaco/stoves/HUUMHIVE_Local_6kw__3600_ubtwqn.jpg"
+            },
+            " Harvia KIP 8KW Sauna Heater": {
+                "price": 1470,
+                "power": "8 Kw",
+                "dimensions": "16 W × 11”H × 21 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464062/torontosaunaco/stoves/Harvia_KIP_8KW_Sauna_Heater_with_Rocks__1600_ajkagr.jpg"
+            },
+            "Homecraft Revive Heater - 6KW": {
+                "price": 2640,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464079/torontosaunaco/stoves/Homecraft_Revive_7.5kw_Sauna_Heater_with_Controls__2500_xjtsc4.jpg"
+            }
+        },
+        "installation": {
+            "DIY": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+            },
+            "Supply_Install": {
+                "price": 1750,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+            }
+        },
+        "seller_info": {
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "phone": "617-555-5555"
+        },
+        "images": [
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721012418/torontosaunaco/CTC/Canadian%20Timber/7x10wPx_g3r6zg_a5kior.webp",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361071/torontosaunaco/CTC/Canadian%20Timber/Tranquility_Barrel/CTC2345W_3_soab3k.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361070/torontosaunaco/CTC/Canadian%20Timber/Tranquility_Barrel/CTC2345W_2_podzar.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721008420/torontosaunaco/CTC/Canadian%20Timber/7x10wPx_g3r6zg.webp",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361070/torontosaunaco/CTC/Canadian%20Timber/Tranquility_Barrel/CTC2345W_1_yx79as.jpg"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+        "_id": {
+            "$oid": "669487bca93a72ff9464ef70"
+        },
+        "owner": "torontosaunco",
+        "name": "Canadian Timber Luna Sauna",
+        "type": "Canadian Timber",
+        "collectionType": "CT",
+        "series": "CTC28LU",
+        "description": "This Canadian Timber Collection Luna Sauna by Dundalk LeisureCraft is handcrafted from Eastern White Cedar that is lighter in color and has tight knots in the wood. This Luna Sauna kit will seat 2-4 people, comes with solid cedar floor joists, floor and walls, white cedar bevel siding for the sides and is packaged in a ready to assemble kit.",
+        "dimension": "84 x 84 x 60 (in)",
+        "price": 9417,
+        "views": {},
+        "wood_type": {},
+        "stove_type": {
+            "Designer B Electric Heater (6kw)": {
+                "price": 1860,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg"
+            },
+            " Huum Drop Heater - 6KW LOCAL CONTROL": {
+                "price": 2810,
+                "power": "6 Kw",
+                "dimensions": "10 x 11 x 23 (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361776/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_7.5_KW_Electric_Heater_Local_Control_2721.00_lgzulk.jpg"
+            },
+            " Huum Drop Heater - 6KW WIFI CONTROL": {
+                "price": 3386,
+                "power": "6 Kw",
+                "dimensions": "10 x 11 x 23 (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361773/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_6.0_Electric_Heater_With_WIFI_Controls_3132.50_zpe3m3.jpg"
+            },
+            " Huum Hive Heater - 6KW LOCAL CONTROL": {
+                "price": 4294,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464088/torontosaunaco/stoves/HUUMHIVE_Local_6kw__3600_ubtwqn.jpg"
+            },
+            " Huum Hive Heater - 6KW WIFI CONTROL": {
+                "price": 4870,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464088/torontosaunaco/stoves/HUUMHIVE_Local_6kw__3600_ubtwqn.jpg"
+            },
+            " Harvia KIP 8KW Sauna Heater": {
+                "price": 1470,
+                "power": "8 Kw",
+                "dimensions": "16 W × 11”H × 21 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464062/torontosaunaco/stoves/Harvia_KIP_8KW_Sauna_Heater_with_Rocks__1600_ajkagr.jpg"
+            },
+            "Homecraft Revive Heater - 6KW": {
+                "price": 2640,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464079/torontosaunaco/stoves/Homecraft_Revive_7.5kw_Sauna_Heater_with_Controls__2500_xjtsc4.jpg"
+            }
+        },
+        "installation": {
+            "DIY": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+            },
+            "Supply_Install": {
+                "price": 1750,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+            }
+        },
+        "seller_info": {
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "phone": "617-555-5555"
+        },
+        "images": [
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721007667/torontosaunaco/CTC/Canadian%20Timber/IMG-20240714-WA0013_ptdiat.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720467094/torontosaunaco/CTC/Canadian%20Timber/Luna/CTC22LU_5_obwlw9.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720467085/torontosaunaco/CTC/Canadian%20Timber/Luna/CTC22LU_3_du4rgi.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720467082/torontosaunaco/CTC/Canadian%20Timber/Luna/CTC22LU_2_yappvj.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721007667/torontosaunaco/CTC/Canadian%20Timber/IMG-20240714-WA0013_ptdiat.jpg"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+        "_id": {
+            "$oid": "668c43ff22b4807f7ad15453"
+        },
+        "owner": "torontosaunco",
+        "name": "Georgian Cabin Sauna w Porch",
+        "type": "Canadian Timber",
+        "collectionType": "CT",
+        "series": "CTP-88",
+        "description": "The Georgian Cabin Sauna with Changeroom, part of the Canadian Timber Collection, is handcrafted by Leisurecraft from Eastern White Cedar that is lighter in colour and has tight knots in the wood. The cabin shape fits in well with all cottages and homes and comes in kit form. The metal shingle roof ensures that your sauna is dry and ready to enjoy. It can fit 2-6 persons.",
+        "dimension": "98 x 100 (in)",
+        "price": 10705,
+        "views": {},
+        "wood_type": {},
+        "stove_type": {
+            "Designer B Electric Heater (6kw)": {
+                "price": 1860,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg"
+            },
+            " Huum Drop Heater - 6KW LOCAL CONTROL": {
+                "price": 2810,
+                "power": "6 Kw",
+                "dimensions": "10 x 11 x 23 (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361776/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_7.5_KW_Electric_Heater_Local_Control_2721.00_lgzulk.jpg"
+            },
+            " Huum Drop Heater - 6KW WIFI CONTROL": {
+                "price": 3386,
+                "power": "6 Kw",
+                "dimensions": "10 x 11 x 23 (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361773/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_6.0_Electric_Heater_With_WIFI_Controls_3132.50_zpe3m3.jpg"
+            },
+            " Huum Hive Heater - 6KW LOCAL CONTROL": {
+                "price": 4294,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464088/torontosaunaco/stoves/HUUMHIVE_Local_6kw__3600_ubtwqn.jpg"
+            },
+            " Huum Hive Heater - 6KW WIFI CONTROL": {
+                "price": 4870,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464088/torontosaunaco/stoves/HUUMHIVE_Local_6kw__3600_ubtwqn.jpg"
+            },
+            " Harvia KIP 8KW Sauna Heater": {
+                "price": 1470,
+                "power": "8 Kw",
+                "dimensions": "16 W × 11”H × 21 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464062/torontosaunaco/stoves/Harvia_KIP_8KW_Sauna_Heater_with_Rocks__1600_ajkagr.jpg"
+            },
+            "Homecraft Revive Heater - 6KW": {
+                "price": 2640,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464079/torontosaunaco/stoves/Homecraft_Revive_7.5kw_Sauna_Heater_with_Controls__2500_xjtsc4.jpg"
+            }
+        },
+        "additional_features": {
+            "chimney and Heat Shield Set for out the side Wall": {
+                "price": 1650,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720460199/torontosaunaco/chimneys/Chimney_Heat_Shield_Set_For_Out_the_Side_Wall__1650_ur0h3c.jpg"
+            },
+            "chimney and Heat Shield with elbow for out the back Wall": {
+                "price": 1650,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720460196/torontosaunaco/chimneys/Chimney_Heat_Shield_Set_For_Out_the_Back_Wall__1650_hkupzp.jpg"
+            }
+        },
+        "installation": {
+            "DIY": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+            },
+            "Supply_Install": {
+                "price": 1750,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+            }
+        },
+        "seller_info": {
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "phone": "617-555-5555"
+        },
+        "images": [
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721095290/torontosaunaco/CTC/Canadian%20Timber/Georgian%20wPorch/Untitled_design_49_ziot0k.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361065/torontosaunaco/CTC/Canadian%20Timber/Georgian%20wPorch/Georgian_wPorch_Print-20_jp80qr.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361064/torontosaunaco/CTC/Canadian%20Timber/Georgian%20wPorch/Georgian_wPorch_Print-19_i4hk3b.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361064/torontosaunaco/CTC/Canadian%20Timber/Georgian%20wPorch/Georgian_wPorch_Print-18_osm2xb.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720465941/torontosaunaco/CTC/Canadian%20Timber/Georgian%20wPorch/CTC88PW_s3twio.jpg"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+        "_id": {
+            "$oid": "66993a12d4cac00475346677"
+        },
+        "owner": "torontosaunco",
+        "name": "6'x 6' Barrel Sauna",
+        "type": "Barrel",
+        "collectionType": "Barrel",
+        "series": "790",
+        "description": "The 6'x6' Barrel Sauna in western red cedar (knotty). A traditional option that stands the test of time. Customize to suit your sauna needs then enjoy with family and friends.",
+        "dimension": "84 x 84 x 60 (in)",
+        "price": 8691,
+        "views": {},
+        "wood_type": {
+            "Knotty Cedar": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg"
+            },
+            "Clear Cedar": {
+                "price": 3115,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg"
+            }
+        },
+        "stove_type": {
+            "Designer B Electric Heater (4.5kw)": {
+                "price": 1780,
+                "power": "4.4 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg"
+            },
+            "Designer B Electric Heater (6kw)": {
+                "price": 1860,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg"
+            },
+            " Harvia KIP 8KW Sauna Heater": {
+                "price": 1470,
+                "power": "8 Kw",
+                "dimensions": "16 W × 11”H × 21 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464062/torontosaunaco/stoves/Harvia_KIP_8KW_Sauna_Heater_with_Rocks__1600_ajkagr.jpg"
+            },
+            "Homecraft Revive Heater - 4.5KW": {
+                "price": 2540,
+                "power": "4.5 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464079/torontosaunaco/stoves/Homecraft_Revive_7.5kw_Sauna_Heater_with_Controls__2500_xjtsc4.jpg"
+            },
+            "Homecraft Revive Heater - 6KW": {
+                "price": 2640,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464079/torontosaunaco/stoves/Homecraft_Revive_7.5kw_Sauna_Heater_with_Controls__2500_xjtsc4.jpg"
+            }
+        },
+        "installation": {
+            "DIY": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+            },
+            "Supply_Install": {
+                "price": 1750,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+            }
+        },
+        "seller_info": {
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "phone": "617-555-5555"
+        },
+        "images": [
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721316611/torontosaunaco/Barrell/6x6/6x6BarrelSauna_seu8gz.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721317809/torontosaunaco/Barrell/6x6/6x6BarrelSauna_Interior_1_nz1vke.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721317808/torontosaunaco/Barrell/6x6/6x6BarrelSauna_Interior_sjvlsa.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720930179/torontosaunaco/Barrell/CLASSIC6x6_vmrxv6.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720933070/torontosaunaco/Barrell/Filler_Image4_piux8f.jpg"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+        "_id": {
+            "$oid": "669967eed4cac0047534667b"
+        },
+        "owner": "torontosaunco",
+        "name": "7'x 7'  Barrel Sauna w Changeroom",
+        "type": "Barrel",
+        "collectionType": "Barrel",
+        "series": "762",
+        "description": "6'x6' Barrel Sauna w/ Changeroom in western red cedar (knotty). A traditional option that stands the test of time. Customize to suit your sauna needs then enjoy with family and friends. This version incorporates the benefits of a 4' changeroom and can be customized to suit your sauna needs. Enjoy with family and friends!",
+        "dimension": "84 x 84 x 60 (in)",
+        "price": 12711,
+        "views": {},
+        "wood_type": {
+            "Knotty Cedar": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg"
+            },
+            "Clear Cedar": {
+                "price": 11385,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg"
+            }
+        },
+        "stove_type": {
+            "Designer B Electric Heater (6kw)": {
+                "price": 1800,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg"
+            },
+            "Designer B Electric Heater (8kw)": {
+                "price": 1860,
+                "power": "8 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg"
+            },
+            " Huum Drop Heater - 6KW LOCAL CONTROL": {
+                "price": 2810,
+                "power": "6 Kw",
+                "dimensions": "10 x 11 x 23 (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361776/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_7.5_KW_Electric_Heater_Local_Control_2721.00_lgzulk.jpg"
+            },
+            " Huum Drop Heater - 6KW WIFI CONTROL": {
+                "price": 3386,
+                "power": "6 Kw",
+                "dimensions": "10 x 11 x 23 (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361773/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_6.0_Electric_Heater_With_WIFI_Controls_3132.50_zpe3m3.jpg"
+            },
+            " Huum Hive Heater - 6KW LOCAL CONTROL": {
+                "price": 4294,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464088/torontosaunaco/stoves/HUUMHIVE_Local_6kw__3600_ubtwqn.jpg"
+            },
+            " Huum Hive Heater - 6KW WIFI CONTROL": {
+                "price": 4870,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464088/torontosaunaco/stoves/HUUMHIVE_Local_6kw__3600_ubtwqn.jpg"
+            },
+            " Harvia KIP 6KW Sauna Heater": {
+                "price": 1470,
+                "power": "6 Kw",
+                "dimensions": "16 W × 11”H × 21 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464062/torontosaunaco/stoves/Harvia_KIP_8KW_Sauna_Heater_with_Rocks__1600_ajkagr.jpg"
+            },
+            " Harvia KIP 8KW Sauna Heater": {
+                "price": 1545,
+                "power": "8 Kw",
+                "dimensions": "16 W × 11”H × 21 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464062/torontosaunaco/stoves/Harvia_KIP_8KW_Sauna_Heater_with_Rocks__1600_ajkagr.jpg"
+            },
+            "Homecraft Revive Heater - 6KW": {
+                "price": 2640,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464079/torontosaunaco/stoves/Homecraft_Revive_7.5kw_Sauna_Heater_with_Controls__2500_xjtsc4.jpg"
+            }
+        },
+        "installation": {
+            "DIY": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+            },
+            "Supply_Install": {
+                "price": 1750,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+            }
+        },
+        "seller_info": {
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "phone": "617-555-5555"
+        },
+        "images": [
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721329964/torontosaunaco/Barrell/7x7/7x7BarrelSauna_wCR_wemape.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720930178/torontosaunaco/Barrell/7x12wCR_gut5xy.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720930178/torontosaunaco/Barrell/7x12wCR_gut5xy.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720933070/torontosaunaco/Barrell/Filler_Image2_wjdarw.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721327694/torontosaunaco/Barrell/7x7/7x7BarrelSauna_wCR_lgdu44.png"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+        "_id": {
+            "$oid": "66996e42d4cac0047534667c"
+        },
+        "owner": "torontosaunco",
+        "name": "6' x 6'  Barrel Sauna with Changeroom & Porch",
+        "type": "Barrel",
+        "collectionType": "Barrel",
+        "series": "662CPW",
+        "description": "The 6'x6' Barrel Sauna w/ Changeroom & Porch in western red cedar (knotty). A traditional option that stands the test of time. Customize to suit your sauna needs then enjoy with family and friends. This version incorporates the benefits of a 4' changeroom, 2' porch and can be customized to suit your sauna needs. Enjoy with family and friends!",
+        "dimension": "84 x 84 x 60 (in)",
+        "price": 12314,
+        "views": {},
+        "wood_type": {
+            "Knotty Cedar": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg"
+            },
+            "Clear Cedar": {
+                "price": 9525,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg"
+            }
+        },
+        "stove_type": {
+            "Designer B Electric Heater (4.5kw)": {
+                "price": 1780,
+                "power": "4.4 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg"
+            },
+            "Designer B Electric Heater (6kw)": {
+                "price": 1860,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg"
+            },
+            " Harvia KIP 4.5KW Sauna Heater": {
+                "price": 1410,
+                "power": "4.5 Kw",
+                "dimensions": "16 W × 11”H × 21 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464062/torontosaunaco/stoves/Harvia_KIP_8KW_Sauna_Heater_with_Rocks__1600_ajkagr.jpg"
+            },
+            " Harvia KIP 6KW Sauna Heater": {
+                "price": 1470,
+                "power": "6 Kw",
+                "dimensions": "16 W × 11”H × 21 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464062/torontosaunaco/stoves/Harvia_KIP_8KW_Sauna_Heater_with_Rocks__1600_ajkagr.jpg"
+            }
+        },
+        "installation": {
+            "DIY": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+            },
+            "Supply_Install": {
+                "price": 1750,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+            }
+        },
+        "seller_info": {
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "phone": "617-555-5555"
+        },
+        "images": [
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721331063/torontosaunaco/Barrell/6x6/6x6BarrelSauna_wPorch_CR_diuspk.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721324349/torontosaunaco/Barrell/6x6/660CW_nlk85y.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721324345/torontosaunaco/Barrell/6x6/660CW_2_c2d0ri.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721324343/torontosaunaco/Barrell/6x6/660CW_1_hfpri7.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721331063/torontosaunaco/Barrell/6x6/6x6BarrelSauna_wPorch_CR_diuspk.png"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+        "_id": {
+            "$oid": "669974e90e0773f0dae7ee0e"
+        },
+        "owner": "torontosaunco",
+        "name": "7' x 7'  Barrel Sauna with Changeroom & Porch",
+        "type": "Barrel",
+        "collectionType": "Barrel",
+        "series": "772CPW",
+        "description": "The 7'x7' Barrel Sauna w/ Changeroom & Porch in western red cedar (knotty). A traditional option that stands the test of time. Customize to suit your sauna needs then enjoy with family and friends. This version incorporates the benefits of a 4' changeroom, 2' porch and can be customized to suit your sauna needs. Enjoy with family and friends!",
+        "dimension": "84 x 84 x 60 (in)",
+        "price": 13889,
+        "views": {},
+        "wood_type": {
+            "Knotty Cedar": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg"
+            },
+            "Clear Cedar": {
+                "price": 12406,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg"
+            }
+        },
+        "stove_type": {
+            "Designer B Electric Heater (6kw)": {
+                "price": 1800,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg"
+            },
+            "Designer B Electric Heater (8kw)": {
+                "price": 1860,
+                "power": "8 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg"
+            },
+            " Huum Drop Heater - 7.5KW LOCAL CONTROL": {
+                "price": 3000,
+                "power": "7.5 Kw",
+                "dimensions": "10 x 11 x 23 (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361776/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_7.5_KW_Electric_Heater_Local_Control_2721.00_lgzulk.jpg"
+            },
+            " Huum Drop Heater - 7.5KW WIFI CONTROL": {
+                "price": 3386,
+                "power": "7.5 Kw",
+                "dimensions": "10 x 11 x 23 (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361773/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_6.0_Electric_Heater_With_WIFI_Controls_3132.50_zpe3m3.jpg"
+            },
+            " Huum Hive Heater - 6KW LOCAL CONTROL": {
+                "price": 4294,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464088/torontosaunaco/stoves/HUUMHIVE_Local_6kw__3600_ubtwqn.jpg"
+            },
+            " Huum Hive Heater - 6KW WIFI CONTROL": {
+                "price": 4870,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464088/torontosaunaco/stoves/HUUMHIVE_Local_6kw__3600_ubtwqn.jpg"
+            },
+            " Harvia KIP 6KW Sauna Heater": {
+                "price": 1470,
+                "power": "6 Kw",
+                "dimensions": "16 W × 11”H × 21 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464062/torontosaunaco/stoves/Harvia_KIP_8KW_Sauna_Heater_with_Rocks__1600_ajkagr.jpg"
+            },
+            " Harvia KIP 8KW Sauna Heater": {
+                "price": 1545,
+                "power": "8 Kw",
+                "dimensions": "16 W × 11”H × 21 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464062/torontosaunaco/stoves/Harvia_KIP_8KW_Sauna_Heater_with_Rocks__1600_ajkagr.jpg"
+            },
+            "Homecraft Revive Heater - 6KW": {
+                "price": 2640,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464079/torontosaunaco/stoves/Homecraft_Revive_7.5kw_Sauna_Heater_with_Controls__2500_xjtsc4.jpg"
+            }
+        },
+        "installation": {
+            "DIY": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+            },
+            "Supply_Install": {
+                "price": 1750,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+            }
+        },
+        "seller_info": {
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "phone": "617-555-5555"
+        },
+        "images": [
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721332483/torontosaunaco/Barrell/7x7/7x7BarrelSauna_CRP_qkzlun.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720933070/torontosaunaco/Barrell/Filler_Image2_wjdarw.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720933070/torontosaunaco/Barrell/Filler_Image3_bbrj7z.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721332882/torontosaunaco/Barrell/7x7crp_filler_v2s2qk.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721332483/torontosaunaco/Barrell/7x7/7x7BarrelSauna_CRP_qkzlun.png"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+        "_id": {
+            "$oid": "6699537dd4cac0047534667a"
+        },
+        "owner": "torontosaunco",
+        "name": "6'x6'  Barrel Sauna w Changeroom",
+        "type": "Barrel",
+        "collectionType": "Barrel",
+        "series": "662",
+        "description": "6'x6' Barrel Sauna w/ Changeroom in western red cedar (knotty). A traditional option that stands the test of time. Customize to suit your sauna needs then enjoy with family and friends. This version incorporates the benefits of a 4' changeroom and can be customized to suit your sauna needs. Enjoy with family and friends!",
+        "dimension": "84 x 84 x 60 (in)",
+        "price": 11446,
+        "views": {},
+        "wood_type": {
+            "Knotty Cedar": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg"
+            },
+            "Clear Cedar": {
+                "price": 8220,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg"
+            }
+        },
+        "stove_type": {
+            "Designer B Electric Heater (4.5kw)": {
+                "price": 1780,
+                "power": "4.4 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg"
+            },
+            "Designer B Electric Heater (6kw)": {
+                "price": 1860,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg"
+            },
+            " Harvia KIP 4.5KW Sauna Heater": {
+                "price": 1420,
+                "power": "4.5 Kw",
+                "dimensions": "16 W × 11”H × 21 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464062/torontosaunaco/stoves/Harvia_KIP_8KW_Sauna_Heater_with_Rocks__1600_ajkagr.jpg"
+            },
+            " Harvia KIP 6KW Sauna Heater": {
+                "price": 1470,
+                "power": "4.5 Kw",
+                "dimensions": "16 W × 11”H × 21 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464062/torontosaunaco/stoves/Harvia_KIP_8KW_Sauna_Heater_with_Rocks__1600_ajkagr.jpg"
+            }
+        },
+        "installation": {
+            "DIY": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+            },
+            "Supply_Install": {
+                "price": 1750,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+            }
+        },
+        "seller_info": {
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "phone": "617-555-5555"
+        },
+        "images": [
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721324123/torontosaunaco/Barrell/6x6/6x6BarrelSauna_wCR_tqclui.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721324345/torontosaunaco/Barrell/6x6/660CW_2_c2d0ri.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721324343/torontosaunaco/Barrell/6x6/660CW_1_hfpri7.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721324347/torontosaunaco/Barrell/6x6/660CW_3_j3vdao.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721324349/torontosaunaco/Barrell/6x6/660CW_nlk85y.jpg"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+        "_id": {
+            "$oid": "66935b9e727c3180af50f15a"
+        },
+        "owner": "torontosaunco",
+        "name": "Barrel Sauna w Porch (7' x 8')",
+        "type": "Barrel",
+        "collectionType": "Barrel",
+        "series": "782PW",
+        "description": "The Barrel Sauna with porch brings a luxurious new class of modular pre-built sauna kits to your home or cottage. Halfmoon Front Wall Windows Only Available with Signature or Lounge Benches and Wood Heater Chimney must go up through the roof. ",
+        "dimension": "84 x 84 x 60 (in)",
+        "price": 11015,
+        "views": {},
+        "wood_type": {
+            "Knotty Cedar": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg"
+            },
+            "Clear Cedar": {
+                "price": 9300,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg"
+            }
+        },
+        "stove_type": {
+            "Designer B Electric Heater (8kw)": {
+                "price": 1860,
+                "power": "8 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg"
+            },
+            " Huum Drop Heater - 7.5KW LOCAL CONTROL": {
+                "price": 3000,
+                "power": "7.5 Kw",
+                "dimensions": "10 x 11 x 23 (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361776/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_7.5_KW_Electric_Heater_Local_Control_2721.00_lgzulk.jpg"
+            },
+            " Huum Drop Heater - 7.5KW WIFI CONTROL": {
+                "price": 3386,
+                "power": "7.5 Kw",
+                "dimensions": "10 x 11 x 23 (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361773/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_6.0_Electric_Heater_With_WIFI_Controls_3132.50_zpe3m3.jpg"
+            },
+            " Huum Hive Heater - 6KW LOCAL CONTROL": {
+                "price": 4294,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464088/torontosaunaco/stoves/HUUMHIVE_Local_6kw__3600_ubtwqn.jpg"
+            },
+            " Huum Hive Heater - 6KW WIFI CONTROL": {
+                "price": 4870,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464088/torontosaunaco/stoves/HUUMHIVE_Local_6kw__3600_ubtwqn.jpg"
+            },
+            " Harvia KIP 8KW Sauna Heater": {
+                "price": 1545,
+                "power": "8 Kw",
+                "dimensions": "16 W × 11”H × 21 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464062/torontosaunaco/stoves/Harvia_KIP_8KW_Sauna_Heater_with_Rocks__1600_ajkagr.jpg"
+            },
+            "Homecraft Revive Heater - 7.5KW": {
+                "price": 2640,
+                "power": "7.5  Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464079/torontosaunaco/stoves/Homecraft_Revive_7.5kw_Sauna_Heater_with_Controls__2500_xjtsc4.jpg"
+            }
+        },
+        "installation": {
+            "DIY": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+            },
+            "Supply_Install": {
+                "price": 1750,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+            }
+        },
+        "seller_info": {
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "phone": "617-555-5555"
+        },
+        "images": [
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720930176/torontosaunaco/Barrell/7x8wP_oq9au4.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720933070/torontosaunaco/Barrell/Filler_Image2_wjdarw.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720933070/torontosaunaco/Barrell/Filler_Image3_bbrj7z.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720933070/torontosaunaco/Barrell/Filler_Image1_z6njhq.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720933070/torontosaunaco/Barrell/Filler_Image4_piux8f.jpg"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+        "_id": {
+            "$oid": "66935b9e727c3180af50f15a"
+        },
+        "owner": "torontosaunco",
+        "name": "Barrel Sauna w Porch (7' x 8')",
+        "type": "Barrel",
+        "collectionType": "Barrel",
+        "series": "782PW",
+        "description": "The Barrel Sauna with porch brings a luxurious new class of modular pre-built sauna kits to your home or cottage. Halfmoon Front Wall Windows Only Available with Signature or Lounge Benches and Wood Heater Chimney must go up through the roof. ",
+        "dimension": "84 x 84 x 60 (in)",
+        "price": 10000,
+        "views": {},
+        "wood_type": {
+            "Knotty Cedar": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg"
+            },
+            "Clear Cedar": {
+                "price": 9000,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg"
+            }
+        },
+        "stove_type": {
+            "Narvi NC 16 Black Woodburning Heater": {
+                "price": 1650,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361795/torontosaunaco/Wood_Stove_Install_img/NARVINC_1688.50_fryhhq.jpg"
+            },
+            "Huum Hive Heater": {
+                "price": 1650,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361795/torontosaunaco/Wood_Stove_Install_img/NARVINC_1688.50_fryhhq.jpg"
+            }
+        },
+        "installation": {
+            "DIY": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+            },
+            "Supply_Install": {
+                "price": 1750,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+            }
+        },
+        "seller_info": {
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "phone": "617-555-5555"
+        },
+        "images": [
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720930176/torontosaunaco/Barrell/7x8wP_oq9au4.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720933070/torontosaunaco/Barrell/Filler_Image2_wjdarw.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720933070/torontosaunaco/Barrell/Filler_Image3_bbrj7z.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720933070/torontosaunaco/Barrell/Filler_Image1_z6njhq.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720933070/torontosaunaco/Barrell/Filler_Image4_piux8f.jpg"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+        "_id": {
+            "$oid": "66993ffdd4cac00475346678"
+        },
+        "owner": "torontosaunco",
+        "name": "7' x 7' Barrel Sauna",
+        "type": "Barrel",
+        "collectionType": "Barrel",
+        "series": "790",
+        "description": "The 7 x 7' Barrel Sauna in western red cedar (knotty). A traditional option that stands the test of time. Customize to suit your sauna needs then enjoy with family and friends.",
+        "dimension": "84 x 84 x 60 (in)",
+        "price": 9518,
+        "views": {},
+        "wood_type": {
+            "Knotty Cedar": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg"
+            },
+            "Clear Cedar": {
+                "price": 4400,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg"
+            }
+        },
+        "stove_type": {
+            "Designer B Electric Heater (6kw)": {
+                "price": 1800,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg"
+            },
+            "Designer B Electric Heater (8kw)": {
+                "price": 1860,
+                "power": "8 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg"
+            },
+            " Huum Drop Heater - 6KW LOCAL CONTROL": {
+                "price": 2810,
+                "power": "6 Kw",
+                "dimensions": "10 x 11 x 23 (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361776/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_7.5_KW_Electric_Heater_Local_Control_2721.00_lgzulk.jpg"
+            },
+            " Huum Drop Heater - 6KW WIFI CONTROL": {
+                "price": 3386,
+                "power": "6 Kw",
+                "dimensions": "10 x 11 x 23 (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361773/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_6.0_Electric_Heater_With_WIFI_Controls_3132.50_zpe3m3.jpg"
+            },
+            " Huum Hive Heater - 6KW LOCAL CONTROL": {
+                "price": 4294,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464088/torontosaunaco/stoves/HUUMHIVE_Local_6kw__3600_ubtwqn.jpg"
+            },
+            " Huum Hive Heater - 6KW WIFI CONTROL": {
+                "price": 4870,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464088/torontosaunaco/stoves/HUUMHIVE_Local_6kw__3600_ubtwqn.jpg"
+            },
+            " Harvia KIP 6KW Sauna Heater": {
+                "price": 1470,
+                "power": "6 Kw",
+                "dimensions": "16 W × 11”H × 21 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464062/torontosaunaco/stoves/Harvia_KIP_8KW_Sauna_Heater_with_Rocks__1600_ajkagr.jpg"
+            },
+            " Harvia KIP 8KW Sauna Heater": {
+                "price": 1545,
+                "power": "8 Kw",
+                "dimensions": "16 W × 11”H × 21 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464062/torontosaunaco/stoves/Harvia_KIP_8KW_Sauna_Heater_with_Rocks__1600_ajkagr.jpg"
+            },
+            "Homecraft Revive Heater - 6KW": {
+                "price": 2640,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464079/torontosaunaco/stoves/Homecraft_Revive_7.5kw_Sauna_Heater_with_Controls__2500_xjtsc4.jpg"
+            }
+        },
+        "installation": {
+            "DIY": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+            },
+            "Supply_Install": {
+                "price": 1750,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+            }
+        },
+        "seller_info": {
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "phone": "617-555-5555"
+        },
+        "images": [
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721319175/torontosaunaco/Barrell/7x7/7x7BarrelSauna_iyksgi.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720933070/torontosaunaco/Barrell/Filler_Image3_bbrj7z.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720933070/torontosaunaco/Barrell/Filler_Image2_wjdarw.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720930179/torontosaunaco/Barrell/ClassicSauna_7x8x_rv1qhr.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721319175/torontosaunaco/Barrell/7x7/7x7BarrelSauna_iyksgi.png"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+        "_id": {
+            "$oid": "6699487bd4cac00475346679"
+        },
+        "owner": "torontosaunco",
+        "name": "6'x6'  Barrel Sauna w Porch",
+        "type": "Barrel",
+        "collectionType": "Barrel",
+        "series": "790",
+        "description": "The 7 x 7' Barrel Sauna in western red cedar (knotty). A traditional option that stands the test of time. Customize to suit your sauna needs then enjoy with family and friends.",
+        "dimension": "84 x 84 x 60 (in)",
+        "price": 9520,
+        "views": {},
+        "wood_type": {
+            "Knotty Cedar": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg"
+            },
+            "Clear Cedar": {
+                "price": 6316,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg"
+            }
+        },
+        "stove_type": {
+            "Designer B Electric Heater (6kw)": {
+                "price": 1800,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg"
+            },
+            "Designer B Electric Heater (8kw)": {
+                "price": 1860,
+                "power": "8 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg"
+            },
+            " Harvia KIP 6KW Sauna Heater": {
+                "price": 1470,
+                "power": "6 Kw",
+                "dimensions": "16 W × 11”H × 21 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464062/torontosaunaco/stoves/Harvia_KIP_8KW_Sauna_Heater_with_Rocks__1600_ajkagr.jpg"
+            },
+            " Harvia KIP 8KW Sauna Heater": {
+                "price": 1545,
+                "power": "8 Kw",
+                "dimensions": "16 W × 11”H × 21 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464062/torontosaunaco/stoves/Harvia_KIP_8KW_Sauna_Heater_with_Rocks__1600_ajkagr.jpg"
+            }
+        },
+        "installation": {
+            "DIY": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+            },
+            "Supply_Install": {
+                "price": 1750,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+            }
+        },
+        "seller_info": {
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "phone": "617-555-5555"
+        },
+        "images": [
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721321406/torontosaunaco/Barrell/6x6/6x6BarrelSauna_wPorch_hyp5yu.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720933070/torontosaunaco/Barrell/Filler_Image2_wjdarw.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720933070/torontosaunaco/Barrell/Filler_Image3_bbrj7z.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720930177/torontosaunaco/Barrell/7x10wP1_lytnpl.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721321406/torontosaunaco/Barrell/6x6/6x6BarrelSauna_wPorch_hyp5yu.png"
         ],
         "is_featured": false,
         "createdAt": "2024-01-01T00:00:00.000Z",
