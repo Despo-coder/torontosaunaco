@@ -3,9 +3,23 @@ import { PortableText } from '@portabletext/react'
 import { urlFor } from '@/lib/sanity'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Button } from '@/components/ui/button'
+
+
+
+export const metadata = {
+  title: "Toronto Sauna Co.",
+  description: "Explore premium outdoor and indoor saunas for your home, crafted from high-quality cedar wood. Proudly made in Canada, our cedar barrel and cube saunas, sauna kits, and backyard wellness solutions provide relaxation, health benefits, and timeless luxury. Elevate your space today—cold plunges available!",
+  keywords: "sauna, toronto, ontario, canada, wellness, relaxation, steam, Best sauna shop in Ontario, Home Saunas near me",
+};
 
 
 export const revalidate = 30
+
+
+
+
+
 export const GetData = async () => {
   const query = `*[_type == "blogPost"] | order(_createdAt desc) {
     title,
@@ -36,7 +50,7 @@ const getPostBySlug = async (slug) => {
 export default async function BlogPost({ params }) {
   const post = await getPostBySlug(params.slug)
   const extraPosts = await GetData()
-console.log(post)
+
   if (!post) {
     return <div>Post not found</div>
   }
@@ -95,13 +109,16 @@ console.log(post)
       </div>
 
       {/* Back to All Articles */}
-      <div className="mt-12 border-t pt-8">
-        <Link 
-          href="/blog"
-          className="text-blue-600 hover:underline font-medium"
-        >
-          ← View All Articles
-        </Link>
+      <div className="mt-12 border-t pt-8 flex flex-col md:flex-row md:items-center md:justify-center items-center gap-3">
+      <Link href="/saunas"  className="text-black hover:underline font-medium">
+      <Button variant='outline' className='bg-gray-50 rounded-xl hover:bg-gray-100'>View All Saunas</Button>
+      </Link>
+      <Link href="/quote" className="text-black hover:underline font-medium">
+      <Button  variant='outline' className='bg-gray-50 rounded-xl hover:bg-gray-100'>Get a Quote</Button>
+      </Link>
+      <Link href="/blog"  className="text-black hover:underline font-medium">
+      <Button variant='outline' className='bg-gray-50 rounded-xl hover:bg-gray-100'>View Blogs</Button>
+      </Link>
       </div>
     </div>
   )
