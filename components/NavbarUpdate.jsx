@@ -213,6 +213,14 @@ import {  signOut, useSession} from 'next-auth/react';
 import defaultImage from "@/assets/images/profile.png"
 
 
+
+export const metadata = {
+    title: "Toronto Sauna Co.",
+    description: "Explore premium outdoor and indoor saunas for your home, crafted from high-quality cedar wood. Proudly made in Canada, our cedar barrel and cube saunas, sauna kits, and backyard wellness solutions provide relaxation, health benefits, and timeless luxury. Elevate your space today—cold plunges available!",
+    keywords: "sauna, toronto, ontario, canada, wellness, relaxation, steam, Best sauna shop in Ontario, Home Saunas near me",
+  };
+  
+
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -252,7 +260,7 @@ export default function Header() {
 
             <div className="absolute inset-0 z-0 ">  
                                <div className="absolute inset-0 bg-[url('/images/Print_Hudson-44.png')] bg-cover bg-center"></div>
-                <div className="absolute inset-0 bg-black/70"></div>
+                <div className="absolute inset-0 bg-black/40"></div>
             </div>
 
             <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center gap-y-4 lg:gap-y-0 relative z-10">
