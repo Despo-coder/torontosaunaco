@@ -1,4 +1,3 @@
-//import products from "@/data/products.json"
 import ProductCard from "@/components/ProductCard"
 import {fetchProducts} from "@/assets/utils/request"
 

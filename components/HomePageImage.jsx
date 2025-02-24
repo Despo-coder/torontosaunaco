@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const HomePageImage = () => {
   return (
@@ -24,14 +25,16 @@ const HomePageImage = () => {
     
         {/* Call-to-Action Buttons */}
         <div className="flex flex-col gap-2  md:flex-row">
-          
+          <Link href="/saunas">
           <Button variant='none' className="border-white text-black px-6 py-3 bg-[#eeb35a]   rounded-lg font-semibold hover:bg-white hover:text-black transition">
           View Saunas
           </Button>
-
+       </Link>
+      <Link href="/quote">
           <Button variant="outline" className="border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition">
           Request a Quote
           </Button>
+          </Link>
           
         </div>
       </div>

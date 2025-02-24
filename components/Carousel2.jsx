@@ -10,11 +10,11 @@ const CarouselContainer = () => {
         const fetchData = async () => {
           try {
             const data = await fetchProducts()
-            const filteredProducts = Object.values(data).filter((x) => x.type !== 'Cold Plunge');
+            const filteredProducts = Object.values(data).filter((x) => x.type !== 'Cold Plunge' && x.type === 'Pure Cube' );
             
            
             const shuffled = filteredProducts.sort(() => 0.5 - Math.random());
-            const selected = shuffled.slice(0, 10);
+            const selected = shuffled.slice(0, 7);
       
             const items = selected.map(product => ({
               id: product._id,

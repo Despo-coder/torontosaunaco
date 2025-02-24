@@ -2,12 +2,10 @@
 import { useState, useEffect } from "react"
 import { useParams } from "next/navigation"
 import { fetchProduct } from "@/assets/utils/request";
-import SaunaHeaderImage from "@/components/SaunaHeaderImage";
 import ColdPlungeDetails from "@/components/ColdPlungeDetails";
 import Spinner from "@/components/Spinner";
 import ShareButtons from "@/components/ShareButtons";
 import toast from "react-hot-toast";
-import ColdPlunge from "../page";
 import PureCube1_ID from "@/components/PureCube1_ID";
 
 
