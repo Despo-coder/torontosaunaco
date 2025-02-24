@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 
-
+export const revalidate = 30
 export const GetData = async () => {
   const query = `*[_type == "blogPost"] | order(_createdAt desc) {
     title,
@@ -36,7 +36,7 @@ const getPostBySlug = async (slug) => {
 export default async function BlogPost({ params }) {
   const post = await getPostBySlug(params.slug)
   const extraPosts = await GetData()
-
+console.log(post)
   if (!post) {
     return <div>Post not found</div>
   }
@@ -59,7 +59,7 @@ export default async function BlogPost({ params }) {
             />
           )}
 
-          <div className="prose lg:prose-xl">
+          <div className="prose prose-blue prose-lg  ">
             <PortableText value={post.content} />
           </div>
         </article>
