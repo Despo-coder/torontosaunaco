@@ -66,6 +66,7 @@ const data = await GetData()
   )
 }
 
+//Python script to change docx to json -- "C:\Pyton_Docx_Json"
 
 // Local API to use instead of sanity in case of error
 
