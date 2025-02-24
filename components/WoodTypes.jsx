@@ -21,7 +21,7 @@ const WoodTypes = () => {
       ];
       
       return (
-        <section className="wood-types py-[120px] bg-gray-100">
+        <section className="wood-types md:py-[120px]  bg-gray-50">
         <div className="container mx-auto flex flex-wrap">
           {woodData.map((wood, index) => (
             <div className="w-full md:w-1/3 px-4 mb-8 md:mb-0" key={index}>

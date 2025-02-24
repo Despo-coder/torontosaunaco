@@ -54,7 +54,7 @@ const Hero = () => {
       />
       Your browser does not support the video tag.
     </video> */}
-        <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-black/30 z-10"></div>
 
 {/* Content */}
 <div className="relative mt-10 z-20 flex flex-col items-center justify-center text-white h-full">
