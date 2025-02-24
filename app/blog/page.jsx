@@ -1,72 +1,10 @@
-// import React from 'react'
-// import Head from 'next/head'
-// import Image from 'next/image';
-// import Image1 from '@/assets/images/pexels-nick-bulanov-1110438433-20763181.jpg';
-// import Image2 from '@/assets/images/pexels-heyho-8092430.jpg';
-// import Image3 from '@/assets/images/pexels-yaroslav-shuraev-5976845.jpg';
-
-// export const metadata = {
-//     title: "Toronto Sauna Co.",
-//     description: "Explore premium outdoor and indoor saunas for your home, crafted from high-quality cedar wood. Proudly made in Canada, our cedar barrel and cube saunas, sauna kits, and backyard wellness solutions provide relaxation, health benefits, and timeless luxury. Elevate your space today—cold plunges available!",
-//     keywords: "sauna, toronto, ontario, canada, wellness, relaxation, steam, Best sauna shop in Ontario, Home Saunas near me",
-// };
-
-// const blogs = [
-//     {
-//       id: 1,
-//       title: 'Benefits of Sauna for Health',
-//       image: Image1,
-//       excerpt: 'Discover the top health benefits of using a sauna regularly, from improved circulation to stress relief.',
-//       link: 'blog/cold-plunge-benefits'
-//     },
-//     {
-//       id: 2,
-//       title: 'How to Choose the Right Sauna for Your Home',
-//       image: Image2,
-//       excerpt: 'Looking to buy a sauna? Learn about different types and which one suits your lifestyle best.',
-//       link: '/blog/sauna-accessories-guide'
-//     },
-//     {
-//       id: 3,
-//       title: 'Traditional vs. Infrared Saunas: Which is Best?',
-//       image: Image3,
-//       excerpt: 'Understand the key differences between traditional and infrared saunas to make an informed decision.',
-//       link: '/blog/wellness-routine'
-//     },
-// ];
-
-// const BlogPage = () => {
-//     return (
-//         <>
-//            
-//             <div className="container mx-auto py-12 px-4 md:px-12 mt-16">
-//                 {blogs.map((blog, index) => (
-//                     <div key={blog.id} className={`grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
-//                         <div className={`flex flex-col justify-center ${index % 2 === 1 ? 'md:order-2' : ''}`}>
-//                             <h2 className="text-2xl font-bold mb-4">{blog.title}</h2>
-//                             <p className="text-gray-700 mb-4">{blog.excerpt}</p>
-//                             <a href={blog.link} className="text-blue-500 hover:underline">Read More</a>
-//                         </div>
-//                         <div className={index % 2 === 1 ? 'md:order-1' : ''}>
-//                             <Image src={blog.image} alt={blog.title} className="w-full h-auto rounded-lg shadow-lg" />
-//                         </div>
-//                     </div>
-//                 ))}
-//             </div>
-//             {/* <BlogLayout/> */}
-//         </>
-//     );
-// };
-
-// export default BlogPage;
-
-
 import { client } from '@/lib/sanity'
 import Image from 'next/image'
 import Link from 'next/link'
 import { urlFor } from '@/lib/sanity'
 
 
+export const revalidate = 30
 export const GetData = async () => {
   const query = `*[_type == "blogPost"] | order(_createdAt desc) {
     title,
@@ -75,6 +13,7 @@ export const GetData = async () => {
     "imageUrl": featuredImage.asset->url
   }`
 const data = await client.fetch(query)
+
 return data
 }
 
@@ -89,7 +28,7 @@ export default async function BlogPage() {
 //   `)
 // console.log(posts)
 const data = await GetData()
-//console.log(data)
+console.log(data)
   return (
    
                 
@@ -132,3 +71,49 @@ const data = await GetData()
     </div>
   )
 }
+
+
+// Local API to use instead of sanity
+
+// async function fetchBlogs() {
+//   const res = await fetch(`${process.env.NEXTAUTH_URL}/api/blogs`);
+//   if (!res.ok) throw new Error("Failed to fetch blogs");
+//   return res.json();
+// }
+ 
+// export default async function BlogPage() {
+//   const blogs = await fetchBlogs();
+  
+//   console.log(blogs.titleimage?.asset._ref);
+
+//   return (
+//       <div className="max-w-6xl mx-auto px-4 py-8 md:mt-20">
+//           <h1 className="text-4xl font-bold mb-8">Latest Blogs</h1>
+          
+//           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+//         {blogs.map((blog) => (
+//           <div key={blog.slug.current} className="p-6 border rounded-lg shadow-md">
+//             {blog.titleimage?.asset && (
+//               <div className="relative h-48 w-full mb-4">
+//                 {/* <Image
+//                   src={urlFor(blog.titleimage).url()}
+//                   alt={blog.title}
+//                   fill
+//                   className="rounded-lg object-cover"
+//                   sizes="(max-width: 768px) 100vw, 33vw"
+//                 /> */}
+//               </div>
+//             )}
+//             <h2 className="text-xl font-semibold mb-2">{blog.title}</h2>
+//             <p className="text-gray-600 line-clamp-2">
+//               {blog.content?.length > 0 ? blog.content[0].children[0].text : "Read more..."}
+//             </p>
+//             <a href={`/blog/${blog.slug.current}`} className="text-blue-600 hover:underline">
+//               Read More →
+//             </a>
+//           </div>))}
+//           </div>
+        
+//       </div>
+//   );
+// }
