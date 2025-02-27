@@ -25,7 +25,7 @@ const Contact = () => {
         };
       
         try {
-          setLoading(true);
+          // setLoading(true);
           const res = await fetch('/api/emails', {
             method: 'POST',
             headers: {
@@ -33,7 +33,7 @@ const Contact = () => {
             },
             body: JSON.stringify(formData)
           });
-          setLoading(true)
+          // setLoading(true)
           const dataResponse = await res.json();
           if (dataResponse.message='Email sent successfully!') {
             setLoading(false);
@@ -45,7 +45,7 @@ const Contact = () => {
           } else {
             toast.error('Error sending email. Please try again later.');
           }
-          setEmailResult(data);
+          setEmailResult(dataResponse);
           setLoading(false);
         } catch (error) {
           console.error('Error sending emails:', error);
