@@ -20,7 +20,7 @@ export const GET = async (req, res) => {
 const session = await getServerSession(authOptions);
     // const session = await getServerSession(authOptions);
   
-  console.log('Session',session)
+  //console.log('Session',session)
   // console.log('Token',csrfToken)
 
 try {

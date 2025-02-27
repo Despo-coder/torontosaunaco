@@ -1,16 +1,17 @@
 'use client'
 import { useState } from "react";
-import {FaTwitter, FaFacebook, FaInstagram} from 'react-icons/fa'
+import { FaInstagram} from 'react-icons/fa'
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { set } from "mongoose";
+
 
 const Contact = () => {
     const router = useRouter();
-    const [emailresult, setEmailResult] = useState({})
+    const [emailResult, setEmailResult] = useState({})
     const [loading, setLoading] = useState(false)
   
+    console.log(emailResult);
   
     const sendEmails = async (e) =>{
     e.preventDefault(); // Prevent form from submitting the traditional way
@@ -25,7 +26,7 @@ const Contact = () => {
         };
       
         try {
-          setLoading(true);
+          // setLoading(true);
           const res = await fetch('/api/emails', {
             method: 'POST',
             headers: {
@@ -33,9 +34,9 @@ const Contact = () => {
             },
             body: JSON.stringify(formData)
           });
-          setLoading(true)
+          // setLoading(true)
           const dataResponse = await res.json();
-          if (dataResponse.message='Email sent successfully!') {
+          if (dataResponse.message ==='Email sent successfully!') {
             setLoading(false);
             toast.success('Email sent successfully!', { duration: 2700 });
             setTimeout(() => {
@@ -45,7 +46,7 @@ const Contact = () => {
           } else {
             toast.error('Error sending email. Please try again later.');
           }
-          setEmailResult(data);
+          setEmailResult(dataResponse);
           setLoading(false);
         } catch (error) {
           console.error('Error sending emails:', error);

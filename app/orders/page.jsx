@@ -31,7 +31,7 @@ const OrdersPage = async () => {
   // const { orders = [] } = await fetchOrders()
   // Filter orders for the logged-in user
 
-console.log(orders)
+//console.log(orders)
   // const userOrders = orders.filter(order => order.id === session.user.secondaryId);
 
   // const userOrders = session ? orders.filter(order => order.id === session.user.secondaryId) : [];

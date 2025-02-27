@@ -14,7 +14,7 @@ try {
    
  return new Response (JSON.stringify(accessories), {status: 200});
 } catch (error) {
-    console.log(error)
+    //console.log(error)
     return new Response ("error", {status: 500});
 }
 };

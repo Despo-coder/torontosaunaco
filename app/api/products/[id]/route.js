@@ -1,11 +1,10 @@
-import { NextResponse } from 'next/server';
 import connectDB from "@/config/db";
 import Products from "@/models/Products";
 
 // GET API Handler - /api/products/:id
 export const GET = async (request, {params}) => {
     
-    const { id } = params;
+    const {id }= await params;
 
     try {
         await connectDB();

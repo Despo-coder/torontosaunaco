@@ -21,7 +21,7 @@ try {
     
     return new Response (JSON.stringify(products), {status: 200});
 } catch (error) {
-    console.log(error)
+    //console.log(error)
     return new Response ("error", {status: 500});
 }
 };
@@ -43,7 +43,7 @@ export const POST = async (req, res) => {
         const images = formData.getAll('images').filter(image => image.namw !== '');
         const isFeatured = formData.getAll('is_featured').length > 0
         const views = JSON.parse(formData.get('views') || '{}');
-        console.log(views)
+        //console.log(views)
         const productData = {
          type: formData.get('type'),
          name: formData.get('name'),

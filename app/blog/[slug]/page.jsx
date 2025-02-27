@@ -48,7 +48,8 @@ const getPostBySlug = async (slug) => {
 }
 
 export default async function BlogPost({ params }) {
-  const post = await getPostBySlug(params.slug)
+  const { slug } = await params;
+  const post = await getPostBySlug(slug)
   const extraPosts = await GetData()
 
   if (!post) {
