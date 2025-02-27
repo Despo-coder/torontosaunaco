@@ -275,7 +275,7 @@ const SaunaDetails = ({ product }) => {
           {/* Trust Badges */}
           <div className="flex items-center gap-3">
             <ShieldCheckIcon className="w-5 h-5 text-green-600 shrink-0" />
-            <span className="text-sm">10-Year Structural Warranty</span>
+            <span className="text-sm">5-Year Structural Warranty</span>
           </div>
           <div className="flex items-center gap-3">
             <LeafIcon className="w-5 h-5 text-green-600 shrink-0" />

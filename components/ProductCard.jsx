@@ -1,7 +1,7 @@
-'use client'
 import Image from "next/image"
 import Link from "next/link"
-
+import { Button } from "./ui/button"
+import { GoogleTagManager } from '@next/third-parties/google'
 
 const ProductCard = ({product}) => {
   
@@ -11,15 +11,18 @@ const colpluneLink = `/cold-plunge/${product._id}`
 ///console.log(product)
   return (
     <>
+    <GoogleTagManager gtmId="AW-16622832527" />
            <div className="group relative rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 bg-white">
   {product.type !== 'Cold Plunge' ? (
     <Link href={saunaLink} className="block focus:outline-none focus:ring-2 focus:ring-black/20">
       {/* Image Container */}
       <div className="relative aspect-square overflow-hidden">
-        <img 
+        <Image 
           src={product.images[0]} 
           alt={product.name} 
           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          width={450}
+          height={450}
         />
       </div>
 
@@ -35,16 +38,14 @@ const colpluneLink = `/cold-plunge/${product._id}`
               {/* <span className="text-lg font-normal text-gray-500 ml-1">CDN</span> */}
             </span>
           </div>
+         
           <Link href={saunaLink}>
-          <button 
-  className="px-3 py-2 border border-gray-300 text-black bg-white rounded-lg  hover:bg-black hover:text-white shadow-sm transition-all ease-in duration-300
-             focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2"
- 
->
-  View More
-</button>
-</Link>
-
+                  <Button 
+                    className="px-3 py-2 border border-gray-300 text-black bg-white rounded-lg hover:bg-black hover:text-white shadow-sm transition-all ease-in duration-300 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2"
+                  >
+                    View More
+                  </Button>
+                </Link>
         </div>
       </div>
     </Link>

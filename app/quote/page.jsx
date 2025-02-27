@@ -1,11 +1,5 @@
-'use client'
-// import { useState } from "react";
-// import {FaTwitter, FaFacebook, FaInstagram} from 'react-icons/fa'
-// import toast from "react-hot-toast";
-// import { useRouter } from "next/navigation";
 import Contact from "@/components/Contact";
-
-
+import { GoogleTagManager } from '@next/third-parties/google'
 
 
 
@@ -14,6 +8,7 @@ const Quote = () => {
   return (
 <>
 <Contact />
+<GoogleTagManager gtmId="AW-16622832527" />
 </>
 
   )
