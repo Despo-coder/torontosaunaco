@@ -303,7 +303,7 @@ const SaunaDetails = ({ product }) => {
   src={
     type === "Pure Cube"
       ? PureCubeLogo
-      : type === "Barrel" || type === "Luna Sauna"
+      : type === "Barrel" || type === "Luna Sauna" || type === "Dundalk"
       ? DundalkLogo
       : CTLOGO // Fallback logo for other types
   }
