@@ -25,7 +25,7 @@ const session = await getServerSession(authOptions);
 
 try {
     const token = await getToken({ req, secret: process.env.NEXTAUTH_SECRET });
-    console.log('Token:', token); // Log the token for debugging
+   // console.log('Token:', token); // Log the token for debugging
     
     // if (!token) {
     //     return new Response(JSON.stringify({ error: "Not authenticated" }), { status: 401 });

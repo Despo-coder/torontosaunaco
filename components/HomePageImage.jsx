@@ -9,8 +9,8 @@ const HomePageImage = () => {
       <Image
         src="https://res.cloudinary.com/dw4ev5whz/image/upload/v1740247723/torontosaunaco/latvia-912341_1920_new_mvdep7.png"
         alt="Sauna by the sea"
-        layout="fill"
-        objectFit="cover"
+        fill
+        style={{ objectFit: "cover" }}
         priority
       />
 

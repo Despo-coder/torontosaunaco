@@ -10,14 +10,7 @@ import toast from "react-hot-toast";
 
 
 
-// const dataFile = {
-//   ids: ['668f1df5662a799cce869d64','668f1df5662a799cce869d63','668f1df5662a799cce869d62','668f1df5662a799cce869d61','668f1df5662a799cce869d60'],
-// }
-// export const metadata = {
-//     title: "Toronto Sauna Co.",
-//     description: "Explore premium outdoor and indoor saunas for your home, crafted from high-quality cedar wood. Proudly made in Canada, our cedar barrel and cube saunas, sauna kits, and backyard wellness solutions provide relaxation, health benefits, and timeless luxury. Elevate your space today—cold plunges available!",
-//     keywords: "sauna, toronto, ontario, canada, wellness, relaxation, steam, Best sauna shop in Ontario, Home Saunas near me",
-// };
+
 
 const SaunaPage = () => {
   const { id } = useParams()
@@ -61,12 +54,12 @@ const SaunaPage = () => {
   }
 
 
-  const images = product?.images.map(image => ({
-    id: product._id,
-    image,
-    name: product.name,
-    price: product.price
-  })) || [];
+  // const images = product?.images.map(image => ({
+  //   id: product._id,
+  //   image,
+  //   name: product.name,
+  //   price: product.price
+  // })) || [];
 
 // console.log(product?.map((p) => ({
 //   id: p._id, // Assuming each image should have the same product ID
