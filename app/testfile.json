@@ -2535,27 +2535,18 @@
     },
     {
         "_id": {
-            "$oid": "6699487bd4cac00475346679"
+            "$oid": "67c0b2bfa8421d0a654aa527"
         },
         "owner": "torontosaunco",
-        "name": "6'x6'  Barrel Sauna w Porch",
-        "type": "Barrel",
-        "collectionType": "Barrel",
-        "series": "790",
-        "description": "The 7 x 7' Barrel Sauna in western red cedar (knotty). A traditional option that stands the test of time. Customize to suit your sauna needs then enjoy with family and friends.",
-        "dimension": "84 x 84 x 60 (in)",
-        "price": 9520,
+        "name": "Serenity MP Barrel Sauna",
+        "type": "Canadian Timber",
+        "collectionType": "CT",
+        "series": "CTC2245MPE",
+        "description": "This Canadian Timber Collection Sauna by Dundalk LeisureCraft is handcrafted from Eastern White Cedar that is lighter in color and has tight knots in the wood. The door is 5mm bronze tempered glass with wooden frame and pre-hung on the front wall for easy installation.",
+        "dimension": " 96 x 45 x 34 (in)",
+        "price": 10194,
         "views": {},
-        "wood_type": {
-            "Knotty Cedar": {
-                "price": 0,
-                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg"
-            },
-            "Clear Cedar": {
-                "price": 6316,
-                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg"
-            }
-        },
+        "wood_type": {},
         "stove_type": {
             "Designer B Electric Heater (6kw)": {
                 "price": 1800,
@@ -2569,6 +2560,30 @@
                 "dimensions": "16-1/2 W × 23”H × 11 D (in)",
                 "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg"
             },
+            " Huum Drop Heater - 6KW LOCAL CONTROL": {
+                "price": 2810,
+                "power": "6 Kw",
+                "dimensions": "10 x 11 x 23 (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361776/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_7.5_KW_Electric_Heater_Local_Control_2721.00_lgzulk.jpg"
+            },
+            " Huum Drop Heater - 6KW WIFI CONTROL": {
+                "price": 3386,
+                "power": "6 Kw",
+                "dimensions": "10 x 11 x 23 (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361773/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_6.0_Electric_Heater_With_WIFI_Controls_3132.50_zpe3m3.jpg"
+            },
+            " Huum Hive Heater - 6KW LOCAL CONTROL": {
+                "price": 4294,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464088/torontosaunaco/stoves/HUUMHIVE_Local_6kw__3600_ubtwqn.jpg"
+            },
+            " Huum Hive Heater - 6KW WIFI CONTROL": {
+                "price": 4870,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464088/torontosaunaco/stoves/HUUMHIVE_Local_6kw__3600_ubtwqn.jpg"
+            },
             " Harvia KIP 6KW Sauna Heater": {
                 "price": 1470,
                 "power": "6 Kw",
@@ -2580,6 +2595,12 @@
                 "power": "8 Kw",
                 "dimensions": "16 W × 11”H × 21 D (in)",
                 "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464062/torontosaunaco/stoves/Harvia_KIP_8KW_Sauna_Heater_with_Rocks__1600_ajkagr.jpg"
+            },
+            "Homecraft Revive Heater - 6KW": {
+                "price": 2640,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464079/torontosaunaco/stoves/Homecraft_Revive_7.5kw_Sauna_Heater_with_Controls__2500_xjtsc4.jpg"
             }
         },
         "installation": {
@@ -2598,11 +2619,236 @@
             "phone": "617-555-5555"
         },
         "images": [
-            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721321406/torontosaunaco/Barrell/6x6/6x6BarrelSauna_wPorch_hyp5yu.png",
-            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720933070/torontosaunaco/Barrell/Filler_Image2_wjdarw.jpg",
-            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720933070/torontosaunaco/Barrell/Filler_Image3_bbrj7z.jpg",
-            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720930177/torontosaunaco/Barrell/7x10wP1_lytnpl.jpg",
-            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721321406/torontosaunaco/Barrell/6x6/6x6BarrelSauna_wPorch_hyp5yu.png"
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1740681118/torontosaunaco/CTC/Canadian%20Timber/Serenity_1_bgyx79.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1740681119/torontosaunaco/CTC/Canadian%20Timber/Serenity_2_x4ni6t.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1740681118/torontosaunaco/CTC/Canadian%20Timber/CTC2245MPE_2_oabnew.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1740681119/torontosaunaco/CTC/Canadian%20Timber/CTC2245MPE_4_jzjlau.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1740681118/torontosaunaco/CTC/Canadian%20Timber/CTC2245MPE_1_zms93j.jpg"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+        "_id": {
+            "$oid": "67c0b2bfa8421d0a654aa527"
+        },
+        "owner": "torontosaunco",
+        "name": "Tranquility MP Barrel Sauna",
+        "type": "Canadian Timber",
+        "collectionType": "CT",
+        "series": "CTC2245MPE",
+        "description": "This Canadian Timber Collection Sauna by Dundalk LeisureCraft is handcrafted from Eastern White Cedar that is lighter in color and has tight knots in the wood. The door is 5mm bronze tempered glass with wooden frame and pre-hung on the front wall for easy installation.",
+        "dimension": "120 x 45 x 34(in)",
+        "price": 10515,
+        "views": {},
+        "wood_type": {},
+        "stove_type": {
+            "Designer B Electric Heater (8kw)": {
+                "price": 1860,
+                "power": "8 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg"
+            },
+            " Huum Drop Heater - 6KW LOCAL CONTROL": {
+                "price": 2810,
+                "power": "6 Kw",
+                "dimensions": "10 x 11 x 23 (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361776/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_7.5_KW_Electric_Heater_Local_Control_2721.00_lgzulk.jpg"
+            },
+            " Huum Drop Heater - 6KW WIFI CONTROL": {
+                "price": 3386,
+                "power": "6 Kw",
+                "dimensions": "10 x 11 x 23 (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361773/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_6.0_Electric_Heater_With_WIFI_Controls_3132.50_zpe3m3.jpg"
+            },
+            " Huum Hive Heater - 6KW LOCAL CONTROL": {
+                "price": 4294,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464088/torontosaunaco/stoves/HUUMHIVE_Local_6kw__3600_ubtwqn.jpg"
+            },
+            " Huum Hive Heater - 6KW WIFI CONTROL": {
+                "price": 4870,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464088/torontosaunaco/stoves/HUUMHIVE_Local_6kw__3600_ubtwqn.jpg"
+            },
+            " Harvia KIP 8KW Sauna Heater": {
+                "price": 1545,
+                "power": "8 Kw",
+                "dimensions": "16 W × 11”H × 21 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464062/torontosaunaco/stoves/Harvia_KIP_8KW_Sauna_Heater_with_Rocks__1600_ajkagr.jpg"
+            },
+            "Homecraft Revive Heater - 6KW": {
+                "price": 2640,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464079/torontosaunaco/stoves/Homecraft_Revive_7.5kw_Sauna_Heater_with_Controls__2500_xjtsc4.jpg"
+            }
+        },
+        "installation": {
+            "DIY": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+            },
+            "Supply_Install": {
+                "price": 1750,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+            }
+        },
+        "seller_info": {
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "phone": "617-555-5555"
+        },
+        "images": [
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1740696356/torontosaunaco/CTC/Canadian%20Timber/tranquility_1_rszovk.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1740696356/torontosaunaco/CTC/Canadian%20Timber/CTC2345MPE_3_t2jfot.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1740696356/torontosaunaco/CTC/Canadian%20Timber/tranquility_2_nd4fpr.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1740696356/torontosaunaco/CTC/Canadian%20Timber/CTC2345MPE_2_jevswn.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1740696356/torontosaunaco/CTC/Canadian%20Timber/CTC2345MPE_1_umin4x.jpg"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+        "_id": {
+            "$oid": "668af06648215c199c419a66"
+        },
+        "owner": "torontosaunco",
+        "name": "Indoor Dundalk Cabin Sauna - LS672E",
+        "type": "Dundalk",
+        "collectionType": "Dundalk",
+        "series": "LS672E",
+        "description": "The Dundalk Experience offers the ultimate relaxation with our Indoor Cabin Sauna—crafted for comfort, style, and wellness. Enjoy the soothing heat in a cozy, private space, perfect for unwinding at home",
+        "dimension": "120x182(cm)",
+        "price": 9389,
+        "views": {},
+        "wood_type": {
+            "Knotty Cedar": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg"
+            },
+            "Clear Cedar": {
+                "price": 2924,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg"
+            }
+        },
+        "stove_type": {
+            "Designer B Electric Heater (8kw)": {
+                "price": 1800,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg"
+            },
+            " Huum Drop Heater - 6KW LOCAL CONTROL": {
+                "price": 2810,
+                "power": "6 Kw",
+                "dimensions": "10 x 11 x 23 (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361776/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_7.5_KW_Electric_Heater_Local_Control_2721.00_lgzulk.jpg"
+            },
+            " Huum Drop Heater - 6KW WIFI CONTROL": {
+                "price": 3386,
+                "power": "6 Kw",
+                "dimensions": "10 x 11 x 23 (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361773/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_6.0_Electric_Heater_With_WIFI_Controls_3132.50_zpe3m3.jpg"
+            },
+            " Huum Hive Heater - 6KW LOCAL CONTROL": {
+                "price": 4294,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464088/torontosaunaco/stoves/HUUMHIVE_Local_6kw__3600_ubtwqn.jpg"
+            },
+            " Huum Hive Heater - 6KW WIFI CONTROL": {
+                "price": 4870,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464088/torontosaunaco/stoves/HUUMHIVE_Local_6kw__3600_ubtwqn.jpg"
+            },
+            " Harvia KIP 4.5KW Sauna Heater": {
+                "price": 1380,
+                "power": "4.5 Kw",
+                "dimensions": "16 W × 11”H × 21 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464062/torontosaunaco/stoves/Harvia_KIP_8KW_Sauna_Heater_with_Rocks__1600_ajkagr.jpg"
+            },
+            "Homecraft Revive Heater - 6KW": {
+                "price": 2640,
+                "power": "6 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464079/torontosaunaco/stoves/Homecraft_Revive_7.5kw_Sauna_Heater_with_Controls__2500_xjtsc4.jpg"
+            }
+        },
+        "installation": {
+            "DIY": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+            },
+            "Supply_Install": {
+                "price": 1750,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+            }
+        },
+        "seller_info": {
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "phone": "617-555-5555"
+        },
+        "images": [
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1741553621/torontosaunaco/Dundalk_Indoor_1_ziu08m.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1741553621/torontosaunaco/Dundalk_Indoor_mveme7.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1741553621/torontosaunaco/Dundalk_Indoor_2_dakesv.png"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+        "_id": {
+            "$oid": "668af06648215c199c420a66"
+        },
+        "owner": "torontosaunco",
+        "name": "The Arctic Plunge Tub - Clear Red Cedar",
+        "type": "Cold Plunge Tub",
+        "collectionType": "Cold Plunge",
+        "series": "Tub",
+        "description": "Experience cold plunge therapy with The Arctic Cold Plunge Tub that is manufactured in Canada by Leisurecraft to match the same quality of your sauna or hot tub. The white plastic shell is cut and welded with HDPE plastic and comes with a cedar skirt held in place by the stainless steel bands. Fill this tub with cold water or buy the optional chiller unit which has a built in ozone filter for ease of mind cold tub therapy. The solid cedar cover and steps are great accessories as well and the Arctic Cold Plunge Tub comes completely assembled and ready to use!",
+        "dimension": "40 x 40 x 55 (in)",
+        "price": 4590,
+        "views": {},
+        "wood_type": {},
+        "stove_type": {
+            "Coldture Chiller w/ Fittings": {
+                "price": 4675,
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721167248/torontosaunaco/coldplunge/Untitled_design_j17dds.jpg"
+            },
+            "Penguin Cold Therapy Chiller w/ Filter Kit": {
+                "price": 3100,
+                "dimensions": "10 x 11 x 23 (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742156045/Penguin_Cold_Therapy_1_lgrry9.png"
+            }
+        },
+        "installation": {
+            "DIY": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+            },
+            "Supply_Install": {
+                "price": 1750,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+            }
+        },
+        "seller_info": {
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "phone": "617-555-5555"
+        },
+        "images": [
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742152365/Arctic_1_ljcjby.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742154819/Arctic_2_j085by.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1741553621/torontosaunaco/Dundalk_Indoor_2_dakesv.png"
         ],
         "is_featured": false,
         "createdAt": "2024-01-01T00:00:00.000Z",

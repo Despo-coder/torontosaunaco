@@ -87,20 +87,22 @@ const SaunaDetails = ({ product }) => {
       selectedOptions: item.selectedOptions || {},
     };
   };
+//Cart Functinality
 
-  const handleAddToCart = () => {
-    const item = {
-      id: product.id,
-      name: product.name,
-      price: cost,
-      image: product.image || '',
-      qty: 1,
-      selectedOptions: selectedOptions,
-    };
-    const normalizedItem = normalizeCartItem(item);
-    dispatch(addToCart(normalizedItem));
-    toast.success("Added to cart");
-  };
+  // const handleAddToCart = () => {
+  //   const item = {
+  //     id: product.id,
+  //     name: product.name,
+  //     price: cost,
+  //     image: product.image || '',
+  //     qty: 1,
+  //     selectedOptions: selectedOptions,
+  //   };
+  //   const normalizedItem = normalizeCartItem(item);
+  //   dispatch(addToCart(normalizedItem));
+  //   toast.success("Added to cart");
+  // };
+
 
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -193,9 +195,6 @@ const SaunaDetails = ({ product }) => {
     </div>
   </section>
 )}
-
-
-
 
             {/* Installation Selection */}
             <section className="space-y-6">
@@ -303,7 +302,7 @@ const SaunaDetails = ({ product }) => {
   src={
     type === "Pure Cube"
       ? PureCubeLogo
-      : type === "Barrel" || type === "Luna Sauna"
+      : type === "Barrel" || type === "Luna Sauna" || type === "Dundalk"
       ? DundalkLogo
       : CTLOGO // Fallback logo for other types
   }
