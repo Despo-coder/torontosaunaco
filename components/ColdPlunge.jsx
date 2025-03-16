@@ -9,7 +9,7 @@ import {fetchProducts} from "@/assets/utils/request"
 const Cold_Plunge = async () => {
 
     const product = await fetchProducts()
-   const cubes = product.filter(product => product.type.includes("Cold Plunge"))
+   const cubes = product.filter(product => product.type.includes("Cold Plunge", "Cold Plunge Tub"))
     const recentProducts = cubes.sort(()=> Math.random())
     // .slice(0, )
      return (

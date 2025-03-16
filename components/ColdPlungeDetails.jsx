@@ -54,9 +54,9 @@ const ColdPlungeDetails = ({ product }) => {
   const [windowStyle, setWindowStyle] = useState('');
   const [installationChoice, setInstallationChoice] = useState('');
   
-  const { wood_type: woodPrices, stove_type: stovePrices, type } = product;
+  const { wood_type: woodPrices, stove_type: stovePrices, type , name} = product;
 
-  
+  console.log(name)
   ///const installationPrices = product.installation;
   const windowPrices = product.views;
 
@@ -146,7 +146,29 @@ const ColdPlungeDetails = ({ product }) => {
 
 
   {/* Wood Type Selection */}
-            {type !== 'Canadian Timber' || type === "Cold Plunge" && (
+            {type !== 'Canadian Timber' || type === "Cold Plunge"  && (
+  <section className="space-y-6">
+    <h2 className="text-xl font-semibold">Material Selection</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {Object.entries(woodPrices).map(([key, value]) => (
+        <MaterialCard
+          key={key}
+          name={key}
+          price={value.price}
+          image={value.image}
+          selected={woodType === key}
+          onSelect={() => setWoodType(key)}
+          properties={[
+            // `Aging: ${value.aging}`,
+            // `Density: ${value.density}`,
+            // `Maintenance: ${value.maintenance}`
+          ]}
+        />
+      ))}
+    </div>
+  </section>
+)}
+            {name == "The Glacier Plunge Tub" && (
   <section className="space-y-6">
     <h2 className="text-xl font-semibold">Material Selection</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
