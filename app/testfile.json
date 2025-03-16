@@ -2806,16 +2806,16 @@
     },
     {
         "_id": {
-            "$oid": "668af06648215c199c420a66"
+            "$oid": "668af06648215c199c421a66"
         },
         "owner": "torontosaunco",
-        "name": "The Arctic Plunge Tub - Clear Red Cedar",
-        "type": "Cold Plunge Tub",
+        "name": "The Arctic Plunge Tub - Knotty Red Cedar",
+        "type": "Cold Plunge",
         "collectionType": "Cold Plunge",
         "series": "Tub",
         "description": "Experience cold plunge therapy with The Arctic Cold Plunge Tub that is manufactured in Canada by Leisurecraft to match the same quality of your sauna or hot tub. The white plastic shell is cut and welded with HDPE plastic and comes with a cedar skirt held in place by the stainless steel bands. Fill this tub with cold water or buy the optional chiller unit which has a built in ozone filter for ease of mind cold tub therapy. The solid cedar cover and steps are great accessories as well and the Arctic Cold Plunge Tub comes completely assembled and ready to use!",
         "dimension": "40 x 40 x 55 (in)",
-        "price": 4590,
+        "price": 4150,
         "views": {},
         "wood_type": {},
         "stove_type": {

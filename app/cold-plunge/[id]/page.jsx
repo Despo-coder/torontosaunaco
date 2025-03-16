@@ -11,6 +11,7 @@ import PureCube1_ID from "@/components/PureCube1_ID";
 
 
 
+
 const ColdPlungePage = () => {
   const { id } = useParams()
   const [product, setProduct] = useState(null)
@@ -44,7 +45,7 @@ const ColdPlungePage = () => {
       <p className="text-center">Product not found</p>
     )
   }
-
+  //const filteredProducts = Object.values(product).filter((x) => x.type === 'Cold Plunge');
 
   const sendEmails = async (e) =>{
     e.preventDefault(); // Prevent form from submitting the traditional way
