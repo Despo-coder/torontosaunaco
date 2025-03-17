@@ -185,7 +185,7 @@ export default function Header() {
                             className="flex justify-between items-center gap-24 text-gray-800 hover:text-blue-600 transition"
                             onClick={() => setSaunasDropdownOpen(!saunasDropdownOpen)}
                         >
-                            <Link href='/saunas'>Saunas</Link> 
+                            <span>Saunas</span>
                             <FaChevronDown className="w-4 h-4" />
                         </button>
                         {saunasDropdownOpen && (
@@ -198,9 +198,24 @@ export default function Header() {
                             </ul>
                         )}
                     </li>
-                    <NavItem href="/cold-plunge" label="Cold Plunge" onClick={() => setMenuOpen(false)} />
-                    <NavItem href="/quote" label="Get a Quote" onClick={() => setMenuOpen(!menuOpen)} />
-                    <NavItem href="/accessories" label="Accessories" onClick={() => setMenuOpen(!menuOpen)} />
+                    <li className="dropdown">
+                        <button 
+                            className="flex justify-between items-center gap-24 text-gray-800 hover:text-blue-600 transition"
+                            onClick={() => setTubsDropdownOpen(!tubsDropdownOpen)}
+                        >
+                            <span>Hot & Cold Tubs</span>
+                            <FaChevronDown className="w-4 h-4" />
+                        </button>
+                        {tubsDropdownOpen && (
+                            <ul className="pl-6 mt-2 space-y-2">
+                                <DropdownItem href="/cold-plunge/" label="Cold Tubs" onClick={() => { setTubsDropdownOpen(false); setMenuOpen(!menuOpen); }} />
+                                <DropdownItem href="/hot-tub/" label="Hot Tubs" onClick={() => { setTubsDropdownOpen(false); setMenuOpen(!menuOpen); }} />
+                                <DropdownItem href="/showers/" label="Outdoor Showers" onClick={() => { setTubsDropdownOpen(false); setMenuOpen(!menuOpen); }} />
+                            </ul>
+                        )}
+                    </li>
+                    <NavItem href="/quote" label="Get a Quote" onClick={() => setMenuOpen(false)} />
+                    <NavItem href="/accessories" label="Accessories" onClick={() => setMenuOpen(false)} />
                 </ul>
                 <span>copyright @ 2024</span>
             </nav>
@@ -219,7 +234,7 @@ export default function Header() {
                         <button 
                             className="flex items-center gap-2 font-nunito text-md hover:text-blue-600 transition"
                         >
-                            <Link href='/saunas'>Saunas</Link>  
+                            <span>Saunas</span>
                         </button>
                         {saunasDropdownOpen && (
                             <ul className="font-atkinson absolute z-[-10] left-0 mt-[-2] w-48 bg-white/95 shadow-md shadow-black rounded-2xl px-4 py-2 backdrop-blur-sm">
@@ -239,7 +254,7 @@ export default function Header() {
                         <button 
                             className="flex items-center gap-2 font-nunito text-md hover:text-blue-600 transition"
                         >
-                            <Link href='/tubs'>Hot & Cold Tubs</Link> 
+                            <span>Hot & Cold Tubs</span>
                         </button>
                         {tubsDropdownOpen && (
                             <ul className="font-atkinson absolute z-[-10] left-0 mt-[-2] w-48 bg-white/95 shadow-md shadow-black rounded-2xl px-4 py-2 backdrop-blur-sm">
