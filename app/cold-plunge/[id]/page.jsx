@@ -45,6 +45,7 @@ const ColdPlungePage = () => {
       <p className="text-center">Product not found</p>
     )
   }
+  //console.log(product)
   //const filteredProducts = Object.values(product).filter((x) => x.type === 'Cold Plunge');
 
   const sendEmails = async (e) =>{

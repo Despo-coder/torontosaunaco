@@ -2860,7 +2860,7 @@
         },
         "owner": "torontosaunco",
         "name": "The Glacier Plunge Tub",
-        "type": "Cold Plunge Tub",
+        "type": "Cold Plunge",
         "collectionType": "Cold Plunge",
         "series": "Tub",
         "description": "The Glacier Cold Plunge Tub is the first in its class, manufactured in Canada by Leisurecraft. Now available with either 304 Stainless Steel Interior or white HPDE Plastic and clear or knotty red cedar skirt. This new and improved model is your quality solution for cold plunge therapy with or without a sauna. The optional roll up cover will keep your water clean when not in use and an easy to use drain that will connect to any garden hose is included with all cold plunge tubs. The total outside measurement is  71 x 33x 25  in  High with angled sides for easy in and out access and will hold 190 gallons (720 litres) of water.",
@@ -2905,9 +2905,293 @@
             "phone": "617-555-5555"
         },
         "images": [
-            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742152365/Arctic_1_ljcjby.jpg",
-            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742154819/Arctic_2_j085by.jpg",
-            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1741553621/torontosaunaco/Dundalk_Indoor_2_dakesv.png"
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742166578/The_Glacier_h5qmyp.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742166577/The_Glacier_1_rkjguc.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742166577/The_Glacier_2_vzvvv7.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742166577/The_Glacier_3_hop3pq.png"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+        "_id": {
+            "$oid": "668af06648215c199c424b79"
+        },
+        "owner": "torontosaunco",
+        "name": "Sunlight Outdoor Shower - Knotty Red Cedar",
+        "type": "Outdoor Shower",
+        "collectionType": "Outdoor Shower",
+        "series": "Shower",
+        "description": "Enjoy the outdoors with our open air Sunlight Outdoor Shower. Easy to assemble, hook up and move around if needed this shower is the perfect choice by your swimming pool or hot tub to rinse off or for a quick cool down.",
+        "dimension": " 80 x 17 x 14 (in)",
+        "price": 1700,
+        "views": {},
+        "wood_type": {
+            "Knotty Cedar": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg"
+            },
+            "Clear Cedar": {
+                "price": 200,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg"
+            }
+        },
+        "stove_type": {},
+        "installation": {
+            "DIY": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+            },
+            "Supply_Install": {
+                "price": 1750,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+            }
+        },
+        "seller_info": {
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "phone": "617-555-5555"
+        },
+        "images": [
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742240730/OutDoorShowers_new_rwthni.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742240166/OutDoorShowers_new_kg3sss.png"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+        "_id": {
+            "$oid": "668af06648215c199c425b79"
+        },
+        "owner": "torontosaunco",
+        "name": "Rainbow Barrel Outdoor Shower",
+        "type": "Outdoor Shower",
+        "collectionType": "Outdoor Shower",
+        "series": "Shower",
+        "description": "This superb deluxe outdoor cedar barrel shower comes in a prefabricated kit that can be assembled in approximately 2 hours. This superb shower is great to use after your sauna session or a swim in the lake, ocean or pool to wash away sand, salt or chlorine.",
+        "dimension": " 84 x 45 x 26 (in)",
+        "price": 5500,
+        "views": {},
+        "wood_type": {
+            "Knotty Cedar": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg"
+            },
+            "Clear Cedar": {
+                "price": 1315,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg"
+            }
+        },
+        "stove_type": {},
+        "installation": {
+            "DIY": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+            },
+            "Supply_Install": {
+                "price": 1750,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+            }
+        },
+        "seller_info": {
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "phone": "617-555-5555"
+        },
+        "images": [
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742241733/Rainbow_Barrel_bqrmio.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742241733/Rainbow_Barrel_bqrmio.png"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+        "_id": {
+            "$oid": "668af06648215c199c426b79"
+        },
+        "owner": "torontosaunco",
+        "name": "Cloudburst Outdoor Shower",
+        "type": "Outdoor Shower",
+        "collectionType": "Outdoor Shower",
+        "series": "Shower",
+        "description": "This superb deluxe outdoor cedar barrel shower comes in a prefabricated kit that can be assembled in approximately 2 hours. This superb shower is great to use after your sauna session or a swim in the lake, ocean or pool to wash away sand, salt or chlorine.",
+        "dimension": "84 x 45 x 26 (in)",
+        "price": 5490,
+        "views": {},
+        "wood_type": {
+            "Knotty Cedar": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg"
+            },
+            "Clear Cedar": {
+                "price": 715,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg"
+            }
+        },
+        "stove_type": {},
+        "installation": {
+            "DIY": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+            },
+            "Supply_Install": {
+                "price": 1750,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+            }
+        },
+        "seller_info": {
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "phone": "617-555-5555"
+        },
+        "images": [
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742243373/Cloudburst_hr3qcm.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742243373/Cloudburst_hr3qcm.png"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+        "_id": {
+            "$oid": "668af06648215c199c423a66"
+        },
+        "owner": "torontosaunco",
+        "name": "The Cascade Tub 3'x7'",
+        "type": "Hot Tub",
+        "collectionType": "Hot Tub",
+        "series": "Tub",
+        "description": "Step back in time with The Cascade Tub also Made in Canada by Leisurecraft and shipped to you in a ready to use package. Comfortable sit 2 people in this model which can be used as a wood burning hot tub or without the heater for cold plunge therapy. The 5052 aluminum shell and optional wood heater are light weight and easy to clean, red cedar skirting on the outside can be left natural or stained to match your surroundings. The heat up time is less then 3 hours and out different cover options help keep the heat inside and the water clean when not in use. Each woodburning hot tub include a drain that will connect to your garden hose for easy draining and holds 233 gallons of water. (885 litres)",
+        "dimension": "40 x 40 x 55 (in)",
+        "price": 7674,
+        "views": {},
+        "wood_type": {
+            "Knotty Cedar": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg"
+            },
+            "Clear Cedar": {
+                "price": 600,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg"
+            }
+        },
+        "stove_type": {},
+        "installation": {
+            "DIY": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+            },
+            "Supply_Install": {
+                "price": 1750,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+            }
+        },
+        "seller_info": {
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "phone": "617-555-5555"
+        },
+        "images": [
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742229509/Cascade_Tub_1_j4lfda.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742229510/Cascade_Tub_4_ovhcoe.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742229509/Cascade_Tub_1_j4lfda.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742229509/Cascade_Tub_2_ise9eg.png"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+        "_id": {
+            "$oid": "668af06648215c199c426a41"
+        },
+        "owner": "torontosaunco",
+        "name": "The Evolution Cedar Tub 5' - Knotty Red Cedar",
+        "type": "Hot Tub",
+        "collectionType": "Hot Tub",
+        "series": "Tub",
+        "description": "Introducing the Evolution 5' Wood Burning Hot Tub – the perfect addition to your cottage or home for ultimate relaxation in a compact, efficient package. Designed to comfortably seat two people, this smaller version of our popular 7' Evolution model delivers all the benefits of a traditional wood-burning hot tub in a more intimate size. This model comes fully assembled and ready to use! Crafted from durable, knotty Western Red Cedar, this hot tub features a robust white HDPE plastic liner that is 3/8 thick, ensuring long-lasting performance. Whether you're soaking in the warmth or enjoying a cozy, serene atmosphere, the Evolution 5' hot tub is designed to heat up in just 2 hours, providing quick access to relaxation For added convenience, the tub comes with the option of a 3-tier step system for easy access and a vinyl insulated cover to maintain heat and protect the tub when not in use. Made in Canada, this wood-burning hot tub combines rustic charm with modern engineering, making it the ideal choice for those seeking a premium yet compact spa experience. Perfect for unwinding after a long day, the Evolution 5' is your gateway to peaceful, private relaxation.",
+        "dimension": "65 x 65 x 54 (in)",
+        "price": 7840,
+        "views": {},
+        "wood_type": {
+            "Knotty Cedar": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg"
+            }
+        },
+        "stove_type": {},
+        "installation": {
+            "DIY": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+            },
+            "Supply_Install": {
+                "price": 1750,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+            }
+        },
+        "seller_info": {
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "phone": "617-555-5555"
+        },
+        "images": [
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742245310/Evolution_du377s.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742245420/Evolution_1_y0o4pj.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742229509/Cascade_Tub_1_j4lfda.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742229509/Cascade_Tub_2_ise9eg.png"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+        "_id": {
+            "$oid": "668af06648215c199c427a41"
+        },
+        "owner": "torontosaunco",
+        "name": "The Original Cedar Hot Tub 5'",
+        "type": "Hot Tub",
+        "collectionType": "Hot Tub",
+        "series": "Tub",
+        "description": "The Original Cedar Tub is handcrafted with clear western red cedar and is a standard  (107cm) total height with inside depth of  (96cm). Enjoy a total off grid soak with the peaceful crackling of the aluminum wood fired heater and all natural wooden tub.",
+        "dimension": "65 x 65 x 54 (in)",
+        "price": 7050,
+        "views": {},
+        "wood_type": {
+            "Knotty Cedar": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg"
+            },
+            "Clear Cedar": {
+                "price": 850,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg"
+            }
+        },
+        "stove_type": {},
+        "installation": {
+            "DIY": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+            },
+            "Supply_Install": {
+                "price": 1750,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+            }
+        },
+        "seller_info": {
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "phone": "617-555-5555"
+        },
+        "images": [
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742247740/Origunal_Cedar_rv6wkq.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742247686/Original_Cedar_2_lbjyea.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742247687/Original_Cedar_1_ul24ly.png"
         ],
         "is_featured": false,
         "createdAt": "2024-01-01T00:00:00.000Z",
