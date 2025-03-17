@@ -18,4 +18,5 @@ const ColdPlunge = () => {
   )
 }
 
+
 export default ColdPlunge

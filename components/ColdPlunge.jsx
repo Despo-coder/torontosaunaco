@@ -9,19 +9,21 @@ import {fetchProducts} from "@/assets/utils/request"
 const Cold_Plunge = async () => {
 
     const product = await fetchProducts()
-   const cubes = product.filter(product => product.type.includes("Cold Plunge", "Cold Plunge Tub"))
-    const recentProducts = cubes.sort(()=> Math.random())
+   const cubes = product.filter(product => product.type.includes("Cold Plunge"))
+  //  const recentProducts = cubes.sort(()=> Math.random())
     // .slice(0, )
+   // console.log(cubes)
      return (
     <>
     <section className="px-4 py-6">
         <div className="container-xl lg:container m-auto">
-            <h2 className="text-4xl font-bold mb-4 text-center text-black">
-                Cold Plunge
-            </h2>
+        <h1 className="text-3xl text-center font-bold font-playfair mb-2 mt-4">
+               Cold Tubs
+               
+            </h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
-{recentProducts === 0 ? (<p>No Products found</p>):
-recentProducts.map((product, i)=>(
+{cubes === 0 ? (<p>No Products found</p>):
+cubes.map((product, i)=>(
     <ColdPlungeCard key={i} product= {product} />
 ))
 
