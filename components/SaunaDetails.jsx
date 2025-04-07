@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { Button } from "./ui/button";
-import Link from "next/link";
+// import { Button } from "./ui/button";
+// import Link from "next/link";
 import { useSelector, useDispatch } from "react-redux";
 import { addToCart } from "@/redux/slices/cartSlice";
 import toast from "react-hot-toast";

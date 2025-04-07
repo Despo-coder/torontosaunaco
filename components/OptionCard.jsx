@@ -15,15 +15,17 @@ export const OptionCard = ({ title, price, image, specs, selected, onSelect }) =
     )}
 
     {/* Option Image */}
-    <div className="relative h-48 w-full overflow-hidden rounded-md">
-      <Image
-        src={image}
-        alt={title}
-        fill
-        className="object-cover object-center"
-        sizes="(max-width: 768px) 100vw, 50vw"
-      />
-    </div>
+    <div className="relative h-38 w-full overflow-hidden rounded-md">
+  <Image
+    src={image}
+    alt={title}
+    // className="object-cover object-center"
+    // sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+    // style={{ maxWidth: "100%", height: "auto" }}
+    width={450}
+    height={250}
+  />
+</div>
 
     {/* Option Details */}
     <div className="mt-4">

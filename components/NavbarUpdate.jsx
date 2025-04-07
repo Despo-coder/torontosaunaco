@@ -192,7 +192,7 @@ export default function Header() {
                             <ul className="pl-6 mt-2 space-y-2">
                                 <DropdownItem href="/saunas/cube" label="Cube Saunas" onClick={() => { setSaunasDropdownOpen(false); setMenuOpen(!menuOpen); }} />
                                 <DropdownItem href="/saunas/luna" label="Luna Saunas" onClick={() => { setSaunasDropdownOpen(false); setMenuOpen(!menuOpen); }} />
-                                <DropdownItem href="/saunas/barell" label="Barrell Saunas" onClick={() => { setSaunasDropdownOpen(false); setMenuOpen(!menuOpen); }} />
+                                <DropdownItem href="/saunas/barell" label="Barrel Saunas" onClick={() => { setSaunasDropdownOpen(false); setMenuOpen(!menuOpen); }} />
                                 <DropdownItem href="/saunas/canadian-timber" label="Canadian Timber" onClick={() => { setSaunasDropdownOpen(false); setMenuOpen(!menuOpen); }} />
                                 <DropdownItem href="/saunas/indoor" label="Indoor Saunas" onClick={() => { setSaunasDropdownOpen(false); setMenuOpen(!menuOpen); }} />
                                 <DropdownItem href="/showers/" label="Outdoor Showers" onClick={() => { setSaunasDropdownOpen(false); setMenuOpen(!menuOpen); }} />
@@ -241,7 +241,7 @@ export default function Header() {
                             <ul className="font-atkinson absolute z-[-10] left-0 mt-[-2] w-48 bg-white/95 shadow-md shadow-black rounded-2xl px-4 py-2 backdrop-blur-sm">
                                 <DropdownItem href="/saunas/cube" label="Cube Saunas" onClick={closeDropdown} />
                                 <DropdownItem href="/saunas/luna" label="Luna Saunas" onClick={closeDropdown} />
-                                <DropdownItem href="/saunas/barell" label="Barrell Saunas" onClick={closeDropdown} />
+                                <DropdownItem href="/saunas/barell" label="Barrel Saunas" onClick={closeDropdown} />
                                 <DropdownItem href="/saunas/canadian-timber" label="Canadian Timber" onClick={closeDropdown} />
                                 <DropdownItem href="/saunas/indoor" label="Indoor Saunas" onClick={closeDropdown} />
                                 <DropdownItem href="/showers" label="Outdoor Showers" onClick={closeDropdown} />
