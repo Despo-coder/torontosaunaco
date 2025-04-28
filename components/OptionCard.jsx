@@ -27,6 +27,7 @@ export const OptionCard = ({ title, price, image, specs, selected, onSelect }) =
   />
 </div>
 
+
     {/* Option Details */}
     <div className="mt-4">
       <h4 className="font-medium text-lg">{title}</h4>
