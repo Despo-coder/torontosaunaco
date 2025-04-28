@@ -3,7 +3,8 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "@/assets/images/1.png";
-import { FaBars, FaTimes, FaUser, FaChevronDown, FaShoppingBag, FaHome } from "react-icons/fa";
+import newLogo from "@/assets/images/IMG_6773_white.png"
+import { FaBars, FaTimes, FaChevronDown, FaShoppingBag, FaHome } from "react-icons/fa";
 import { useSelector } from 'react-redux';
 import { signOut, useSession } from 'next-auth/react';
 import defaultImage from "@/assets/images/profile.png";
@@ -65,7 +66,7 @@ export default function Header() {
                 <div className="hidden lg:block absolute left-1/2 top-0 -translate-x-1/2 lg:static lg:translate-x-0 z-20">
                     <Link href="/" className="block w-36 h-36 lg:w-48 lg:h-48">
                         <Image 
-                            src={logo} 
+                            src={newLogo} 
                             alt="Toronto Sauna Co" 
                             width={400}
                             height={400}

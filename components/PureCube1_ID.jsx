@@ -45,8 +45,8 @@ export default function SimpleSlider({id}) {
     if(!product || product.length === 0) return <div>No product found</div>
 
     return (
-      <div className="grid grid-cols-1  md:grid-cols-2 gap-[6px] p-4 md:gap-8">
-    <div className="slider-container ">
+    <div className="grid grid-cols-1  md:grid-cols-2 gap-[6px] p-4 md:gap-8 mt-8 ">
+    <div className="slider-container">
       
       <Slider {...settings}>
         {product.images.map((image, index) => (
@@ -60,22 +60,23 @@ export default function SimpleSlider({id}) {
               style={{ objectFit: 'cover' , layout: 'fill' }}
               width={0}
               height={0}
-             
-            />
+              />
 
             </div>
           </div>
         ))}
       </Slider>
 
+
     </div>
     <div className="flex flex-col items-center justify-center">
     <div className="product-info">
-      <h2 className="text-2xl font-bold mb-4 font-playfair">{product.name}</h2>
-      <h2 className="font-semibold">${`${product.price.toLocaleString()}.00`}</h2>
-      <p className="text-gray-600 font-roboto" >{product.description}</p>
+    <h2 className="text-2xl font-bold mb-4 font-playfair">{product.name}</h2>
+    <h2 className="font-semibold">${`${product.price.toLocaleString()}.00`}</h2>
+    <p className="text-gray-600 font-roboto" >{product.description}</p>
     </div>
     </div>
   </div>
-    );
+
+  );
   }
