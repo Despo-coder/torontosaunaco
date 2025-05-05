@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
+import Contact from "@/components/Contact";
 
 const HeaterDetails = () => {
   const [heater, setHeater] = useState(null);
@@ -14,6 +15,7 @@ const HeaterDetails = () => {
   });
   const [selectedImage, setSelectedImage] = useState(0);
   const [totalPrice, setTotalPrice] = useState(0);
+  const [showContact, setShowContact] = useState(false);
   const params = useParams();
   // console.log(heater);
   useEffect(() => {
@@ -372,15 +374,27 @@ const HeaterDetails = () => {
                   ${totalPrice}
                 </p>
               </div>
+              <div className="mt-6 text-xs italic text-gray-500 text-center">
+                To make an order, click below and send the information
+              </div>
               <Link href="/quote">
                 <button
                   type="button"
                   className="mt-8 w-full bg-black border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setShowContact((v) => !v);
+                  }}
                 >
-                  Get More Information
+                  {showContact ? "Hide Contact Form" : "Order Now"}
                 </button>
               </Link>
             </div>
+            {showContact && (
+              <div className="mt-6 transition-all duration-300">
+                <Contact />
+              </div>
+            )}
           </div>
         </div>
       </div>
