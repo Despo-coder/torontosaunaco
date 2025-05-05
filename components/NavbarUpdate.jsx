@@ -300,6 +300,11 @@ export default function Header() {
             label="Accessories"
             onClick={() => setMenuOpen(false)}
           />
+          <NavItem
+            href="/heaters"
+            label="Heaters"
+            onClick={() => setMenuOpen(false)}
+          />
         </ul>
         <span>copyright @ 2024</span>
       </nav>
@@ -387,6 +392,7 @@ export default function Header() {
             label="Accessories"
             className="font-atkinson"
           />
+          <NavItem href="/heaters" label="Heaters" className="font-atkinson" />
         </ul>
       </nav>
     </header>
