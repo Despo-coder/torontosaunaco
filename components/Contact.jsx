@@ -65,14 +65,14 @@ const Contact = () => {
             Have a question or just want to say hi? We'd love to hear from you.
             Send us a message and we'll respond as soon as possible.
           </p>
-          <div className="mt-8">
+          {/* <div className="mt-8">
             <Link
               href="/consultation"
               className="inline-block bg-black text-white px-6 py-3 rounded-xl hover:bg-[#f9bd63] transition-colors"
             >
               Book a Consultation →
             </Link>
-          </div>
+          </div> */}
           <div className="mt-12">
             <h2 className="text-gray-800 text-base font-bold">Socials</h2>
             <ul className="flex mt-4 space-x-4">
