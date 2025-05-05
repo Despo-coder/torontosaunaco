@@ -416,6 +416,7 @@ function NavItem({ href, label, onClick }) {
 
 // Reusable Dropdown Item Component
 function DropdownItem({ href, label, onClick }) {
+
   return (
     <li className="border-b last:border-none">
       <Link
@@ -427,4 +428,17 @@ function DropdownItem({ href, label, onClick }) {
       </Link>
     </li>
   );
+
+    return (
+        <li className="border-b last:border-none">
+            <Link 
+                href={href} 
+                className="block px-4 py-2 hover:bg-gray-100"
+                onClick={onClick}
+            >
+                {label}
+            </Link>
+        </li>
+    );
+
 }
