@@ -210,6 +210,14 @@ export default function Header() {
             </button>
             {saunasDropdownOpen && (
               <ul className="pl-6 mt-2 space-y-2">
+                {/* <DropdownItem
+                  href="/saunas/studio-6"
+                  label="Studio 6 "
+                  onClick={() => {
+                    setSaunasDropdownOpen(false);
+                    setMenuOpen(!menuOpen);
+                  }}
+                /> */}
                 <DropdownItem
                   href="/saunas/cube"
                   label="Cube Saunas"
@@ -325,6 +333,11 @@ export default function Header() {
             </button>
             {saunasDropdownOpen && (
               <ul className="font-atkinson absolute z-[-10] left-0 mt-[-2] w-48 bg-white/95 shadow-md shadow-black rounded-2xl px-4 py-2 backdrop-blur-sm">
+                {/* <DropdownItem
+                  href="/saunas/studio-6"
+                  label="Studio Six"
+                  onClick={closeDropdown}
+                /> */}
                 <DropdownItem
                   href="/saunas/cube"
                   label="Cube Saunas"
