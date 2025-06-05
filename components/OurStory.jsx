@@ -2,18 +2,45 @@ import React from 'react'
 
 const OurStory = () => {
     return (
-        <div className="min-h-screen flex items-center justify-center px-6 md:px-12 lg:px-24">
-        <div className="w-full max-w-5xl text-center">
-          <h1 className="text-4xl font-bold mb-8 font-playfair">Our Story</h1>
-          <p className="text-medium leading-relaxed font-roboto">
-            At Pathways to Perennials Inc, we have been pioneers in the garden design and construction industry for over 40 years. Our journey began with a passion for creating beautiful, sustainable outdoor spaces that inspire and rejuvenate. As an industry leader, we’ve dedicated ourselves to blending artistry with nature, ensuring every project we undertake transforms spaces into sanctuaries of peace and wellness.
-  
-            Understanding the profound impact nature has on well-being, it was only natural for us to expand our horizons into another realm of wellness. This led to the founding of The Toronto Sauna Co. in 2022, a subsidiary of Pathways to Perennials Inc. The Toronto Sauna Co. embodies our commitment to health and wellness, offering a complementary service that enhances the holistic benefits of our garden and landscape designs.
-  
-            Our saunas are crafted with the same dedication to quality and sustainability that has defined our gardening projects for decades. Manufactured in Dundalk, Ontario, our saunas are made from Canadian-sourced wood, ensuring a high standard of craftsmanship and a connection to our local environment.
-  
-            The synergy between the restorative power of a sauna and the holistic nature of gardening creates a unique wellness experience. Both practices encourage relaxation, rejuvenation, and a deeper connection to nature. At Pathways to Perennials and The Toronto Sauna Co., we are dedicated to fostering this harmony, helping our clients cultivate spaces that nourish the body, mind, and spirit.
+        <div className="min-h-screen flex items-center justify-center px-6 md:px-12 lg:px-24 bg-gradient-to-br from-yellow-100 via-white to-amber-300">
+        <div className="w-full max-w-5xl text-center py-12 rounded-2xl shadow-xl bg-white/80 backdrop-blur-md">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 font-playfair text-emerald-700 drop-shadow-lg">About The Toronto Sauna Co.</h1>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-8">
+            {/* Founder Image Placeholder */}
+            <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-emerald-400 shadow-lg bg-gray-200 mx-auto md:mx-0 transition-shadow duration-300 hover:shadow-2xl">
+              {/* Replace src with founders' photo if available */}
+             
+              <img src="/images/Mini 3.png" alt="Founders TJ and Angie Allen" className="object-cover w-full h-full" />
+            </div>
+            <div className="text-center md:text-center flex-1">
+              <h2 className="text-2xl font-semibold text-indigo-700 mb-2 font-playfair">Our Founders</h2>
+              <p className="italic text-gray-700 font-roboto">TJ & Angie Allen</p>
+              <p className="text-sm text-gray-500 mt-2">Husband & Wife | Sauna Enthusiasts | Wellness Advocates</p>
+            </div>
+          </div>
+          <p className="text-lg leading-relaxed font-roboto text-gray-800 mb-8">
+            The Toronto Sauna Co. is a proudly Canadian company founded by husband-and-wife team <span className="font-semibold text-emerald-700">TJ and Angie Allen</span>. What started as a shared passion for health, design, and craftsmanship has grown into a trusted name in the Canadian wellness space.<br/><br/>
+            Every sauna we offer is thoughtfully designed and manufactured across Ontario, using high-quality Canadian materials built for our climate. From modern backyard cubes to traditional cedar barrels, we specialize in low-maintenance, high-performance sauna builds that look as good as they feel.<br/><br/>
+            We partner with the best local manufacturers and artisans to bring timeless Nordic tradition into the modern Canadian home. Whether you’re looking for a private wellness space, a cottage upgrade, or a bold feature for your Airbnb, we deliver more than a sauna, we deliver the full experience.
           </p>
+          {/* <ul className="text-left text-gray-700 list-disc ml-6 mt-2 space-y-1">
+  <li>Canadian materials built for harsh winters</li>
+  <li>Custom builds for Airbnb and cottages</li>
+  <li>Handcrafted by Ontario artisans</li>
+</ul> */}
+       
+        <div className="mt-10 mb-10">
+  {/* <h3 className="text-lg font-bold text-emerald-700 mb-2">Milestones</h3> */}
+  <ul className="text-gray-600  ml-6">
+     <li>Canadian materials built for harsh winters</li>
+  <li>Custom builds for Airbnb and cottages</li>
+  <li>Handcrafted by Ontario artisans</li>
+  </ul>
+</div>
+   <blockquote className="text-xl italic text-indigo-800 font-playfair border-l-4 border-emerald-400 pl-4 mb-8 bg-emerald-50/60 py-4">
+            "Our mission: Help Canadians feel better, every day, through the simple power of heat, sweat, and purpose."
+          </blockquote>
+          <a href="/saunas" className="inline-block px-8 py-3 bg-emerald-600 text-white font-bold rounded-full shadow-lg hover:bg-emerald-700 transition">See Our Saunas</a>
         </div>
       </div>
       )

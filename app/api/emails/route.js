@@ -75,7 +75,8 @@ export async function POST(req) {
 
     const mailOptions = {
       from: process.env.MAIL_USER,
-      to: "info@thetorontosaunaco.com",
+      // to: "info@thetorontosaunaco.com",
+      to: "tjallen@thetorontosaunaco.com",
       subject: subject,
       html: emailContent,
     };
