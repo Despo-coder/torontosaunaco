@@ -134,7 +134,7 @@ const Studio6Page = () => {
                   <p className="text-gray-600 mb-4">{model.description}</p>
                   <Link href="/quote">
                     <button className="w-full bg-black text-white py-1 rounded-xl font-semibold hover:bg-gray-800 transition-colors">
-                      Configure This Model
+                      Get a Quote
                     </button>
                   </Link>
                 </div>
