@@ -1,10 +1,9 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 
 const Studio6Card = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-center items-start gap-8 w-full max-w-7xl mx-auto p-6">
-      
+    <div className="flex flex-col lg:flex-row justify-center items-start gap-8 w-full max-w-7xl mx-auto p-6 mt-20">
       {/* Static Image Card */}
       <div className="group relative rounded-lg overflow-hidden shadow-md bg-white max-w-md w-full">
         <div className="relative aspect-square overflow-hidden">
@@ -17,7 +16,9 @@ const Studio6Card = () => {
           />
         </div>
         <div className="p-6 bg-white">
-          <h3 className="font-light text-gray-900 text-xl mb-2">Studio 6 Sauna</h3>
+          <h3 className="font-light text-gray-900 text-xl mb-2">
+            Studio 6 Sauna
+          </h3>
           <div className="flex items-center justify-between">
             <span className="font-light text-gray-900 text-lg">$8,999</span>
             <Link href="/saunas/studio-6">
@@ -43,12 +44,15 @@ const Studio6Card = () => {
           playsInline
           className="w-full h-full object-cover"
         >
-          <source src="https://res.cloudinary.com/dw4ev5whz/video/upload/v1747613878/ClassicSauna_tsxfp2.mp4" type="video/mp4" />
+          <source
+            src="https://res.cloudinary.com/dw4ev5whz/video/upload/v1747613878/ClassicSauna_tsxfp2.mp4"
+            type="video/mp4"
+          />
           Your browser does not support the video tag.
         </video>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Studio6Card
+export default Studio6Card;
