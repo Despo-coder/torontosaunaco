@@ -62,7 +62,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="sticky top-0 py-4 lg:py-6 shadow-md shadow-black/85 min-h-[80px] lg:min-h-[200px] bg-white z-50">
+    <header className="sticky top-0 py-4 lg:py-5 xl:py-6 shadow-md shadow-black/85 min-h-[80px] lg:min-h-[180px] xl:min-h-[200px] bg-white z-50">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[url('/images/Print_Hudson-44.png')] bg-cover bg-center"></div>
@@ -72,7 +72,10 @@ export default function Header() {
       <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center gap-y-4 lg:gap-y-0 relative z-10">
         {/* Logo */}
         <div className="hidden lg:block absolute left-1/2 top-0 -translate-x-1/2 lg:static lg:translate-x-0 z-20">
-          <Link href="/" className="block w-36 h-36 lg:w-48 lg:h-48">
+          <Link
+            href="/"
+            className="block w-36 h-36 lg:w-40 lg:h-40 xl:w-48 xl:h-48"
+          >
             <Image
               src={newLogo}
               alt="Toronto Sauna Co"
@@ -88,7 +91,7 @@ export default function Header() {
         <div className="flex flex-col lg:flex-row gap-y-2 lg:gap-x-5 text-white text-xl font-bold">
           <Link href="/" className="flex items-center gap-x-2">
             <div className="flex items-center gap-x-2">
-              <h1 className="font-atkinson text-2xl md:text-4xl text-white border-4 border-white p-2 md:p-4 rounded-none">
+              <h1 className="font-atkinson text-2xl md:text-3xl lg:text-3xl xl:text-4xl text-white border-4 border-white p-2 md:p-3 lg:p-3 xl:p-4 rounded-none">
                 The Toronto Sauna Co.
               </h1>
             </div>
@@ -96,10 +99,10 @@ export default function Header() {
         </div>
 
         {/* Navigation */}
-        <div className="btn btn-outline flex items-center gap-4 px-6 py-2 border border-white rounded-xl transition-colors">
-          <div className="relative flex items-center gap-8 text-white">
+        <div className="btn btn-outline flex items-center gap-3 lg:gap-4 px-4 lg:px-6 py-2 border border-white rounded-xl transition-colors">
+          <div className="relative flex items-center gap-6 lg:gap-8 text-white">
             <div className="relative">
-              <FaShoppingBag className="text-xl w-7 h-7" />
+              <FaShoppingBag className="text-lg lg:text-xl w-6 h-6 lg:w-7 lg:h-7" />
               <span className="absolute -top-[4px] -right-2 z-10 bg-green-500 text-white font-semibold rounded-xl w-5 h-5 flex items-center justify-center text-sm border border-white">
                 {!cartItems ? "0" : cartItems.length}
               </span>
@@ -116,7 +119,7 @@ export default function Header() {
                 <span className="absolute -inset-1.5"></span>
                 <span className="sr-only">Open user menu</span>
                 <Image
-                  className="h-8 w-8 rounded-full"
+                  className="h-7 w-7 lg:h-8 lg:w-8 rounded-full"
                   src={profileImage}
                   alt=""
                   width={50}
@@ -210,14 +213,14 @@ export default function Header() {
             </button>
             {saunasDropdownOpen && (
               <ul className="pl-6 mt-2 space-y-2">
-                {/* <DropdownItem
+                <DropdownItem
                   href="/saunas/studio-6"
                   label="Studio 6 "
                   onClick={() => {
                     setSaunasDropdownOpen(false);
                     setMenuOpen(!menuOpen);
                   }}
-                /> */}
+                />
                 <DropdownItem
                   href="/saunas/cube"
                   label="Cube Saunas"
@@ -318,8 +321,8 @@ export default function Header() {
       </nav>
 
       {/* Desktop Navigation */}
-      <nav className="font-nunito hidden lg:flex absolute lg:left-[51.25%] transform -translate-x-1/2 top-16 bg-white shadow-md shadow-black rounded-2xl px-10 py-4 mt-36 backdrop-blur-sm">
-        <ul className="flex gap-x-6 text-gray-800 text-base md:mx-auto">
+      <nav className="font-nunito hidden lg:flex absolute lg:left-[51.25%] transform -translate-x-1/2 top-12 lg:top-14 xl:top-16 bg-white shadow-md shadow-black rounded-2xl px-6 lg:px-8 xl:px-10 py-3 lg:py-4 mt-28 lg:mt-32 xl:mt-36 backdrop-blur-sm">
+        <ul className="flex gap-x-4 lg:gap-x-6 text-gray-800 text-sm lg:text-base md:mx-auto">
           <NavItem href="/" label="Home" />
 
           {/* Desktop Dropdown */}
@@ -328,16 +331,16 @@ export default function Header() {
             onMouseEnter={() => handleDesktopHover("saunas", true)}
             onMouseLeave={() => handleDesktopHover("saunas", false)}
           >
-            <button className="flex items-center gap-2 font-nunito text-md hover:text-blue-600 transition">
+            <button className="flex items-center gap-2 font-nunito text-sm lg:text-md hover:text-blue-600 transition">
               <span>Saunas</span>
             </button>
             {saunasDropdownOpen && (
-              <ul className="font-atkinson absolute z-[-10] left-0 mt-[-2] w-48 bg-white/95 shadow-md shadow-black rounded-2xl px-4 py-2 backdrop-blur-sm">
-                {/* <DropdownItem
+              <ul className="font-atkinson absolute z-[-10] left-0 mt-[-2] w-44 lg:w-48 bg-white/95 shadow-md shadow-black rounded-2xl px-3 lg:px-4 py-2 backdrop-blur-sm">
+                <DropdownItem
                   href="/saunas/studio-6"
                   label="Studio Six"
                   onClick={closeDropdown}
-                /> */}
+                />
                 <DropdownItem
                   href="/saunas/cube"
                   label="Cube Saunas"
@@ -376,11 +379,11 @@ export default function Header() {
             onMouseEnter={() => handleDesktopHover("tubs", true)}
             onMouseLeave={() => handleDesktopHover("tubs", false)}
           >
-            <button className="flex items-center gap-2 font-nunito text-md hover:text-blue-600 transition">
+            <button className="flex items-center gap-2 font-nunito text-sm lg:text-md hover:text-blue-600 transition">
               <span>Hot & Cold Tubs</span>
             </button>
             {tubsDropdownOpen && (
-              <ul className="font-atkinson absolute z-[-10] left-0 mt-[-2] w-48 bg-white/95 shadow-md shadow-black rounded-2xl px-4 py-2 backdrop-blur-sm">
+              <ul className="font-atkinson absolute z-[-10] left-0 mt-[-2] w-44 lg:w-48 bg-white/95 shadow-md shadow-black rounded-2xl px-3 lg:px-4 py-2 backdrop-blur-sm">
                 <DropdownItem
                   href="/cold-plunge/"
                   label="Cold Tubs"
@@ -429,7 +432,6 @@ function NavItem({ href, label, onClick }) {
 
 // Reusable Dropdown Item Component
 function DropdownItem({ href, label, onClick }) {
-
   return (
     <li className="border-b last:border-none">
       <Link
@@ -442,16 +444,15 @@ function DropdownItem({ href, label, onClick }) {
     </li>
   );
 
-    return (
-        <li className="border-b last:border-none">
-            <Link 
-                href={href} 
-                className="block px-4 py-2 hover:bg-gray-100"
-                onClick={onClick}
-            >
-                {label}
-            </Link>
-        </li>
-    );
-
+  // return (
+  //     <li className="border-b last:border-none">
+  //         <Link
+  //             href={href}
+  //             className="block px-4 py-2 hover:bg-gray-100"
+  //             onClick={onClick}
+  //         >
+  //             {label}
+  //         </Link>
+  //     </li>
+  // );
 }
