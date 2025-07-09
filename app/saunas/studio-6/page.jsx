@@ -57,14 +57,14 @@ const Studio6Page = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative bg-gray-900 text-white py-20 overflow-hidden">
+      <section className="relative bg-gray-900 text-white py-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/50 z-10"></div>
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 ">
           <Image
             src="/images/Classic 2.png"
             alt="Studio Six Collection"
             fill
-            className="object-cover"
+            className="object-cover "
             priority
           />
         </div>
@@ -178,13 +178,35 @@ const Studio6Page = () => {
               </div>
               <p className="text-lg mb-6">
                 Built in Canada. Backed by wellness. Designed for year-round
-                use.
+                use. Download the specifications book below.
               </p>
-              <Link href="/quote">
-                <button className="bg-white text-black px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-100 transition-colors">
-                  Start Your Project
-                </button>
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link href="/quote">
+                  <button className="bg-white text-black px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-100 transition-colors">
+                    Start Your Project
+                  </button>
+                </Link>
+                <a
+                  href="/pdf/Toronto Sauna Co - Spec Book.pdf"
+                  download="Toronto Sauna Co - Spec Book.pdf"
+                  className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white hover:text-black transition-colors inline-flex items-center gap-2"
+                >
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    />
+                  </svg>
+                  Download Spec Book
+                </a>
+              </div>
             </div>
 
             <div className="text-center mb-4">
