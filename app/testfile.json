@@ -449,12 +449,6 @@
             }
         },
         "stove_type": {
-            "Huum Hive Heater Local Control (10.5Kw)": {
-                "price": 4600,
-                "power": "9 Kw",
-                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
-                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361795/torontosaunaco/Wood_Stove_Install_img/NARVINC_1688.50_fryhhq.jpg"
-            },
             "Huum Hive Heater Wifi Control (10.5Kw)": {
                 "price": 5175,
                 "power": "9 Kw",
@@ -3192,6 +3186,62 @@
             "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742247740/Origunal_Cedar_rv6wkq.png",
             "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742247686/Original_Cedar_2_lbjyea.png",
             "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742247687/Original_Cedar_1_ul24ly.png"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+        "_id": {
+            "$oid": "668af06648215c199f921z72"
+        },
+        "owner": "torontosaunco",
+        "name": "Superior Hydra Sauna",
+        "type": "Pure Cube",
+        "collectionType": "Cube",
+        "series": "SH6112",
+        "description": "The Superior Hydra is TTSC’s most complete 4-season sauna, combining the clean lines of the Orion with a built-in change room and full bronze glass front for a 180° view. This sauna features Insulated walls, roof and flooring. It also boasts a bronze tempered glass front door. It offers optional side benches, showers and accessories.",
+        "dimension": "84 x 120(in)",
+        "price": 20180,
+        "views": {},
+        "wood_type": {
+            "Knotty Cedar": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg"
+            },
+            "Clear Cedar": {
+                "price": 5767,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg"
+            }
+        },
+        "stove_type": {
+            "Huum Hive Heater Wifi Control (10.5Kw)": {
+                "price": 5175,
+                "power": "10.5 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361795/torontosaunaco/Wood_Stove_Install_img/NARVINC_1688.50_fryhhq.jpg"
+            }
+        },
+        "installation": {
+            "DIY": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+            },
+            "Supply_Install": {
+                "price": 1750,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+            }
+        },
+        "seller_info": {
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "phone": "617-555-5555"
+        },
+        "images": [
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1753838904/torontosaunaco/Cubes/Superior/SH_1_kcya7h.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1753838949/torontosaunaco/Cubes/Superior/OR6110_fcr0nz.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1753838949/torontosaunaco/Cubes/Superior/OR6110_fcr0nz.jpg"
+            
         ],
         "is_featured": false,
         "createdAt": "2024-01-01T00:00:00.000Z",
