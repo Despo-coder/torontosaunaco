@@ -86,7 +86,7 @@ const Studio6Page = () => {
             <div className="text-2xl md:text-3xl font-semibold mb-4">
               Prices starting at $15,999
             </div>
-            <Link href="/quote">
+            <Link href="/quote?sauna=Studio%20Six%20Collection">
               <button className="bg-white  text-black px-8 py-4 rounded-xl  font-semibold text-lg hover:bg-gray-200 transition-colors">
                 Get Your Quote
               </button>
@@ -132,7 +132,9 @@ const Studio6Page = () => {
                     {model.dimensions}
                   </p>
                   <p className="text-gray-600 mb-4">{model.description}</p>
-                  <Link href="/quote">
+                  <Link
+                    href={`/quote?sauna=Studio%20Six%20${model.name}&dimensions=${encodeURIComponent(model.dimensions)}`}
+                  >
                     <button className="w-full bg-black text-white py-1 rounded-xl font-semibold hover:bg-gray-800 transition-colors">
                       Get a Quote
                     </button>
@@ -181,7 +183,7 @@ const Studio6Page = () => {
                 use. Download the specifications book below.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/quote">
+                <Link href="/quote?sauna=Studio%20Six%20Collection">
                   <button className="bg-white text-black px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-100 transition-colors">
                     Start Your Project
                   </button>
@@ -284,7 +286,7 @@ const Studio6Page = () => {
                 routine with Studio Six.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/quote">
+                <Link href="/quote?sauna=Studio%20Six%20Collection">
                   <button className="bg-white text-black px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-100 transition-colors">
                     Get Custom Quote
                   </button>

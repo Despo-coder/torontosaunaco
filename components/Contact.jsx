@@ -1,13 +1,19 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaInstagram } from "react-icons/fa";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
-const Contact = () => {
+const Contact = ({ defaultSubject = "" }) => {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
+  const [subject, setSubject] = useState(defaultSubject);
+
+  // Update subject when defaultSubject prop changes
+  useEffect(() => {
+    setSubject(defaultSubject);
+  }, [defaultSubject]);
 
   const sendEmails = async (e) => {
     e.preventDefault();
@@ -18,7 +24,7 @@ const Contact = () => {
       email: e.target.email.value,
       phone: e.target.phone?.value || "",
       message: e.target.message.value,
-      subject: e.target.subject.value,
+      subject: subject || e.target.subject.value, // Use state value or fallback to input value
       isConsultation: false,
     };
 
@@ -101,9 +107,18 @@ const Contact = () => {
             className="w-full text-gray-800 rounded-lg py-2.5 px-4 border text-sm outline-blue-500"
           />
           <input
+            type="tel"
+            placeholder="Phone Number"
+            id="phone"
+            required
+            className="w-full text-gray-800 rounded-lg py-2.5 px-4 border text-sm outline-blue-500"
+          />
+          <input
             type="text"
             placeholder="Subject"
             id="subject"
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
             required
             className="w-full text-gray-800 rounded-lg py-2.5 px-4 border text-sm outline-blue-500"
           />
