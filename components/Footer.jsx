@@ -151,7 +151,7 @@ const Footer = () => {
         </div>
         <div className="border-t text-center border-[#6b5f5f] pt-8 mt-8">
           <p className="text-gray-300 text-[15px]">
-            Copyright © 2023
+            &copy; {new Date().getFullYear()}{" "}
             <Link
               href="https://www.thetorontosaunaco.com/"
               className="hover:underline mx-1"
