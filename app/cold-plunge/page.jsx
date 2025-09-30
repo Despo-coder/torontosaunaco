@@ -1,22 +1,17 @@
-import Cold_Plunge from "@/components/ColdPlunge"
-
-
+import Cold_Plunge from "@/components/ColdPlunge";
 
 export const metadata = {
-  title: "Toronto Sauna Co.",
-  description: "Explore premium outdoor and indoor saunas for your home, crafted from high-quality cedar wood. Proudly made in Canada, our cedar barrel and cube saunas, sauna kits, and backyard wellness solutions provide relaxation, health benefits, and timeless luxury. Elevate your space today—cold plunges available!",
-  keywords: "sauna, toronto, ontario, canada, wellness, relaxation, steam, Best sauna shop in Ontario, Home Saunas near me",
+  title: "Cold-Plunge | Toronto Sauna Co.",
+  description:
+    "Explore premium outdoor and indoor saunas for your home, crafted from high-quality cedar wood. Proudly made in Canada, our cedar barrel and cube saunas, sauna kits, and backyard wellness solutions provide relaxation, health benefits, and timeless luxury. Elevate your space today—cold plunges available!",
 };
-
-
 
 const ColdPlunge = () => {
   return (
     <div className="mt-8">
-     <Cold_Plunge />
+      <Cold_Plunge />
     </div>
-  )
-}
+  );
+};
 
-
-export default ColdPlunge
+export default ColdPlunge;
