@@ -65,7 +65,7 @@ export default function Header() {
     <header className="sticky top-0 py-4 lg:py-5 xl:py-6 shadow-md shadow-black/85 min-h-[80px] lg:min-h-[180px] xl:min-h-[200px] bg-white z-50">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[url('https://res.cloudinary.com/dw4ev5whz/image/upload/v1759247840/torontosaunaco/Print_Hudson-44_hk0ftv.webp')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 bg-[url('/images/Print_Hudson-44.png')] bg-cover bg-center"></div>
         <div className="absolute inset-0 bg-black/65"></div>
       </div>
 
@@ -194,6 +194,7 @@ export default function Header() {
           <div className="flex justify-center items-center">
             {/* Close Hamburger Icon */}
             <button
+              aria-label="Home Link"
               className="text-gray-800 text-2xl"
               onClick={() => setMenuOpen(!menuOpen)}
             >
@@ -205,6 +206,7 @@ export default function Header() {
           {/* Mobile Dropdown */}
           <li className="dropdown">
             <button
+              aria-label="Saunas Link"
               className="flex justify-between items-center gap-24 text-gray-800 hover:text-blue-600 transition"
               onClick={() => setSaunasDropdownOpen(!saunasDropdownOpen)}
             >
@@ -274,6 +276,7 @@ export default function Header() {
           </li>
           <li className="dropdown">
             <button
+              aria-label="Hot & Cold Tubs Link"
               className="flex justify-between items-center gap-24 text-gray-800 hover:text-blue-600 transition"
               onClick={() => setTubsDropdownOpen(!tubsDropdownOpen)}
             >
@@ -331,7 +334,10 @@ export default function Header() {
             onMouseEnter={() => handleDesktopHover("saunas", true)}
             onMouseLeave={() => handleDesktopHover("saunas", false)}
           >
-            <button className="flex items-center gap-2 font-nunito text-sm lg:text-md hover:text-blue-600 transition">
+            <button
+              className="flex items-center gap-2 font-nunito text-sm lg:text-md hover:text-blue-600 transition"
+              aria-label="Saunas Link"
+            >
               <span>Saunas</span>
             </button>
             {saunasDropdownOpen && (
@@ -379,7 +385,10 @@ export default function Header() {
             onMouseEnter={() => handleDesktopHover("tubs", true)}
             onMouseLeave={() => handleDesktopHover("tubs", false)}
           >
-            <button className="flex items-center gap-2 font-nunito text-sm lg:text-md hover:text-blue-600 transition">
+            <button
+              className="flex items-center gap-2 font-nunito text-sm lg:text-md hover:text-blue-600 transition"
+              aria-label="Hot & Cold Tubs Link"
+            >
               <span>Hot & Cold Tubs</span>
             </button>
             {tubsDropdownOpen && (
@@ -402,13 +411,20 @@ export default function Header() {
             href="/quote"
             label="Get a Quote"
             className="font-atkinson"
+            aria-label="Get a Quote Link"
           />
           <NavItem
             href="/accessories"
             label="Accessories"
             className="font-atkinson"
+            aria-label="Accessories Link"
           />
-          <NavItem href="/heaters" label="Heaters" className="font-atkinson" />
+          <NavItem
+            href="/heaters"
+            label="Heaters"
+            className="font-atkinson"
+            aria-label="Heaters Link"
+          />
         </ul>
       </nav>
     </header>
@@ -423,6 +439,7 @@ function NavItem({ href, label, onClick }) {
         href={href}
         className="hover:text-blue-600 transition"
         onClick={onClick}
+        aria-label={label}
       >
         {label}
       </Link>
@@ -438,6 +455,7 @@ function DropdownItem({ href, label, onClick }) {
         href={href}
         className="block px-4 py-2 hover:bg-gray-100"
         onClick={onClick}
+        aria-label={label}
       >
         {label}
       </Link>
