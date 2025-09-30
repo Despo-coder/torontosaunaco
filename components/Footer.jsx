@@ -9,9 +9,9 @@ const Footer = () => {
       <footer className="font-sans tracking-wide bg-slate-100 py-10 px-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h4 className="text-[#101010] font-semibold text-lg mb-6">
+            <h1 className="text-[#101010] font-semibold text-lg mb-6">
               Toronto Sauna
-            </h4>
+            </h1>
             <ul className="space-y-5">
               <li>
                 <Link
@@ -34,9 +34,9 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-[#101010] font-semibold text-lg mb-6">
+            <h1 className="text-[#101010] font-semibold text-lg mb-6">
               Socials
-            </h4>
+            </h1>
             <ul className="space-y-5">
               {/* <ul className="flex mt-4 space-x-4">
                             <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
@@ -75,9 +75,9 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-[#101010] font-semibold text-lg mb-6">
+            <h1 className="text-[#101010] font-semibold text-lg mb-6">
               Company
-            </h4>
+            </h1>
             <ul className="space-y-5">
               {/* <li>
               <Link href="/" className="hover:underline hover:text-[#FFA726]  transition-all">Our Story</Link>
@@ -111,9 +111,9 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
+          {/* Add the Map instead of the Newsletter */}
           <div>
-            <h2 className="text-2xl font-bold mb-4">Newsletter</h2>
+            <h1 className="text-2xl font-bold mb-4">Newsletter</h1>
             <p className="mb-4">
               Subscribe to our newsletter for the latest updates and offers.
             </p>
