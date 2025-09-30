@@ -6,7 +6,8 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata = {
-  title: "Blog Post | Toronto Sauna Co.",
+  title:
+    "Blog Post | Toronto Sauna Co. | Sauna for Sale| outdoor sauna for sale | custome sauna Toronto",
   description:
     "Explore premium outdoor and indoor saunas for your home, crafted from high-quality cedar wood. Proudly made in Canada, our cedar barrel and cube saunas, sauna kits, and backyard wellness solutions provide relaxation, health benefits, and timeless luxury. Elevate your space today—cold plunges available!",
 };

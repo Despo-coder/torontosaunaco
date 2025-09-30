@@ -2,7 +2,8 @@ import Lunas from "@/components/Lunas";
 import IndividualHeroes from "@/components/IndividualHeroes";
 
 export const metadata = {
-  title: "Luna Saunas | Toronto Sauna Co.",
+  title:
+    "Luna Saunas | Toronto Sauna Co. | Sauna for Sale| outdoor sauna for sale | custome sauna Toronto",
   description:
     "Discover premium cedar saunas in Toronto. Outdoor & indoor barrel, cube & custom sauna kits. Relax, recharge & enjoy cold plunges.",
 };

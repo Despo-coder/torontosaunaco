@@ -3,7 +3,8 @@ import Image from "next/image";
 import BarrelPage from "@/components/Barrel";
 
 export const metadata = {
-  title: "Barrel Saunas | Toronto Sauna Co.| Ontario",
+  title:
+    "Barrel Saunas | Toronto Sauna Co.| Ontario | Sauna for Sale| outdoor sauna for sale | custome sauna Toronto",
   description:
     "Explore premium outdoor and indoor saunas for your home, crafted from high-quality cedar wood. Proudly made in Canada, our cedar barrel and cube saunas, sauna kits, and backyard wellness solutions provide relaxation, health benefits, and timeless luxury. Elevate your space today—cold plunges available!",
 };

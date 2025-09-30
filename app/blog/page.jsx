@@ -5,7 +5,8 @@ import { urlFor } from "@/lib/sanity";
 import { GoogleTagManager } from "@next/third-parties/google";
 
 export const metadata = {
-  title: "Blogs | Toronto Sauna Co.",
+  title:
+    "Blogs | Toronto Sauna Co. | Sauna for Sale| outdoor sauna for sale | custome sauna Toronto",
   description:
     "Explore premium outdoor and indoor saunas for your home, crafted from high-quality cedar wood. Proudly made in Canada, our cedar barrel and cube saunas, sauna kits, and backyard wellness solutions provide relaxation, health benefits, and timeless luxury. Elevate your space today—cold plunges available!",
 };
