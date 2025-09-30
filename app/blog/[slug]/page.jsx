@@ -87,6 +87,7 @@ export default async function BlogPost({ params }) {
                     width={300}
                     height={200}
                     className="rounded-lg mb-2"
+                    priority
                   />
                 )}
                 <h3 className="font-semibold group-hover:text-blue-600 transition">

@@ -6,7 +6,7 @@ import AuthProvider from "@/components/AuthProvider";
 import { Toaster } from "react-hot-toast";
 import ScrollToTop from "@/components/ScrollToTop";
 import Footer from "@/components/Footer";
-import { GoogleTagManager } from "@next/third-parties/google";
+// import { GoogleTagManager } from "@next/third-parties/google";
 
 // Create Meta Data
 export const metadata = {
@@ -20,7 +20,7 @@ const MainLayout = ({ children }) => {
   return (
     <AuthProvider>
       <html lang="en" suppressHydrationWarning>
-        <GoogleTagManager gtmId="AW-16622832527" />
+        {/* <GoogleTagManager gtmId="AW-16622832527" /> */}
         <head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link

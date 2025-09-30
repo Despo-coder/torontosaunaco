@@ -2,7 +2,7 @@ import { client } from "@/lib/sanity";
 import Image from "next/image";
 import Link from "next/link";
 import { urlFor } from "@/lib/sanity";
-import { GoogleTagManager } from "@next/third-parties/google";
+// import { GoogleTagManager } from "@next/third-parties/google";
 
 export const metadata = {
   title:
@@ -45,6 +45,7 @@ export default async function BlogPage() {
                 className="w-full h-48 object-cover"
                 width={450}
                 height={450}
+                priority
               />
               <div className="p-4">
                 <h2 className="text-xl font-bold mb-2 line-clamp-2">
@@ -57,7 +58,7 @@ export default async function BlogPage() {
           </div>
         ))}
       </div>
-      <GoogleTagManager gtmId="AW-16622832527" />
+      {/* <GoogleTagManager gtmId="AW-16622832527" /> */}
     </div>
   );
 }

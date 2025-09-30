@@ -32,6 +32,7 @@ const HomePage = () => {
               width={150}
               height={150}
               className="mx-auto"
+              priority
             />
           </div>
           <div className="col-span-1">
@@ -41,6 +42,7 @@ const HomePage = () => {
               width={150}
               height={150}
               className="mx-auto"
+              priority
             />
           </div>
           <div className="col-span-2 mt-8 md:mt-0">
@@ -50,6 +52,7 @@ const HomePage = () => {
               width={150}
               height={150}
               className="mx-auto"
+              priority
             />
           </div>
         </div>
