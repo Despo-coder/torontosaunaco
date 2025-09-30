@@ -3193,7 +3193,74 @@
     },
     {
         "_id": {
-            "$oid": "668af06648215c199f921z72"
+            "$oid": "668af06648215c199f921a92"
+        },
+        "owner": "torontosaunco",
+        "name": "Pure Cube 672",
+        "type": "Pure Cube",
+        "collectionType": "Cube",
+        "series": "SH6112",
+        "description": "The Pure Cube CU672 Outdoor Sauna is built for those who want a little more room to relax. With its added depth and two-tier L-bench, it comfortably seats 4 to 5 people. A full glass front and door invite the outdoors in, while the clean, modern design makes it a standout in any backyard or cottage setting. More space, same Pure Cube style.",
+        "dimension": "84 x 120(in)",
+        "price": 13950,
+        "views": {},
+        "wood_type": {
+            "Knotty Cedar": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg"
+            },
+            "Clear Cedar": {
+                "price": 4550,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg"
+            }
+        },
+        "stove_type": {
+            "Harvia KIP": {
+                "price": 1750,
+                "power": "8 Kw",
+                "dimensions": "16 W x 11 D x 24 H (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361760/torontosaunaco/Wood_Stove_Install_img/Harvia_KIP_6KWH_WIth_Rocks_1470_jz0epy.jpg"
+            },
+            "Huum Drop WIFI": {
+                "price": 3750,
+                "power": "9 Kw",
+                "dimensions": "10 x 11 x 23 (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361773/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_6.0_Electric_Heater_With_WIFI_Controls_3132.50_zpe3m3.jpg"
+            },
+            "Homecraft Revive Heater - 7.5KW": {
+                "price": 3000,
+                "power": "9 Kw",
+                "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464079/torontosaunaco/stoves/Homecraft_Revive_7.5kw_Sauna_Heater_with_Controls__2500_xjtsc4.jpg"
+            }
+        },
+        "installation": {
+            "DIY": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+            },
+            "Supply_Install": {
+                "price": 1750,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+            }
+        },
+        "seller_info": {
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "phone": "617-555-5555"
+        },
+        "images": [
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1753984070/torontosaunaco/Cubes/purecube672_atc5wu.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1753984070/torontosaunaco/Cubes/purecube672_atc5wu.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1753984070/torontosaunaco/Cubes/purecube672_atc5wu.png"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+        "_id": {
+            "$oid": "668af06648215c199c427a91"
         },
         "owner": "torontosaunco",
         "name": "Superior Hydra Sauna",
@@ -3238,10 +3305,9 @@
             "phone": "617-555-5555"
         },
         "images": [
-            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1753838904/torontosaunaco/Cubes/Superior/SH_1_kcya7h.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1753839801/torontosaunaco/Cubes/Superior/SH_3_wicugw.jpg",
             "https://res.cloudinary.com/dw4ev5whz/image/upload/v1753838949/torontosaunaco/Cubes/Superior/OR6110_fcr0nz.jpg",
             "https://res.cloudinary.com/dw4ev5whz/image/upload/v1753838949/torontosaunaco/Cubes/Superior/OR6110_fcr0nz.jpg"
-            
         ],
         "is_featured": false,
         "createdAt": "2024-01-01T00:00:00.000Z",

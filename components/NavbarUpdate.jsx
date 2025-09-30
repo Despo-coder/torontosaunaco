@@ -65,7 +65,7 @@ export default function Header() {
     <header className="sticky top-0 py-4 lg:py-5 xl:py-6 shadow-md shadow-black/85 min-h-[80px] lg:min-h-[180px] xl:min-h-[200px] bg-white z-50">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[url('/images/Print_Hudson-44.png')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 bg-[url('https://res.cloudinary.com/dw4ev5whz/image/upload/v1759247840/torontosaunaco/Print_Hudson-44_hk0ftv.webp')] bg-cover bg-center"></div>
         <div className="absolute inset-0 bg-black/65"></div>
       </div>
 
