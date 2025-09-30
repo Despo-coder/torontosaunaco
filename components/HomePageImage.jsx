@@ -18,7 +18,7 @@ const HomePageImage = () => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-60">
         <div className="relative h-full w-full px-6 py-12 overflow-visible">
-          <div className="h-full max-w-[1800px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="h-full max-w-[1800px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             {/* Left Column - Main Content */}
             <div className="text-left md:max-w-xl lg:pl-8">
               <h1 className="text-white text-3xl md:text-5xl font-bold font-atkinson mb-4">
@@ -56,7 +56,7 @@ const HomePageImage = () => {
               <div className="text-white flex flex-col items-start gap-4 bg-black bg-opacity-40 p-8 rounded-lg w-full">
                 <h2 className="text-2xl font-bold">Visit Our Showroom</h2>
 
-                <div className="space-y-2">
+                <div className="md:space-y-2 ">
                   <div className="flex items-center gap-3">
                     {/* <FaMapMarkerAlt className="text-[#eeb35a] text-xl flex-shrink-0" /> */}
                     <div className="rounded-lg overflow-hidden w-full h-50 md:h-70 border-2 border-orange-300">
