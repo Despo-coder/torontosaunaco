@@ -82,13 +82,15 @@ const Contact = ({ defaultSubject = "" }) => {
           <div className="mt-12">
             <h2 className="text-gray-800 text-base font-bold">Socials</h2>
             <ul className="flex mt-4 space-x-4">
-              <Link href="https://www.instagram.com/thetorontosaunaco/">
-                {" "}
+              <a
+                href="https://www.instagram.com/thetorontosaunaco/"
                 alt="Instagram Link"
+              >
+                {" "}
                 <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                   <FaInstagram />
                 </li>
-              </Link>
+              </a>
             </ul>
           </div>
         </div>
