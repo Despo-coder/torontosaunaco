@@ -65,6 +65,7 @@ const Footer = () => {
                   href="https://www.instagram.com/thetorontosaunaco/"
                   className="hover:underline hover:text-[#FFA726]"
                   alt="Instagram Link"
+                  aria-label="Instagram Link"
                 >
                   <FaInstagram />
                 </a>
