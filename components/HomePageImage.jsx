@@ -66,6 +66,7 @@ const HomePageImage = () => {
                         loading="lazy"
                         allowFullScreen
                         referrerPolicy="no-referrer-when-downgrade"
+                        title="Map of The Toronto Sauna Co."
                       ></iframe>
                     </div>
                   </div>
