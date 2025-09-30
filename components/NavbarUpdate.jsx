@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "@/assets/images/1.png";
 import newLogo from "@/assets/images/IMG_6773_white.png";
 import {
   FaBars,
@@ -338,7 +337,9 @@ export default function Header() {
               className="flex items-center gap-2 font-nunito text-sm lg:text-md hover:text-blue-600 transition"
               aria-label="Saunas Link"
             >
-              <span>Saunas</span>
+              <a href="/saunas">
+                <span>Saunas</span>
+              </a>
             </button>
             {saunasDropdownOpen && (
               <ul className="font-atkinson absolute z-[-10] left-0 mt-[-2] w-44 lg:w-48 bg-white/95 shadow-md shadow-black rounded-2xl px-3 lg:px-4 py-2 backdrop-blur-sm">

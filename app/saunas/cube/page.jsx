@@ -3,11 +3,9 @@ import PureCube from "@/components/PureCube";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Toronto Sauna Co.",
+  title: "Cube Saunas | Toronto Sauna Co.| Ontario",
   description:
     "Explore premium outdoor and indoor saunas for your home, crafted from high-quality cedar wood. Proudly made in Canada, our cedar barrel and cube saunas, sauna kits, and backyard wellness solutions provide relaxation, health benefits, and timeless luxury. Elevate your space today—cold plunges available!",
-  keywords:
-    "sauna, toronto, ontario, canada, wellness, relaxation, steam, Best sauna shop in Ontario, Home Saunas near me",
 };
 
 const PureCubePage = () => {
@@ -21,11 +19,12 @@ const PureCubePage = () => {
               <div className="w-full md:w-[70%]">
                 <Image
                   src="/images/indoor.jpg"
-                  alt="Modern Sauna Image"
+                  alt="Modern cedar sauna with glass front"
                   className="rounded-xl object-cover h-full w-full"
-                  width={0}
-                  height={0}
-                  sizes="100vh"
+                  width={800}
+                  height={600}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  priority
                 />
               </div>
 

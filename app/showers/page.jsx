@@ -1,13 +1,18 @@
-import Showers from '@/components/Showers'
-import React from 'react'
+import Showers from "@/components/Showers";
+import React from "react";
+
+export const metadata = {
+  title: "Showers | Toronto Sauna Co.| Ontario",
+  description:
+    "Explore premium outdoor and indoor saunas for your home, crafted from high-quality cedar wood. Proudly made in Canada, our cedar barrel and cube saunas, sauna kits, and backyard wellness solutions provide relaxation, health benefits, and timeless luxury. Elevate your space today—cold plunges available!",
+};
 
 const ShowersPage = () => {
   return (
     <div>
-  <Showers />
+      <Showers />
     </div>
-  )
-}
+  );
+};
 
-export default ShowersPage
-
+export default ShowersPage;
