@@ -112,7 +112,23 @@ const Footer = () => {
             </ul>
           </div>
           {/* Add the Map instead of the Newsletter */}
+
           <div>
+            <h3 className="mb-4 text-xl font-semibold text-orange-300">
+              Find Us
+            </h3>
+            <div className="rounded-lg overflow-hidden w-full h-48 border-2 border-orange-300">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.1234567890123!2d-79.63026428222656!3d43.991024017333984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sPathways%20to%20Perennials!5e0!3m2!1sen!2sca!4v1747678349536!5m2!1sen!2sca&markers=color:red%7C43.991024017333984,-79.63026428222656"
+                className="w-full h-full border-0"
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+          {/* <div>
             <h1 className="text-2xl font-bold mb-4">Newsletter</h1>
             <p className="mb-4">
               Subscribe to our newsletter for the latest updates and offers.
@@ -131,7 +147,7 @@ const Footer = () => {
                 Subscribe
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
         <div className="border-t text-center border-[#6b5f5f] pt-8 mt-8">
           <p className="text-gray-300 text-[15px]">
