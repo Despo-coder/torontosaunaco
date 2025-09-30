@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Studio Six Collection - Toronto Sauna Co.",
+  title:
+    "Studio Six Collection - Toronto Sauna Co. | Sauna for Sale| outdoor sauna for sale | custome sauna Toronto",
   description:
     "Contemporary. Minimalist. Built for Canadian backyards. The Studio Six Collection blends timeless wellness with modern design, featuring CharClad black aluminum siding and premium Western Red Cedar.",
   keywords:
