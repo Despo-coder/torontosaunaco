@@ -15,10 +15,11 @@ export const metadata = {
 export const revalidate = 30;
 
 export const GetData = async () => {
-  const query = `*[_type == "blogPost"] | order(_createdAt desc) {
+  const query = `*[_type == "blogPost"] | order(publishedAt desc) {
     title,
     slug,
     titleimage,
+    publishedAt,
     "imageUrl": featuredImage.asset->url
   }`;
   const data = await client.fetch(query);
@@ -31,6 +32,7 @@ const getPostBySlug = async (slug) => {
     slug,
     content,
     titleimage,
+    publishedAt,
   }`;
 
   const post = await client.fetch(query, { slug });
@@ -51,7 +53,17 @@ export default async function BlogPost({ params }) {
       <div className="grid md:grid-cols-3 gap-12">
         {/* Main Content */}
         <article className="md:col-span-2">
-          <h1 className="text-4xl font-bold mb-8">{post.title}</h1>
+          <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
+          {post.publishedAt && (
+            <p className="text-gray-500 mb-8">
+              Published on{" "}
+              {new Date(post.publishedAt).toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
+            </p>
+          )}
 
           {post.titleimage && (
             <Image

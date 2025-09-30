@@ -14,12 +14,13 @@ export const metadata = {
 export const revalidate = 30;
 
 export const GetData = async () => {
-  const query = `*[_type == "blogPost"] | order(_createdAt desc) {
+  const query = `*[_type == "blogPost"] | order(publishedAt desc) {
     title,
     slug,
     titleimage,
+    publishedAt,
     "imageUrl": featuredImage.asset->url
-}[0...3]`;
+  }[0...3]`;
   const data = await client.fetch(query);
 
   return data;
@@ -51,6 +52,15 @@ export default async function BlogPage() {
                 <h2 className="text-xl font-bold mb-2 line-clamp-2">
                   {post.title}
                 </h2>
+                {post.publishedAt && (
+                  <p className="text-sm text-gray-500 mb-2">
+                    {new Date(post.publishedAt).toLocaleDateString("en-US", {
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
+                    })}
+                  </p>
+                )}
                 {/* <p className="text-gray-700">{post.excerpt}</p> */}
                 Read more.
               </div>

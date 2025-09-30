@@ -34,7 +34,7 @@
 //         type: 'array',
 //         of: [
 //           { type: 'block' },
-//           { 
+//           {
 //             type: 'image',
 //             fields: [
 //               {
@@ -50,50 +50,61 @@
 //   }
 
 export default {
-
-name: 'blogPost',
-title: 'Blog Post',
-type: 'document',
-fields: [
-  {
-    name: 'title',
-    title: 'Title of Blog Post',
-    type: 'string',
-  },
-  {
-    name: 'slug',
-    title: 'Slug or  Blog Post',
-    type: 'slug',
-    options: { source: 'title' },
-  },
-  {
-    name: 'titleimage',
-    title: 'Image or  Blog Post',
-    type: 'image',
-  },
-  {
-    name: 'description',
-    title: 'Description  Blog Post',
-    type: 'text',
-  },
-  {
-    name: 'content',
-    title: 'Blog Post Content',
-    type: 'array',
-    of: [
-      { type: 'block' },
-      {
-        type: 'image',
-        fields: [
-          {
-            name: 'alt',
-            title: 'Alternative Text',
-            type: 'string',
-          },
-        ],
+  name: 'blogPost',
+  title: 'Blog Post',
+  type: 'document',
+  fields: [
+    {
+      name: 'title',
+      title: 'Title of Blog Post',
+      type: 'string',
+    },
+    {
+      name: 'slug',
+      title: 'Slug or  Blog Post',
+      type: 'slug',
+      options: {source: 'title'},
+    },
+    {
+      name: 'titleimage',
+      title: 'Image or  Blog Post',
+      type: 'image',
+    },
+    {
+      name: 'description',
+      title: 'Description  Blog Post',
+      type: 'text',
+    },
+    {
+      name: 'publishedAt',
+      title: 'Published Date',
+      type: 'datetime',
+      options: {
+        dateFormat: 'YYYY-MM-DD',
+        timeFormat: 'HH:mm',
+        timeStep: 15,
+        calendarTodayLabel: 'Today',
       },
-    ]
-  }
-]
-
+      initialValue: () => new Date().toISOString(),
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: 'content',
+      title: 'Blog Post Content',
+      type: 'array',
+      of: [
+        {type: 'block'},
+        {
+          type: 'image',
+          fields: [
+            {
+              name: 'alt',
+              title: 'Alternative Text',
+              type: 'string',
+            },
+          ],
+        },
+      ],
+    },
+  ],
 }
