@@ -52,7 +52,7 @@ const HomePageImage = () => {
             </div>
 
             {/* Right Column - Business Info */}
-            <div className="md:justify-self-end md:max-w-md lg:pr-8 relative z-10 mb-8 md:mb-0">
+            <div className="mt-[-14px] md:justify-self-end md:max-w-md lg:pr-8 relative z-10 mb-8 md:mb-0">
               <div className="text-white flex flex-col items-start gap-4 bg-black bg-opacity-40 p-8 rounded-lg w-full">
                 <h2 className="text-2xl font-bold">Visit Our Showroom</h2>
 
