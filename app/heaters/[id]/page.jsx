@@ -114,6 +114,7 @@ const HeaterDetails = () => {
                           }`}
                           width={150}
                           height={150}
+                          priority
                         />
                       </button>
                     ))}

@@ -25,6 +25,7 @@ const page = () => {
                   width={0}
                   height={0}
                   sizes="100vh"
+                  priority
                 />
               </div>
 

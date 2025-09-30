@@ -120,6 +120,7 @@ const Studio6Page = () => {
                     alt={`Studio Six ${model.name}`}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    priority
                   />
                   <div className="absolute top-4 left-4 bg-black/80 text-white px-3 py-1 rounded-full text-sm font-semibold">
                     {model.name}
