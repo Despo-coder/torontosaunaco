@@ -114,9 +114,9 @@ const Footer = () => {
           {/* Add the Map instead of the Newsletter */}
 
           <div>
-            <h3 className="mb-4 text-xl font-semibold text-orange-300">
+            <h1 className="mb-4 text-xl font-semibold text-orange-300">
               Find Us
-            </h3>
+            </h1>
             <div className="rounded-lg overflow-hidden w-full h-48 border-2 border-orange-300">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.1234567890123!2d-79.63026428222656!3d43.991024017333984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sPathways%20to%20Perennials!5e0!3m2!1sen!2sca!4v1747678349536!5m2!1sen!2sca&markers=color:red%7C43.991024017333984,-79.63026428222656"
@@ -124,6 +124,7 @@ const Footer = () => {
                 loading="lazy"
                 allowFullScreen
                 referrerPolicy="no-referrer-when-downgrade"
+                title="Map of The Toronto Sauna Co."
               ></iframe>
             </div>
           </div>
