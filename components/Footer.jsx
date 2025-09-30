@@ -61,13 +61,13 @@ const Footer = () => {
               <Link href="/" className="hover:underline hover:text-[#FFA726]  transition-all"><FaFacebook /></Link>
             </li> */}
               <li>
-                <Link
+                <a
                   href="https://www.instagram.com/thetorontosaunaco/"
                   className="hover:underline hover:text-[#FFA726]"
                   alt="Instagram Link"
                 >
                   <FaInstagram />
-                </Link>
+                </a>
               </li>
               {/* <li><a href="/services" className="hover:underline hover:text-[#FFA726]"><FaTwitter /></a></li> */}
             </ul>
