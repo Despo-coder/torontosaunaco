@@ -73,12 +73,15 @@ const HomePageImage = () => {
 
                   <div className="flex items-center gap-3">
                     <FaPhone className="text-[#eeb35a] text-xl flex-shrink-0" />
+
                     <p>(437) 429-6623</p>
                   </div>
 
                   <div className="flex items-center gap-3">
                     <FaEnvelope className="text-[#eeb35a] text-xl flex-shrink-0" />
-                    <p>info@thetorontosaunaco.com</p>
+                    <Link href="mailto:sales@thetorontosaunaco.com">
+                      <p>sales@thetorontosaunaco.com</p>
+                    </Link>
                   </div>
                 </div>
 
